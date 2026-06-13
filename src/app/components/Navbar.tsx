@@ -8,6 +8,13 @@ export function Navbar() {
   const [servicesOpen, setServicesOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
+  const serviceLinks = [
+    ["Digital Marketing", "digital-marketing"],
+    ["SEO", "seo"],
+    ["Custom Software", "custom-software"],
+    ["IoT-Based Solutions", "iot"],
+    ["Web Development Services", "web-dev"],
+  ];
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 10);
@@ -29,6 +36,11 @@ export function Navbar() {
       return;
     }
 
+    if (id === "seo") {
+      navigate("/seo");
+      return;
+    }
+
     if (id === "custom-software") {
       navigate("/custom-software");
       return;
@@ -36,6 +48,16 @@ export function Navbar() {
 
     if (id === "iot") {
       navigate("/iot");
+      return;
+    }
+
+    if (id === "web-dev") {
+      navigate("/web-development");
+      return;
+    }
+
+    if (id === "contact") {
+      navigate("/contact");
       return;
     }
 
@@ -55,77 +77,101 @@ export function Navbar() {
       }`}
       style={{ backgroundColor: "#fbfbfb", borderBottom: "1px solid #000" }}
     >
-      <div className="max-w-[1270px] mx-auto px-4 sm:px-6 lg:px-10 py-3 flex items-center justify-between">
+      <div className="w-full px-3 sm:px-6 lg:px-4 py-[10px] flex items-center justify-between">
         {/* Logo */}
         <div
           className="cursor-pointer"
           onClick={() => scrollTo("hero")}
         >
           <span
-            className="text-black"
+            className="text-[#151c36]"
             style={{
-              fontFamily: "'Orbitron', sans-serif",
-              fontSize: "22px",
-              letterSpacing: "2px",
+              fontFamily: "'Playfair Display', serif",
+              fontSize: "25px",
+              letterSpacing: "1px",
               fontWeight: 700,
+              textTransform: "lowercase",
             }}
           >
-            D'MIRAKI
+            d'miraki
           </span>
         </div>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-[20px] lg:gap-[22px]">
           <button
             onClick={() => scrollTo("hero")}
-            className="text-[#a5a5a5] hover:text-black transition-colors"
-            style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "13px" }}
+            className="text-[#9f9f9f] hover:text-black transition-colors uppercase"
+            style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "15px", fontWeight: 800, lineHeight: "1" }}
           >
             Home
           </button>
           <button
             onClick={() => scrollTo("about")}
-            className="text-[#a5a5a5] hover:text-black transition-colors"
-            style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "13px" }}
+            className="text-[#9f9f9f] hover:text-black transition-colors uppercase"
+            style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "15px", fontWeight: 800, lineHeight: "1" }}
           >
             About
           </button>
-          <div className="relative">
+          <div>
             <button
               onClick={() => setServicesOpen(!servicesOpen)}
-              className="flex items-center gap-1 text-[#a5a5a5] hover:text-black transition-colors"
-              style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "13px" }}
+              className="flex items-center gap-1 text-black hover:text-black transition-colors uppercase"
+              style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "15px", fontWeight: 900, lineHeight: "1" }}
             >
               Services
-              <ChevronDown size={14} />
+              <ChevronDown size={15} strokeWidth={3} />
             </button>
             {servicesOpen && (
               <div
-                className="absolute top-full left-0 mt-2 w-56 bg-white border border-black shadow-lg z-50"
+                className="absolute left-0 right-0 top-full z-50 border-t border-black px-4 py-[62px]"
                 onMouseLeave={() => setServicesOpen(false)}
+                style={{
+                  background:
+                    "linear-gradient(110deg, #000 0%, #050505 43%, #1a1a1a 62%, #6f6f6f 100%)",
+                }}
               >
-                {[
-                  ["Digital Marketing", "digital-marketing"],
-                  ["Custom Software", "custom-software"],
-                  ["IoT Solutions", "iot"],
-                  ["Web Development", "web-dev"],
-                ].map(([label, id]) => (
-                  <button
-                    key={id}
-                    onClick={() => scrollTo(id)}
-                    className="w-full text-left px-4 py-3 text-sm text-black hover:bg-gray-100 transition-colors border-b border-gray-100 last:border-0"
-                    style={{ fontFamily: "'Roboto', sans-serif" }}
-                  >
-                    {label}
-                  </button>
-                ))}
+                <div className="mx-auto flex max-w-[1000px] flex-wrap items-center justify-center gap-x-[18px] gap-y-[22px]">
+                  {serviceLinks.map(([label, id]) => (
+                    <button
+                      key={id}
+                      onClick={() => scrollTo(id)}
+                      className="h-[46px] border border-white/75 px-7 text-white transition-colors hover:bg-white hover:text-black uppercase"
+                      style={{
+                        fontFamily: "'Orbitron', sans-serif",
+                        fontSize: "20px",
+                        fontWeight: 500,
+                        lineHeight: "1",
+                        minWidth:
+                          id === "digital-marketing"
+                            ? "335px"
+                            : id === "custom-software"
+                            ? "348px"
+                            : id === "web-dev"
+                            ? "445px"
+                            : id === "iot"
+                            ? "334px"
+                            : "260px",
+                      }}
+                    >
+                      {label}
+                    </button>
+                  ))}
+                </div>
               </div>
             )}
           </div>
           <button
             onClick={() => scrollTo("contact")}
-            className="border border-[#3b3b3b] px-5 py-2 text-[#3b3b3b] hover:bg-black hover:text-white transition-colors"
-            style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "12px" }}
+            className="text-[#9f9f9f] hover:text-black transition-colors uppercase"
+            style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "15px", fontWeight: 800, lineHeight: "1" }}
+          >
+            Contact
+          </button>
+          <button
+            onClick={() => scrollTo("contact")}
+            className="border border-[#5b5b5b] px-[22px] py-[9px] text-[#2b2b2b] hover:bg-black hover:text-white transition-colors uppercase"
+            style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "14px", fontWeight: 500, lineHeight: "1" }}
           >
             Get in touch
           </button>
@@ -147,9 +193,10 @@ export function Navbar() {
             ["Home", "hero"],
             ["About", "about"],
             ["Digital Marketing", "digital-marketing"],
+            ["SEO", "seo"],
             ["Custom Software", "custom-software"],
-            ["IoT Solutions", "iot"],
-            ["Web Development", "web-dev"],
+            ["IoT-Based Solutions", "iot"],
+            ["Web Development Services", "web-dev"],
             ["Contact", "contact"],
           ].map(([label, id]) => (
             <button

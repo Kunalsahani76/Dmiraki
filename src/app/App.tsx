@@ -19,6 +19,9 @@ import About from "../imports/DesktopAbout";
 import DigitalMarketing from "../imports/DesktopDigitalMarketing";
 import CustomSoftware from "../imports/DesktopCustomSoftware";
 import IotBased from "../imports/IotBased";
+import WebDevelopmentPage from "./pages/WebDevelopmentPage";
+import ContactPage from "./pages/ContactPage";
+import SEOPage from "./pages/SEOPage";
 
 function HomePage() {
   const location = useLocation();
@@ -121,6 +124,36 @@ function IotPage() {
   );
 }
 
+function WebDevelopmentRoutePage() {
+  return (
+    <div className="w-full min-h-screen bg-black overflow-x-hidden">
+      <Navbar />
+      <div style={{ height: "62px" }} />
+      <WebDevelopmentPage />
+    </div>
+  );
+}
+
+function ContactRoutePage() {
+  return (
+    <div className="w-full min-h-screen bg-black overflow-x-hidden">
+      <Navbar />
+      <div style={{ height: "62px" }} />
+      <ContactPage />
+    </div>
+  );
+}
+
+function SEORoutePage() {
+  return (
+    <div className="w-full min-h-screen bg-black overflow-x-hidden">
+      <Navbar />
+      <div style={{ height: "62px" }} />
+      <SEOPage />
+    </div>
+  );
+}
+
 export default function App() {
   return (
     <Routes>
@@ -129,6 +162,9 @@ export default function App() {
       <Route path="/digital-marketing" element={<DigitalMarketingPage />} />
       <Route path="/custom-software" element={<CustomSoftwarePage />} />
       <Route path="/iot" element={<IotPage />} />
+      <Route path="/web-development" element={<WebDevelopmentRoutePage />} />
+      <Route path="/contact" element={<ContactRoutePage />} />
+      <Route path="/seo" element={<SEORoutePage />} />
     </Routes>
   );
 }
