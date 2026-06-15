@@ -1,13 +1,16 @@
 /* Digital Marketing, Custom Software, IoT, Web Development sections */
 
-const glassCard = "backdrop-blur-md bg-white/30 border border-[rgba(64,64,64,0.5)] flex flex-col gap-3 px-4 py-3";
+import whatWeOfferImage from "../../images/What We Offer.png";
+import iotBasedSolutionsImage from "../../images/IoT-Based Solutions.png";
+
+const glassCard = "min-h-[178px] backdrop-blur-md bg-white/30 border border-[rgba(64,64,64,0.5)] flex flex-col gap-3 px-4 py-3";
 
 function GlassServiceCard({ icon, title, desc }: { icon: string; title: string; desc: string }) {
   return (
     <div className={glassCard}>
       <div className="text-white text-2xl">{icon}</div>
       <div>
-        <p className="text-white mb-1" style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "14px", lineHeight: "1.6" }}>
+        <p className="text-white mb-1" style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "14px", lineHeight: "1.6", overflowWrap: "anywhere" }}>
           {title}
         </p>
         <p className="text-[#eee]" style={{ fontFamily: "'Roboto', sans-serif", fontSize: "14px", lineHeight: "22px" }}>
@@ -37,14 +40,14 @@ export function DigitalMarketingSection() {
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: `url(https://images.unsplash.com/photo-1579567761406-4684ee0c75b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920)`,
+          backgroundImage: `url(${whatWeOfferImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       />
       <div className="absolute inset-0 bg-black/70" />
 
-      <div className="relative z-10 max-w-[1270px] mx-auto px-4 sm:px-6 lg:px-10 py-16">
+      <div className="relative z-10 max-w-[1270px] mx-auto px-4 sm:px-6 lg:px-10 py-12 sm:py-16">
         <h2
           className="text-white mb-10"
           style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "clamp(22px,4vw,36px)" }}
@@ -74,10 +77,10 @@ function WhiteServiceCard({
   borderStyle?: string;
 }) {
   return (
-    <div className={`relative flex flex-col gap-4 p-8 ${borderStyle ?? "border border-black"}`}>
+    <div className={`relative flex min-h-[245px] flex-col gap-4 p-6 sm:p-8 ${borderStyle ?? "border border-black"}`}>
       <div className="text-2xl">{icon}</div>
       <div>
-        <p className="text-[#1b1b1d] mb-2" style={{ fontFamily: "'Inter', sans-serif", fontSize: "20px", fontWeight: 600, lineHeight: "1.4" }}>
+        <p className="text-[#1b1b1d] mb-2" style={{ fontFamily: "'Inter', sans-serif", fontSize: "20px", fontWeight: 600, lineHeight: "1.4", overflowWrap: "anywhere" }}>
           {title}
         </p>
         <p className="text-[#44474d]" style={{ fontFamily: "'Manrope', sans-serif", fontSize: "15px", lineHeight: "24px" }}>
@@ -157,7 +160,7 @@ export function IoTSection() {
   return (
     <section id="iot" className="w-full bg-white py-12">
       <div className="max-w-[1270px] mx-auto px-4 sm:px-6 lg:px-10">
-        <div className="flex flex-col lg:flex-row items-center gap-12">
+        <div className="flex flex-col lg:flex-row items-start lg:items-center gap-10 lg:gap-12">
           {/* Left text */}
           <div className="flex-1">
             <h2
@@ -168,7 +171,7 @@ export function IoTSection() {
             </h2>
             <div className="flex flex-col gap-10">
               {items.map((item) => (
-                <div key={item.title} className="flex gap-6 items-start">
+                <div key={item.title} className="flex gap-4 sm:gap-6 items-start">
                   <div
                     className="flex items-center justify-center rounded shrink-0"
                     style={{ width: 48, height: 48, backgroundColor: "rgba(143,143,143,0.2)" }}
@@ -197,12 +200,12 @@ export function IoTSection() {
           </div>
 
           {/* Right image */}
-          <div className="flex-1 lg:max-w-[50%]">
+          <div className="w-full flex-1 lg:max-w-[50%]">
             <img
-              src="https://images.unsplash.com/photo-1703675858673-56aab77ccbec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+              src={iotBasedSolutionsImage}
               alt="IoT Solutions"
               className="w-full object-cover"
-              style={{ maxHeight: "500px" }}
+              style={{ maxHeight: "500px", minHeight: "260px" }}
             />
           </div>
         </div>
@@ -239,34 +242,34 @@ export function WebDevSection() {
       />
       <div className="absolute inset-0 bg-black/75" />
 
-      <div className="relative z-10 max-w-[1270px] mx-auto px-4 sm:px-6 lg:px-10 py-16">
+      <div className="relative z-10 max-w-[1270px] mx-auto px-4 sm:px-6 lg:px-10 py-12 sm:py-16">
         <h2
           className="text-white mb-10"
           style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "clamp(18px,3vw,36px)" }}
         >
           Web Development Services
         </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mb-4">
+        <div className="grid grid-cols-1 min-[430px]:grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mb-4">
           {row1.map((c) => (
             <div
               key={c.title}
-              className="backdrop-blur-md bg-white/30 border border-[rgba(64,64,64,0.5)] flex flex-col items-center gap-3 px-3 py-4 text-center"
+              className="min-h-[132px] backdrop-blur-md bg-white/30 border border-[rgba(64,64,64,0.5)] flex flex-col items-center justify-center gap-3 px-3 py-4 text-center"
             >
               <div className="text-white text-2xl">{c.icon}</div>
-              <p className="text-white" style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "13px", lineHeight: "1.6" }}>
+              <p className="text-white" style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "13px", lineHeight: "1.6", overflowWrap: "anywhere" }}>
                 {c.title}
               </p>
             </div>
           ))}
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div className="grid grid-cols-1 min-[430px]:grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
           {row2.map((c) => (
             <div
               key={c.title}
-              className="backdrop-blur-md bg-white/30 border border-[rgba(64,64,64,0.5)] flex flex-col items-center gap-3 px-3 py-4 text-center"
+              className="min-h-[132px] backdrop-blur-md bg-white/30 border border-[rgba(64,64,64,0.5)] flex flex-col items-center justify-center gap-3 px-3 py-4 text-center"
             >
               <div className="text-white text-2xl">{c.icon}</div>
-              <p className="text-white" style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "13px", lineHeight: "1.6" }}>
+              <p className="text-white" style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "13px", lineHeight: "1.6", overflowWrap: "anywhere" }}>
                 {c.title}
               </p>
             </div>

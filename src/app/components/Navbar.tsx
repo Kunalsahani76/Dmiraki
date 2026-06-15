@@ -77,7 +77,7 @@ export function Navbar() {
       }`}
       style={{ backgroundColor: "#fbfbfb", borderBottom: "1px solid #000" }}
     >
-      <div className="w-full px-3 sm:px-6 lg:px-4 py-[10px] flex items-center justify-between">
+      <div className="w-full px-4 sm:px-6 lg:px-4 py-[10px] flex items-center justify-between">
         {/* Logo */}
         <div
           className="cursor-pointer"
@@ -124,7 +124,7 @@ export function Navbar() {
             </button>
             {servicesOpen && (
               <div
-                className="absolute left-0 right-0 top-full z-50 border-t border-black px-4 py-[62px]"
+                className="absolute left-0 right-0 top-full z-50 max-h-[calc(100vh-62px)] overflow-y-auto border-t border-black px-4 py-8 lg:py-[62px]"
                 onMouseLeave={() => setServicesOpen(false)}
                 style={{
                   background:
@@ -136,7 +136,7 @@ export function Navbar() {
                     <button
                       key={id}
                       onClick={() => scrollTo(id)}
-                      className="h-[46px] border border-white/75 px-7 text-white transition-colors hover:bg-white hover:text-black uppercase"
+                      className="min-h-[46px] w-full max-w-[445px] border border-white/75 px-5 py-3 text-white transition-colors hover:bg-white hover:text-black uppercase sm:w-auto sm:px-7"
                       style={{
                         fontFamily: "'Orbitron', sans-serif",
                         fontSize: "20px",
@@ -188,7 +188,7 @@ export function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white border-t border-black px-6 py-4 flex flex-col gap-4">
+        <div className="md:hidden max-h-[calc(100vh-62px)] overflow-y-auto bg-white border-t border-black px-6 py-4 flex flex-col gap-4">
           {[
             ["Home", "hero"],
             ["About", "about"],
@@ -202,7 +202,7 @@ export function Navbar() {
             <button
               key={id}
               onClick={() => scrollTo(id)}
-              className="text-left text-black hover:text-gray-600 transition-colors py-1"
+              className="text-left text-black hover:text-gray-600 transition-colors py-2"
               style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "13px" }}
             >
               {label}

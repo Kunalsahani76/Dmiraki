@@ -1,14 +1,16 @@
 import svgPaths from "./svg-97aztw19jm";
-import imgFrame1000002782 from "./beb8360f8139a9526e93a44bb311e86cf524e1bb.png";
+import imgDigitalMarketing from "../../images/Digitalmarketing.png";
+import imgDigitalMarketingBanner from "../../images/digitalmarketingbaner.png";
 import imgDmirakiPosts1 from "./bf4cf617b34b1b26e10ed7fbbabad160e79fb2e8.png";
 
 function Heading() {
   return (
     <div className="content-stretch flex flex-col items-start pt-[1.2px] relative shrink-0 w-full" data-name="Heading 1">
-      <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#fbfbfb] text-[42px] tracking-[1.12px] w-full">
-        <p className="leading-[54px] mb-0">DIGITAL MARKETING</p>
-        <p className="leading-[54px] mb-0">THAT DRIVES</p>
-        <p className="leading-[54px]">REAL GROWTH</p>
+      <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#fbfbfb] text-[50px] tracking-[1.2px] w-full">
+        <p className="leading-[70px] mb-0">DIGITAL</p>
+        <p className="leading-[70px] mb-0">MARKETING</p>
+        <p className="leading-[70px] mb-0">THAT DRIVES</p>
+        <p className="leading-[70px]">REAL GROWTH</p>
       </div>
     </div>
   );
@@ -17,10 +19,8 @@ function Heading() {
 function Container() {
   return (
     <div className="content-stretch flex flex-col items-start max-w-[576px] pb-[0.59px] relative shrink-0 w-full" data-name="Container">
-      <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#fbfbfb] text-[18px] w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
-        <p className="leading-[28.8px] mb-0">AetherForge blends high-precision engineering with visionary digital</p>
-        <p className="leading-[28.8px] mb-0">{`strategies to scale enterprise brands. We don't just run ads; we architect`}</p>
-        <p className="leading-[28.8px]">ecosystems of performance.</p>
+      <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#fbfbfb] text-[13px] w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
+        <p className="leading-[20px]">AetherForge Blends High-Precision Engineering With Visionary Digital...</p>
       </div>
     </div>
   );
@@ -28,10 +28,10 @@ function Container() {
 
 function Button() {
   return (
-    <div className="backdrop-blur-[6px] bg-[rgba(255,255,255,0.03)] content-stretch flex flex-col items-center justify-center px-[33px] py-[17px] relative shrink-0" data-name="Button">
+    <div className="backdrop-blur-[6px] bg-[rgba(255,255,255,0.03)] content-stretch flex flex-col h-[54px] items-center justify-center relative shrink-0 w-[388px]" data-name="Button">
       <div aria-hidden className="absolute border border-[rgba(255,255,255,0.3)] border-solid inset-0 pointer-events-none" />
-      <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#e5e1e4] text-[18px] text-center whitespace-nowrap">
-        <p className="leading-[28px]">Book Free Consultation</p>
+      <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#e5e1e4] text-[13px] text-center tracking-[2px] uppercase whitespace-nowrap">
+        <p className="leading-[20px]">Book Free Consultation</p>
       </div>
     </div>
   );
@@ -47,7 +47,7 @@ function Container1() {
 
 function Frame7() {
   return (
-    <div className="content-stretch flex flex-col gap-[32px] items-start relative shrink-0 w-[696px]">
+    <div className="content-stretch flex flex-col gap-[30px] items-start relative shrink-0 w-[548px]">
       <Heading />
       <Container />
       <Container1 />
@@ -61,8 +61,8 @@ function Ab6AXuAiEsJrdFyNhWyUg41G0M6Bt2XLcWa2NNjZEy8Vzgi7X6DuMJfA1WfzL4BEAReBf65
 
 function Frame8() {
   return (
-    <div className="h-[375px] overflow-clip relative shrink-0 w-[462px]">
-      <Ab6AXuAiEsJrdFyNhWyUg41G0M6Bt2XLcWa2NNjZEy8Vzgi7X6DuMJfA1WfzL4BEAReBf65RW1I7Ahab2NiEwWb2Jv7A0GgR5Cywvuum1Dtjb5MwaIxrSwnZhuxfVbR2U6FAl8X2DewHb95BOhiTbXjNsBaruliMgP8FzfHfxpBmGdc17QeySQum7UkyXPyCd4IxWq5V6LuL0DnkjX4Xn8OqfTvmb3Sy2VgGzPyWi3Sgnq3QbmJce4U3JEbJsiEFhqGhyDo />
+    <div className="h-[405px] overflow-clip relative shrink-0 w-[462px]">
+      <img alt="Digital marketing analytics dashboard" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgDigitalMarketing} />
     </div>
   );
 }
@@ -132,7 +132,7 @@ function Frame2() {
 function Frame6() {
   return (
     <div className="h-[700px] relative shrink-0 w-full">
-      <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgFrame1000002782} />
+      <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgDigitalMarketingBanner} />
       <div className="flex flex-row items-center justify-center overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex gap-[10px] items-center justify-center p-[10px] relative size-full">
           <Frame9 />

@@ -36,8 +36,8 @@ function FooterColumn({ title, items }: { title: string; items: string[] }) {
 export function SiteFooter() {
   return (
     <footer className="bg-[#222] w-full">
-      <div className="p-[30px]">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:grid-rows-[248px]">
+      <div className="px-5 py-8 sm:p-[30px]">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-12">
           <div className="flex flex-col gap-2 lg:col-[1/span_5]">
             <h2
               className="text-white text-[30px] leading-9"

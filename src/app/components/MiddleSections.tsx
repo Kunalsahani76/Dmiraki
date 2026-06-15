@@ -1,5 +1,7 @@
 /* Stats, What We Pay Attention To, The Approach sections */
 
+import whatWePayAttentionImage from "../../images/What We Pay Attention to.png";
+
 export function StatsSection() {
   return (
     <section className="w-full bg-white py-8">
@@ -94,18 +96,12 @@ export function AttentionSection() {
             </div>
           </div>
 
-          {/* Right images */}
+          {/* Right image */}
           <div className="flex-shrink-0 flex flex-col lg:flex-row gap-0" style={{ width: "auto", maxWidth: "440px" }}>
             <img
-              src="https://images.unsplash.com/photo-1481026469463-66327c86e544?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
-              alt="Attention 1"
-              className="w-full lg:w-1/2 object-cover"
-              style={{ height: "300px" }}
-            />
-            <img
-              src="https://images.unsplash.com/photo-1690944851207-3f288c8fcd0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
-              alt="Attention 2"
-              className="w-full lg:w-1/2 object-cover"
+              src={whatWePayAttentionImage}
+              alt="What We Pay Attention to"
+              className="w-full object-cover"
               style={{ height: "300px" }}
             />
           </div>

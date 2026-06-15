@@ -4,6 +4,7 @@ import imgComponent57 from "./1d7d1199b6359e2a5a182bbb1787c2a835d1add3.png";
 import imgFrame1000002751 from "./5d30b30b201bc563295ce7873381ee59fe7c305a.png";
 import imgDmirakiPosts1 from "./bf4cf617b34b1b26e10ed7fbbabad160e79fb2e8.png";
 import { imgGroup, imgGroup1, imgGroup2, imgGroup3, imgGroup4 } from "./svg-848im";
+import howWeWorkImage from "../../images/HOW-WE-WORK.png";
 
 function Heading() {
   return (
@@ -59,7 +60,14 @@ function Frame5() {
   return (
     <div className="-translate-x-1/2 absolute content-stretch flex gap-[33px] items-end left-1/2 top-[115px]">
       <Container />
-      <div className="h-[520px] relative shrink-0 w-[504px]" data-name="Component 57">
+      <div
+        className="h-[520px] relative shrink-0 w-[504px]"
+        data-name="Component 57"
+        style={{
+          transform: "translateY(-28px)",
+          boxShadow: "0 32px 90px rgba(0, 0, 0, 0.55)",
+        }}
+      >
         <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgComponent57} />
         <Ab6AXuAb0Lg4JHtKok8KgHpQjW4Op4RIgi0GMweFuARnPiFxmRQyRxaPooDVuD3JMp7AVqqLa3Hs5MyYzAdDwANqAvOlzZqaQhbIv0PTFcjA76A3UdaKo8VqOnDpHmQj50WhBowzZq415BfdsoqebHaaFutS5O2RCbikpXi7CP71GpYcrERpN00TXzt6VZkazoghMkGolfUqKUmxVjyFhPeXaAb8RhE6JqJyi5NFWDybEdp8YgEkCjMshrIqbQkRnA9MwYEk />
       </div>
@@ -1129,7 +1137,20 @@ function Frame23() {
 }
 
 function Ab6AXuC8M1Wzh4OoPJayF1KnSeQIwi8PivLnrJn2NgyWojABtT3HhQtHohz9W5Sd8F7XkGXly1IuyfrA424WTqminS9Zp9PyvMy5GXpiPkDiHxnXHhLwejq8KGdNsE2ITmIyvyHy8EeJemGeve2BEli6Uiq7JiRfP21EW1VrsU4Yt4KuLccdUntHejZgaeIqKKrGzQr1LHGdckxjOiIdt8NwdRcfF7KhA0OpdBlEm5ZfJxsBzYuYf2AbwYly5LlmcCZqw05NduGE() {
-  return <div className="bg-white mix-blend-saturation relative shrink-0 size-[462px]" data-name="AB6AXuC8m1wzh4OoPJayF1KnSeQIwi8PIVLnrJn2NGYWojABtT3hhQTHohz9w5sd8f7xkGXly1iuyfrA_42-4wTqminS9-ZP9pyvMy5gXpiPkDiHxnXHhLWEJQ8kGDNsE2ITmIyvyHY8EeJemGEVE2bEli6Uiq7JI_rfP21eW1vrsU4YT4KULccdUntHejZGAEIqKKrGzQR1lHGdckxjOiIdt8-nwdRcfF7khA0opdBlEm5zfJxs_bzYuYf2ABWYly5LlmcCZqw05Ndu_gE" />;
+  return (
+    <div
+      className="bg-[#202020] relative shrink-0 size-[462px]"
+      data-name="HOW WE WORK image"
+      style={{ boxShadow: "0 24px 48px rgba(0, 0, 0, 0.55)" }}
+    >
+      <img
+        alt="HOW WE WORK?"
+        className="absolute inset-[14px] max-w-none object-cover pointer-events-none"
+        src={howWeWorkImage}
+        style={{ width: "calc(100% - 28px)", height: "calc(100% - 28px)" }}
+      />
+    </div>
+  );
 }
 
 function Heading15() {
@@ -3781,7 +3802,7 @@ function Frame3() {
 
 export default function About() {
   return (
-    <div className="bg-[#fbfbfb] content-stretch flex flex-col gap-[40px] items-center relative size-full" data-name="ABOUT">
+    <div className="about-page-responsive bg-[#fbfbfb] content-stretch flex flex-col gap-[40px] items-center relative size-full" data-name="ABOUT">
       <Frame4 />
       <Frame6 />
       <Frame11 />

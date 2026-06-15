@@ -28,7 +28,7 @@ export function DreamingBigSection() {
         className="max-w-[1270px] mx-auto px-4 sm:px-6 lg:px-10 py-10"
         style={{ border: "1px solid black" }}
       >
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
           {/* Left column */}
           <div className="flex flex-col gap-8">
             <div>
@@ -46,17 +46,17 @@ export function DreamingBigSection() {
               </p>
             </div>
             <div className="flex flex-col gap-6">
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 min-w-0">
                 <span className="text-xl">📞</span>
-                <span style={{ fontFamily: "'Inter', sans-serif", fontSize: "17px" }}>+91 92113 41245</span>
+                <span style={{ fontFamily: "'Inter', sans-serif", fontSize: "17px", overflowWrap: "anywhere" }}>+91 92113 41245</span>
               </div>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 min-w-0">
                 <span className="text-xl">✉️</span>
-                <span style={{ fontFamily: "'Inter', sans-serif", fontSize: "17px" }}>info@dmiraki.com</span>
+                <span style={{ fontFamily: "'Inter', sans-serif", fontSize: "17px", overflowWrap: "anywhere" }}>info@dmiraki.com</span>
               </div>
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-4 min-w-0">
                 <span className="text-xl mt-1">📍</span>
-                <span style={{ fontFamily: "'Inter', sans-serif", fontSize: "17px" }}>B-103, Sector-2 Noida-201301, India</span>
+                <span style={{ fontFamily: "'Inter', sans-serif", fontSize: "17px", overflowWrap: "anywhere" }}>B-103, Sector-2 Noida-201301, India</span>
               </div>
             </div>
           </div>
@@ -64,7 +64,7 @@ export function DreamingBigSection() {
           {/* Right column - Form */}
           <div>
             <form className="flex flex-col gap-4" onSubmit={(e) => e.preventDefault()}>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <input
                   type="text"
                   placeholder="First name"
@@ -104,7 +104,7 @@ export function DreamingBigSection() {
               />
               <button
                 type="submit"
-                className="bg-white text-black px-6 py-3 rounded-sm hover:bg-black hover:text-white transition-colors"
+                className="w-full bg-white text-black px-6 py-3 rounded-sm hover:bg-black hover:text-white transition-colors"
                 style={{ fontFamily: "'Inter', sans-serif", fontSize: "15px", fontWeight: 600, border: "1px solid black" }}
               >
                 Send
