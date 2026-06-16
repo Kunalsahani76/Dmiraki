@@ -61,7 +61,7 @@ function Frame5() {
     <div className="-translate-x-1/2 absolute content-stretch flex gap-[33px] items-end left-1/2 top-[115px]">
       <Container />
       <div
-        className="h-[520px] relative shrink-0 w-[504px]"
+        className="about-hero-floating-image h-[520px] relative shrink-0 w-[504px]"
         data-name="Component 57"
         style={{
           transform: "translateY(-28px)",
@@ -1382,7 +1382,7 @@ function Frame25() {
   return (
     <div className="bg-black relative shrink-0 w-full">
       <div className="flex flex-row items-center justify-center size-full">
-        <div className="content-stretch flex items-center justify-between p-[30px] relative size-full">
+        <div className="content-stretch flex items-center justify-between max-w-[1270px] mx-auto p-[30px] relative w-full">
           <Ab6AXuC8M1Wzh4OoPJayF1KnSeQIwi8PivLnrJn2NgyWojABtT3HhQtHohz9W5Sd8F7XkGXly1IuyfrA424WTqminS9Zp9PyvMy5GXpiPkDiHxnXHhLwejq8KGdNsE2ITmIyvyHy8EeJemGeve2BEli6Uiq7JiRfP21EW1VrsU4Yt4KuLccdUntHejZgaeIqKKrGzQr1LHGdckxjOiIdt8NwdRcfF7KhA0OpdBlEm5ZfJxsBzYuYf2AbwYly5LlmcCZqw05NduGE />
           <Container36 />
         </div>
@@ -1708,7 +1708,7 @@ function Form() {
       <PhoneNumberInput />
       <SubjectInput />
       <ProjectDescriptionTextarea />
-      <div className="bg-white content-stretch flex items-center justify-center px-[24px] py-[12px] relative rounded-[2px] shrink-0 w-[527px]" data-name="Submit Button → Button">
+      <div className="bg-white content-stretch flex h-[48px] items-center justify-center px-[24px] py-[12px] relative rounded-[2px] shrink-0 w-full" data-name="Submit Button → Button">
         <div aria-hidden className="absolute border border-black border-solid inset-0 pointer-events-none rounded-[2px]" />
         <div className="[word-break:break-word] flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-black text-center whitespace-nowrap">
           <p className="leading-[24px]">Send</p>
@@ -1728,7 +1728,7 @@ function RightColumnForm() {
 
 function Container44() {
   return (
-    <div className="gap-x-[96px] gap-y-[96px] grid grid-cols-[repeat(2,minmax(0,1fr))] grid-rows-[_512px] relative shrink-0 w-full" data-name="Container">
+    <div className="gap-x-[88px] gap-y-[88px] grid grid-cols-[minmax(0,1fr)_527px] grid-rows-[auto] relative shrink-0 w-full" data-name="Container">
       <LeftColumnInformation />
       <RightColumnForm />
     </div>
@@ -1739,7 +1739,7 @@ function Container43() {
   return (
     <div className="relative shrink-0 w-full" data-name="Container">
       <div aria-hidden className="absolute border border-black border-solid inset-0 pointer-events-none" />
-      <div className="content-stretch flex flex-col items-start px-[60px] py-[20px] relative size-full">
+      <div className="content-stretch flex flex-col items-start max-w-[1270px] mx-auto px-[60px] py-[36px] relative w-full">
         <Container44 />
       </div>
     </div>

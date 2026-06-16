@@ -12,6 +12,8 @@ import {
   ShieldCheck,
   Sparkles,
 } from "lucide-react";
+import heroBackground from "../../images/digitalmarketingbaner.png";
+import seoHeroVisual from "../../images/seo.png";
 import heroVisual from "../../imports/Home/899ad3003fb6b8bbbc20a36dec9d11b401674a56.png";
 import dashboardVisual from "../../imports/Home/ba94765630e49ad56eb0745d378f772c95ef7582.png";
 import angledVisual from "../../imports/Home/d122b3ff70f38e655ad6398506d3fa09c7ea863d.png";
@@ -74,32 +76,40 @@ function GridBackdrop() {
 export default function SEOPage() {
   return (
     <main className="min-h-screen bg-black text-white">
-      <section className="relative overflow-hidden bg-[#111]">
-        <GridBackdrop />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(255,255,255,0.13),transparent_26%),linear-gradient(90deg,rgba(0,0,0,0.2),rgba(0,0,0,0.75))]" />
-        <div className="relative mx-auto grid max-w-[1270px] grid-cols-1 gap-12 px-6 py-20 lg:grid-cols-[1.05fr_0.95fr] lg:px-10 lg:py-24">
-          <div>
+      <section className="relative min-h-[700px] overflow-hidden bg-[#111]">
+        <img
+          alt=""
+          className="absolute inset-0 h-full w-full object-cover opacity-95"
+          src={heroBackground}
+        />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.1),rgba(0,0,0,0.54))]" />
+        <div className="relative mx-auto grid min-h-[700px] max-w-[1270px] grid-cols-1 items-center gap-12 px-6 py-16 lg:grid-cols-[1.08fr_0.92fr] lg:px-[42px]">
+          <div className="relative z-10">
             <h1
-              className="max-w-[690px] uppercase text-[#f1f1f1]"
-              style={{ ...orbitron, fontSize: "clamp(39px, 5.5vw, 72px)", fontWeight: 500, lineHeight: 1.22 }}
+              className="max-w-[705px] uppercase text-[#f1f1f1]"
+              style={{ ...orbitron, fontSize: "clamp(42px, 5.5vw, 64px)", fontWeight: 500, lineHeight: 1.35, letterSpacing: "0.01em" }}
             >
               Not everything visible is understood.
             </h1>
-            <p className="mt-8 max-w-[540px] text-[13px] font-bold leading-6 text-[#d9d9d9]" style={inter}>
+            <p className="mt-8 max-w-[610px] text-[16px] font-normal leading-[26px] text-[#f0f0f0]" style={inter}>
               Most brands appear in search. Very few are recognized for what they truly are.
               We architect search presence for brands that value deliberate positioning over accidental discovery.
             </p>
             <button
-              className="mt-8 h-[64px] min-w-[365px] border border-white/35 px-8 text-[#efefef] transition-colors hover:bg-white hover:text-black max-sm:min-w-full"
-              style={{ ...orbitron, fontSize: "13px", fontWeight: 600, letterSpacing: "0.08em" }}
+              className="mt-8 h-[66px] w-full max-w-[365px] border border-white/30 bg-white/[0.03] px-8 text-[#efefef] backdrop-blur-[6px] transition-colors hover:bg-white hover:text-black"
+              style={{ ...orbitron, fontSize: "16px", fontWeight: 500, letterSpacing: "0.12em" }}
             >
               Book Free Consultation
             </button>
           </div>
 
-          <div className="relative mx-auto w-full max-w-[460px]">
-            <div className="absolute -inset-6 bg-white/10 blur-3xl" />
-            <img src={heroVisual} alt="Architectural search abstraction" className="relative aspect-[1.08] w-full object-cover grayscale" />
+          <div className="relative z-10 mx-auto hidden w-full max-w-[462px] lg:block">
+            <div className="absolute -inset-8 bg-black/45 blur-2xl" />
+            <img
+              src={seoHeroVisual}
+              alt="SEO search presence architecture"
+              className="relative h-[555px] w-full object-cover opacity-90 grayscale"
+            />
           </div>
         </div>
       </section>

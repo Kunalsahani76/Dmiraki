@@ -1,117 +1,91 @@
 import { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Mail, MapPin, Phone } from "lucide-react";
 import { SiteFooter } from "./SiteFooter";
 
 export function DreamingBigSection() {
   return (
-    <section id="contact" className="w-full bg-white py-0">
-      {/* CTA Banner */}
-      <div className="w-full bg-white border-t border-black py-12 px-4 sm:px-6 lg:px-10">
-        <div className="max-w-[1270px] mx-auto">
-          <h2
-            className="text-black mb-4"
-            style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "clamp(28px,5vw,56px)", lineHeight: "1.2" }}
-          >
-            Dreaming Big?<br />Let's build it.
-          </h2>
-          <p
-            className="text-[#191c1e] mb-0"
-            style={{ fontFamily: "'Inter', sans-serif", fontSize: "17px", lineHeight: "1.7", maxWidth: "500px" }}
-          >
-            Have big ideas but unsure where to begin? Let's talk and find the perfect solution for your business.
-          </p>
-        </div>
-      </div>
-
-      {/* Contact form section */}
+    <section id="contact" className="w-full border-y border-black bg-white">
       <div
-        className="max-w-[1270px] mx-auto px-4 sm:px-6 lg:px-10 py-10"
-        style={{ border: "1px solid black" }}
+        className="mx-auto grid max-w-[1270px] grid-cols-1 gap-10 px-5 py-9 sm:px-8 lg:grid-cols-[1fr_526px] lg:gap-[88px] lg:px-[62px] lg:py-[36px]"
       >
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
-          {/* Left column */}
-          <div className="flex flex-col gap-8">
-            <div>
-              <h3
-                className="text-black mb-4"
-                style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "clamp(22px,3vw,38px)", lineHeight: "1.3" }}
-              >
-                Dreaming Big?<br />Let's build it.
-              </h3>
-              <p
-                className="text-[#191c1e]"
-                style={{ fontFamily: "'Inter', sans-serif", fontSize: "16px", lineHeight: "1.7" }}
-              >
-                Have big ideas but unsure where to begin? Let's talk and find the perfect solution for your business.
-              </p>
-            </div>
-            <div className="flex flex-col gap-6">
-              <div className="flex items-center gap-4 min-w-0">
-                <span className="text-xl">📞</span>
-                <span style={{ fontFamily: "'Inter', sans-serif", fontSize: "17px", overflowWrap: "anywhere" }}>+91 92113 41245</span>
-              </div>
-              <div className="flex items-center gap-4 min-w-0">
-                <span className="text-xl">✉️</span>
-                <span style={{ fontFamily: "'Inter', sans-serif", fontSize: "17px", overflowWrap: "anywhere" }}>info@dmiraki.com</span>
-              </div>
-              <div className="flex items-start gap-4 min-w-0">
-                <span className="text-xl mt-1">📍</span>
-                <span style={{ fontFamily: "'Inter', sans-serif", fontSize: "17px", overflowWrap: "anywhere" }}>B-103, Sector-2 Noida-201301, India</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Right column - Form */}
+        <div className="flex flex-col gap-[54px]">
           <div>
-            <form className="flex flex-col gap-4" onSubmit={(e) => e.preventDefault()}>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <input
-                  type="text"
-                  placeholder="First name"
-                  className="bg-[#262626] text-[#f4f4f4] px-4 py-3 rounded-sm outline-none"
-                  style={{ fontFamily: "'Inter', sans-serif", fontSize: "15px" }}
-                />
-                <input
-                  type="text"
-                  placeholder="Last Name"
-                  className="bg-[#262626] text-[#f4f4f4] px-4 py-3 rounded-sm outline-none"
-                  style={{ fontFamily: "'Inter', sans-serif", fontSize: "15px" }}
-                />
-              </div>
-              <input
-                type="email"
-                placeholder="Email"
-                className="bg-[#262626] text-[#f4f4f4] px-4 py-3 rounded-sm outline-none"
-                style={{ fontFamily: "'Inter', sans-serif", fontSize: "15px" }}
-              />
-              <input
-                type="tel"
-                placeholder="Phone number"
-                className="bg-[#262626] text-[#f4f4f4] px-4 py-3 rounded-sm outline-none"
-                style={{ fontFamily: "'Inter', sans-serif", fontSize: "15px" }}
-              />
-              <input
-                type="text"
-                placeholder="Enter subject"
-                className="bg-[#262626] text-[#f4f4f4] px-4 py-3 rounded-sm outline-none"
-                style={{ fontFamily: "'Inter', sans-serif", fontSize: "15px" }}
-              />
-              <textarea
-                placeholder="Short description of the project"
-                rows={5}
-                className="bg-[#262626] text-[#f4f4f4] px-4 py-3 rounded-sm outline-none resize-none"
-                style={{ fontFamily: "'Inter', sans-serif", fontSize: "15px" }}
-              />
-              <button
-                type="submit"
-                className="w-full bg-white text-black px-6 py-3 rounded-sm hover:bg-black hover:text-white transition-colors"
-                style={{ fontFamily: "'Inter', sans-serif", fontSize: "15px", fontWeight: 600, border: "1px solid black" }}
-              >
-                Send
-              </button>
-            </form>
+            <h2
+              className="mb-6 text-black"
+              style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "clamp(32px,4.5vw,40px)", lineHeight: "1.5" }}
+            >
+              Dreaming Big?<br />Let's build it.
+            </h2>
+            <p
+              className="max-w-[520px] text-[#191c1e]"
+              style={{ fontFamily: "'Inter', sans-serif", fontSize: "18px", lineHeight: "1.55" }}
+            >
+              Have big ideas but unsure where to begin? Let's talk and find the perfect solution for your business.
+            </p>
+          </div>
+          <div className="flex flex-col gap-[26px] text-black">
+            <div className="flex min-w-0 items-center gap-5">
+              <Phone className="size-5 shrink-0" strokeWidth={1.8} />
+              <span style={{ fontFamily: "'Inter', sans-serif", fontSize: "18px", overflowWrap: "anywhere" }}>+91 92113 41245</span>
+            </div>
+            <div className="flex min-w-0 items-center gap-5">
+              <Mail className="size-5 shrink-0" strokeWidth={1.8} />
+              <span style={{ fontFamily: "'Inter', sans-serif", fontSize: "18px", overflowWrap: "anywhere" }}>info@dmiraki.com</span>
+            </div>
+            <div className="flex min-w-0 items-start gap-5">
+              <MapPin className="mt-1 size-5 shrink-0" strokeWidth={1.8} />
+              <span style={{ fontFamily: "'Inter', sans-serif", fontSize: "18px", overflowWrap: "anywhere" }}>B-103, Sector-2 Noida-201301, India</span>
+            </div>
           </div>
         </div>
+
+        <form className="flex flex-col gap-4" onSubmit={(e) => e.preventDefault()}>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <input
+              type="text"
+              placeholder="First name"
+              className="h-12 rounded-[2px] bg-[#262626] px-4 text-[#f4f4f4] outline-none placeholder:text-[#f4f4f4]/90"
+              style={{ fontFamily: "'Inter', sans-serif", fontSize: "16px" }}
+            />
+            <input
+              type="text"
+              placeholder="Last Name"
+              className="h-12 rounded-[2px] bg-[#262626] px-4 text-[#f4f4f4] outline-none placeholder:text-[#f4f4f4]/90"
+              style={{ fontFamily: "'Inter', sans-serif", fontSize: "16px" }}
+            />
+          </div>
+          <input
+            type="email"
+            placeholder="Email"
+            className="h-12 rounded-[2px] bg-[#262626] px-4 text-[#f4f4f4] outline-none placeholder:text-[#f4f4f4]/90"
+            style={{ fontFamily: "'Inter', sans-serif", fontSize: "16px" }}
+          />
+          <input
+            type="tel"
+            placeholder="Phone number"
+            className="h-12 rounded-[2px] bg-[#262626] px-4 text-[#f4f4f4] outline-none placeholder:text-[#f4f4f4]/90"
+            style={{ fontFamily: "'Inter', sans-serif", fontSize: "16px" }}
+          />
+          <input
+            type="text"
+            placeholder="Enter subject"
+            className="h-12 rounded-[2px] bg-[#262626] px-4 text-[#f4f4f4] outline-none placeholder:text-[#f4f4f4]/90"
+            style={{ fontFamily: "'Inter', sans-serif", fontSize: "16px" }}
+          />
+          <textarea
+            placeholder="Short description of the project"
+            rows={5}
+            className="min-h-[124px] resize-none rounded-[2px] bg-[#262626] px-4 py-3 text-[#f4f4f4] outline-none placeholder:text-[#f4f4f4]/90"
+            style={{ fontFamily: "'Inter', sans-serif", fontSize: "16px" }}
+          />
+          <button
+            type="submit"
+            className="h-12 w-full border border-black bg-white px-6 text-center text-black transition-colors hover:bg-black hover:text-white"
+            style={{ fontFamily: "'Inter', sans-serif", fontSize: "16px", fontWeight: 700 }}
+          >
+            Send
+          </button>
+        </form>
       </div>
     </section>
   );

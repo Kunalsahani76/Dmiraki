@@ -23,7 +23,58 @@ canvas {
   box-sizing: border-box;
 }
 
+.about-hero-floating-image {
+  animation: aboutHeroFloat 4.8s ease-in-out infinite;
+  isolation: isolate;
+  will-change: transform;
+}
+
+.about-hero-floating-image::before {
+  content: "";
+  position: absolute;
+  inset: -26px;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 50% 95%, rgba(255, 255, 255, 0.34), transparent 38%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.2));
+  box-shadow:
+    0 0 44px rgba(255, 255, 255, 0.18),
+    0 34px 70px rgba(255, 255, 255, 0.2);
+  filter: blur(6px);
+}
+
+@keyframes aboutHeroFloat {
+  0%,
+  100% {
+    transform: translateY(-28px);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-hero-floating-image {
+    animation: none;
+  }
+}
+
 @media (max-width: 767px) {
+  .about-hero-floating-image {
+    animation-name: aboutHeroFloatMobile;
+  }
+
+  @keyframes aboutHeroFloatMobile {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+  }
+
   .about-page-responsive {
     gap: 28px !important;
     width: 100% !important;

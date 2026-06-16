@@ -6,11 +6,11 @@ import imgDmirakiPosts1 from "./bf4cf617b34b1b26e10ed7fbbabad160e79fb2e8.png";
 function Heading() {
   return (
     <div className="content-stretch flex flex-col items-start pt-[1.2px] relative shrink-0 w-full" data-name="Heading 1">
-      <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#fbfbfb] text-[50px] tracking-[1.2px] w-full">
-        <p className="leading-[70px] mb-0">DIGITAL</p>
-        <p className="leading-[70px] mb-0">MARKETING</p>
-        <p className="leading-[70px] mb-0">THAT DRIVES</p>
-        <p className="leading-[70px]">REAL GROWTH</p>
+      <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#fbfbfb] text-[60px] tracking-[1.2px] w-full">
+        <p className="leading-[78px] mb-0">DIGITAL</p>
+        <p className="leading-[78px] mb-0">MARKETING</p>
+        <p className="leading-[78px] mb-0">THAT DRIVES</p>
+        <p className="leading-[78px]">REAL GROWTH</p>
       </div>
     </div>
   );
@@ -19,8 +19,8 @@ function Heading() {
 function Container() {
   return (
     <div className="content-stretch flex flex-col items-start max-w-[576px] pb-[0.59px] relative shrink-0 w-full" data-name="Container">
-      <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#fbfbfb] text-[13px] w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
-        <p className="leading-[20px]">AetherForge Blends High-Precision Engineering With Visionary Digital...</p>
+      <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#fbfbfb] text-[16px] w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
+        <p className="leading-[24px]">AetherForge Blends High-Precision Engineering With Visionary Digital...</p>
       </div>
     </div>
   );
@@ -28,10 +28,10 @@ function Container() {
 
 function Button() {
   return (
-    <div className="backdrop-blur-[6px] bg-[rgba(255,255,255,0.03)] content-stretch flex flex-col h-[54px] items-center justify-center relative shrink-0 w-[388px]" data-name="Button">
+    <div className="backdrop-blur-[6px] bg-[rgba(255,255,255,0.03)] content-stretch flex flex-col h-[66px] items-center justify-center relative shrink-0 w-[490px]" data-name="Button">
       <div aria-hidden className="absolute border border-[rgba(255,255,255,0.3)] border-solid inset-0 pointer-events-none" />
-      <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#e5e1e4] text-[13px] text-center tracking-[2px] uppercase whitespace-nowrap">
-        <p className="leading-[20px]">Book Free Consultation</p>
+      <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#e5e1e4] text-[16px] text-center tracking-[3px] uppercase whitespace-nowrap">
+        <p className="leading-[24px]">Book Free Consultation</p>
       </div>
     </div>
   );
@@ -47,7 +47,7 @@ function Container1() {
 
 function Frame7() {
   return (
-    <div className="content-stretch flex flex-col gap-[30px] items-start relative shrink-0 w-[548px]">
+    <div className="content-stretch flex flex-col gap-[30px] items-start relative shrink-0 w-[660px]">
       <Heading />
       <Container />
       <Container1 />
@@ -61,7 +61,7 @@ function Ab6AXuAiEsJrdFyNhWyUg41G0M6Bt2XLcWa2NNjZEy8Vzgi7X6DuMJfA1WfzL4BEAReBf65
 
 function Frame8() {
   return (
-    <div className="h-[405px] overflow-clip relative shrink-0 w-[462px]">
+    <div className="h-[475px] overflow-clip relative shrink-0 w-[462px]">
       <img alt="Digital marketing analytics dashboard" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgDigitalMarketing} />
     </div>
   );
@@ -684,7 +684,7 @@ function Heading8() {
   return (
     <div className="relative shrink-0 w-full" data-name="Heading 2">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
-        <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[40px] text-center text-white tracking-[-0.8px] whitespace-nowrap">
+        <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[40px] text-white tracking-[1.2px] uppercase whitespace-nowrap">
           <p className="leading-[48px]">The Aether Method</p>
         </div>
       </div>
@@ -696,8 +696,8 @@ function Container32() {
   return (
     <div className="backdrop-blur-[6px] bg-[rgba(255,255,255,0.03)] relative shrink-0 w-full" data-name="Container">
       <div aria-hidden className="absolute border border-[rgba(255,255,255,0.4)] border-solid inset-0 pointer-events-none" />
-      <div className="flex flex-col items-center size-full">
-        <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-center p-[33px] relative size-full">
+      <div className="flex flex-col items-start size-full">
+        <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start px-[33px] py-[33px] relative size-full">
           <Heading8 />
         </div>
       </div>
@@ -1019,7 +1019,7 @@ function Container50() {
 
 function Container34() {
   return (
-    <div className="gap-x-[32px] gap-y-[64px] grid grid-cols-[repeat(6,minmax(0,1fr))] grid-rows-[_180px] relative shrink-0 w-full" data-name="Container">
+    <div className="gap-x-[32px] gap-y-[64px] grid grid-cols-[repeat(6,minmax(0,1fr))] grid-rows-[_170px] relative shrink-0 w-full" data-name="Container">
       <Container35 />
       <Container38 />
       <Container41 />
@@ -1043,8 +1043,8 @@ function Container33() {
 
 function Container31() {
   return (
-    <div className="max-w-[1280px] relative shrink-0 w-full" style={{ backgroundImage: "linear-gradient(106.038deg, rgb(0, 0, 0) 50.985%, rgb(102, 102, 102) 95.83%)" }} data-name="Container">
-      <div className="content-stretch flex flex-col gap-[12px] items-start max-w-[inherit] p-[48px] relative size-full">
+    <div className="relative shrink-0 w-full" style={{ backgroundImage: "linear-gradient(106.038deg, rgb(0, 0, 0) 50.985%, rgb(102, 102, 102) 95.83%)" }} data-name="Container">
+      <div className="content-stretch flex flex-col gap-[12px] items-start px-[48px] py-[50px] relative size-full">
         <Container32 />
         <Container33 />
       </div>

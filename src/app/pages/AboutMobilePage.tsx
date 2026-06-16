@@ -119,7 +119,7 @@ export default function AboutMobilePage() {
               We empower businesses to achieve sustainable growth through strategic digital innovation. Our mission is to build partnerships, not just services, creating lasting value for ambitious businesses ready to transform their online presence.
             </p>
           </div>
-          <div className="overflow-hidden border border-white/40 bg-white/10 shadow-2xl">
+          <div className="about-hero-floating-image overflow-hidden border border-white/40 bg-white/10 shadow-2xl">
             <img alt="About DMiraki" className="aspect-[1/1.04] w-full object-cover" src={imgHeroPerson} />
           </div>
         </div>
@@ -187,7 +187,7 @@ export default function AboutMobilePage() {
           </p>
         </div>
         <div className="mt-7 grid gap-4">
-          {expertise.map(([title, body]) => <InfoCard key={title} title={title} body={body} dark />)}
+          {expertise.map(([title, body]) => <InfoCard key={title} title={title} body={body} />)}
         </div>
       </section>
 
