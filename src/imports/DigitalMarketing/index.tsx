@@ -5,7 +5,7 @@ import imgDmirakiPosts1 from "./bf4cf617b34b1b26e10ed7fbbabad160e79fb2e8.png";
 function Heading() {
   return (
     <div className="content-stretch flex flex-col items-start pt-[1.2px] relative shrink-0 w-full" data-name="Heading 1">
-      <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#fbfbfb] text-[42px] tracking-[1.12px] w-full">
+      <div className="[word-break:break-word] flex flex-col justify-center leading-[0] not-italic relative shrink-0 text-[#fbfbfb] text-[42px] w-full" style={{ fontFamily: "'Orbitron', sans-serif", fontWeight: 500, letterSpacing: "0.01em" }}>
         <p className="leading-[54px] mb-0">DIGITAL MARKETING</p>
         <p className="leading-[54px] mb-0">THAT DRIVES</p>
         <p className="leading-[54px]">REAL GROWTH</p>

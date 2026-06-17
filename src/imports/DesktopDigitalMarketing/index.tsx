@@ -6,11 +6,11 @@ import imgDmirakiPosts1 from "./bf4cf617b34b1b26e10ed7fbbabad160e79fb2e8.png";
 function Heading() {
   return (
     <div className="content-stretch flex flex-col items-start pt-[1.2px] relative shrink-0 w-full" data-name="Heading 1">
-      <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#fbfbfb] text-[60px] tracking-[1.2px] w-full">
-        <p className="leading-[78px] mb-0">DIGITAL</p>
-        <p className="leading-[78px] mb-0">MARKETING</p>
-        <p className="leading-[78px] mb-0">THAT DRIVES</p>
-        <p className="leading-[78px]">REAL GROWTH</p>
+      <div className="[word-break:break-word] flex flex-col justify-center leading-[0] not-italic relative shrink-0 text-[#fbfbfb] text-[64px] w-full" style={{ fontFamily: "'Orbitron', sans-serif", fontWeight: 500, letterSpacing: "0.01em" }}>
+        <p className="leading-[88px] mb-0">DIGITAL</p>
+        <p className="leading-[88px] mb-0">MARKETING</p>
+        <p className="leading-[88px] mb-0">THAT DRIVES</p>
+        <p className="leading-[88px]">REAL GROWTH</p>
       </div>
     </div>
   );

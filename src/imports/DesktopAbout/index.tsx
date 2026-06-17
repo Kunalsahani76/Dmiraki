@@ -1,3 +1,4 @@
+import { useState } from "react";
 import svgPaths from "./svg-y22a015lnt";
 import imgFrame1000002652 from "./899ad3003fb6b8bbbc20a36dec9d11b401674a56.png";
 import imgComponent57 from "./1d7d1199b6359e2a5a182bbb1787c2a835d1add3.png";
@@ -1571,13 +1572,15 @@ function Container51() {
 
 function FirstNameInput() {
   return (
-    <div className="bg-[#262626] col-1 h-[48px] justify-self-stretch relative rounded-[2px] row-1 shrink-0" data-name="First Name → Input">
-      <div className="flex flex-row justify-center overflow-clip rounded-[inherit] size-full">
-        <div className="content-stretch flex items-start justify-center px-[16px] py-[14px] relative size-full">
-          <Container51 />
-        </div>
-      </div>
-    </div>
+    <input
+      className="bg-[#262626] col-1 h-[48px] justify-self-stretch relative rounded-[2px] row-1 shrink-0 px-[16px] text-[#f4f4f4] outline-none transition-all duration-300 placeholder:text-[#f4f4f4] hover:bg-black focus:bg-black focus:ring-2 focus:ring-black/30"
+      data-name="First Name → Input"
+      name="firstName"
+      placeholder="First name"
+      required
+      style={{ fontFamily: "'Inter:Regular',sans-serif", fontSize: "16px" }}
+      type="text"
+    />
   );
 }
 
@@ -1593,13 +1596,15 @@ function Container52() {
 
 function LastNameInput() {
   return (
-    <div className="bg-[#262626] col-2 h-[48px] justify-self-stretch relative rounded-[2px] row-1 shrink-0" data-name="Last Name → Input">
-      <div className="flex flex-row justify-center overflow-clip rounded-[inherit] size-full">
-        <div className="content-stretch flex items-start justify-center px-[16px] py-[14px] relative size-full">
-          <Container52 />
-        </div>
-      </div>
-    </div>
+    <input
+      className="bg-[#262626] col-2 h-[48px] justify-self-stretch relative rounded-[2px] row-1 shrink-0 px-[16px] text-[#f4f4f4] outline-none transition-all duration-300 placeholder:text-[#f4f4f4] hover:bg-black focus:bg-black focus:ring-2 focus:ring-black/30"
+      data-name="Last Name → Input"
+      name="lastName"
+      placeholder="Last Name"
+      required
+      style={{ fontFamily: "'Inter:Regular',sans-serif", fontSize: "16px" }}
+      type="text"
+    />
   );
 }
 
@@ -1624,13 +1629,15 @@ function Container53() {
 
 function EmailAddressInput() {
   return (
-    <div className="bg-[#262626] relative rounded-[2px] shrink-0 w-full" data-name="Email Address → Input">
-      <div className="flex flex-row justify-center overflow-clip rounded-[inherit] size-full">
-        <div className="content-stretch flex items-start justify-center px-[16px] py-[14px] relative size-full">
-          <Container53 />
-        </div>
-      </div>
-    </div>
+    <input
+      className="bg-[#262626] h-[48px] relative rounded-[2px] shrink-0 w-full px-[16px] text-[#f4f4f4] outline-none transition-all duration-300 placeholder:text-[#f4f4f4] hover:bg-black focus:bg-black focus:ring-2 focus:ring-black/30"
+      data-name="Email Address → Input"
+      name="email"
+      placeholder="Email"
+      required
+      style={{ fontFamily: "'Inter:Regular',sans-serif", fontSize: "16px" }}
+      type="email"
+    />
   );
 }
 
@@ -1646,13 +1653,15 @@ function Container54() {
 
 function PhoneNumberInput() {
   return (
-    <div className="bg-[#262626] relative rounded-[2px] shrink-0 w-full" data-name="Phone Number → Input">
-      <div className="flex flex-row justify-center overflow-clip rounded-[inherit] size-full">
-        <div className="content-stretch flex items-start justify-center px-[16px] py-[14px] relative size-full">
-          <Container54 />
-        </div>
-      </div>
-    </div>
+    <input
+      className="bg-[#262626] h-[48px] relative rounded-[2px] shrink-0 w-full px-[16px] text-[#f4f4f4] outline-none transition-all duration-300 placeholder:text-[#f4f4f4] hover:bg-black focus:bg-black focus:ring-2 focus:ring-black/30"
+      data-name="Phone Number → Input"
+      name="phone"
+      placeholder="Phone number"
+      required
+      style={{ fontFamily: "'Inter:Regular',sans-serif", fontSize: "16px" }}
+      type="tel"
+    />
   );
 }
 
@@ -1668,13 +1677,15 @@ function Container55() {
 
 function SubjectInput() {
   return (
-    <div className="bg-[#262626] relative rounded-[2px] shrink-0 w-full" data-name="Subject → Input">
-      <div className="flex flex-row justify-center overflow-clip rounded-[inherit] size-full">
-        <div className="content-stretch flex items-start justify-center px-[16px] py-[14px] relative size-full">
-          <Container55 />
-        </div>
-      </div>
-    </div>
+    <input
+      className="bg-[#262626] h-[48px] relative rounded-[2px] shrink-0 w-full px-[16px] text-[#f4f4f4] outline-none transition-all duration-300 placeholder:text-[#f4f4f4] hover:bg-black focus:bg-black focus:ring-2 focus:ring-black/30"
+      data-name="Subject → Input"
+      name="subject"
+      placeholder="Enter subject"
+      required
+      style={{ fontFamily: "'Inter:Regular',sans-serif", fontSize: "16px" }}
+      type="text"
+    />
   );
 }
 
@@ -1690,31 +1701,29 @@ function Container56() {
 
 function ProjectDescriptionTextarea() {
   return (
-    <div className="bg-[#262626] h-[123px] relative rounded-[2px] shrink-0 w-full" data-name="Project Description → Textarea">
-      <div className="flex flex-row justify-center overflow-auto rounded-[inherit] size-full">
-        <div className="content-stretch flex items-start justify-center pb-[140px] pt-[12px] px-[16px] relative size-full">
-          <Container56 />
-        </div>
-      </div>
-    </div>
+    <textarea
+      className="bg-[#262626] h-[123px] relative rounded-[2px] shrink-0 w-full resize-none px-[16px] py-[12px] text-[#f4f4f4] outline-none transition-all duration-300 placeholder:text-[#f4f4f4] hover:bg-black focus:bg-black focus:ring-2 focus:ring-black/30"
+      data-name="Project Description → Textarea"
+      name="projectDescription"
+      placeholder="Short description of the project"
+      required
+      style={{ fontFamily: "'Inter:Regular',sans-serif", fontSize: "16px", lineHeight: "24px" }}
+    />
   );
 }
 
 function Form() {
   return (
-    <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full" data-name="Form">
+    <form action="mailto:info@dmiraki.com" className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full" data-name="Form" encType="text/plain" method="post">
       <Container50 />
       <EmailAddressInput />
       <PhoneNumberInput />
       <SubjectInput />
       <ProjectDescriptionTextarea />
-      <div className="bg-white content-stretch flex h-[48px] items-center justify-center px-[24px] py-[12px] relative rounded-[2px] shrink-0 w-full" data-name="Submit Button → Button">
-        <div aria-hidden className="absolute border border-black border-solid inset-0 pointer-events-none rounded-[2px]" />
-        <div className="[word-break:break-word] flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-black text-center whitespace-nowrap">
-          <p className="leading-[24px]">Send</p>
-        </div>
-      </div>
-    </div>
+      <button className="bg-white content-stretch flex h-[48px] cursor-pointer items-center justify-center px-[24px] py-[12px] relative rounded-[2px] shrink-0 w-full border border-black font-['Inter:Semi_Bold',sans-serif] font-semibold text-[16px] text-black text-center transition-all duration-300 hover:-translate-y-0.5 hover:bg-black hover:text-white hover:shadow-[0_8px_20px_rgba(0,0,0,0.18)] active:translate-y-0" data-name="Submit Button → Button" type="submit">
+        Send
+      </button>
+    </form>
   );
 }
 
@@ -3278,130 +3287,55 @@ function HorizontalBorder40() {
   );
 }
 
+const aboutFaqItems = [
+  ["What does D’Miraki specialise in?", "D’Miraki specialises in Digital Marketing, Branding, Website Development, Mobile App Development, Custom Software Development, and IoT Solutions designed for modern businesses."],
+  ["What digital marketing services do you offer?", "We offer SEO, International SEO, Social Media Marketing, Performance Marketing, Google Ads, Content Marketing, Branding Strategy, and Lead Generation services."],
+  ["Do you provide branding services for startups and businesses?", "Yes. We help businesses build a strong brand identity through logo design, brand strategy, visual communication, positioning, and digital presence."],
+  ["Can D’Miraki develop custom websites?", "Yes. We design and develop custom websites based on your business goals, industry, and user experience requirements."],
+  ["Do you create e-commerce websites?", "Yes. We develop secure and scalable e-commerce websites with payment integration, product management, and mobile-friendly design."],
+  ["Do you provide mobile app development services?", "Yes. We develop Android, iOS, and cross-platform mobile applications for startups, enterprises, and growing businesses."],
+  ["Can you develop custom software for businesses?", "Absolutely. We build customised software solutions that help businesses automate operations, improve efficiency, and manage workflows effectively."],
+  ["What is IoT software development?", "IoT software development connects devices, sensors, and systems through smart technology to automate processes, monitor data, and improve operational control."],
+  ["Which industries do you work with?", "We work with industries including Power, Infrastructure, Engineering, Construction, Real Estate, Manufacturing, Technology, Textile, Government, and SMEs."],
+  ["How long does it take to develop a website or app?", "The timeline depends on the project scope, features, and complexity. Basic websites may take a few weeks, while advanced platforms and applications may require longer development cycles."],
+  ["Do you offer SEO services for international markets?", "Yes. We provide international SEO strategies focused on global visibility, country-specific targeting, multilingual SEO, and organic growth."],
+  ["Why should I choose D’Miraki?", "D’Miraki combines strategy, creativity, and technology to build digital systems that are focused on long-term growth, visibility, and business impact."],
+  ["Do you provide ongoing support after project completion?", "Yes. We provide maintenance, technical support, updates, and performance monitoring after deployment."],
+  ["How can I get started with D’Miraki?", "You can contact our team through our website, email, or phone to discuss your business requirements and project goals."],
+  ["Do you work with small businesses and startups?", "Yes. We work with startups, SMEs, and enterprises, offering scalable solutions based on business stage and growth goals."],
+  ["Can you redesign an existing website or application?", "Yes. We help businesses modernise outdated websites, improve user experience, and upgrade digital performance."],
+  ["Do you sign NDAs and maintain project confidentiality?", "Yes. We value privacy and maintain strict confidentiality for all client projects and business information."],
+  ["What makes your SEO approach different?", "Our SEO approach focuses on search intent, technical optimisation, content structure, AI search readiness, and long-term visibility rather than temporary ranking tactics."],
+  ["Do you provide complete digital transformation solutions?", "Yes. From branding and marketing to software and automation, D’Miraki provides end-to-end digital solutions under one ecosystem."],
+];
+
 function HorizontalBorder() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
   return (
-    <div className="content-stretch flex flex-col items-start pt-[2px] relative shrink-0 w-full" data-name="HorizontalBorder">
-      <div aria-hidden className="absolute border-black border-solid border-t-2 inset-0 pointer-events-none" />
-      <button className="cursor-pointer h-[102px] relative shrink-0 w-[1226px]" data-name="Component 58">
-        <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[inherit] size-full">
-          <HorizontalBorder1 />
-          <HorizontalBorder2 />
+    <div className="content-stretch flex flex-col items-start pt-[2px] relative shrink-0 w-full border-t-2 border-black" data-name="HorizontalBorder">
+      {aboutFaqItems.map(([question, answer], index) => {
+        const isOpen = openIndex === index;
+
+        return (
+        <div className="relative shrink-0 w-full" data-name="FAQ Item" key={question}>
+          <button
+            aria-expanded={isOpen}
+            className="flex w-full cursor-pointer items-center justify-between gap-[24px] border-b-2 border-black px-[16px] py-[32px] text-left transition-colors duration-300 hover:bg-black/[0.03]"
+            onClick={() => setOpenIndex(isOpen ? null : index)}
+            type="button"
+          >
+            <p className="font-['Roboto:Regular',sans-serif] font-normal leading-[36px] text-[24px] text-black">{question}</p>
+            <span className="font-['Inter:Regular',sans-serif] text-[24px] leading-none text-black">{isOpen ? "⌃" : "⌄"}</span>
+          </button>
+          {isOpen && (
+            <div className="flex items-center justify-between gap-[24px] border-b-2 border-black px-[16px] py-[32px]">
+              <p className="font-['Roboto:Regular',sans-serif] font-normal leading-[36px] text-[24px] text-black">{answer}</p>
+            </div>
+          )}
         </div>
-      </button>
-      <button className="cursor-pointer h-[102px] relative shrink-0 w-[1226px]" data-name="Component 59">
-        <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[inherit] size-full">
-          <HorizontalBorder3 />
-          <HorizontalBorder4 />
-        </div>
-      </button>
-      <button className="cursor-pointer h-[102px] relative shrink-0 w-[1226px]" data-name="Component 60">
-        <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[inherit] size-full">
-          <HorizontalBorder5 />
-          <HorizontalBorder6 />
-        </div>
-      </button>
-      <button className="cursor-pointer h-[102px] relative shrink-0 w-[1226px]" data-name="Component 61">
-        <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[inherit] size-full">
-          <HorizontalBorder7 />
-          <HorizontalBorder8 />
-        </div>
-      </button>
-      <button className="cursor-pointer h-[102px] relative shrink-0 w-[1226px]" data-name="Component 62">
-        <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[inherit] size-full">
-          <HorizontalBorder9 />
-          <HorizontalBorder10 />
-        </div>
-      </button>
-      <button className="cursor-pointer h-[102px] relative shrink-0 w-[1226px]" data-name="Component 63">
-        <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[inherit] size-full">
-          <HorizontalBorder11 />
-          <HorizontalBorder12 />
-        </div>
-      </button>
-      <button className="cursor-pointer h-[102px] relative shrink-0 w-[1226px]" data-name="Component 64">
-        <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[inherit] size-full">
-          <HorizontalBorder13 />
-          <HorizontalBorder14 />
-        </div>
-      </button>
-      <button className="cursor-pointer h-[102px] relative shrink-0 w-[1226px]" data-name="Component 65">
-        <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[inherit] size-full">
-          <HorizontalBorder15 />
-          <HorizontalBorder16 />
-        </div>
-      </button>
-      <button className="cursor-pointer h-[102px] relative shrink-0 w-[1226px]" data-name="Component 67">
-        <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[inherit] size-full">
-          <HorizontalBorder17 />
-          <HorizontalBorder18 />
-        </div>
-      </button>
-      <button className="cursor-pointer h-[102px] relative shrink-0 w-[1226px]" data-name="Component 68">
-        <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[inherit] size-full">
-          <HorizontalBorder19 />
-          <HorizontalBorder20 />
-        </div>
-      </button>
-      <button className="cursor-pointer h-[102px] relative shrink-0 w-[1226px]" data-name="Component 69">
-        <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[inherit] size-full">
-          <HorizontalBorder21 />
-          <HorizontalBorder22 />
-        </div>
-      </button>
-      <button className="cursor-pointer h-[102px] relative shrink-0 w-[1226px]" data-name="Component 70">
-        <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[inherit] size-full">
-          <HorizontalBorder23 />
-          <HorizontalBorder24 />
-        </div>
-      </button>
-      <button className="cursor-pointer h-[102px] relative shrink-0 w-[1226px]" data-name="Component 71">
-        <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[inherit] size-full">
-          <HorizontalBorder25 />
-          <HorizontalBorder26 />
-        </div>
-      </button>
-      <button className="cursor-pointer h-[102px] relative shrink-0 w-[1226px]" data-name="Component 72">
-        <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[inherit] size-full">
-          <HorizontalBorder27 />
-          <HorizontalBorder28 />
-        </div>
-      </button>
-      <button className="cursor-pointer h-[102px] relative shrink-0 w-[1226px]" data-name="Component 73">
-        <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[inherit] size-full">
-          <HorizontalBorder29 />
-          <HorizontalBorder30 />
-        </div>
-      </button>
-      <button className="cursor-pointer h-[102px] relative shrink-0 w-[1226px]" data-name="Component 74">
-        <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[inherit] size-full">
-          <HorizontalBorder31 />
-          <HorizontalBorder32 />
-        </div>
-      </button>
-      <button className="cursor-pointer h-[102px] relative shrink-0 w-[1226px]" data-name="Component 75">
-        <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[inherit] size-full">
-          <HorizontalBorder33 />
-          <HorizontalBorder34 />
-        </div>
-      </button>
-      <button className="cursor-pointer h-[102px] relative shrink-0 w-[1226px]" data-name="Component 76">
-        <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[inherit] size-full">
-          <HorizontalBorder35 />
-          <HorizontalBorder36 />
-        </div>
-      </button>
-      <button className="cursor-pointer h-[102px] relative shrink-0 w-[1226px]" data-name="Component 77">
-        <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[inherit] size-full">
-          <HorizontalBorder37 />
-          <HorizontalBorder38 />
-        </div>
-      </button>
-      <button className="cursor-pointer h-[102px] relative shrink-0 w-[1226px]" data-name="Component 78">
-        <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[inherit] size-full">
-          <HorizontalBorder39 />
-          <HorizontalBorder40 />
-        </div>
-      </button>
+        );
+      })}
     </div>
   );
 }

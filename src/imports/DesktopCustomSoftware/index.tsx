@@ -1,4 +1,5 @@
-import heroBg from "./beb8360f8139a9526e93a44bb311e86cf524e1bb.png";
+import heroBg from "../../images/digitalmarketingbaner.png";
+import heroVisual from "../../images/customsoftwarebanner.png";
 import svgPaths from "./svg-v1mu0axv8t";
 import { SiteFooter } from "../../app/components/SiteFooter";
 
@@ -24,26 +25,31 @@ function HeroSection() {
         alt=""
         className="absolute inset-0 w-full h-full object-cover pointer-events-none"
       />
-      <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute inset-0 bg-black/30" />
 
       {/* Content */}
       <div className="relative z-10 w-full max-w-[1270px] mx-auto px-4 sm:px-6 lg:px-10 py-16 lg:py-20">
-        <div className="max-w-[700px]">
-          {/* Heading */}
-          <h1
-            className="text-[#fbfbfb] mb-8 leading-tight"
-            style={{
-              fontFamily: "'Orbitron', monospace",
-              fontWeight: 400,
-              fontSize: "clamp(28px, 4vw, 42px)",
-              letterSpacing: "-2px",
-              lineHeight: "1.3",
-            }}
-          >
-            Custom Software
-            <br />
-            Development Solutions
-          </h1>
+        <div className="grid items-center gap-10 lg:grid-cols-[0.95fr_1.05fr]">
+          <div className="max-w-[700px]">
+            {/* Heading */}
+            <h1
+              className="text-[#fbfbfb] mb-8 leading-tight"
+              style={{
+                fontFamily: "'Orbitron', monospace",
+                fontWeight: 500,
+                fontSize: "clamp(48px, 5.2vw, 66px)",
+                letterSpacing: "0.01em",
+                lineHeight: "1.35",
+              }}
+            >
+              Custom
+              <br />
+              Software
+              <br />
+              Development
+              <br />
+              Solutions
+            </h1>
 
           {/* Description */}
           <p
@@ -77,6 +83,15 @@ function HeroSection() {
               Book Free Consultation
             </span>
           </a>
+          </div>
+          <div className="relative hidden min-h-[430px] overflow-hidden bg-black/20 md:block">
+            <img
+              src={heroVisual}
+              alt=""
+              className="absolute inset-0 h-full w-full object-cover opacity-90 pointer-events-none"
+            />
+            <div className="absolute inset-0 bg-black/10" />
+          </div>
         </div>
       </div>
     </section>

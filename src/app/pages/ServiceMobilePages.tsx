@@ -1,6 +1,7 @@
+import type { CSSProperties } from "react";
 import { ArrowRight, BarChart3, CheckCircle2, Cpu, RadioTower, Search, Share2, ShieldCheck, Zap } from "lucide-react";
 import digitalHero from "../../images/Digitalmarketing.png";
-import iotHero from "../../imports/IotBased/beb8360f8139a9526e93a44bb311e86cf524e1bb.png";
+import iotHero from "../../images/digitalmarketingbaner.png";
 import { Footer } from "../components/ContactFAQFooter";
 
 const digitalTech = ["GOOGLE ADS", "META ADS", "SEMRUSH", "SHOPIFY", "MAILCHIMP", "WORDPRESS", "HUBSPOT"];
@@ -71,17 +72,19 @@ function Hero({
   title,
   copy,
   image,
+  titleStyle,
 }: {
   title: string;
   copy: string;
   image: string;
+  titleStyle?: CSSProperties;
 }) {
   return (
     <section className="relative min-h-[620px] overflow-hidden bg-black px-5 py-12 text-white">
       <img alt="" className="absolute inset-0 h-full w-full object-cover opacity-70" src={image} />
       <div className="absolute inset-0 bg-black/30" />
       <div className="relative z-10 flex min-h-[520px] flex-col justify-center">
-        <h1 className="text-[38px] uppercase leading-[1.12]" style={{ fontFamily: "'Orbitron', sans-serif" }}>
+        <h1 className="text-[38px] uppercase" style={{ fontFamily: "'Pirulen', 'Orbitron', sans-serif", lineHeight: 1.35, ...titleStyle }}>
           {title}
         </h1>
         <p className="mt-6 text-[16px] leading-7 text-white/85" style={{ fontFamily: "'Roboto', sans-serif" }}>
@@ -169,6 +172,7 @@ export function DigitalMarketingMobilePage() {
         title="Digital Marketing That Drives Real Growth"
         copy="AetherForge blends high-precision engineering with visionary digital strategies to scale enterprise brands. We don't just run ads; we architect ecosystems of performance."
         image={digitalHero}
+        titleStyle={{ fontFamily: "'Orbitron', sans-serif", fontWeight: 500, letterSpacing: "0.01em" }}
       />
       <TechStrip label="Engineered with industry-leading tech stacks" items={digitalTech} />
 
@@ -219,6 +223,7 @@ export function IotMobilePage() {
         title="IoT-Based Smart Solutions"
         copy="We build intelligent IoT ecosystems that connect devices, automate operations, and deliver real-time insights for smarter business decisions."
         image={iotHero}
+        titleStyle={{ fontFamily: "'Orbitron', sans-serif", fontWeight: 500, letterSpacing: "0.01em" }}
       />
       <TechStrip label="Powered by advanced IoT technologies" items={iotTech} />
 

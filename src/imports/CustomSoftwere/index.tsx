@@ -1,13 +1,13 @@
 import svgPaths from "./svg-okhbbtw71u";
-import imgFrame1000002782 from "./beb8360f8139a9526e93a44bb311e86cf524e1bb.png";
+import imgFrame1000002782 from "../../images/customsoftwarebanner.png";
 import imgDmirakiPosts1 from "./bf4cf617b34b1b26e10ed7fbbabad160e79fb2e8.png";
 
 function Heading() {
   return (
     <div className="content-stretch flex flex-col items-start pt-[1.2px] relative shrink-0 w-full" data-name="Heading 1">
-      <div className="[word-break:break-word] flex flex-col font-['Geist:ExtraBold',sans-serif] font-extrabold justify-center leading-[0] not-italic relative shrink-0 text-[#fbfbfb] text-[0px] tracking-[-2.88px] w-full">
-        <p className="font-['Pirulen:Regular',sans-serif] leading-[54px] mb-0 text-[42px]">Custom Software</p>
-        <p className="font-['Pirulen:Regular',sans-serif] leading-[54px] text-[42px]">Development Solutions</p>
+      <div className="[word-break:break-word] flex flex-col justify-center leading-[0] not-italic relative shrink-0 text-[#fbfbfb] text-[64px] w-full" style={{ fontFamily: "'Orbitron', sans-serif", fontWeight: 500, letterSpacing: "0.01em" }}>
+        <p className="leading-[86.4px] mb-0">Custom Software</p>
+        <p className="leading-[86.4px]">Development Solutions</p>
       </div>
     </div>
   );

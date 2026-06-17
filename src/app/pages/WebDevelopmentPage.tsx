@@ -120,7 +120,7 @@ export default function WebDevelopmentPage() {
           <div className="flex max-w-[720px] flex-col items-start justify-center">
             <h1
               className="mb-8 uppercase text-white"
-              style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "clamp(38px, 6vw, 76px)", lineHeight: 1.18, letterSpacing: 0 }}
+              style={{ fontFamily: "'Orbitron', sans-serif", fontWeight: 500, fontSize: "clamp(38px, 6vw, 76px)", lineHeight: 1.35, letterSpacing: "0.01em" }}
             >
               Modern Web Development Services
             </h1>

@@ -1,12 +1,14 @@
 import svgPaths from "./svg-g0z6adp1kt";
-import imgFrame1000002782 from "./beb8360f8139a9526e93a44bb311e86cf524e1bb.png";
+import imgFrame1000002782 from "../../images/digitalmarketingbaner.png";
+import imgIotBanner from "../../images/iotbanner.png";
 
 function Heading() {
   return (
     <div className="content-stretch flex flex-col items-start pt-[1.2px] relative shrink-0 w-full" data-name="Heading 1">
-      <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#fbfbfb] text-[42px] tracking-[-2.88px] w-full">
-        <p className="leading-[54px] mb-0">IOT-BASED SMART</p>
-        <p className="leading-[54px]">SOLUTIONS</p>
+      <div className="[word-break:break-word] flex flex-col justify-center leading-[0] not-italic relative shrink-0 text-[#fbfbfb] text-[64px] w-full" style={{ fontFamily: "'Orbitron', sans-serif", fontWeight: 500, letterSpacing: "0.01em" }}>
+        <p className="leading-[86.4px] mb-0">IOT-BASED</p>
+        <p className="leading-[86.4px] mb-0">SMART</p>
+        <p className="leading-[86.4px]">SOLUTIONS</p>
       </div>
     </div>
   );
@@ -59,8 +61,9 @@ function Ab6AXuAiEsJrdFyNhWyUg41G0M6Bt2XLcWa2NNjZEy8Vzgi7X6DuMJfA1WfzL4BEAReBf65
 
 function Frame8() {
   return (
-    <div className="h-[375px] overflow-clip relative shrink-0 w-[462px]">
-      <Ab6AXuAiEsJrdFyNhWyUg41G0M6Bt2XLcWa2NNjZEy8Vzgi7X6DuMJfA1WfzL4BEAReBf65RW1I7Ahab2NiEwWb2Jv7A0GgR5Cywvuum1Dtjb5MwaIxrSwnZhuxfVbR2U6FAl8X2DewHb95BOhiTbXjNsBaruliMgP8FzfHfxpBmGdc17QeySQum7UkyXPyCd4IxWq5V6LuL0DnkjX4Xn8OqfTvmb3Sy2VgGzPyWi3Sgnq3QbmJce4U3JEbJsiEFhqGhyDo />
+    <div className="h-[472px] overflow-clip relative shrink-0 w-[462px]">
+      <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgIotBanner} />
+      <div className="absolute inset-0 bg-black/10" />
     </div>
   );
 }
