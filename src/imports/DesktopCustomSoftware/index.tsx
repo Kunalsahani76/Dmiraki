@@ -17,7 +17,7 @@ function HeroSection() {
   return (
     <section
       id="home"
-      className="relative w-full min-h-[600px] lg:h-[700px] flex items-center overflow-hidden"
+      className="service-hero-typography relative w-full min-h-[600px] lg:h-[700px] flex items-center overflow-hidden"
     >
       {/* Background */}
       <img

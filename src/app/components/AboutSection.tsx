@@ -2,13 +2,15 @@
 
 export function WhatWeOfferTitle() {
   return (
-    <div className="w-full border-b border-black py-6">
+    <div className="w-full border-b border-black bg-[#fbfbfb] py-10 sm:py-12">
       <h2
-        className="text-[#222] text-center"
+        className="text-center uppercase text-[#222]"
         style={{
-          fontFamily: "'Orbitron', sans-serif",
-          fontSize: "clamp(24px,4vw,48px)",
-          letterSpacing: "-2px",
+          fontFamily: "'Pirulen', 'Orbitron', sans-serif",
+          fontSize: "clamp(28px,4vw,42px)",
+          fontWeight: 400,
+          letterSpacing: "0",
+          lineHeight: "1.15",
         }}
       >
         What We Offer

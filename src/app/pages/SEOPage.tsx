@@ -76,7 +76,7 @@ function GridBackdrop() {
 export default function SEOPage() {
   return (
     <main className="min-h-screen bg-black text-white">
-      <section className="relative min-h-[700px] overflow-hidden bg-[#111]">
+      <section className="service-hero-typography relative min-h-[700px] overflow-hidden bg-[#111]">
         <img
           alt=""
           className="absolute inset-0 h-full w-full object-cover opacity-95"

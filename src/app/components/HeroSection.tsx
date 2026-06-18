@@ -1,3 +1,5 @@
+import introVideo from "../../images/intro.mp4";
+
 const TICKER_ITEMS = [
   "STRATEGY", "DEVELOPMENT", "SEO", "SOCIAL MEDIA", "BRANDING",
   "CONTENT", "ADVERTISING", "DESIGN", "ANALYTICS", "STRATEGY", "DEVELOPMENT", "SEO", "SOCIAL MEDIA", "BRANDING",
@@ -12,13 +14,13 @@ export function HeroSection() {
       style={{ minHeight: "clamp(560px, 86vh, 700px)" }}
     >
       {/* Background */}
-      <div
-        className="absolute inset-0"
-        style={{
-          backgroundImage: `url(https://images.unsplash.com/photo-1626908013351-800ddd734b8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920)`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 h-full w-full object-cover"
+        src={introVideo}
       />
       <div className="absolute inset-0 bg-black/60" />
 

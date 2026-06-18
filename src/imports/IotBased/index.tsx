@@ -47,7 +47,7 @@ function Container1() {
 
 function Frame7() {
   return (
-    <div className="content-stretch flex flex-col gap-[32px] items-start relative shrink-0 w-[696px]">
+    <div className="service-hero-typography content-stretch flex flex-col gap-[32px] items-start relative shrink-0 w-[696px]">
       <Heading />
       <Container />
       <Container1 />

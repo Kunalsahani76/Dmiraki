@@ -15,6 +15,24 @@ export function Navbar() {
     ["IoT-Based Solutions", "iot"],
     ["Web Development Services", "web-dev"],
   ];
+  const servicePaths = ["/digital-marketing", "/seo", "/custom-software", "/iot", "/web-development"];
+  const pathById: Record<string, string> = {
+    hero: "/",
+    about: "/about",
+    "digital-marketing": "/digital-marketing",
+    seo: "/seo",
+    "custom-software": "/custom-software",
+    iot: "/iot",
+    "web-dev": "/web-development",
+    contact: "/contact",
+  };
+  const isHomeActive = location.pathname === "/";
+  const isAboutActive = location.pathname === "/about";
+  const isServicesActive = servicePaths.includes(location.pathname);
+  const isContactActive = location.pathname === "/contact";
+  const isItemActive = (id: string) => location.pathname === pathById[id];
+  const navTextClass = (active: boolean) =>
+    `${active ? "text-black" : "text-[#9f9f9f]"} hover:text-black transition-colors uppercase`;
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 10);
@@ -101,14 +119,14 @@ export function Navbar() {
         <div className="hidden md:flex items-center gap-[20px] lg:gap-[22px]">
           <button
             onClick={() => scrollTo("hero")}
-            className="text-[#9f9f9f] hover:text-black transition-colors uppercase"
+            className={navTextClass(isHomeActive)}
             style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "15px", fontWeight: 800, lineHeight: "1" }}
           >
             Home
           </button>
           <button
             onClick={() => scrollTo("about")}
-            className="text-[#9f9f9f] hover:text-black transition-colors uppercase"
+            className={navTextClass(isAboutActive)}
             style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "15px", fontWeight: 800, lineHeight: "1" }}
           >
             About
@@ -116,7 +134,7 @@ export function Navbar() {
           <div>
             <button
               onClick={() => setServicesOpen(!servicesOpen)}
-              className="flex items-center gap-1 text-black hover:text-black transition-colors uppercase"
+              className={`flex items-center gap-1 ${navTextClass(isServicesActive)}`}
               style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "15px", fontWeight: 900, lineHeight: "1" }}
             >
               Services
@@ -136,7 +154,9 @@ export function Navbar() {
                     <button
                       key={id}
                       onClick={() => scrollTo(id)}
-                      className="min-h-[46px] w-full max-w-[445px] border border-white/75 px-5 py-3 text-white transition-colors hover:bg-white hover:text-black uppercase sm:w-auto sm:px-7"
+                      className={`min-h-[46px] w-full max-w-[445px] border border-white/75 px-5 py-3 transition-colors hover:bg-white hover:text-black uppercase sm:w-auto sm:px-7 ${
+                        isItemActive(id) ? "bg-white text-black" : "text-white"
+                      }`}
                       style={{
                         fontFamily: "'Orbitron', sans-serif",
                         fontSize: "20px",
@@ -163,7 +183,7 @@ export function Navbar() {
           </div>
           <button
             onClick={() => scrollTo("contact")}
-            className="text-[#9f9f9f] hover:text-black transition-colors uppercase"
+            className={navTextClass(isContactActive)}
             style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "15px", fontWeight: 800, lineHeight: "1" }}
           >
             Contact
@@ -202,7 +222,11 @@ export function Navbar() {
             <button
               key={id}
               onClick={() => scrollTo(id)}
-              className="text-left text-black hover:text-gray-600 transition-colors py-2"
+              className={`text-left hover:text-black transition-colors py-2 ${
+                isItemActive(id)
+                  ? "text-black"
+                  : "text-[#9f9f9f]"
+              }`}
               style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "13px" }}
             >
               {label}

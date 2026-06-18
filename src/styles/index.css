@@ -12,6 +12,71 @@ body,
   overflow-x: hidden;
 }
 
+body,
+p,
+li,
+a,
+button,
+input,
+textarea,
+select,
+label,
+span,
+div,
+[class*="Inter"],
+[class*="Roboto"],
+[class*="Manrope"],
+[class*="Playfair"],
+[class*="Bodoni"],
+[style*="Inter"],
+[style*="Roboto"],
+[style*="Manrope"],
+[style*="Playfair"],
+[style*="Bodoni"] {
+  font-family: "DM Sans", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+[class*="Orbitron"],
+[class*="Pirulen"],
+[style*="Orbitron"],
+[style*="Pirulen"] {
+  font-family: "Space Grotesk", sans-serif !important;
+}
+
+.service-hero-typography [class*="Orbitron"],
+.service-hero-typography [style*="Orbitron"] {
+  font-family: "Orbitron", sans-serif !important;
+}
+
+.service-hero-typography p,
+.service-hero-typography span,
+.service-hero-typography div,
+.service-hero-typography a,
+.service-hero-typography button {
+  font-family: inherit !important;
+}
+
+.service-hero-typography [class*="Pirulen"],
+.service-hero-typography [style*="Pirulen"] {
+  font-family: "Pirulen", "Orbitron", sans-serif !important;
+}
+
+.service-hero-typography [class*="Roboto"],
+.service-hero-typography [style*="Roboto"] {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.service-hero-typography [class*="Inter"],
+.service-hero-typography [style*="Inter"] {
+  font-family: "Inter", sans-serif !important;
+}
+
 img,
 svg,
 video,

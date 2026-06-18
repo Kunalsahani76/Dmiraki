@@ -2,18 +2,26 @@
 
 import whatWeOfferImage from "../../images/What We Offer.png";
 import iotBasedSolutionsImage from "../../images/IoT-Based Solutions.png";
+import seoIcon from "../../icons/seo.png";
+import pmIcon from "../../icons/pm.png";
+import smoIcon from "../../icons/smo.png";
+import ppcIcon from "../../icons/ppc.png";
+import wdIcon from "../../icons/wd.png";
+import aeoIcon from "../../icons/aeo.png";
+import geoIcon from "../../icons/geo.png";
+import emIcon from "../../icons/em.png";
 
-const glassCard = "min-h-[178px] backdrop-blur-md bg-white/30 border border-[rgba(64,64,64,0.5)] flex flex-col gap-3 px-4 py-3";
+const glassCard = "min-h-[162px] backdrop-blur-xl bg-white/25 border border-white/35 shadow-[0_14px_40px_rgba(0,0,0,0.28)] flex flex-col gap-2.5 px-3 py-2.5";
 
 function GlassServiceCard({ icon, title, desc }: { icon: string; title: string; desc: string }) {
   return (
     <div className={glassCard}>
-      <div className="text-white text-2xl">{icon}</div>
+      <img src={icon} alt="" className="h-[27px] w-[35px] object-contain object-left" />
       <div>
-        <p className="text-white mb-1" style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "14px", lineHeight: "1.6", overflowWrap: "anywhere" }}>
+        <p className="text-white mb-1.5" style={{ fontFamily: "'Roboto', sans-serif", fontSize: "clamp(22px,2.35vw,24px)", fontWeight: 400, lineHeight: "1.05", overflowWrap: "anywhere" }}>
           {title}
         </p>
-        <p className="text-[#eee]" style={{ fontFamily: "'Roboto', sans-serif", fontSize: "14px", lineHeight: "22px" }}>
+        <p className="text-white/90" style={{ fontFamily: "'Roboto', sans-serif", fontSize: "14px", lineHeight: "20px" }}>
           {desc}
         </p>
       </div>
@@ -23,41 +31,42 @@ function GlassServiceCard({ icon, title, desc }: { icon: string; title: string; 
 
 export function DigitalMarketingSection() {
   const row1 = [
-    { icon: "🔍", title: "Search Engine Optimization (SEO)", desc: "Keyword architecture, technical structure, and content alignment for sustained search visibility" },
-    { icon: "📊", title: "Performance Marketing", desc: "Paid media campaigns structured for efficiency, control, and measurable return." },
-    { icon: "📱", title: "Social Media Management (SMO)", desc: "Planned and managed communication across platforms with consistency and clarity." },
-    { icon: "💰", title: "Pay Per Click Advertising (PPC)", desc: "Targeted campaigns with controlled spend and continuous optimisation." },
+    { icon: seoIcon, title: "Search Engine Optimization (SEO)", desc: "Keyword architecture, technical structure, and content alignment for sustained search visibility" },
+    { icon: pmIcon, title: "Performance Marketing", desc: "Paid media campaigns structured for efficiency, control, and measurable return." },
+    { icon: smoIcon, title: "Social Media Management (SMO)", desc: "Planned and managed communication across platforms with consistency and clarity." },
+    { icon: ppcIcon, title: "Pay Per Click Advertising (PPC)", desc: "Targeted campaigns with controlled spend and continuous optimisation." },
   ];
   const row2 = [
-    { icon: "🌐", title: "Website Development", desc: "Responsive, secure websites built for performance, search compatibility, and usability." },
-    { icon: "🤖", title: "Answer Engine Optimization (AEO)", desc: "Content structured for AI-generated answers, voice search, and featured results." },
-    { icon: "✨", title: "Generative Engine Optimization (GEO)", desc: "Brand presence aligned with AI platforms through structured data and content signals." },
-    { icon: "📧", title: "Email Marketing", desc: "Direct communication systems designed for engagement and continuity." },
+    { icon: wdIcon, title: "Website Development", desc: "Responsive, secure websites built for performance, search compatibility, and usability." },
+    { icon: aeoIcon, title: "Answer Engine Optimization (AEO)", desc: "Content structured for AI-generated answers, voice search, and featured results." },
+    { icon: geoIcon, title: "Generative Engine Optimization (GEO)", desc: "Brand presence aligned with AI platforms through structured data and content signals." },
+    { icon: emIcon, title: "Email Marketing", desc: "Direct communication systems designed for engagement and continuity." },
   ];
 
   return (
-    <section id="digital-marketing" className="relative w-full overflow-hidden" style={{ minHeight: "600px" }}>
+    <section id="digital-marketing" className="relative w-full overflow-hidden" style={{ minHeight: "500px" }}>
       <div
         className="absolute inset-0"
         style={{
           backgroundImage: `url(${whatWeOfferImage})`,
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "center 44%",
+          filter: "grayscale(1)",
         }}
       />
-      <div className="absolute inset-0 bg-black/70" />
+      <div className="absolute inset-0 bg-black/55" />
 
-      <div className="relative z-10 max-w-[1270px] mx-auto px-4 sm:px-6 lg:px-10 py-12 sm:py-16">
+      <div className="relative z-10 max-w-[1080px] mx-auto px-5 sm:px-7 py-9 sm:py-10">
         <h2
-          className="text-white mb-10"
-          style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "clamp(22px,4vw,36px)" }}
+          className="text-white mb-9 text-center uppercase"
+          style={{ fontFamily: "'Pirulen', 'Orbitron', sans-serif", fontSize: "clamp(24px,4vw,34px)", fontWeight: 400, letterSpacing: "1px", lineHeight: "1.15" }}
         >
           Digital Marketing
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-5">
           {row1.map((c) => <GlassServiceCard key={c.title} {...c} />)}
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {row2.map((c) => <GlassServiceCard key={c.title} {...c} />)}
         </div>
       </div>
@@ -69,15 +78,13 @@ function WhiteServiceCard({
   icon,
   title,
   desc,
-  borderStyle,
 }: {
   icon: string;
   title: string;
   desc: string;
-  borderStyle?: string;
 }) {
   return (
-    <div className={`relative flex min-h-[245px] flex-col gap-4 p-6 sm:p-8 ${borderStyle ?? "border border-black"}`}>
+    <div className="relative flex min-h-[190px] flex-col gap-4 border-r border-b border-black p-6 sm:min-h-[245px] sm:p-8">
       <div className="text-2xl">{icon}</div>
       <div>
         <p className="text-[#1b1b1d] mb-2" style={{ fontFamily: "'Inter', sans-serif", fontSize: "20px", fontWeight: 600, lineHeight: "1.4", overflowWrap: "anywhere" }}>
@@ -92,13 +99,11 @@ function WhiteServiceCard({
 }
 
 export function CustomSoftwareSection() {
-  const row1 = [
+  const services = [
     { icon: "⚙️", title: "Custom software", desc: "Tailored codebases built to solve specific organizational challenges." },
     { icon: "🏢", title: "Enterprise systems", desc: "Robust, scalable platforms for high-volume corporate operations." },
     { icon: "🔄", title: "CRM and ERP platforms", desc: "Centralized resource management and customer relationship architecture." },
     { icon: "☁️", title: "SaaS products", desc: "Cloud-native software products designed for recurring value delivery." },
-  ];
-  const row2 = [
     { icon: "🌩️", title: "Cloud-based applications", desc: "Highly available, auto-scaling solutions deployed on major cloud providers." },
     { icon: "🔗", title: "API development", desc: "Secure and efficient data interfaces for ecosystem interoperability." },
     { icon: "⚡", title: "Automation systems", desc: "Custom workflows that eliminate manual friction and human error." },
@@ -116,24 +121,9 @@ export function CustomSoftwareSection() {
             Custom Software Development
           </h2>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 mb-4">
-          {row1.map((c, i) => (
-            <WhiteServiceCard
-              key={c.title}
-              {...c}
-              borderStyle={
-                i === 0
-                  ? "border-t border-l border-b border-black"
-                  : i === 3
-                  ? "border-t border-r border-b border-black"
-                  : "border border-black"
-              }
-            />
-          ))}
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border border-black">
-          {row2.map((c) => (
-            <WhiteServiceCard key={c.title} {...c} borderStyle="border-r border-black last:border-r-0" />
+        <div className="grid grid-cols-1 border-t border-l border-black sm:grid-cols-2 lg:grid-cols-4">
+          {services.map((c) => (
+            <WhiteServiceCard key={c.title} {...c} />
           ))}
         </div>
       </div>

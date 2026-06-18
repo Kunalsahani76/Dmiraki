@@ -1,5 +1,5 @@
 import svgPaths from "./svg-f4g1snj1ed";
-import imgFrame1000002652 from "./899ad3003fb6b8bbbc20a36dec9d11b401674a56.png";
+import introVideo from "../../images/intro.mp4";
 import imgDmirakiPosts1 from "./bf4cf617b34b1b26e10ed7fbbabad160e79fb2e8.png";
 import imgFrame1000002689 from "./ba94765630e49ad56eb0745d378f772c95ef7582.png";
 import imgFrame1000002708 from "./7e7289376327a991cbaea03f686e9c032ef6270e.png";
@@ -292,7 +292,7 @@ function Frame1() {
 function Frame3() {
   return (
     <div className="h-[700px] overflow-clip relative shrink-0 w-full">
-      <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgFrame1000002652} />
+      <video autoPlay loop muted playsInline className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={introVideo} />
       <p className="-translate-x-1/2 [word-break:break-word] absolute capitalize font-['Inter:Regular',sans-serif] font-normal leading-[26px] left-[calc(50%+0.5px)] not-italic text-[16px] text-center text-white top-[320px] w-[815px]">
         brings together digital marketing, web development, software engineering, and application development into a single, structured system.
         <br aria-hidden />

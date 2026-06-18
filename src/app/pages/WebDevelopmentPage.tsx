@@ -114,7 +114,7 @@ function DashboardVisual({ compact = false }: { compact?: boolean }) {
 export default function WebDevelopmentPage() {
   return (
     <main className="min-h-screen bg-black text-white">
-      <section className="relative overflow-hidden border-b-[6px] border-white bg-[#151515]">
+      <section className="service-hero-typography relative overflow-hidden border-b-[6px] border-white bg-[#151515]">
         <div className="absolute inset-0 opacity-[0.18] [background-image:linear-gradient(rgba(255,255,255,0.75)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.75)_1px,transparent_1px)] [background-size:28px_28px]" />
         <div className="relative mx-auto grid max-w-[1270px] grid-cols-1 gap-10 px-5 py-16 sm:px-8 lg:grid-cols-[1fr_470px] lg:px-10 lg:py-28">
           <div className="flex max-w-[720px] flex-col items-start justify-center">

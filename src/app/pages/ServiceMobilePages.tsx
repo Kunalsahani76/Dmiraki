@@ -80,7 +80,7 @@ function Hero({
   titleStyle?: CSSProperties;
 }) {
   return (
-    <section className="relative min-h-[620px] overflow-hidden bg-black px-5 py-12 text-white">
+    <section className="service-hero-typography relative min-h-[620px] overflow-hidden bg-black px-5 py-12 text-white">
       <img alt="" className="absolute inset-0 h-full w-full object-cover opacity-70" src={image} />
       <div className="absolute inset-0 bg-black/30" />
       <div className="relative z-10 flex min-h-[520px] flex-col justify-center">
