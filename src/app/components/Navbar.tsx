@@ -9,11 +9,11 @@ export function Navbar() {
   const location = useLocation();
   const navigate = useNavigate();
   const serviceLinks = [
-    ["Digital Marketing", "digital-marketing"],
+    ["DIGITAL MARKETING", "digital-marketing"],
     ["SEO", "seo"],
-    ["Custom Software", "custom-software"],
-    ["IoT-Based Solutions", "iot"],
-    ["Web Development Services", "web-dev"],
+    ["CUSTOM SOFTWARE", "custom-software"],
+    ["IOT-BASED SOLUTIONS", "iot"],
+    ["WEB DEVELOPMENT SERVICES", "web-dev"],
   ];
   const servicePaths = ["/digital-marketing", "/seo", "/custom-software", "/iot", "/web-development"];
   const pathById: Record<string, string> = {
@@ -33,6 +33,13 @@ export function Navbar() {
   const isItemActive = (id: string) => location.pathname === pathById[id];
   const navTextClass = (active: boolean) =>
     `${active ? "text-black" : "text-[#9f9f9f]"} hover:text-black transition-colors uppercase`;
+  const navItemStyle = {
+    fontFamily: "'Pirulen', 'Orbitron', sans-serif",
+    fontSize: "15px",
+    fontWeight: 400,
+    letterSpacing: "0.08em",
+    lineHeight: "1",
+  };
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 10);
@@ -120,24 +127,24 @@ export function Navbar() {
           <button
             onClick={() => scrollTo("hero")}
             className={navTextClass(isHomeActive)}
-            style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "15px", fontWeight: 800, lineHeight: "1" }}
+            style={navItemStyle}
           >
-            Home
+            HOME
           </button>
           <button
             onClick={() => scrollTo("about")}
             className={navTextClass(isAboutActive)}
-            style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "15px", fontWeight: 800, lineHeight: "1" }}
+            style={navItemStyle}
           >
-            About
+            ABOUT
           </button>
           <div>
             <button
               onClick={() => setServicesOpen(!servicesOpen)}
               className={`flex items-center gap-1 ${navTextClass(isServicesActive)}`}
-              style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "15px", fontWeight: 900, lineHeight: "1" }}
+              style={navItemStyle}
             >
-              Services
+              SERVICES
               <ChevronDown size={15} strokeWidth={3} />
             </button>
             {servicesOpen && (
@@ -160,7 +167,8 @@ export function Navbar() {
                       style={{
                         fontFamily: "'Orbitron', sans-serif",
                         fontSize: "20px",
-                        fontWeight: 500,
+                        fontWeight: 400,
+                        letterSpacing: "0.08em",
                         lineHeight: "1",
                         minWidth:
                           id === "digital-marketing"
@@ -184,16 +192,22 @@ export function Navbar() {
           <button
             onClick={() => scrollTo("contact")}
             className={navTextClass(isContactActive)}
-            style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "15px", fontWeight: 800, lineHeight: "1" }}
+            style={navItemStyle}
           >
-            Contact
+            CONTACT
           </button>
           <button
             onClick={() => scrollTo("contact")}
             className="border border-[#5b5b5b] px-[22px] py-[9px] text-[#2b2b2b] hover:bg-black hover:text-white transition-colors uppercase"
-            style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "14px", fontWeight: 500, lineHeight: "1" }}
+            style={{
+              fontFamily: "'Pirulen', 'Orbitron', sans-serif",
+              fontSize: "14px",
+              fontWeight: 400,
+              letterSpacing: "0.08em",
+              lineHeight: "1",
+            }}
           >
-            Get in touch
+            GET IN TOUCH
           </button>
         </div>
 
@@ -210,14 +224,14 @@ export function Navbar() {
       {menuOpen && (
         <div className="md:hidden max-h-[calc(100vh-62px)] overflow-y-auto bg-white border-t border-black px-6 py-4 flex flex-col gap-4">
           {[
-            ["Home", "hero"],
-            ["About", "about"],
-            ["Digital Marketing", "digital-marketing"],
+            ["HOME", "hero"],
+            ["ABOUT", "about"],
+            ["DIGITAL MARKETING", "digital-marketing"],
             ["SEO", "seo"],
-            ["Custom Software", "custom-software"],
-            ["IoT-Based Solutions", "iot"],
-            ["Web Development Services", "web-dev"],
-            ["Contact", "contact"],
+            ["CUSTOM SOFTWARE", "custom-software"],
+            ["IOT-BASED SOLUTIONS", "iot"],
+            ["WEB DEVELOPMENT SERVICES", "web-dev"],
+            ["CONTACT", "contact"],
           ].map(([label, id]) => (
             <button
               key={id}

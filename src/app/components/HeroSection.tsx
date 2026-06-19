@@ -33,8 +33,14 @@ export function HeroSection() {
           {TICKER_ITEMS.map((item, i) => (
             <span
               key={i}
-              className="text-white shrink-0 px-5 py-2 border border-dashed border-white"
-              style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "clamp(12px, 3.2vw, 16px)" }}
+              className="text-white shrink-0 px-5 py-2 border border-dashed border-white uppercase"
+              style={{
+                fontFamily: "'Pirulen', 'Orbitron', sans-serif",
+                fontSize: "clamp(18px, 3.2vw, 26px)",
+                fontWeight: 400,
+                letterSpacing: "0.02em",
+                lineHeight: "1.2",
+              }}
             >
               {item}
             </span>
@@ -49,12 +55,12 @@ export function HeroSection() {
         <h1
           className="text-white mb-8"
           style={{
-            fontFamily: "'Orbitron', sans-serif",
-            fontSize: "clamp(34px,10vw,66px)",
-            letterSpacing: "clamp(3px,2.8vw,42px)",
+            fontFamily: "'Pirulen', 'Orbitron', sans-serif",
+            fontSize: "clamp(42px,8vw,66px)",
+            letterSpacing: "clamp(10px,3.2vw,38px)",
             lineHeight: "1.1",
             fontWeight: 400,
-            paddingLeft: "clamp(3px,2.8vw,42px)",
+            paddingLeft: "clamp(10px,3.2vw,38px)",
           }}
         >
           D&apos;MIRAKI
@@ -62,12 +68,14 @@ export function HeroSection() {
         <p
           className="text-white mb-8 max-w-2xl"
           style={{
-            fontFamily: "'Roboto', sans-serif",
+            fontFamily: "'Pirulen', 'Roboto', sans-serif",
             fontSize: "clamp(14px,3.8vw,16px)",
             lineHeight: "26px",
+            fontWeight: 400,
+            letterSpacing: "0",
           }}
         >
-          Brings Together Digital Marketing, Web Development, Software Engineering,
+          Bring Together Digital Marketing, Web Development, Software Engineering,
           And Application Development Into A Single, Structured System.
         </p>
         <a
@@ -76,8 +84,14 @@ export function HeroSection() {
             e.preventDefault();
             document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
           }}
-          className="border border-dashed border-white px-6 py-3 text-white hover:bg-white hover:text-black transition-colors"
-          style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "16px" }}
+          className="border border-white px-14 py-5 text-white hover:bg-white hover:text-black transition-colors uppercase"
+          style={{
+            fontFamily: "'Pirulen', 'Orbitron', sans-serif",
+            fontSize: "16px",
+            fontWeight: 400,
+            letterSpacing: "0.16em",
+            lineHeight: "1",
+          }}
         >
           CONTACT US
         </a>

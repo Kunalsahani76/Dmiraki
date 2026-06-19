@@ -11,7 +11,7 @@ function Frame60() {
     <div className="absolute content-stretch flex items-center justify-center left-0 px-[20px] py-[10px] top-[10px]">
       <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[26px] text-white whitespace-nowrap">
-        <p className="leading-[32px]">Strategy</p>
+          <p className="leading-[32px]">STRATEGY</p>
       </div>
     </div>
   );
@@ -22,7 +22,7 @@ function Frame55() {
     <div className="absolute content-stretch flex items-center justify-center left-[255px] px-[20px] py-[10px] top-[10px]">
       <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[26px] text-white whitespace-nowrap">
-        <p className="leading-[32px]">Development</p>
+          <p className="leading-[32px]">DEVELOPMENT</p>
       </div>
     </div>
   );
@@ -44,7 +44,7 @@ function Frame57() {
     <div className="absolute content-stretch flex items-center justify-center left-[729px] px-[20px] py-[10px] top-[10px]">
       <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[26px] text-white whitespace-nowrap">
-        <p className="leading-[32px]">Social Media</p>
+          <p className="leading-[32px]">SOCIAL MEDIA</p>
       </div>
     </div>
   );
@@ -55,7 +55,7 @@ function Frame58() {
     <div className="absolute content-stretch flex items-center justify-center left-[1050px] px-[20px] py-[10px] top-[10px]">
       <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[26px] text-white whitespace-nowrap">
-        <p className="leading-[32px]">Branding</p>
+          <p className="leading-[32px]">BRANDING</p>
       </div>
     </div>
   );
@@ -66,7 +66,7 @@ function Frame59() {
     <div className="absolute content-stretch flex items-center justify-center left-[1303px] px-[20px] py-[10px] top-[10px]">
       <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[26px] text-white whitespace-nowrap">
-        <p className="leading-[32px]">Content</p>
+          <p className="leading-[32px]">CONTENT</p>
       </div>
     </div>
   );
@@ -77,7 +77,7 @@ function Frame61() {
     <div className="absolute content-stretch flex items-center justify-center left-[1542px] px-[20px] py-[10px] top-[10px]">
       <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[26px] text-white whitespace-nowrap">
-        <p className="leading-[32px]">Advertising</p>
+          <p className="leading-[32px]">ADVERTISING</p>
       </div>
     </div>
   );
@@ -88,7 +88,7 @@ function Frame62() {
     <div className="absolute content-stretch flex items-center justify-center left-[1846px] px-[20px] py-[10px] top-[10px]">
       <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[26px] text-white whitespace-nowrap">
-        <p className="leading-[32px]">Design</p>
+          <p className="leading-[32px]">DESIGN</p>
       </div>
     </div>
   );
@@ -99,7 +99,7 @@ function Frame63() {
     <div className="absolute content-stretch flex items-center justify-center left-[2043px] px-[20px] py-[10px] top-[10px]">
       <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[26px] text-white whitespace-nowrap">
-        <p className="leading-[32px]">Analytics</p>
+          <p className="leading-[32px]">ANALYTICS</p>
       </div>
     </div>
   );
@@ -126,7 +126,7 @@ function Frame64() {
     <div className="absolute content-stretch flex items-center justify-center left-0 px-[20px] py-[10px] top-[10px]">
       <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[26px] text-white whitespace-nowrap">
-        <p className="leading-[32px]">Strategy</p>
+        <p className="leading-[32px]">STRATEGY</p>
       </div>
     </div>
   );
@@ -137,7 +137,7 @@ function Frame65() {
     <div className="absolute content-stretch flex items-center justify-center left-[255px] px-[20px] py-[10px] top-[10px]">
       <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[26px] text-white whitespace-nowrap">
-        <p className="leading-[32px]">Development</p>
+        <p className="leading-[32px]">DEVELOPMENT</p>
       </div>
     </div>
   );
@@ -159,7 +159,7 @@ function Frame69() {
     <div className="absolute content-stretch flex items-center justify-center left-[729px] px-[20px] py-[10px] top-[10px]">
       <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[26px] text-white whitespace-nowrap">
-        <p className="leading-[32px]">Social Media</p>
+        <p className="leading-[32px]">SOCIAL MEDIA</p>
       </div>
     </div>
   );
@@ -170,7 +170,7 @@ function Frame70() {
     <div className="absolute content-stretch flex items-center justify-center left-[1050px] px-[20px] py-[10px] top-[10px]">
       <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[26px] text-white whitespace-nowrap">
-        <p className="leading-[32px]">Branding</p>
+        <p className="leading-[32px]">BRANDING</p>
       </div>
     </div>
   );
@@ -181,7 +181,7 @@ function Frame71() {
     <div className="absolute content-stretch flex items-center justify-center left-[1303px] px-[20px] py-[10px] top-[10px]">
       <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[26px] text-white whitespace-nowrap">
-        <p className="leading-[32px]">Content</p>
+        <p className="leading-[32px]">CONTENT</p>
       </div>
     </div>
   );
@@ -192,7 +192,7 @@ function Frame72() {
     <div className="absolute content-stretch flex items-center justify-center left-[1542px] px-[20px] py-[10px] top-[10px]">
       <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[26px] text-white whitespace-nowrap">
-        <p className="leading-[32px]">Advertising</p>
+        <p className="leading-[32px]">ADVERTISING</p>
       </div>
     </div>
   );
@@ -203,7 +203,7 @@ function Frame73() {
     <div className="absolute content-stretch flex items-center justify-center left-[1846px] px-[20px] py-[10px] top-[10px]">
       <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[26px] text-white whitespace-nowrap">
-        <p className="leading-[32px]">Design</p>
+        <p className="leading-[32px]">DESIGN</p>
       </div>
     </div>
   );
@@ -214,7 +214,7 @@ function Frame74() {
     <div className="absolute content-stretch flex items-center justify-center left-[2043px] px-[20px] py-[10px] top-[10px]">
       <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[26px] text-white whitespace-nowrap">
-        <p className="leading-[32px]">Analytics</p>
+        <p className="leading-[32px]">ANALYTICS</p>
       </div>
     </div>
   );
@@ -253,19 +253,24 @@ function Frame107() {
     <div className="content-stretch flex gap-[12px] items-center relative shrink-0">
       <div className="content-stretch flex items-center justify-center p-[2px] relative shrink-0">
         <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#a5a5a5] text-[16px] whitespace-nowrap">
-          <p className="leading-[24px]">Home</p>
+          <p className="leading-[24px]">HOME</p>
         </div>
       </div>
       <div className="content-stretch flex items-center justify-center p-[2px] relative shrink-0">
         <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#a5a5a5] text-[16px] whitespace-nowrap">
-          <p className="leading-[24px]">about</p>
+          <p className="leading-[24px]">ABOUT</p>
         </div>
       </div>
       <div className="content-stretch flex gap-[2px] items-center relative shrink-0">
         <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#a5a5a5] text-[16px] whitespace-nowrap">
-          <p className="leading-[24px]">sevices</p>
+          <p className="leading-[24px]">SERVICES</p>
         </div>
         <Frame />
+      </div>
+      <div className="content-stretch flex items-center justify-center p-[2px] relative shrink-0">
+        <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#a5a5a5] text-[16px] whitespace-nowrap">
+          <p className="leading-[24px]">CONTACT</p>
+        </div>
       </div>
     </div>
   );
@@ -280,7 +285,7 @@ function Frame1() {
           <div className="content-stretch flex flex-col items-center justify-center px-[20px] py-[8px] relative w-[207.368px]" data-name="Button">
             <div aria-hidden className="absolute border border-[#3b3b3b] border-solid inset-0 pointer-events-none" />
             <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#3b3b3b] text-[16px] text-center w-full">
-              <p className="leading-[24px]">Get in touch</p>
+              <p className="leading-[24px]">GET IN TOUCH</p>
             </div>
           </div>
         </div>
@@ -294,13 +299,13 @@ function Frame3() {
     <div className="h-[700px] overflow-clip relative shrink-0 w-full">
       <video autoPlay loop muted playsInline className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={introVideo} />
       <p className="-translate-x-1/2 [word-break:break-word] absolute capitalize font-['Inter:Regular',sans-serif] font-normal leading-[26px] left-[calc(50%+0.5px)] not-italic text-[16px] text-center text-white top-[320px] w-[815px]">
-        brings together digital marketing, web development, software engineering, and application development into a single, structured system.
+        Brings Together Digital Marketing, Web Development, Software Engineering, And Application Development Into A Single, Structured System.
         <br aria-hidden />
         <br aria-hidden />
       </p>
       <div className="-translate-x-1/2 absolute content-stretch flex items-center justify-center left-1/2 px-[20px] py-[10px] top-[434px]">
         <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
-        <p className="[word-break:break-word] capitalize font-['Pirulen:Regular',sans-serif] leading-[26px] not-italic relative shrink-0 text-[#fbfbfb] text-[22px] text-center whitespace-nowrap">contact US</p>
+        <p className="[word-break:break-word] uppercase font-['Pirulen:Regular',sans-serif] leading-[26px] not-italic relative shrink-0 text-[#fbfbfb] text-[22px] text-center whitespace-nowrap">CONTACT US</p>
       </div>
       <div className="absolute h-[72px] left-[50px] overflow-clip top-[564px] w-[2298px]" data-name="Component 81">
         <Frame66 />
@@ -322,7 +327,7 @@ function Frame4() {
     <div className="content-stretch flex h-[94px] items-center justify-center py-[7px] relative shrink-0 w-full">
       <div aria-hidden className="absolute border-b border-black border-solid inset-0 pointer-events-none" />
       <div className="[word-break:break-word] flex flex-[1_0_0] flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] min-w-px not-italic relative text-[#222] text-[48px] text-center tracking-[-2.88px]">
-        <p className="leading-[79.2px]">What We Offer</p>
+        <p className="leading-[79.2px]">WHAT WE OFFER</p>
       </div>
     </div>
   );
@@ -726,7 +731,7 @@ function Frame18() {
     <div className="h-[600px] overflow-clip relative shrink-0 w-[1270px]">
       <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgFrame1000002689} />
       <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] left-[calc(25%+70.5px)] not-italic text-[36px] text-white top-[66px] w-[507px]">
-        <p className="leading-[29.6px]">Digital Marketing</p>
+        <p className="leading-[29.6px]">DIGITAL MARKETING</p>
       </div>
       <Frame30 />
     </div>
@@ -737,7 +742,7 @@ function Frame47() {
   return (
     <div className="content-stretch flex items-center justify-center p-[10px] relative shrink-0">
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#222] text-[36px] whitespace-nowrap">
-        <p className="leading-[29.6px]">Custom Software Development</p>
+        <p className="leading-[29.6px]">CUSTOM SOFTWARE DEVELOPMENT</p>
       </div>
     </div>
   );
@@ -1117,7 +1122,7 @@ function Heading1() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Heading 2">
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#222] text-[36px] tracking-[-0.4px] w-full">
-        <p className="leading-[48px]">IoT-Based Solutions</p>
+        <p className="leading-[48px]">IOT-BASED SOLUTIONS</p>
       </div>
     </div>
   );
@@ -1439,7 +1444,7 @@ function Frame77() {
   return (
     <div className="content-stretch flex flex-col items-center justify-center relative shrink-0 w-full">
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[18px] text-center text-white w-full">
-        <p className="leading-[32px]">Corporate Websites</p>
+        <p className="leading-[32px]">CORPORATE WEBSITES</p>
       </div>
     </div>
   );
@@ -1473,7 +1478,7 @@ function Frame80() {
   return (
     <div className="content-stretch flex flex-col items-center justify-center relative shrink-0 w-full">
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[18px] text-center text-white w-full">
-        <p className="leading-[32px]">Business websites</p>
+        <p className="leading-[32px]">BUSINESS WEBSITES</p>
       </div>
     </div>
   );
@@ -1507,7 +1512,7 @@ function Frame83() {
   return (
     <div className="content-stretch flex flex-col items-center justify-center relative shrink-0 w-full">
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[18px] text-center text-white w-full">
-        <p className="leading-[32px]">E-commerce platforms</p>
+        <p className="leading-[32px]">E-COMMERCE PLATFORMS</p>
       </div>
     </div>
   );
@@ -1547,7 +1552,7 @@ function Frame86() {
   return (
     <div className="content-stretch flex flex-col items-center justify-center relative shrink-0 w-full">
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[18px] text-center text-white w-full">
-        <p className="leading-[32px]">Custom web applications</p>
+        <p className="leading-[32px]">CUSTOM WEB APPLICATIONS</p>
       </div>
     </div>
   );
@@ -1587,7 +1592,7 @@ function Frame89() {
   return (
     <div className="content-stretch flex flex-col items-center justify-center relative shrink-0 w-full">
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[18px] text-center text-white w-full">
-        <p className="leading-[32px]">Landing pages</p>
+        <p className="leading-[32px]">LANDING PAGES</p>
       </div>
     </div>
   );
@@ -1639,8 +1644,8 @@ function Frame93() {
   return (
     <div className="content-stretch flex flex-col items-center justify-center relative shrink-0 w-full">
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[18px] text-center text-white w-full whitespace-pre-wrap">
-        <p className="leading-[32px] mb-0">{`CMS and `}</p>
-        <p className="leading-[32px] tracking-[2px]">wordpress</p>
+        <p className="leading-[32px] mb-0">{`CMS AND `}</p>
+        <p className="leading-[32px] tracking-[2px]">WORDPRESS</p>
       </div>
     </div>
   );
@@ -1672,7 +1677,7 @@ function Frame96() {
   return (
     <div className="content-stretch flex flex-col items-center justify-center relative shrink-0 w-full">
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[18px] text-center text-white w-full">
-        <p className="leading-[32px]">SEO-ready architecture</p>
+        <p className="leading-[32px]">SEO-READY ARCHITECTURE</p>
       </div>
     </div>
   );
@@ -1704,7 +1709,7 @@ function Frame99() {
   return (
     <div className="content-stretch flex flex-col items-center justify-center relative shrink-0 w-full">
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[18px] text-center text-white w-full">
-        <p className="leading-[32px]">Speed optimisation</p>
+        <p className="leading-[32px]">SPEED OPTIMISATION</p>
       </div>
     </div>
   );
@@ -1736,7 +1741,7 @@ function Frame101() {
   return (
     <div className="content-stretch flex flex-col items-center justify-center relative shrink-0 w-full">
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[18px] text-center text-white w-full">
-        <p className="leading-[32px]">Maintenance and support</p>
+        <p className="leading-[32px]">MAINTENANCE AND SUPPORT</p>
       </div>
     </div>
   );
@@ -1776,7 +1781,7 @@ function Frame104() {
   return (
     <div className="content-stretch flex flex-col items-center justify-center relative shrink-0 w-full">
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[18px] text-center text-white w-full">
-        <p className="leading-[32px]">Conversion integration</p>
+        <p className="leading-[32px]">CONVERSION INTEGRATION</p>
       </div>
     </div>
   );
@@ -1818,7 +1823,7 @@ function Frame19() {
     <div className="h-[463px] overflow-clip relative shrink-0 w-[1270px]">
       <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgFrame1000002689} />
       <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] left-[calc(50%-382px)] not-italic text-[36px] text-white top-[51px] whitespace-nowrap">
-        <p className="leading-[29.6px]">Web Development Services</p>
+        <p className="leading-[29.6px]">WEB DEVELOPMENT SERVICES</p>
       </div>
       <Frame53 />
     </div>
@@ -1878,8 +1883,8 @@ function Container42() {
   return (
     <div className="-translate-x-1/2 -translate-y-1/2 absolute content-stretch flex flex-col items-start left-[calc(50%+0.25px)] pb-[0.695px] top-[calc(50%+0.35px)] w-[288.5px]" data-name="Container">
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[43.3px] text-center text-white tracking-[-0.96px] w-full">
-        <p className="leading-[52.8px] mb-0">Less</p>
-        <p className="leading-[52.8px]">Compare</p>
+        <p className="leading-[52.8px] mb-0">LESS</p>
+        <p className="leading-[52.8px]">COMPARE</p>
       </div>
     </div>
   );
@@ -1918,9 +1923,9 @@ function Frame12() {
     <div className="h-[104px] relative shrink-0 w-full">
       <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Georgia:Regular',sans-serif] justify-center leading-[0] left-0 not-italic text-[#0a0a0a] text-[0px] top-[52px] tracking-[-1.8px] w-[618px]">
         <p className="font-['Ethnocentric:Regular',sans-serif] text-[34.5px]">
-          <span className="leading-[52px]">{`What We Pay `}</span>
-          <span className="leading-[52px] text-[#787872]">{`Attention `}</span>
-          <span className="leading-[52px]">to</span>
+          <span className="leading-[52px]">{`WHAT WE PAY `}</span>
+          <span className="leading-[52px] text-[#787872]">{`ATTENTION `}</span>
+          <span className="leading-[52px]">TO</span>
         </p>
       </div>
     </div>
@@ -2000,8 +2005,8 @@ function Frame16() {
     <div className="h-[104px] relative shrink-0 w-full">
       <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Ethnocentric:Regular',sans-serif] justify-center leading-[0] left-0 not-italic text-[#0a0a0a] text-[34.5px] top-[52px] tracking-[-1.8px] w-[618px]">
         <p className="font-['Pirulen:Regular',sans-serif]">
-          <span className="leading-[52px]">{`The `}</span>
-          <span className="leading-[52px] text-[#787872]">Approach</span>
+          <span className="leading-[52px]">{`THE `}</span>
+          <span className="leading-[52px] text-[#787872]">APPROACH</span>
         </p>
       </div>
     </div>
@@ -2049,8 +2054,8 @@ function Heading() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Heading 1">
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[38px] text-black w-full">
-        <p className="leading-[60px] mb-0">Dreaming Big?</p>
-        <p className="leading-[60px]">{`Let's build it.`}</p>
+        <p className="leading-[60px] mb-0">DREAMING BIG?</p>
+        <p className="leading-[60px]">{`LET'S BUILD IT.`}</p>
       </div>
     </div>
   );
@@ -2683,38 +2688,38 @@ function Frame2() {
   return (
     <div className="-translate-x-1/2 absolute content-stretch flex gap-[12px] items-center justify-center left-[calc(50%-0.28px)] top-[145px]">
       <div className="h-[154px] relative shrink-0 w-[71.867px]" data-name="Component 48">
-        <div className="-translate-x-1/2 [word-break:break-word] absolute bottom-[41.07px] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] left-[35.93px] lowercase not-italic text-[54.76px] text-center text-white translate-y-1/2 whitespace-nowrap">
-          <p className="leading-[82.133px]">d’</p>
+        <div className="-translate-x-1/2 [word-break:break-word] absolute bottom-[41.07px] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] left-[35.93px] uppercase not-italic text-[54.76px] text-center text-white translate-y-1/2 whitespace-nowrap">
+          <p className="leading-[82.133px]">D’</p>
         </div>
       </div>
       <div className="h-[154.007px] relative shrink-0 w-[71.87px]" data-name="Component 49">
-        <div className="-translate-x-1/2 [word-break:break-word] absolute bottom-[41.07px] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] left-[34.22px] lowercase not-italic text-[54.76px] text-center text-white translate-y-1/2 whitespace-nowrap">
-          <p className="leading-[82.137px]">m</p>
+        <div className="-translate-x-1/2 [word-break:break-word] absolute bottom-[41.07px] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] left-[34.22px] uppercase not-italic text-[54.76px] text-center text-white translate-y-1/2 whitespace-nowrap">
+          <p className="leading-[82.137px]">M</p>
         </div>
       </div>
       <div className="h-[154.007px] relative shrink-0 w-[71.87px]" data-name="Component 50">
-        <div className="-translate-x-1/2 [word-break:break-word] absolute bottom-[41.07px] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] left-[35.93px] lowercase not-italic text-[54.76px] text-center text-white translate-y-1/2 whitespace-nowrap">
-          <p className="leading-[82.137px]">i</p>
+        <div className="-translate-x-1/2 [word-break:break-word] absolute bottom-[41.07px] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] left-[35.93px] uppercase not-italic text-[54.76px] text-center text-white translate-y-1/2 whitespace-nowrap">
+          <p className="leading-[82.137px]">I</p>
         </div>
       </div>
       <div className="h-[154.007px] relative shrink-0 w-[71.87px]" data-name="Component 51">
-        <div className="-translate-x-1/2 [word-break:break-word] absolute bottom-[41.07px] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] left-[35.93px] lowercase not-italic text-[54.76px] text-center text-white translate-y-1/2 whitespace-nowrap">
-          <p className="leading-[82.137px]">r</p>
+        <div className="-translate-x-1/2 [word-break:break-word] absolute bottom-[41.07px] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] left-[35.93px] uppercase not-italic text-[54.76px] text-center text-white translate-y-1/2 whitespace-nowrap">
+          <p className="leading-[82.137px]">R</p>
         </div>
       </div>
       <div className="h-[154.007px] relative shrink-0 w-[71.87px]" data-name="Component 52">
-        <div className="-translate-x-1/2 [word-break:break-word] absolute bottom-[41.07px] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] left-[35.93px] lowercase not-italic text-[54.76px] text-center text-white translate-y-1/2 whitespace-nowrap">
-          <p className="leading-[82.137px]">a</p>
+        <div className="-translate-x-1/2 [word-break:break-word] absolute bottom-[41.07px] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] left-[35.93px] uppercase not-italic text-[54.76px] text-center text-white translate-y-1/2 whitespace-nowrap">
+          <p className="leading-[82.137px]">A</p>
         </div>
       </div>
       <div className="h-[154.007px] relative shrink-0 w-[71.87px]" data-name="Component 53">
-        <div className="-translate-x-1/2 [word-break:break-word] absolute bottom-[41.07px] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] left-[34.22px] lowercase not-italic text-[54.76px] text-center text-white translate-y-1/2 whitespace-nowrap">
-          <p className="leading-[82.137px]">k</p>
+        <div className="-translate-x-1/2 [word-break:break-word] absolute bottom-[41.07px] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] left-[34.22px] uppercase not-italic text-[54.76px] text-center text-white translate-y-1/2 whitespace-nowrap">
+          <p className="leading-[82.137px]">K</p>
         </div>
       </div>
       <div className="h-[154.007px] relative shrink-0 w-[71.87px]" data-name="Component 54">
-        <div className="-translate-x-1/2 [word-break:break-word] absolute bottom-[41.07px] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] left-[35.93px] lowercase not-italic text-[54.76px] text-center text-white translate-y-1/2 whitespace-nowrap">
-          <p className="leading-[82.137px]">i</p>
+        <div className="-translate-x-1/2 [word-break:break-word] absolute bottom-[41.07px] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] left-[35.93px] uppercase not-italic text-[54.76px] text-center text-white translate-y-1/2 whitespace-nowrap">
+          <p className="leading-[82.137px]">I</p>
         </div>
       </div>
     </div>
@@ -2726,7 +2731,7 @@ function Frame106() {
     <div className="absolute content-stretch flex items-center justify-center left-0 px-[20px] py-[10px] top-[10px]">
       <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[26px] text-white whitespace-nowrap">
-        <p className="leading-[32px]">Strategy</p>
+          <p className="leading-[32px]">STRATEGY</p>
       </div>
     </div>
   );
@@ -2737,7 +2742,7 @@ function Frame108() {
     <div className="absolute content-stretch flex items-center justify-center left-[255px] px-[20px] py-[10px] top-[10px]">
       <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[26px] text-white whitespace-nowrap">
-        <p className="leading-[32px]">Development</p>
+          <p className="leading-[32px]">DEVELOPMENT</p>
       </div>
     </div>
   );
@@ -2759,7 +2764,7 @@ function Frame110() {
     <div className="absolute content-stretch flex items-center justify-center left-[729px] px-[20px] py-[10px] top-[10px]">
       <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[26px] text-white whitespace-nowrap">
-        <p className="leading-[32px]">Social Media</p>
+          <p className="leading-[32px]">SOCIAL MEDIA</p>
       </div>
     </div>
   );
@@ -2770,7 +2775,7 @@ function Frame111() {
     <div className="absolute content-stretch flex items-center justify-center left-[1050px] px-[20px] py-[10px] top-[10px]">
       <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[26px] text-white whitespace-nowrap">
-        <p className="leading-[32px]">Branding</p>
+          <p className="leading-[32px]">BRANDING</p>
       </div>
     </div>
   );
@@ -2781,7 +2786,7 @@ function Frame112() {
     <div className="absolute content-stretch flex items-center justify-center left-[1303px] px-[20px] py-[10px] top-[10px]">
       <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[26px] text-white whitespace-nowrap">
-        <p className="leading-[32px]">Content</p>
+          <p className="leading-[32px]">CONTENT</p>
       </div>
     </div>
   );
@@ -2792,7 +2797,7 @@ function Frame113() {
     <div className="absolute content-stretch flex items-center justify-center left-[1542px] px-[20px] py-[10px] top-[10px]">
       <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[26px] text-white whitespace-nowrap">
-        <p className="leading-[32px]">Advertising</p>
+          <p className="leading-[32px]">ADVERTISING</p>
       </div>
     </div>
   );
@@ -2803,7 +2808,7 @@ function Frame114() {
     <div className="absolute content-stretch flex items-center justify-center left-[1846px] px-[20px] py-[10px] top-[10px]">
       <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[26px] text-white whitespace-nowrap">
-        <p className="leading-[32px]">Design</p>
+          <p className="leading-[32px]">DESIGN</p>
       </div>
     </div>
   );
@@ -2814,7 +2819,7 @@ function Frame115() {
     <div className="absolute content-stretch flex items-center justify-center left-[2043px] px-[20px] py-[10px] top-[10px]">
       <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[26px] text-white whitespace-nowrap">
-        <p className="leading-[32px]">Analytics</p>
+          <p className="leading-[32px]">ANALYTICS</p>
       </div>
     </div>
   );
@@ -2841,7 +2846,7 @@ function Frame117() {
     <div className="absolute content-stretch flex items-center justify-center left-0 px-[20px] py-[10px] top-[10px]">
       <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[26px] text-white whitespace-nowrap">
-        <p className="leading-[32px]">Strategy</p>
+        <p className="leading-[32px]">STRATEGY</p>
       </div>
     </div>
   );
@@ -2852,7 +2857,7 @@ function Frame118() {
     <div className="absolute content-stretch flex items-center justify-center left-[255px] px-[20px] py-[10px] top-[10px]">
       <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[26px] text-white whitespace-nowrap">
-        <p className="leading-[32px]">Development</p>
+        <p className="leading-[32px]">DEVELOPMENT</p>
       </div>
     </div>
   );
@@ -2874,7 +2879,7 @@ function Frame120() {
     <div className="absolute content-stretch flex items-center justify-center left-[729px] px-[20px] py-[10px] top-[10px]">
       <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[26px] text-white whitespace-nowrap">
-        <p className="leading-[32px]">Social Media</p>
+        <p className="leading-[32px]">SOCIAL MEDIA</p>
       </div>
     </div>
   );
@@ -2885,7 +2890,7 @@ function Frame121() {
     <div className="absolute content-stretch flex items-center justify-center left-[1050px] px-[20px] py-[10px] top-[10px]">
       <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[26px] text-white whitespace-nowrap">
-        <p className="leading-[32px]">Branding</p>
+        <p className="leading-[32px]">BRANDING</p>
       </div>
     </div>
   );
@@ -2896,7 +2901,7 @@ function Frame122() {
     <div className="absolute content-stretch flex items-center justify-center left-[1303px] px-[20px] py-[10px] top-[10px]">
       <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[26px] text-white whitespace-nowrap">
-        <p className="leading-[32px]">Content</p>
+        <p className="leading-[32px]">CONTENT</p>
       </div>
     </div>
   );
@@ -2907,7 +2912,7 @@ function Frame123() {
     <div className="absolute content-stretch flex items-center justify-center left-[1542px] px-[20px] py-[10px] top-[10px]">
       <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[26px] text-white whitespace-nowrap">
-        <p className="leading-[32px]">Advertising</p>
+        <p className="leading-[32px]">ADVERTISING</p>
       </div>
     </div>
   );
@@ -2918,7 +2923,7 @@ function Frame124() {
     <div className="absolute content-stretch flex items-center justify-center left-[1846px] px-[20px] py-[10px] top-[10px]">
       <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[26px] text-white whitespace-nowrap">
-        <p className="leading-[32px]">Design</p>
+        <p className="leading-[32px]">DESIGN</p>
       </div>
     </div>
   );
@@ -2929,7 +2934,7 @@ function Frame125() {
     <div className="absolute content-stretch flex items-center justify-center left-[2043px] px-[20px] py-[10px] top-[10px]">
       <div aria-hidden className="absolute border border-dashed border-white inset-[-1px] pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[26px] text-white whitespace-nowrap">
-        <p className="leading-[32px]">Analytics</p>
+        <p className="leading-[32px]">ANALYTICS</p>
       </div>
     </div>
   );
