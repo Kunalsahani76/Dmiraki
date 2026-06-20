@@ -18,7 +18,7 @@ function GlassServiceCard({ icon, title, desc }: { icon: string; title: string; 
     <div className={glassCard}>
       <img src={icon} alt="" className="h-[27px] w-[35px] object-contain object-left" />
       <div>
-        <p className="text-white mb-1.5" style={{ fontFamily: "'Roboto', sans-serif", fontSize: "clamp(22px,2.35vw,24px)", fontWeight: 400, lineHeight: "1.05", overflowWrap: "anywhere" }}>
+        <p className="text-white mb-1.5" style={{ fontFamily: "'Pirulen', 'Orbitron', sans-serif", fontSize: "18px", fontWeight: 400, lineHeight: "1.35", overflowWrap: "anywhere" }}>
           {title}
         </p>
         <p className="text-white/90" style={{ fontFamily: "'Roboto', sans-serif", fontSize: "14px", lineHeight: "20px" }}>
@@ -61,7 +61,7 @@ export function DigitalMarketingSection() {
           className="text-white mb-9 text-center uppercase"
           style={{ fontFamily: "'Pirulen', 'Orbitron', sans-serif", fontSize: "clamp(24px,4vw,34px)", fontWeight: 400, letterSpacing: "1px", lineHeight: "1.15" }}
         >
-          Digital Marketing
+          DIGITAL MARKETING
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-5">
           {row1.map((c) => <GlassServiceCard key={c.title} {...c} />)}
@@ -87,10 +87,10 @@ function WhiteServiceCard({
     <div className="relative flex min-h-[190px] flex-col gap-4 border-r border-b border-black p-6 sm:min-h-[245px] sm:p-8">
       <div className="text-2xl">{icon}</div>
       <div>
-        <p className="text-[#1b1b1d] mb-2" style={{ fontFamily: "'Inter', sans-serif", fontSize: "20px", fontWeight: 600, lineHeight: "1.4", overflowWrap: "anywhere" }}>
+        <p className="text-[#1b1b1d] mb-2" style={{ fontFamily: "'Roboto', sans-serif", fontSize: "18px", fontWeight: 600, lineHeight: "1.4", overflowWrap: "anywhere" }}>
           {title}
         </p>
-        <p className="text-[#44474d]" style={{ fontFamily: "'Manrope', sans-serif", fontSize: "15px", lineHeight: "24px" }}>
+        <p className="text-[#44474d]" style={{ fontFamily: "'Roboto', sans-serif", fontSize: "14px", lineHeight: "20px" }}>
           {desc}
         </p>
       </div>
@@ -118,7 +118,7 @@ export function CustomSoftwareSection() {
             className="text-[#222] text-center"
             style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "clamp(18px,3vw,36px)" }}
           >
-            Custom Software Development
+            CUSTOM SOFTWARE DEVELOPMENT
           </h2>
         </div>
         <div className="grid grid-cols-1 border-t border-l border-black sm:grid-cols-2 lg:grid-cols-4">
@@ -157,7 +157,7 @@ export function IoTSection() {
               className="text-[#222] mb-8"
               style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "clamp(22px,3vw,36px)" }}
             >
-              IoT-Based Solutions
+              IOT-BASED SOLUTIONS
             </h2>
             <div className="flex flex-col gap-10">
               {items.map((item) => (
@@ -169,10 +169,10 @@ export function IoTSection() {
                     <span className="text-xl">📡</span>
                   </div>
                   <div>
-                    <p className="text-[#222] mb-2" style={{ fontFamily: "'Inter', sans-serif", fontSize: "20px", fontWeight: 600, lineHeight: "1.4" }}>
+                    <p className="text-[#222] mb-2" style={{ fontFamily: "'Roboto', sans-serif", fontSize: "18px", fontWeight: 600, lineHeight: "1.4" }}>
                       {item.title}
                     </p>
-                    <p className="text-[#44474d]" style={{ fontFamily: "'Manrope', sans-serif", fontSize: "15px", lineHeight: "24px" }}>
+                    <p className="text-[#44474d]" style={{ fontFamily: "'Roboto', sans-serif", fontSize: "14px", lineHeight: "20px" }}>
                       {item.desc}
                     </p>
                   </div>
@@ -206,18 +206,18 @@ export function IoTSection() {
 
 export function WebDevSection() {
   const row1 = [
-    { icon: "🏛️", title: "Corporate Websites" },
-    { icon: "💼", title: "Business websites" },
-    { icon: "🛒", title: "E-commerce platforms" },
-    { icon: "⚒️", title: "Custom web applications" },
-    { icon: "🚀", title: "Landing pages" },
+    { icon: "🏛️", title: "CORPORATE WEBSITES" },
+    { icon: "💼", title: "BUSINESS WEBSITES" },
+    { icon: "🛒", title: "E-COMMERCE PLATFORMS" },
+    { icon: "⚒️", title: "CUSTOM WEB APPLICATIONS" },
+    { icon: "🚀", title: "LANDING PAGES" },
   ];
   const row2 = [
-    { icon: "📝", title: "CMS and wordpress" },
-    { icon: "🔎", title: "SEO-ready architecture" },
-    { icon: "⚡", title: "Speed optimisation" },
-    { icon: "🛠️", title: "Maintenance and support" },
-    { icon: "📈", title: "Conversion integration" },
+    { icon: "📝", title: "CMS AND WORDPRESS" },
+    { icon: "🔎", title: "SEO-READY ARCHITECTURE" },
+    { icon: "⚡", title: "SPEED OPTIMISATION" },
+    { icon: "🛠️", title: "MAINTENANCE AND SUPPORT" },
+    { icon: "📈", title: "CONVERSION INTEGRATION" },
   ];
 
   return (
@@ -237,7 +237,7 @@ export function WebDevSection() {
           className="text-white mb-10"
           style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "clamp(18px,3vw,36px)" }}
         >
-          Web Development Services
+          WEB DEVELOPMENT SERVICES
         </h2>
         <div className="grid grid-cols-1 min-[430px]:grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mb-4">
           {row1.map((c) => (
@@ -246,7 +246,7 @@ export function WebDevSection() {
               className="min-h-[132px] backdrop-blur-md bg-white/30 border border-[rgba(64,64,64,0.5)] flex flex-col items-center justify-center gap-3 px-3 py-4 text-center"
             >
               <div className="text-white text-2xl">{c.icon}</div>
-              <p className="text-white" style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "13px", lineHeight: "1.6", overflowWrap: "anywhere" }}>
+              <p className="text-white" style={{ fontFamily: "'Pirulen', 'Orbitron', sans-serif", fontSize: "13px", lineHeight: "1.6", overflowWrap: "anywhere" }}>
                 {c.title}
               </p>
             </div>
@@ -259,7 +259,7 @@ export function WebDevSection() {
               className="min-h-[132px] backdrop-blur-md bg-white/30 border border-[rgba(64,64,64,0.5)] flex flex-col items-center justify-center gap-3 px-3 py-4 text-center"
             >
               <div className="text-white text-2xl">{c.icon}</div>
-              <p className="text-white" style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "13px", lineHeight: "1.6", overflowWrap: "anywhere" }}>
+              <p className="text-white" style={{ fontFamily: "'Pirulen', 'Orbitron', sans-serif", fontSize: "13px", lineHeight: "1.6", overflowWrap: "anywhere" }}>
                 {c.title}
               </p>
             </div>

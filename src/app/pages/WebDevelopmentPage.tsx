@@ -122,7 +122,7 @@ export default function WebDevelopmentPage() {
               className="mb-8 uppercase text-white"
               style={{ fontFamily: "'Orbitron', sans-serif", fontWeight: 500, fontSize: "clamp(38px, 6vw, 76px)", lineHeight: 1.35, letterSpacing: "0.01em" }}
             >
-              Modern Web Development Services
+              MODERN WEB DEVELOPMENT SERVICES
             </h1>
             <p className="mb-9 max-w-[530px] text-[#d0d0d0]" style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: "26px" }}>
               We engineer high-performance, scalable web ecosystems using cutting-edge frontend architectures. Architectural stability meets cinematic user experiences.
@@ -132,7 +132,7 @@ export default function WebDevelopmentPage() {
               className="border border-white/35 px-14 py-5 uppercase text-white transition-colors hover:bg-white hover:text-black"
               style={{ fontFamily: "'Orbitron', sans-serif", fontSize: 13, letterSpacing: "1.4px" }}
             >
-              Book Free Consultation
+              BOO FREE CONSULTATION
             </a>
           </div>
           <DashboardVisual />
@@ -142,7 +142,7 @@ export default function WebDevelopmentPage() {
       <section className="bg-white px-5 py-12 text-black sm:px-8 lg:px-10">
         <div className="mx-auto max-w-[1270px] text-center">
           <h2 className="mb-9 uppercase" style={{ fontFamily: "'Orbitron', sans-serif", fontSize: 16, letterSpacing: "6px" }}>
-            Built with modern web technologies
+            BUILT WITH MODERN WEB TECHNOLOGIES
           </h2>
           <div className="grid grid-cols-2 gap-6 text-[#9a9a9a] sm:grid-cols-4 lg:grid-cols-8">
             {techStack.map((tech) => (
@@ -156,7 +156,7 @@ export default function WebDevelopmentPage() {
         <div className="mx-auto max-w-[1270px]">
           <div className="mb-16 text-center">
             <h2 className="mb-6 uppercase" style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "clamp(28px, 4vw, 48px)", lineHeight: 1.15 }}>
-              High-Performance<br />Web Solutions
+              HIGH-PERFORMANCE<br />WEB SOLUTIONS
             </h2>
             <p className="mx-auto max-w-[560px] text-[#b9b9b9]" style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: "24px" }}>
               We engineer high-performance, scalable web ecosystems using cutting-edge frontend architectures. Architectural stability meets cinematic user experiences.
@@ -179,7 +179,7 @@ export default function WebDevelopmentPage() {
       <section className="border-y-[6px] border-white bg-[linear-gradient(105deg,#000_0%,#000_48%,#5c5c5c_100%)] px-5 py-24 sm:px-8 lg:px-10">
         <div className="mx-auto max-w-[1270px] text-center">
           <h2 className="mb-5 uppercase" style={{ fontFamily: "'Inter', sans-serif", fontSize: "clamp(30px, 4vw, 48px)", fontWeight: 800 }}>
-            Our Architectural Process
+            OUR ARCHITECTURAL PROCESS
           </h2>
           <p className="mb-20 text-[#bcbcbc]" style={{ fontFamily: "'Inter', sans-serif", fontSize: 14 }}>
             The systematic roadmap from initial concept to deployment.
@@ -209,7 +209,7 @@ export default function WebDevelopmentPage() {
         <div className="mx-auto grid max-w-[1270px] grid-cols-1 gap-12 lg:grid-cols-[0.95fr_1.05fr]">
           <div>
             <h2 className="mb-14 uppercase" style={{ fontFamily: "'Inter', sans-serif", fontSize: "clamp(34px, 4vw, 52px)", lineHeight: 1.08, fontWeight: 900 }}>
-              Engineered For<br />Peak<br />Performance
+              ENGINEERED FOR<br />PEAK<br />PERFORMANCE
             </h2>
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
               {performance.map(({ icon: Icon, title, desc }) => (
@@ -229,7 +229,7 @@ export default function WebDevelopmentPage() {
 
       <section id="web-development-contact" className="bg-[linear-gradient(115deg,#050505_0%,#111_45%,#606060_100%)] px-5 py-24 text-center sm:px-8 lg:px-10">
         <h2 className="mx-auto mb-8 max-w-[980px] uppercase" style={{ fontFamily: "'Inter', sans-serif", fontSize: "clamp(38px, 5vw, 70px)", lineHeight: 1.22, fontWeight: 300 }}>
-          Let's Build Your<br />Next-Generation Website
+          LET'S BUILD YOUR<br />NEXT-GENERATION WEBSITE
         </h2>
         <p className="mx-auto mb-12 max-w-[560px] text-[#d0d0d0]" style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, lineHeight: "27px" }}>
           Partner with our architectural team to deploy a high-performance web solution that scales with your ambition.
@@ -239,7 +239,7 @@ export default function WebDevelopmentPage() {
           className="inline-flex bg-white px-16 py-6 uppercase text-black transition-colors hover:bg-black hover:text-white"
           style={{ fontFamily: "'Orbitron', sans-serif", fontSize: 15, letterSpacing: "2px" }}
         >
-          Start Your Project
+          START YOUR PROJECT
         </a>
       </section>
 

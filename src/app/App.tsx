@@ -37,7 +37,7 @@ function HomePage() {
   }, [location.hash]);
 
   return (
-    <div className="w-full min-h-screen bg-white overflow-x-hidden">
+    <div className="home-page-reference w-full min-h-screen bg-white overflow-x-hidden">
       <Navbar />
 
       {/* Spacer for sticky navbar */}

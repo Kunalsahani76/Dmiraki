@@ -6,8 +6,8 @@ function Heading() {
   return (
     <div className="content-stretch flex flex-col items-start pt-[1.2px] relative shrink-0 w-full" data-name="Heading 1">
       <div className="[word-break:break-word] flex flex-col justify-center leading-[0] not-italic relative shrink-0 text-[#fbfbfb] text-[64px] w-full" style={{ fontFamily: "'Orbitron', sans-serif", fontWeight: 500, letterSpacing: "0.01em" }}>
-        <p className="leading-[86.4px] mb-0">Custom Software</p>
-        <p className="leading-[86.4px]">Development Solutions</p>
+        <p className="leading-[86.4px] mb-0">CUSTOM SOFTWARE</p>
+        <p className="leading-[86.4px]">DEVELOPMENT SOLUTIONS</p>
       </div>
     </div>
   );
@@ -30,7 +30,7 @@ function Button() {
     <div className="backdrop-blur-[6px] bg-[rgba(255,255,255,0.03)] content-stretch flex flex-col items-center justify-center px-[33px] py-[17px] relative shrink-0" data-name="Button">
       <div aria-hidden className="absolute border border-[rgba(255,255,255,0.3)] border-solid inset-0 pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#e5e1e4] text-[18px] text-center whitespace-nowrap">
-        <p className="leading-[28px]">Book Free Consultation</p>
+        <p className="leading-[28px]">BOO FREE CONSULTATION</p>
       </div>
     </div>
   );
@@ -273,7 +273,7 @@ function Heading1() {
   return (
     <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-name="Heading 2">
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[40px] text-center text-white tracking-[-0.8px] whitespace-nowrap">
-        <p className="leading-[48px]">World-Class Services</p>
+        <p className="leading-[48px]">WORLD-CLASS SERVICES</p>
       </div>
     </div>
   );
@@ -659,7 +659,7 @@ function Heading8() {
       <div className="flex flex-col items-center size-full">
         <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-center p-[33px] relative size-full">
           <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[40px] text-center text-white tracking-[-0.8px] whitespace-nowrap">
-            <p className="leading-[48px]">Our Symphony of Development</p>
+            <p className="leading-[48px]">OUR SYMPHONY OF DEVELOPMENT</p>
           </div>
         </div>
       </div>
@@ -1026,8 +1026,8 @@ function Heading15() {
     <div className="relative shrink-0 w-full" data-name="Heading 2">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-center relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Geist:ExtraBold',sans-serif] font-extrabold justify-center leading-[0] not-italic relative shrink-0 text-[#e5e1e4] text-[48px] text-center tracking-[-0.96px] whitespace-nowrap">
-          <p className="font-['Pirulen:Regular',sans-serif] leading-[61px] mb-0 text-white">Let’s Build Your Next Big</p>
-          <p className="font-['Pirulen:Regular',sans-serif] leading-[61px] text-[#fbfbfb]">Software Product</p>
+          <p className="font-['Pirulen:Regular',sans-serif] leading-[61px] mb-0 text-white">LET’S BUILD YOUR NEXT BIG</p>
+          <p className="font-['Pirulen:Regular',sans-serif] leading-[61px] text-[#fbfbfb]">SOFTWARE PRODUCT</p>
         </div>
       </div>
     </div>
@@ -1040,7 +1040,7 @@ function Button1() {
       <div aria-hidden className="absolute border border-[rgba(255,255,255,0.3)] border-solid inset-0 pointer-events-none" />
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-center justify-center px-[33px] py-[17px] relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#e5e1e4] text-[18px] text-center whitespace-nowrap">
-          <p className="leading-[28px]">Book Free Consultation</p>
+          <p className="leading-[28px]">BOO FREE CONSULTATION</p>
         </div>
       </div>
     </div>

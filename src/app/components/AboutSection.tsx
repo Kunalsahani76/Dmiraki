@@ -13,7 +13,7 @@ export function WhatWeOfferTitle() {
           lineHeight: "1.15",
         }}
       >
-        What We Offer
+        WHAT WE OFFER
       </h2>
     </div>
   );
@@ -47,19 +47,19 @@ export function AboutSection() {
                 lineHeight: "1.2",
               }}
             >
-              About<br />DMiraki
+              ABOUT<br />DMIRAKI
             </h1>
             <p
               className="text-white mb-4"
               style={{ fontFamily: "'Playfair Display', sans-serif", fontSize: "clamp(16px,2vw,22px)", lineHeight: "1.5" }}
             >
-              Your Strategic Partner in Digital Success — passionate experts dedicated to your growth.
+              YOUR STRATEGIC PARTNER IN DIGITAL SUCCESS — PASSIONATE EXPERTS DEDICATED TO YOUR GROWTH.
             </p>
             <p
               className="text-white/80"
               style={{ fontFamily: "'Roboto', sans-serif", fontSize: "clamp(14px,1.5vw,18px)", lineHeight: "1.8", maxWidth: "560px" }}
             >
-              We empower businesses to achieve sustainable growth through strategic digital innovation. Our mission is to build partnerships, not just services, creating lasting value for ambitious businesses ready to transform their online presence.
+              We Empower Businesses To Achieve Sustainable Growth Through Strategic Digital Innovation. Our Mission Is To Build Partnerships, Not Just Services, Creating Lasting Value For Ambitious Businesses Ready To Transform Their Online Presence.
             </p>
           </div>
           <div className="flex-shrink-0 lg:w-[400px]">
@@ -90,7 +90,7 @@ export function AboutSection() {
                   className="text-white"
                   style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "28px" }}
                 >
-                  Our Mission
+                  OUR MISSION
                 </h3>
               </div>
               <div className="p-6">
@@ -116,7 +116,7 @@ export function AboutSection() {
                   className="text-white"
                   style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "28px" }}
                 >
-                  Our VISION
+                  OUR VISION
                 </h3>
               </div>
               <div className="p-6 border border-black">
@@ -140,7 +140,7 @@ export function AboutSection() {
                 className="text-black mb-4"
                 style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "clamp(24px,3vw,40px)" }}
               >
-                Our Story
+                OUR STORY
               </h3>
               <p
                 className="text-[#333]"
@@ -171,7 +171,7 @@ export function AboutSection() {
               className="text-white text-center mb-3 underline"
               style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "clamp(22px,3vw,40px)" }}
             >
-              Our Values
+              OUR VALUES
             </h3>
             <p
               className="text-[#c9c9c9] text-center mb-10"
@@ -217,7 +217,7 @@ export function AboutSection() {
               className="text-black uppercase"
               style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "clamp(24px,3vw,40px)", letterSpacing: "-1px" }}
             >
-              Our Expertise
+              OUR EXPERTISE
             </h2>
             <p
               className="text-black/80 mt-4 mx-auto"
@@ -267,7 +267,7 @@ export function AboutSection() {
               className="text-black uppercase"
               style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "clamp(22px,3vw,40px)", letterSpacing: "-1px" }}
             >
-              Why Partner With Us?
+              WHY PARTNER WITH US?
             </h2>
             <p
               className="text-black/80 mt-3"

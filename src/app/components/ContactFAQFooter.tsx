@@ -14,7 +14,7 @@ export function DreamingBigSection() {
               className="mb-6 text-black"
               style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "clamp(32px,4.5vw,40px)", lineHeight: "1.5" }}
             >
-              Dreaming Big?<br />Let's build it.
+              DREAMING BIG?<br />LET'S BUILD IT.
             </h2>
             <p
               className="max-w-[520px] text-[#191c1e]"
@@ -172,7 +172,7 @@ export function FAQSection() {
           className="text-black uppercase mb-4"
           style={{ fontFamily: "'Roboto', sans-serif", fontSize: "clamp(24px,5vw,72px)", letterSpacing: "-1px", fontWeight: 400 }}
         >
-          Frequently Asked Questions
+          FREQUENTLY ASKED QUESTIONS
         </h2>
         <div className="mt-8">
           {FAQ_ITEMS.map((item) => (

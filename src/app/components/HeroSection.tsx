@@ -68,14 +68,14 @@ export function HeroSection() {
         <p
           className="text-white mb-8 max-w-2xl"
           style={{
-            fontFamily: "'Pirulen', 'Roboto', sans-serif",
+            fontFamily: "'Inter', 'Roboto', sans-serif",
             fontSize: "clamp(14px,3.8vw,16px)",
             lineHeight: "26px",
             fontWeight: 400,
             letterSpacing: "0",
           }}
         >
-          Bring Together Digital Marketing, Web Development, Software Engineering,
+          Brings Together Digital Marketing, Web Development, Software Engineering,
           And Application Development Into A Single, Structured System.
         </p>
         <a

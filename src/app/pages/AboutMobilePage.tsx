@@ -104,19 +104,19 @@ function MobileFAQItem({ q, a }: { q: string; a: string }) {
 
 export default function AboutMobilePage() {
   return (
-    <main className="w-full overflow-x-hidden bg-[#fbfbfb] md:hidden">
+    <main className="about-page-typography w-full overflow-x-hidden bg-[#fbfbfb] md:hidden">
       <section className="relative overflow-hidden bg-black px-5 pb-8 pt-10 text-white">
         <img alt="" className="absolute inset-0 h-full w-full object-cover opacity-70" src={imgHeroBackground} />
         <div className="relative z-10 flex flex-col gap-7">
           <div>
             <h1 className="text-[44px] uppercase leading-[1.05]" style={{ fontFamily: "'Orbitron', sans-serif" }}>
-              About<br />DMiraki
+              ABOUT<br />DMIRAKI
             </h1>
             <p className="mt-5 text-[20px] leading-7" style={{ fontFamily: "'Playfair Display', serif" }}>
-              Your Strategic Partner in Digital Success - passionate experts dedicated to your growth.
+              YOUR STRATEGIC PARTNER IN DIGITAL SUCCESS — PASSIONATE EXPERTS DEDICATED TO YOUR GROWTH.
             </p>
             <p className="mt-4 text-[15px] leading-7 text-white/80" style={{ fontFamily: "'Inter', sans-serif" }}>
-              We empower businesses to achieve sustainable growth through strategic digital innovation. Our mission is to build partnerships, not just services, creating lasting value for ambitious businesses ready to transform their online presence.
+              We Empower Businesses To Achieve Sustainable Growth Through Strategic Digital Innovation. Our Mission Is To Build Partnerships, Not Just Services, Creating Lasting Value For Ambitious Businesses Ready To Transform Their Online Presence.
             </p>
           </div>
           <div className="about-hero-floating-image overflow-hidden border border-white/40 bg-white/10 shadow-2xl">
@@ -128,7 +128,7 @@ export default function AboutMobilePage() {
       <section className="grid gap-4 px-5 py-8">
         <article className="bg-gradient-to-r from-[#b9b9b9] to-[#2e2e2e] p-5 text-white">
           <div className="mb-4 flex items-center justify-between gap-3">
-            <h2 className="text-[26px] uppercase leading-tight" style={{ fontFamily: "'Orbitron', sans-serif" }}>Our Mission</h2>
+            <h2 className="text-[26px] uppercase leading-tight" style={{ fontFamily: "'Orbitron', sans-serif" }}>OUR MISSION</h2>
             <ArrowRight className="size-5 shrink-0" />
           </div>
           <p className="border border-black bg-white p-4 text-[15px] leading-7 text-black" style={{ fontFamily: "'Inter', sans-serif" }}>
@@ -138,7 +138,7 @@ export default function AboutMobilePage() {
 
         <article className="bg-gradient-to-r from-[#b9b9b9] to-[#2e2e2e] p-5 text-white">
           <div className="mb-4 flex items-center justify-between gap-3">
-            <h2 className="text-[26px] uppercase leading-tight" style={{ fontFamily: "'Orbitron', sans-serif" }}>Our Vision</h2>
+            <h2 className="text-[26px] uppercase leading-tight" style={{ fontFamily: "'Orbitron', sans-serif" }}>OUR VISION</h2>
             <ArrowRight className="size-5 shrink-0" />
           </div>
           <p className="border border-black bg-white p-4 text-[15px] leading-7 text-black" style={{ fontFamily: "'Inter', sans-serif" }}>
@@ -149,7 +149,7 @@ export default function AboutMobilePage() {
 
       <section className="px-5 py-6">
         <div className="border border-black p-5">
-          <SectionHeading title="Our Story" />
+          <SectionHeading title="OUR STORY" />
           <p className="mt-4 text-[15px] leading-7 text-[#333]" style={{ fontFamily: "'Inter', sans-serif" }}>
             Founded on the principle that every business deserves exceptional digital presence, DMiraki has grown from a small team of passionate experts to a comprehensive agency trusted worldwide.
           </p>
@@ -159,7 +159,7 @@ export default function AboutMobilePage() {
 
       <section className="mx-5 bg-gradient-to-r from-black to-[#545454] px-5 py-8 text-white">
         <div className="text-center">
-          <SectionHeading title="Our Values" dark />
+          <SectionHeading title="OUR VALUES" dark />
           <p className="mt-4 text-[15px] leading-7 text-white/75" style={{ fontFamily: "'Inter', sans-serif" }}>
             Founded on the principle that every business deserves exceptional digital presence, DMiraki has grown from a small team of passionate experts to a comprehensive agency trusted worldwide.
           </p>
@@ -181,7 +181,7 @@ export default function AboutMobilePage() {
 
       <section className="px-5 py-10">
         <div className="text-center">
-          <SectionHeading title="Our Expertise" />
+          <SectionHeading title="OUR EXPERTISE" />
           <p className="mt-4 text-[15px] leading-7 text-black/75" style={{ fontFamily: "'Inter', sans-serif" }}>
             Building intelligent digital ecosystems through strategy, technology, and scalable execution.
           </p>
@@ -193,7 +193,7 @@ export default function AboutMobilePage() {
 
       <section className="px-5 pb-10">
         <div className="text-center">
-          <SectionHeading title="Why Partner With Us?" />
+          <SectionHeading title="WHY PARTNER WITH US?" />
           <p className="mt-4 text-[15px] leading-7 text-black/75" style={{ fontFamily: "'Inter', sans-serif" }}>
             Proven results, dedicated support, and industry recognition for sustained partnership success.
           </p>
@@ -206,7 +206,7 @@ export default function AboutMobilePage() {
       <section className="bg-black px-5 py-10 text-white">
         <img alt="How we work" className="aspect-square w-full bg-[#202020] object-cover p-3 shadow-2xl" src={howWeWorkImage} />
         <div className="mt-8">
-          <SectionHeading title="How We Work?" dark />
+          <SectionHeading title="HOW WE WORK?" dark />
           <p className="mt-3 text-[15px] leading-7 text-white/80" style={{ fontFamily: "'Inter', sans-serif" }}>
             Our work process is simple, but it packs a punch.
           </p>
@@ -217,7 +217,7 @@ export default function AboutMobilePage() {
       </section>
 
       <section className="border-y border-black bg-white px-5 py-8">
-        <SectionHeading title="Let's Talk" />
+        <SectionHeading title="LET'S TALK" />
         <div className="mt-6 grid gap-4 text-[15px] text-black" style={{ fontFamily: "'Inter', sans-serif" }}>
           <div className="flex min-w-0 items-center gap-3"><Phone className="size-5 shrink-0" /><span>+91 92113 41245</span></div>
           <div className="flex min-w-0 items-center gap-3"><Mail className="size-5 shrink-0" /><span className="break-all">info@dmiraki.com</span></div>
@@ -227,7 +227,7 @@ export default function AboutMobilePage() {
 
       <DreamingBigSection />
       <section className="bg-white px-5 py-10">
-        <SectionHeading title="Frequently Asked Questions" />
+        <SectionHeading title="FREQUENTLY ASKED QUESTIONS" />
         <div className="mt-6 border-t-2 border-black">
           {faqs.map(([q, a]) => (
             <MobileFAQItem key={q} q={q} a={a} />

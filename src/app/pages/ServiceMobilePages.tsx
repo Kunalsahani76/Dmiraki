@@ -91,7 +91,7 @@ function Hero({
           {copy}
         </p>
         <button className="mt-8 flex w-full items-center justify-center gap-2 border border-white/35 bg-white/5 px-5 py-4 text-[14px] uppercase text-white backdrop-blur-md" style={{ fontFamily: "'Orbitron', sans-serif" }}>
-          Book Free Consultation
+          BOO FREE CONSULTATION
           <ArrowRight className="size-4" />
         </button>
       </div>
@@ -158,7 +158,7 @@ function FooterCta({ title, copy }: { title: string; copy: string }) {
       <Heading dark>{title}</Heading>
       <p className="mt-4 text-[15px] leading-7 text-white/75" style={{ fontFamily: "'Roboto', sans-serif" }}>{copy}</p>
       <button className="mt-7 flex w-full items-center justify-center gap-2 border border-white/40 px-5 py-4 text-[14px] uppercase" style={{ fontFamily: "'Orbitron', sans-serif" }}>
-        Book Free Consultation
+        BOO FREE CONSULTATION
         <ArrowRight className="size-4" />
       </button>
     </section>
@@ -169,29 +169,29 @@ export function DigitalMarketingMobilePage() {
   return (
     <main className="w-full overflow-x-hidden bg-white md:hidden">
       <Hero
-        title="Digital Marketing That Drives Real Growth"
+        title="DIGITAL MARKETING THAT DRIVES REAL GROWTH"
         copy="AetherForge blends high-precision engineering with visionary digital strategies to scale enterprise brands. We don't just run ads; we architect ecosystems of performance."
         image={digitalHero}
         titleStyle={{ fontFamily: "'Orbitron', sans-serif", fontWeight: 500, letterSpacing: "0.01em" }}
       />
-      <TechStrip label="Engineered with industry-leading tech stacks" items={digitalTech} />
+      <TechStrip label="ENGINEERED WITH INDUSTRY-LEADING TECH STACKS" items={digitalTech} />
 
       <section className="bg-[#fbfbfb] px-5 py-10">
         <div className="text-center">
-          <Heading>Strategic Solutions</Heading>
+          <Heading>STRATEGIC SOLUTIONS</Heading>
         </div>
         <Cards items={digitalSolutions} />
       </section>
 
       <section className="bg-white px-5 py-10">
         <div className="text-center">
-          <Heading>The Aether Method</Heading>
+          <Heading>THE AETHER METHOD</Heading>
         </div>
         <Steps items={digitalMethod} />
       </section>
 
       <section className="bg-black px-5 py-10 text-white">
-        <Heading dark>Performance That Speaks For Itself</Heading>
+        <Heading dark>PERFORMANCE THAT SPEAKS FOR ITSELF</Heading>
         <p className="mt-4 text-[15px] leading-7 text-white/75" style={{ fontFamily: "'Roboto', sans-serif" }}>
           We don't deal in vanity metrics. Our focus is on the numbers that move the needle: revenue, cost-per-acquisition, and lifetime value. Every campaign is a precision-engineered instrument of growth.
         </p>
@@ -210,7 +210,7 @@ export function DigitalMarketingMobilePage() {
         </ul>
       </section>
 
-      <FooterCta title="Let's Scale Your Brand To The Next Level" copy="Ready to engineer a digital presence that dominates? Your journey to unprecedented growth starts with a single audit." />
+      <FooterCta title="LET'S SCALE YOUR BRAND TO THE NEXT LEVEL" copy="Ready to engineer a digital presence that dominates? Your journey to unprecedented growth starts with a single audit." />
       <Footer />
     </main>
   );
@@ -220,16 +220,16 @@ export function IotMobilePage() {
   return (
     <main className="w-full overflow-x-hidden bg-white md:hidden">
       <Hero
-        title="IoT-Based Smart Solutions"
+        title="IOT-BASED SMART SOLUTIONS"
         copy="We build intelligent IoT ecosystems that connect devices, automate operations, and deliver real-time insights for smarter business decisions."
         image={iotHero}
         titleStyle={{ fontFamily: "'Orbitron', sans-serif", fontWeight: 500, letterSpacing: "0.01em" }}
       />
-      <TechStrip label="Powered by advanced IoT technologies" items={iotTech} />
+      <TechStrip label="POWERED BY ADVANCED IOT TECHNOLOGIES" items={iotTech} />
 
       <section className="bg-[#fbfbfb] px-5 py-10">
         <div className="text-center">
-          <Heading>Intelligent IoT Services</Heading>
+          <Heading>INTELLIGENT IOT SERVICES</Heading>
           <p className="mt-4 text-[15px] leading-7 text-black/70" style={{ fontFamily: "'Roboto', sans-serif" }}>
             Advanced connected systems engineered for automation, efficiency, and real-time monitoring.
           </p>
@@ -239,7 +239,7 @@ export function IotMobilePage() {
 
       <section className="bg-white px-5 py-10">
         <div className="text-center">
-          <Heading>Our Connected Development Process</Heading>
+          <Heading>OUR CONNECTED DEVELOPMENT PROCESS</Heading>
           <p className="mt-4 text-[15px] leading-7 text-black/70" style={{ fontFamily: "'Roboto', sans-serif" }}>
             A rigorous engineering framework from hardware discovery to global cloud deployment.
           </p>
@@ -248,7 +248,7 @@ export function IotMobilePage() {
       </section>
 
       <section className="bg-black px-5 py-10 text-white">
-        <Heading dark>Smart Technology. Real Results.</Heading>
+        <Heading dark>SMART TECHNOLOGY. REAL RESULTS.</Heading>
         <div className="mt-7 grid gap-4">
           {iotResults.map(([title, body]) => (
             <article className="border border-white/30 p-5" key={title}>
@@ -259,7 +259,7 @@ export function IotMobilePage() {
         </div>
       </section>
 
-      <FooterCta title="Build A Smarter Connected Ecosystem" copy="From connected hardware to cloud dashboards, we can help you turn real-time data into practical business control." />
+      <FooterCta title="BUILD A SMARTER CONNECTED ECOSYSTEM" copy="From connected hardware to cloud dashboards, we can help you turn real-time data into practical business control." />
       <Footer />
     </main>
   );

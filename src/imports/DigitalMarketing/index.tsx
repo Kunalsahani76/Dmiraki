@@ -31,7 +31,7 @@ function Button() {
     <div className="backdrop-blur-[6px] bg-[rgba(255,255,255,0.03)] content-stretch flex flex-col items-center justify-center px-[33px] py-[17px] relative shrink-0" data-name="Button">
       <div aria-hidden className="absolute border border-[rgba(255,255,255,0.3)] border-solid inset-0 pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#e5e1e4] text-[18px] text-center whitespace-nowrap">
-        <p className="leading-[28px]">Book Free Consultation</p>
+        <p className="leading-[28px]">BOO FREE CONSULTATION</p>
       </div>
     </div>
   );
@@ -262,7 +262,7 @@ function Heading1() {
   return (
     <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-name="Heading 2">
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[40px] text-center text-white tracking-[-0.8px] whitespace-nowrap">
-        <p className="leading-[48px]">Strategic Solutions</p>
+        <p className="leading-[48px]">STRATEGIC SOLUTIONS</p>
       </div>
     </div>
   );
@@ -685,7 +685,7 @@ function Heading8() {
     <div className="relative shrink-0 w-full" data-name="Heading 2">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[40px] text-center text-white tracking-[-0.8px] whitespace-nowrap">
-          <p className="leading-[48px]">The Aether Method</p>
+          <p className="leading-[48px]">THE AETHER METHOD</p>
         </div>
       </div>
     </div>
@@ -1434,7 +1434,7 @@ function Button1() {
     <div className="backdrop-blur-[6px] bg-[rgba(255,255,255,0.03)] content-stretch flex flex-col items-center justify-center px-[33px] py-[17px] relative shrink-0" data-name="Button">
       <div aria-hidden className="absolute border border-[rgba(255,255,255,0.3)] border-solid inset-0 pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#e5e1e4] text-[18px] text-center whitespace-nowrap">
-        <p className="leading-[28px]">Book Free Consultation</p>
+        <p className="leading-[28px]">BOO FREE CONSULTATION</p>
       </div>
     </div>
   );

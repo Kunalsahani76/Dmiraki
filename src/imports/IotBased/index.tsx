@@ -31,7 +31,7 @@ function Button() {
     <div className="backdrop-blur-[6px] bg-[rgba(255,255,255,0.03)] content-stretch flex flex-col items-center justify-center px-[33px] py-[17px] relative shrink-0" data-name="Button">
       <div aria-hidden className="absolute border border-[rgba(255,255,255,0.3)] border-solid inset-0 pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#e5e1e4] text-[18px] text-center whitespace-nowrap">
-        <p className="leading-[28px]">Book Free Consultation</p>
+        <p className="leading-[28px]">BOO FREE CONSULTATION</p>
       </div>
     </div>
   );

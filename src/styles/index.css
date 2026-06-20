@@ -22,6 +22,80 @@ body,
   font-weight: 400 !important;
 }
 
+.about-page-typography,
+.about-page-typography * {
+  font-style: normal !important;
+}
+
+.about-page-typography [class*="Pirulen"],
+.about-page-typography [style*="Pirulen"],
+.about-page-typography [style*="Orbitron"],
+.about-page-typography [class*="Bodoni"],
+.about-page-typography [style*="Bodoni"],
+.about-page-typography [style*="Playfair"],
+.about-page-typography [class*="Pirulen"] *,
+.about-page-typography [style*="Pirulen"] *,
+.about-page-typography [style*="Orbitron"] *,
+.about-page-typography [class*="Bodoni"] *,
+.about-page-typography [style*="Bodoni"] *,
+.about-page-typography [style*="Playfair"] * {
+  font-family: "Pirulen", "Pirulen Rg", "Orbitron", sans-serif !important;
+}
+
+.about-page-typography [class*="Roboto"],
+.about-page-typography [style*="Roboto"],
+.about-page-typography [class*="Roboto"] *,
+.about-page-typography [style*="Roboto"] * {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.about-page-typography [class*="Inter"],
+.about-page-typography [style*="Inter"],
+.about-page-typography [class*="Inter"] *,
+.about-page-typography [style*="Inter"] * {
+  font-family: "Inter", sans-serif !important;
+}
+
+/* The home reference uses display type only for headings and labels. */
+#root .home-page-reference [style*="Pirulen"],
+#root .home-page-reference [style*="Orbitron"],
+#root .home-page-reference h1,
+#root .home-page-reference h2 {
+  font-family: "Pirulen", "Orbitron", sans-serif !important;
+}
+
+#root .home-page-reference [style*="Roboto"] {
+  font-family: "Roboto", sans-serif !important;
+}
+
+#root .home-page-reference [style*="Inter"] {
+  font-family: "Inter", sans-serif !important;
+}
+
+#root .home-page-reference [style*="Manrope"] {
+  font-family: "Manrope", sans-serif !important;
+}
+
+#root .home-page-reference [style*="Playfair"] {
+  font-family: "Playfair Display", serif !important;
+}
+
+#root .home-page-reference [style*="font-weight: 300"] {
+  font-weight: 300 !important;
+}
+
+#root .home-page-reference [style*="font-weight: 500"] {
+  font-weight: 500 !important;
+}
+
+#root .home-page-reference [style*="font-weight: 600"] {
+  font-weight: 600 !important;
+}
+
+#root .home-page-reference [style*="font-weight: 700"] {
+  font-weight: 700 !important;
+}
+
 html {
   overflow-x: hidden;
 }

@@ -20,10 +20,10 @@ const orbitron = { fontFamily: "'Orbitron', sans-serif" };
 const inter = { fontFamily: "'Inter', sans-serif" };
 
 const contactCards = [
-  { icon: Mail, label: "Email", value: "concierge@aether.sys" },
-  { icon: Phone, label: "Phone", value: "+1 (888) AETHER-0" },
-  { icon: MapPin, label: "Location", value: "Neo-Tokyo, Sector 7" },
-  { icon: TimerReset, label: "Hours", value: "24/7 Global Access" },
+  { icon: Mail, label: "EMAIL", value: "concierge@aether.sys" },
+  { icon: Phone, label: "PHONE", value: "+1 (888) AETHER-0" },
+  { icon: MapPin, label: "LOCATION", value: "Neo-Tokyo, Sector 7" },
+  { icon: TimerReset, label: "HOURS", value: "24/7 Global Access" },
 ];
 
 const developItems = [
@@ -128,7 +128,7 @@ export default function ContactPage() {
               className="max-w-[620px] text-[#f1f1f1] uppercase"
               style={{ ...orbitron, fontSize: "clamp(42px, 6vw, 74px)", fontWeight: 500, lineHeight: 1.18 }}
             >
-              Let&apos;s build something extraordinary
+              LET&apos;S BUILD SOMETHING EXTRAORDINARY
             </h1>
             <p className="mt-8 max-w-[530px] text-[13px] font-semibold leading-6 text-[#d1d1d1]" style={inter}>
               We engineer high-performance, scalable web ecosystems using cutting-edge frontend architectures.
@@ -138,7 +138,7 @@ export default function ContactPage() {
               className="mt-8 h-[64px] min-w-[365px] border border-white/40 px-8 text-[#eeeeee] transition-colors hover:bg-white hover:text-black max-sm:min-w-full"
               style={{ ...orbitron, fontSize: "13px", fontWeight: 600, letterSpacing: "0.08em" }}
             >
-              Book Free Consultation
+              BOO FREE CONSULTATION
             </button>
           </div>
 
@@ -157,7 +157,7 @@ export default function ContactPage() {
             className="mb-12 text-center text-[#dedede] uppercase"
             style={{ ...orbitron, fontSize: "clamp(24px, 3vw, 38px)", fontWeight: 500, lineHeight: 1.2 }}
           >
-            Connect With Our Team
+            CONNECT WITH OUR TEAM
           </h2>
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {contactCards.map(({ icon: Icon, label, value }) => (
@@ -178,9 +178,9 @@ export default function ContactPage() {
       <section className="bg-[linear-gradient(145deg,#080808_0%,#111_58%,#222_100%)] px-6 py-20 lg:px-10">
         <div className="mx-auto grid max-w-[1110px] grid-cols-1 gap-16 lg:grid-cols-[1fr_0.9fr]">
           <div>
-            <SectionHeading>Send Us A Message</SectionHeading>
+            <SectionHeading>SEND US A MESSAGE</SectionHeading>
             <form className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
-              {["Full Name", "Email Address", "Phone Number"].map((label, index) => (
+              {["FULL NAME", "EMAIL ADDRESS", "PHONE NUMBER"].map((label, index) => (
                 <label key={label} className="flex flex-col gap-3">
                   <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#d6d6d6]" style={inter}>
                     {label}
@@ -193,7 +193,7 @@ export default function ContactPage() {
               ))}
               <label className="flex flex-col gap-3">
                 <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#d6d6d6]" style={inter}>
-                  Service
+                  SERVICE
                 </span>
                 <select className="h-[58px] border border-white/25 bg-black/20 px-5 text-sm text-[#9f9f9f] outline-none transition-colors focus:border-white/70">
                   <option>System Architecture</option>
@@ -204,7 +204,7 @@ export default function ContactPage() {
               </label>
               <label className="flex flex-col gap-3 sm:col-span-2">
                 <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#d6d6d6]" style={inter}>
-                  Project Details
+                  PROJECT DETAILS
                 </span>
                 <textarea
                   className="min-h-[132px] resize-none border border-white/25 bg-black/20 px-5 py-5 text-sm text-white outline-none transition-colors placeholder:text-[#7d7d7d] focus:border-white/70"
@@ -215,7 +215,7 @@ export default function ContactPage() {
                 className="h-[66px] bg-[linear-gradient(180deg,#ffffff_0%,#d9dce2_100%)] text-[#5b5b5b] transition-opacity hover:opacity-85 sm:col-span-2"
                 style={{ ...orbitron, fontSize: "13px", fontWeight: 700, letterSpacing: "0.08em" }}
               >
-                Transmit Inquiry
+                TRANSMIT INQUIRY
               </button>
             </form>
           </div>
@@ -224,7 +224,7 @@ export default function ContactPage() {
             <img src={analyticsVisual} alt="Support analytics dashboard" className="h-[340px] w-full object-cover opacity-75 grayscale" />
             <div className="px-4 py-10 text-center">
               <h3 className="text-[#e6e6e6] uppercase" style={{ ...orbitron, fontSize: "22px", fontWeight: 500 }}>
-                Support Analytics
+                SUPPORT ANALYTICS
               </h3>
               <p className="mx-auto mt-3 max-w-[310px] text-[13px] font-semibold leading-5 text-[#d5d5d5]" style={inter}>
                 Our team uses advanced diagnostic metrics to ensure 99.9% project success rates.
@@ -236,7 +236,7 @@ export default function ContactPage() {
 
       <section className="border-y border-white/15 bg-[linear-gradient(145deg,#1b1b1b_0%,#515151_100%)] px-6 py-12 lg:px-10">
         <div className="mx-auto max-w-[1210px]">
-          <SectionHeading>What We Develop</SectionHeading>
+          <SectionHeading>WHAT WE DEVELOP</SectionHeading>
           <p className="mt-7 max-w-[650px] text-[13px] font-medium leading-6 text-[#dfdfdf]" style={inter}>
             Engineered for performance, built for scale. Our development lifecycle prioritizes architectural integrity and user excellence.
           </p>
@@ -259,7 +259,7 @@ export default function ContactPage() {
       <section className="bg-[linear-gradient(145deg,#2b2b2b_0%,#666_100%)] px-6 py-20 lg:px-10">
         <div className="mx-auto max-w-[1150px]">
           <div className="text-center">
-            <SectionHeading>Technologies We Use</SectionHeading>
+            <SectionHeading>TECHNOLOGIES WE USE</SectionHeading>
           </div>
           <div className="mt-14 grid grid-cols-1 gap-10 lg:grid-cols-3">
             {techColumns.map((column) => (
@@ -291,7 +291,7 @@ export default function ContactPage() {
       <section className="bg-[linear-gradient(145deg,#5c5c5c_0%,#898989_100%)] px-6 py-20 lg:px-10">
         <div className="mx-auto max-w-[1210px]">
           <div className="text-center">
-            <SectionHeading>Why Choose D&apos;Miraki</SectionHeading>
+            <SectionHeading>WHY CHOOSE D&apos;MIRAKI</SectionHeading>
             <p className="mt-8 uppercase text-[#ededed]" style={{ ...orbitron, fontSize: "15px", fontWeight: 500 }}>
               We don&apos;t just write code: we architect competitive advantages.
             </p>
@@ -316,7 +316,7 @@ export default function ContactPage() {
           className="mx-auto max-w-[980px] text-white uppercase"
           style={{ ...orbitron, fontSize: "clamp(34px, 5vw, 62px)", fontWeight: 500, lineHeight: 1.15 }}
         >
-          Ready To Transform Your Operations?
+          READY TO TRANSFORM YOUR OPERATIONS?
         </h2>
         <p className="mx-auto mt-12 max-w-[590px] text-[14px] font-medium leading-6 text-[#eeeeee]" style={inter}>
           Join the ranks of elite enterprises leveraging custom intelligence to dominate their industries.
@@ -326,7 +326,7 @@ export default function ContactPage() {
           className="mt-10 h-[66px] min-w-[360px] bg-[linear-gradient(180deg,#ffffff_0%,#d9dce2_100%)] text-[#5b5b5b] transition-opacity hover:opacity-85 max-sm:min-w-full"
           style={{ ...orbitron, fontSize: "13px", fontWeight: 700 }}
         >
-          Get In Touch
+          GET IN TOUCH
         </button>
       </section>
 

@@ -10,8 +10,8 @@ function Heading() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Heading 1">
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[80px] text-white tracking-[7.2px] w-full">
-        <p className="leading-[110px] mb-0">About</p>
-        <p className="leading-[110px]">DMiraki</p>
+        <p className="leading-[110px] mb-0">ABOUT</p>
+        <p className="leading-[110px]">DMIRAKI</p>
       </div>
     </div>
   );
@@ -21,8 +21,8 @@ function Container1() {
   return (
     <div className="content-stretch flex flex-col items-start max-w-[576px] relative shrink-0 w-[576px]" data-name="Container">
       <div className="[word-break:break-word] flex flex-col font-['Bodoni_Moda:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[24px] text-white whitespace-nowrap">
-        <p className="leading-[30px] mb-0">Your Strategic Partner in Digital Success —</p>
-        <p className="leading-[30px]">passionate experts dedicated to your growth.</p>
+        <p className="leading-[30px] mb-0">YOUR STRATEGIC PARTNER IN DIGITAL SUCCESS —</p>
+        <p className="leading-[30px]">PASSIONATE EXPERTS DEDICATED TO YOUR GROWTH.</p>
       </div>
     </div>
   );
@@ -32,11 +32,11 @@ function Container2() {
   return (
     <div className="content-stretch flex flex-col items-start max-w-[576px] opacity-80 relative shrink-0 w-[576px]" data-name="Container">
       <div className="[word-break:break-word] flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] whitespace-nowrap">
-        <p className="leading-[32px] mb-0">We empower businesses to achieve sustainable growth</p>
-        <p className="leading-[32px] mb-0">through strategic digital innovation. Our mission is to build</p>
-        <p className="leading-[32px] mb-0">partnerships, not just services, creating lasting value for</p>
-        <p className="leading-[32px] mb-0">ambitious businesses ready to transform their online</p>
-        <p className="leading-[32px]">presence.</p>
+        <p className="leading-[32px] mb-0">We Empower Businesses To Achieve Sustainable Growth</p>
+        <p className="leading-[32px] mb-0">Through Strategic Digital Innovation. Our Mission Is To Build</p>
+        <p className="leading-[32px] mb-0">Partnerships, Not Just Services, Creating Lasting Value For</p>
+        <p className="leading-[32px] mb-0">Ambitious Businesses Ready To Transform Their Online</p>
+        <p className="leading-[32px]">Presence.</p>
       </div>
     </div>
   );
@@ -82,7 +82,7 @@ function Heading2() {
     <div className="relative shrink-0" data-name="Heading 3">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-center relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[40px] text-center text-white whitespace-nowrap">
-          <p className="leading-[48px]">Our Mission</p>
+          <p className="leading-[48px]">OUR MISSION</p>
         </div>
       </div>
     </div>
@@ -149,7 +149,7 @@ function Heading3() {
     <div className="relative shrink-0" data-name="Heading 3">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-center relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[40px] text-center text-white tracking-[2px] whitespace-nowrap">
-          <p className="leading-[48px]">Our VISION</p>
+          <p className="leading-[48px]">OUR VISION</p>
         </div>
       </div>
     </div>
@@ -370,7 +370,7 @@ function Frame10() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[16px] items-start leading-[0] not-italic relative shrink-0">
       <div className="flex flex-col font-['Pirulen:Regular',sans-serif] justify-center min-w-full relative shrink-0 text-[40px] text-black w-[min-content]">
-        <p className="leading-[48px]">Our Story</p>
+        <p className="leading-[48px]">OUR STORY</p>
       </div>
       <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center relative shrink-0 text-[#333] text-[20px] tracking-[-0.2px] w-[537px]">
         <p className="leading-[32px] mb-0">Founded on the principle that every business deserves exceptional digital presence, DMiraki has grown from a small team of passionate experts</p>
@@ -402,7 +402,7 @@ function Frame12() {
   return (
     <div className="[word-break:break-word] content-stretch flex flex-col gap-[26px] items-center leading-[0] not-italic relative shrink-0 text-center w-[754px]">
       <div className="flex flex-col font-['Pirulen:Regular',sans-serif] justify-center relative shrink-0 text-[40px] text-white w-full">
-        <p className="[text-decoration-skip-ink:none] decoration-[7.5%] decoration-solid leading-[48px] underline">Our Values</p>
+        <p className="[text-decoration-skip-ink:none] decoration-[7.5%] decoration-solid leading-[48px] underline">OUR VALUES</p>
       </div>
       <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center relative shrink-0 text-[#c9c9c9] text-[20px] tracking-[-0.2px] w-full">
         <p className="leading-[32px] mb-0">Founded on the principle that every business deserves exceptional digital presence, DMiraki has grown from a small team of passionate experts</p>
@@ -1375,8 +1375,8 @@ function Heading20() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Heading 1">
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[38px] text-black w-full">
-        <p className="leading-[60px] mb-0">Dreaming Big?</p>
-        <p className="leading-[60px]">{`Let's build it.`}</p>
+        <p className="leading-[60px] mb-0">DREAMING BIG?</p>
+        <p className="leading-[60px]">{`LET'S BUILD IT.`}</p>
       </div>
     </div>
   );

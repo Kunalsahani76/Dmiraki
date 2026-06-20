@@ -89,7 +89,7 @@ export default function SEOPage() {
               className="max-w-[705px] uppercase text-[#f1f1f1]"
               style={{ ...orbitron, fontSize: "clamp(42px, 5.5vw, 64px)", fontWeight: 500, lineHeight: 1.35, letterSpacing: "0.01em" }}
             >
-              Not everything visible is understood.
+              NOT EVERYTHING VISIBLE IS UNDERSTOOD.
             </h1>
             <p className="mt-8 max-w-[610px] text-[16px] font-normal leading-[26px] text-[#f0f0f0]" style={inter}>
               Most brands appear in search. Very few are recognized for what they truly are.
@@ -99,7 +99,7 @@ export default function SEOPage() {
               className="mt-8 h-[66px] w-full max-w-[365px] border border-white/30 bg-white/[0.03] px-8 text-[#efefef] backdrop-blur-[6px] transition-colors hover:bg-white hover:text-black"
               style={{ ...orbitron, fontSize: "16px", fontWeight: 500, letterSpacing: "0.12em" }}
             >
-              Book Free Consultation
+              BOO FREE CONSULTATION
             </button>
           </div>
 
@@ -167,7 +167,7 @@ export default function SEOPage() {
 
       <section className="bg-black px-6 py-20 lg:px-10">
         <div className="mx-auto max-w-[1190px]">
-          <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#9f8f66]" style={inter}>Performance Benchmarks</p>
+          <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#9f8f66]" style={inter}>PERFORMANCE BENCHMARKS</p>
           <h2 className="mt-4 text-[48px] leading-tight text-white" style={playfair}>The D&apos;Miraki Standard</h2>
           <div className="mt-12 grid grid-cols-1 gap-10 md:grid-cols-3">
             {[

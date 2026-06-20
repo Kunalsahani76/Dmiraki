@@ -42,13 +42,13 @@ function HeroSection() {
                 lineHeight: "1.35",
               }}
             >
-              Custom
+              CUSTOM
               <br />
-              Software
+              SOFTWARE
               <br />
-              Development
+              DEVELOPMENT
               <br />
-              Solutions
+              SOLUTIONS
             </h1>
 
           {/* Description */}
@@ -80,7 +80,7 @@ function HeroSection() {
               className="text-[#e5e1e4] text-[16px] sm:text-[18px] leading-7 whitespace-nowrap"
               style={{ fontFamily: "'Orbitron', monospace", fontWeight: 400 }}
             >
-              Book Free Consultation
+              BOO FREE CONSULTATION
             </span>
           </a>
           </div>
@@ -241,13 +241,13 @@ function ServicesSection() {
             className="text-white text-center text-[28px] sm:text-[36px] lg:text-[40px] leading-[1.2]"
             style={{ fontFamily: "'Orbitron', monospace", fontWeight: 400, letterSpacing: "-0.8px" }}
           >
-            World-Class Services
+            WORLD-CLASS SERVICES
           </h2>
           <p
             className="text-white text-[14px] sm:text-[16px] text-center leading-6 max-w-[672px] capitalize"
             style={{ fontFamily: "'Roboto', sans-serif", fontWeight: 400 }}
           >
-            Strategic software solutions designed for reliability, scalability, and competitive advantage.
+            Strategic Software Solutions Designed For Reliability, Scalability, And Competitive Advantage.
           </p>
         </div>
 
@@ -332,7 +332,7 @@ function ProcessSection() {
             className="text-white text-center text-[22px] sm:text-[32px] lg:text-[40px] leading-[1.2]"
             style={{ fontFamily: "'Orbitron', monospace", fontWeight: 400, letterSpacing: "-0.8px" }}
           >
-            Our Symphony of Development
+            OUR SYMPHONY OF DEVELOPMENT
           </h2>
         </div>
 
@@ -384,9 +384,9 @@ function CtaBanner() {
             lineHeight: "1.27",
           }}
         >
-          Let's Build Your Next Big
+          LET'S BUILD YOUR NEXT BIG
           <br />
-          Software Product
+          SOFTWARE PRODUCT
         </h2>
         <a
           href="#"
@@ -402,7 +402,7 @@ function CtaBanner() {
             className="text-[#e5e1e4] text-[16px] sm:text-[18px] leading-7 whitespace-nowrap"
             style={{ fontFamily: "'Orbitron', monospace", fontWeight: 400 }}
           >
-            Book Free Consultation
+            BOO FREE CONSULTATION
           </span>
         </a>
       </div>

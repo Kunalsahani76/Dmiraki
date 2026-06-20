@@ -72,7 +72,7 @@ export function StatsSection() {
               image={statCircuitImage}
             />
             <StatCard
-              value={<>Less<br />Compare</>}
+              value={<>LESS<br />COMPARE</>}
               detail="users spend less time comparing, more time deciding"
               image={statPanelImage}
               valueSize="clamp(28px,5vw,44px)"
@@ -95,7 +95,7 @@ export function AttentionSection() {
               className="mb-5"
               style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "clamp(22px,3vw,34px)", color: "#0a0a0a", letterSpacing: "-1.5px" }}
             >
-              What We Pay <span style={{ color: "#787872" }}>Attention</span> to
+              WHAT WE PAY <span style={{ color: "#787872" }}>ATTENTION</span> TO
             </h2>
             <div className="flex flex-col gap-5">
               <div className="p-3" style={{ border: "1px solid black" }}>
@@ -150,7 +150,7 @@ export function ApproachSection() {
               className="mb-8"
               style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "clamp(22px,3vw,34px)", color: "#0a0a0a", letterSpacing: "-1.5px" }}
             >
-              The <span style={{ color: "#787872" }}>Approach</span>
+              THE <span style={{ color: "#787872" }}>APPROACH</span>
             </h2>
             <div className="flex flex-col gap-5">
               {[
