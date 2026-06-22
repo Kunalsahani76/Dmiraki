@@ -314,6 +314,98 @@ canvas {
     padding-left: 30px !important;
     padding-right: 30px !important;
   }
+
+  /* About reference typography. Hero is intentionally excluded. */
+  .about-page-responsive > div:nth-child(2) [class*="text-[40px]"] {
+    font-size: 24px !important;
+    line-height: 1.2 !important;
+  }
+
+  .about-page-responsive > div:nth-child(2) [class*="text-[20px]"] {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+  }
+
+  .about-page-responsive > div:nth-child(3) [class*="text-[40px]"],
+  .about-page-responsive > div:nth-child(4) [class*="text-[40px]"] {
+    font-size: 32px !important;
+    line-height: 1.15 !important;
+  }
+
+  .about-page-responsive > div:nth-child(3) [class*="text-[20px]"],
+  .about-page-responsive > div:nth-child(4) [class*="text-[20px]"] {
+    font-size: 14px !important;
+  }
+
+  .about-page-responsive > div:nth-child(4) [class*="text-[15px]"] {
+    font-size: 11px !important;
+    letter-spacing: 0.08em !important;
+  }
+
+  .about-page-responsive > div:nth-child(4) [class*="text-[16px]"] {
+    font-size: 11px !important;
+  }
+
+  .about-page-responsive > div:nth-child(5) [class*="text-[72px]"],
+  .about-page-responsive > div:nth-child(6) [class*="text-[72px]"] {
+    font-size: 40px !important;
+    line-height: 1.15 !important;
+  }
+
+  .about-page-responsive > div:nth-child(5) [class*="text-[20px]"],
+  .about-page-responsive > div:nth-child(6) [class*="text-[20px]"] {
+    font-size: 14px !important;
+  }
+
+  .about-page-responsive > div:nth-child(5) [class*="text-[26px]"] {
+    font-size: 16px !important;
+    line-height: 1.25 !important;
+  }
+
+  .about-page-responsive > div:nth-child(5) [class*="text-[16px]"],
+  .about-page-responsive > div:nth-child(6) [class*="text-[16px]"] {
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+  }
+
+  .about-page-responsive > div:nth-child(7) [class*="text-[38px]"] {
+    font-size: 40px !important;
+    line-height: 1.15 !important;
+  }
+
+  .about-page-responsive > div:nth-child(7) [class*="text-[20px]"] {
+    font-size: 14px !important;
+  }
+
+  .about-page-responsive > div:nth-child(7) [class*="text-[16px]"],
+  .about-page-responsive > div:nth-child(7) [class*="text-[14px]"] {
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+  }
+
+  .about-page-responsive > div:nth-child(8) [class*="text-[38px]"] {
+    font-size: 32px !important;
+    line-height: 1.2 !important;
+  }
+
+  .about-page-responsive > div:nth-child(8) [class*="text-[20px]"],
+  .about-page-responsive > div:nth-child(8) [class*="text-[18px]"] {
+    font-size: 14px !important;
+  }
+
+  .about-page-responsive > div:nth-child(8) [class*="text-[16px]"] {
+    font-size: 12px !important;
+  }
+
+  .about-page-responsive > div:nth-child(9) [class*="text-[72px]"] {
+    font-size: 42px !important;
+    line-height: 1.15 !important;
+  }
+
+  .about-page-responsive > div:nth-child(9) [class*="text-[24px]"] {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+  }
 }
 
 @media (max-width: 767px) {
