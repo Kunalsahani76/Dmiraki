@@ -1,7 +1,6 @@
 import heroBg from "../../images/digitalmarketingbaner.png";
 import heroVisual from "../../images/customsoftwarebanner.png";
 import svgPaths from "./svg-v1mu0axv8t";
-import { SiteFooter } from "../../app/components/SiteFooter";
 
 /* SVG Icon component */
 function SvgIcon({ pathKey, viewBox }: { pathKey: keyof typeof svgPaths; viewBox: string }) {
@@ -410,11 +409,6 @@ function CtaBanner() {
   );
 }
 
-/* Footer */
-function Footer() {
-  return <SiteFooter />;
-}
-
 /* App */
 export default function App() {
   return (
@@ -426,7 +420,6 @@ export default function App() {
         <ProcessSection />
         <CtaBanner />
       </main>
-      <Footer />
     </div>
   );
 }

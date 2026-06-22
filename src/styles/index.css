@@ -2,25 +2,9 @@
 @import './tailwind.css';
 @import './theme.css';
 
-html,
-body,
-#root,
-#root * {
-  font-family: "Pirulen", sans-serif !important;
-  font-style: normal !important;
-  font-weight: 400 !important;
-}
-
-html,
-body,
-#root,
-#root *,
-#root *::before,
-#root *::after {
-  font-family: "Pirulen", "Pirulen Rg", sans-serif !important;
-  font-style: normal !important;
-  font-weight: 400 !important;
-}
+/* Global font reset removed for Pirulen to avoid forcing display/all-caps font on body text.
+   Pirulen will be applied selectively to headings via the .about-page-typography rules below.
+*/
 
 .about-page-typography,
 .about-page-typography * {
@@ -106,6 +90,49 @@ body,
   overflow-x: hidden;
 }
 
+/* Isolate the shared navbar from page-specific typography overrides. */
+#root .site-navbar button {
+  font-family: "Pirulen", "Pirulen Rg", "Orbitron", sans-serif !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+}
+
+#root .site-navbar img {
+  display: block;
+}
+
+/* Keep the shared footer identical to the Home reference on every route. */
+#root .site-footer,
+#root .site-footer * {
+  text-transform: none !important;
+  font-style: normal !important;
+}
+
+#root .site-footer .site-footer__brand {
+  font-family: "Playfair Display", serif !important;
+  font-weight: 700 !important;
+}
+
+#root .site-footer .site-footer__heading,
+#root .site-footer .site-footer__text,
+#root .site-footer .site-footer__tagline,
+#root .site-footer .site-footer__copyright {
+  font-family: "Inter", sans-serif !important;
+}
+
+#root .site-footer .site-footer__heading {
+  font-weight: 600 !important;
+}
+
+#root .site-footer .site-footer__tagline {
+  font-weight: 300 !important;
+}
+
+#root .site-footer .site-footer__text,
+#root .site-footer .site-footer__copyright {
+  font-weight: 400 !important;
+}
+
 body,
 p,
 li,
@@ -171,6 +198,59 @@ h6,
   font-family: "Inter", sans-serif !important;
 }
 
+.about-page-typography,
+.about-page-typography * {
+  font-style: normal !important;
+}
+
+.about-page-typography [class*="Pirulen"],
+.about-page-typography [style*="Pirulen"],
+.about-page-typography [style*="Orbitron"],
+.about-page-typography [class*="Bodoni"],
+.about-page-typography [style*="Bodoni"],
+.about-page-typography [style*="Playfair"],
+.about-page-typography h1,
+.about-page-typography h2,
+.about-page-typography [class*="Pirulen"] *,
+.about-page-typography [style*="Pirulen"] *,
+.about-page-typography [style*="Orbitron"] *,
+.about-page-typography [class*="Bodoni"] *,
+.about-page-typography [style*="Bodoni"] *,
+.about-page-typography [style*="Playfair"] * {
+  font-family: "Pirulen", "Pirulen Rg", "Orbitron", sans-serif !important;
+}
+
+.about-page-typography [class*="Roboto"],
+.about-page-typography [style*="Roboto"],
+.about-page-typography [class*="Roboto"] *,
+.about-page-typography [style*="Roboto"] * {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.about-page-typography [class*="Inter"],
+.about-page-typography [style*="Inter"],
+.about-page-typography input,
+.about-page-typography textarea,
+.about-page-typography button,
+.about-page-typography [class*="Inter"] *,
+.about-page-typography [style*="Inter"] * {
+  font-family: "Inter", sans-serif !important;
+}
+
+.about-page-typography p,
+.about-page-typography span,
+.about-page-typography input,
+.about-page-typography textarea,
+.about-page-typography button {
+  text-transform: none !important;
+}
+
+/* Prevent utility classes like .uppercase from forcing body copy to all-caps
+   inside the about page. Keep headings (h1-h6) unaffected. */
+.about-page-typography *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+  text-transform: none !important;
+}
+
 img,
 svg,
 video,
@@ -216,6 +296,23 @@ canvas {
 @media (prefers-reduced-motion: reduce) {
   .about-hero-floating-image {
     animation: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-page-responsive,
+  .about-page-responsive > div:not(.hidden) {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .about-page-responsive > div:nth-child(2) {
+    justify-content: center !important;
+  }
+
+  .about-page-responsive > div:nth-child(9) {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
   }
 }
 
@@ -508,15 +605,4 @@ canvas {
   .about-page-responsive [data-name="Nav - Legal Links"] {
     padding-bottom: 0 !important;
   }
-}
-
-html,
-body,
-#root,
-#root *,
-#root *::before,
-#root *::after {
-  font-family: "Pirulen", "Pirulen Rg", sans-serif !important;
-  font-style: normal !important;
-  font-weight: 400 !important;
 }

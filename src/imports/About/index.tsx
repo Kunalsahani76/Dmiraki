@@ -3624,19 +3624,24 @@ function Frame26() {
     <div className="content-stretch flex gap-[12px] items-center relative shrink-0">
       <a className="content-stretch cursor-pointer flex items-center justify-center p-[2px] relative shrink-0">
         <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#a5a5a5] text-[16px] text-left whitespace-nowrap">
-          <p className="leading-[24px]">Home</p>
+          <p className="leading-[24px]">HOME</p>
         </div>
       </a>
       <div className="content-stretch flex items-center justify-center p-[2px] relative shrink-0">
         <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#a5a5a5] text-[16px] whitespace-nowrap">
-          <p className="leading-[24px]">about</p>
+          <p className="leading-[24px]">ABOUT</p>
         </div>
       </div>
       <div className="content-stretch flex gap-[2px] items-center relative shrink-0">
         <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#a5a5a5] text-[16px] whitespace-nowrap">
-          <p className="leading-[24px]">sevices</p>
+          <p className="leading-[24px]">SERVICES</p>
         </div>
         <Frame />
+      </div>
+      <div className="content-stretch flex items-center justify-center p-[2px] relative shrink-0">
+        <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#a5a5a5] text-[16px] whitespace-nowrap">
+          <p className="leading-[24px]">CONTACT</p>
+        </div>
       </div>
     </div>
   );
@@ -3651,7 +3656,7 @@ function Frame2() {
           <div className="content-stretch flex flex-col items-center justify-center px-[20px] py-[8px] relative w-[207.368px]" data-name="Button">
             <div aria-hidden className="absolute border border-[#3b3b3b] border-solid inset-0 pointer-events-none" />
             <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#3b3b3b] text-[16px] text-center w-full">
-              <p className="leading-[24px]">Get in touch</p>
+              <p className="leading-[24px]">GET IN TOUCH</p>
             </div>
           </div>
         </div>
@@ -3677,19 +3682,24 @@ function Frame27() {
     <div className="content-stretch flex gap-[12px] items-center relative shrink-0">
       <a className="content-stretch cursor-pointer flex items-center justify-center p-[2px] relative shrink-0">
         <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#a5a5a5] text-[16px] text-left whitespace-nowrap">
-          <p className="leading-[24px]">Home</p>
+          <p className="leading-[24px]">HOME</p>
         </div>
       </a>
       <div className="content-stretch flex items-center justify-center p-[2px] relative shrink-0">
         <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#a5a5a5] text-[16px] whitespace-nowrap">
-          <p className="leading-[24px]">about</p>
+          <p className="leading-[24px]">ABOUT</p>
         </div>
       </div>
       <div className="content-stretch flex gap-[2px] items-center relative shrink-0">
         <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#a5a5a5] text-[16px] whitespace-nowrap">
-          <p className="leading-[24px]">sevices</p>
+          <p className="leading-[24px]">SERVICES</p>
         </div>
         <Frame1 />
+      </div>
+      <div className="content-stretch flex items-center justify-center p-[2px] relative shrink-0">
+        <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#a5a5a5] text-[16px] whitespace-nowrap">
+          <p className="leading-[24px]">CONTACT</p>
+        </div>
       </div>
     </div>
   );
@@ -3704,7 +3714,7 @@ function Frame3() {
           <div className="content-stretch flex flex-col items-center justify-center px-[20px] py-[8px] relative w-[207.368px]" data-name="Button">
             <div aria-hidden className="absolute border border-[#3b3b3b] border-solid inset-0 pointer-events-none" />
             <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#3b3b3b] text-[16px] text-center w-full">
-              <p className="leading-[24px]">Get in touch</p>
+              <p className="leading-[24px]">GET IN TOUCH</p>
             </div>
           </div>
         </div>
@@ -3726,14 +3736,14 @@ export default function About() {
       <Container43 />
       <Container57 />
       <TopContentSectionMargin />
-      <div className="absolute bg-[#fbfbfb] content-stretch flex items-center justify-between left-0 px-[10px] py-[12px] top-[7098px] w-[1270px]" data-name="header">
+      <div className="hidden" data-name="header">
         <div aria-hidden className="absolute border border-black border-solid inset-0 pointer-events-none" />
         <div className="h-[38.408px] relative shrink-0 w-[118px]" data-name="DMIRAKI POSTS 1">
           <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgDmirakiPosts1} />
         </div>
         <Frame2 />
       </div>
-      <div className="absolute bg-[#fbfbfb] content-stretch flex items-center justify-between left-0 px-[10px] py-[12px] top-0 w-[1270px]" data-name="header">
+      <div className="hidden" data-name="header">
         <div aria-hidden className="absolute border border-black border-solid inset-0 pointer-events-none" />
         <div className="h-[38.408px] relative shrink-0 w-[118px]" data-name="DMIRAKI POSTS 1">
           <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgDmirakiPosts1} />

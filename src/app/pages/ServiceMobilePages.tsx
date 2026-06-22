@@ -2,7 +2,6 @@ import type { CSSProperties } from "react";
 import { ArrowRight, BarChart3, CheckCircle2, Cpu, RadioTower, Search, Share2, ShieldCheck, Zap } from "lucide-react";
 import digitalHero from "../../images/Digitalmarketing.png";
 import iotHero from "../../images/digitalmarketingbaner.png";
-import { Footer } from "../components/ContactFAQFooter";
 
 const digitalTech = ["GOOGLE ADS", "META ADS", "SEMRUSH", "SHOPIFY", "MAILCHIMP", "WORDPRESS", "HUBSPOT"];
 const iotTech = ["AWS IOT", "AZURE IOT", "GOOGLE CLOUD", "RASPBERRY PI", "ARDUINO", "DOCKER", "MQTT", "NODE-RED"];
@@ -211,7 +210,6 @@ export function DigitalMarketingMobilePage() {
       </section>
 
       <FooterCta title="LET'S SCALE YOUR BRAND TO THE NEXT LEVEL" copy="Ready to engineer a digital presence that dominates? Your journey to unprecedented growth starts with a single audit." />
-      <Footer />
     </main>
   );
 }
@@ -260,7 +258,6 @@ export function IotMobilePage() {
       </section>
 
       <FooterCta title="BUILD A SMARTER CONNECTED ECOSYSTEM" copy="From connected hardware to cloud dashboards, we can help you turn real-time data into practical business control." />
-      <Footer />
     </main>
   );
 }

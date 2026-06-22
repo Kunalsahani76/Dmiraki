@@ -20,10 +20,9 @@ function Heading() {
 
 function Container1() {
   return (
-    <div className="content-stretch flex flex-col items-start max-w-[576px] relative shrink-0 w-[576px]" data-name="Container">
-      <div className="[word-break:break-word] flex flex-col font-['Bodoni_Moda:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[24px] text-white whitespace-nowrap">
-        <p className="leading-[30px] mb-0">YOUR STRATEGIC PARTNER IN DIGITAL SUCCESS —</p>
-        <p className="leading-[30px]">PASSIONATE EXPERTS DEDICATED TO YOUR GROWTH.</p>
+    <div className="content-stretch flex flex-col items-start max-w-[560px] relative shrink-0 w-[560px]" data-name="Container">
+      <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-white w-full">
+        <p className="leading-[26px]">Your strategic partner in digital success - passionate experts dedicated to your growth.</p>
       </div>
     </div>
   );
@@ -31,13 +30,13 @@ function Container1() {
 
 function Container2() {
   return (
-    <div className="content-stretch flex flex-col items-start max-w-[576px] opacity-80 relative shrink-0 w-[576px]" data-name="Container">
-      <div className="[word-break:break-word] flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[20px] text-white tracking-[-0.2px] whitespace-nowrap">
-        <p className="leading-[32px] mb-0">We Empower Businesses To Achieve Sustainable Growth</p>
-        <p className="leading-[32px] mb-0">Through Strategic Digital Innovation. Our Mission Is To Build</p>
-        <p className="leading-[32px] mb-0">Partnerships, Not Just Services, Creating Lasting Value For</p>
-        <p className="leading-[32px] mb-0">Ambitious Businesses Ready To Transform Their Online</p>
-        <p className="leading-[32px]">Presence.</p>
+    <div className="content-stretch flex flex-col items-start max-w-[560px] opacity-80 relative shrink-0 w-[560px]" data-name="Container">
+      <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-white w-full">
+        <p className="leading-[26px]">We empower businesses to achieve sustainable growth
+through strategic digital innovation. Our mission is to build
+partnerships, not just services, creating lasting value for
+ambitious businesses ready to transform their online
+presence.</p>
       </div>
     </div>
   );
@@ -380,8 +379,8 @@ function Frame10() {
       <div className="flex flex-col font-['Pirulen:Regular',sans-serif] justify-center min-w-full relative shrink-0 text-[40px] text-black w-[min-content]">
         <p className="leading-[48px]">OUR STORY</p>
       </div>
-      <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center relative shrink-0 text-[#333] text-[20px] tracking-[-0.2px] w-[537px]">
-        <p className="leading-[32px] mb-0">Founded on the principle that every business deserves exceptional digital presence, DMiraki has grown from a small team of passionate experts</p>
+      <div className="flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center relative shrink-0 text-[#333] text-[20px] tracking-[-0.2px] w-[537px]">
+  <p className="leading-[32px] mb-0">Founded on the principle that every business deserves exceptional digital presence, DMIRAKI has grown from a small team of passionate experts</p>
         <p className="leading-[32px]">to a comprehensive agency trusted worldwide.</p>
       </div>
     </div>
@@ -412,8 +411,8 @@ function Frame12() {
       <div className="flex flex-col font-['Pirulen:Regular',sans-serif] justify-center relative shrink-0 text-[40px] text-white w-full">
         <p className="[text-decoration-skip-ink:none] decoration-[7.5%] decoration-solid leading-[48px] underline">OUR VALUES</p>
       </div>
-      <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center relative shrink-0 text-[#c9c9c9] text-[20px] tracking-[-0.2px] w-full">
-        <p className="leading-[32px] mb-0">Founded on the principle that every business deserves exceptional digital presence, DMiraki has grown from a small team of passionate experts</p>
+      <div className="flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center relative shrink-0 text-[#c9c9c9] text-[20px] tracking-[-0.2px] w-full">
+  <p className="leading-[32px] mb-0">Founded on the principle that every business deserves exceptional digital presence, DMIRAKI has grown from a small team of passionate experts</p>
         <p className="leading-[32px]">to a comprehensive agency trusted worldwide.</p>
       </div>
     </div>
@@ -947,7 +946,7 @@ function Heading10() {
 function Container31() {
   return (
     <div className="content-stretch flex flex-col items-center opacity-80 relative shrink-0 w-full" data-name="Container">
-      <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[20px] text-black text-center tracking-[-0.2px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
+  <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[20px] text-black text-center tracking-[-0.2px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
         <p className="leading-[32px] mb-0">Proven results, dedicated support, and industry recognition for</p>
         <p className="leading-[32px]">sustained partnership success</p>
       </div>
@@ -968,7 +967,7 @@ function Heading11() {
   return (
     <div className="relative shrink-0 w-[180px]" data-name="Heading 4">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start pt-[8px] relative size-full">
-        <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[20px] text-black uppercase w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
+  <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[20px] text-black w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
           <p className="leading-[30px]">PROVEN TRACK RECORD</p>
         </div>
       </div>
@@ -1006,7 +1005,7 @@ function Heading12() {
   return (
     <div className="relative shrink-0 w-full" data-name="Heading 4">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start pt-[8px] relative size-full">
-        <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[20px] text-black uppercase w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
+  <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[20px] text-black w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
           <p className="leading-[30px] mb-0">DEDICATED TEAM</p>
           <p className="leading-[30px]">APPROACH</p>
         </div>
@@ -1044,7 +1043,7 @@ function Heading13() {
   return (
     <div className="relative shrink-0 w-full" data-name="Heading 4">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start pt-[8px] relative size-full">
-        <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[20px] text-black uppercase w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
+  <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[20px] text-black w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
           <p className="leading-[30px] mb-0">{`ONGOING SUPPORT &`}</p>
           <p className="leading-[30px]">OPTIMIZATION</p>
         </div>
@@ -3293,6 +3292,7 @@ const aboutFaqItems = [
   ["Do you provide branding services for startups and businesses?", "Yes. We help businesses build a strong brand identity through logo design, brand strategy, visual communication, positioning, and digital presence."],
   ["Can D’Miraki develop custom websites?", "Yes. We design and develop custom websites based on your business goals, industry, and user experience requirements."],
   ["Do you create e-commerce websites?", "Yes. We develop secure and scalable e-commerce websites with payment integration, product management, and mobile-friendly design."],
+  ["What technologies do you use for web development?", "We work with modern technologies including React, Node.js, PHP, WordPress, Shopify, Laravel, and custom frameworks based on project needs."],
   ["Do you provide mobile app development services?", "Yes. We develop Android, iOS, and cross-platform mobile applications for startups, enterprises, and growing businesses."],
   ["Can you develop custom software for businesses?", "Absolutely. We build customised software solutions that help businesses automate operations, improve efficiency, and manage workflows effectively."],
   ["What is IoT software development?", "IoT software development connects devices, sensors, and systems through smart technology to automate processes, monitor data, and improve operational control."],
@@ -3601,7 +3601,7 @@ function Container139() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-center relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#a1a1aa] text-[14px] text-center whitespace-nowrap">
-          <p className="leading-[20px]">© 2026 DMiraki. All rights reserved.</p>
+          <p className="leading-[20px]">© 2026 DMIRAKI. All rights reserved.</p>
         </div>
       </div>
     </div>
@@ -3645,19 +3645,24 @@ function Frame26() {
     <div className="content-stretch flex gap-[12px] items-center relative shrink-0">
       <div className="content-stretch flex items-center justify-center p-[2px] relative shrink-0">
         <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#a5a5a5] text-[16px] whitespace-nowrap">
-          <p className="leading-[24px]">Home</p>
+          <p className="leading-[24px]">HOME</p>
         </div>
       </div>
       <div className="content-stretch flex items-center justify-center p-[2px] relative shrink-0">
         <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#a5a5a5] text-[16px] whitespace-nowrap">
-          <p className="leading-[24px]">about</p>
+          <p className="leading-[24px]">ABOUT</p>
         </div>
       </div>
       <div className="content-stretch flex gap-[2px] items-center relative shrink-0">
         <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#a5a5a5] text-[16px] whitespace-nowrap">
-          <p className="leading-[24px]">sevices</p>
+          <p className="leading-[24px]">SERVICES</p>
         </div>
         <Frame />
+      </div>
+      <div className="content-stretch flex items-center justify-center p-[2px] relative shrink-0">
+        <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#a5a5a5] text-[16px] whitespace-nowrap">
+          <p className="leading-[24px]">CONTACT</p>
+        </div>
       </div>
     </div>
   );
@@ -3672,7 +3677,7 @@ function Frame2() {
           <div className="content-stretch flex flex-col items-center justify-center px-[20px] py-[8px] relative w-[207.368px]" data-name="Button">
             <div aria-hidden className="absolute border border-[#3b3b3b] border-solid inset-0 pointer-events-none" />
             <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#3b3b3b] text-[16px] text-center w-full">
-              <p className="leading-[24px]">Get in touch</p>
+              <p className="leading-[24px]">GET IN TOUCH</p>
             </div>
           </div>
         </div>
@@ -3698,19 +3703,24 @@ function Frame27() {
     <div className="content-stretch flex gap-[12px] items-center relative shrink-0">
       <div className="content-stretch flex items-center justify-center p-[2px] relative shrink-0">
         <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#a5a5a5] text-[16px] whitespace-nowrap">
-          <p className="leading-[24px]">Home</p>
+          <p className="leading-[24px]">HOME</p>
         </div>
       </div>
       <div className="content-stretch flex items-center justify-center p-[2px] relative shrink-0">
         <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#a5a5a5] text-[16px] whitespace-nowrap">
-          <p className="leading-[24px]">about</p>
+          <p className="leading-[24px]">ABOUT</p>
         </div>
       </div>
       <div className="content-stretch flex gap-[2px] items-center relative shrink-0">
         <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#a5a5a5] text-[16px] whitespace-nowrap">
-          <p className="leading-[24px]">sevices</p>
+          <p className="leading-[24px]">SERVICES</p>
         </div>
         <Frame1 />
+      </div>
+      <div className="content-stretch flex items-center justify-center p-[2px] relative shrink-0">
+        <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#a5a5a5] text-[16px] whitespace-nowrap">
+          <p className="leading-[24px]">CONTACT</p>
+        </div>
       </div>
     </div>
   );
@@ -3725,7 +3735,7 @@ function Frame3() {
           <div className="content-stretch flex flex-col items-center justify-center px-[20px] py-[8px] relative w-[207.368px]" data-name="Button">
             <div aria-hidden className="absolute border border-[#3b3b3b] border-solid inset-0 pointer-events-none" />
             <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#3b3b3b] text-[16px] text-center w-full">
-              <p className="leading-[24px]">Get in touch</p>
+              <p className="leading-[24px]">GET IN TOUCH</p>
             </div>
           </div>
         </div>
@@ -3746,7 +3756,6 @@ export default function About() {
       <Frame25 />
       <Container43 />
       <Container57 />
-      <TopContentSectionMargin />
       <div className="hidden" data-name="header">
         <div aria-hidden className="absolute border border-black border-solid inset-0 pointer-events-none" />
         <div className="h-[38.408px] relative shrink-0 w-[118px]" data-name="DMIRAKI POSTS 1">

@@ -18,7 +18,6 @@ import heroVisual from "../../imports/Home/899ad3003fb6b8bbbc20a36dec9d11b401674
 import dashboardVisual from "../../imports/Home/ba94765630e49ad56eb0745d378f772c95ef7582.png";
 import angledVisual from "../../imports/Home/d122b3ff70f38e655ad6398506d3fa09c7ea863d.png";
 import structureVisual from "../../imports/Home/62e16418f7e504fb2bb78f293d401b41f8afc188.png";
-import { SiteFooter } from "../components/SiteFooter";
 
 const orbitron = { fontFamily: "'Orbitron', sans-serif" };
 const inter = { fontFamily: "'Inter', sans-serif" };
@@ -270,7 +269,6 @@ export default function SEOPage() {
         </div>
       </section>
 
-      <SiteFooter />
     </main>
   );
 }

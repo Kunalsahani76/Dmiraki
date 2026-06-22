@@ -136,7 +136,7 @@ function Frame6() {
       <div className="flex flex-row items-center justify-center overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex gap-[10px] items-center justify-center p-[10px] relative size-full">
           <Frame9 />
-          <div className="-translate-x-1/2 absolute bg-[#fbfbfb] content-stretch flex items-center justify-between left-1/2 px-[10px] py-[12px] top-0 w-[1270px]" data-name="header">
+          <div className="hidden" data-name="header">
             <div aria-hidden className="absolute border border-black border-solid inset-0 pointer-events-none" />
             <div className="h-[38.408px] relative shrink-0 w-[118px]" data-name="DMIRAKI POSTS 1">
               <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgDmirakiPosts1} />
@@ -1810,7 +1810,7 @@ export default function DigitalMarketing() {
       <Frame10 />
       <OverlayBorderOverlayBlur5 />
       <TopContentSectionMargin />
-      <div className="absolute bg-[#fbfbfb] content-stretch flex items-center justify-between left-0 px-[10px] py-[12px] top-[3229.59px] w-[1270px]" data-name="header">
+      <div className="hidden" data-name="header">
         <div aria-hidden className="absolute border border-black border-solid inset-0 pointer-events-none" />
         <div className="h-[38.408px] relative shrink-0 w-[118px]" data-name="DMIRAKI POSTS 1">
           <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgDmirakiPosts1} />

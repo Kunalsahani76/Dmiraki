@@ -9,7 +9,6 @@ import {
   TerminalSquare,
   Zap,
 } from "lucide-react";
-import { SiteFooter } from "../components/SiteFooter";
 
 const techStack = ["HTML5", "CSS3", "JAVASCRIPT", "REACT", "NEXT.JS", "NODE.JS", "TAILWIND", "WORDPRESS"];
 
@@ -243,7 +242,6 @@ export default function WebDevelopmentPage() {
         </a>
       </section>
 
-      <SiteFooter />
     </main>
   );
 }

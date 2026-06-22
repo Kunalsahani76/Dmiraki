@@ -1543,7 +1543,6 @@ export default function IotBased() {
       <ServicesSection />
       <ProcessSection />
       <Frame10 />
-      <TopContentSectionMargin />
     </div>
   );
 }

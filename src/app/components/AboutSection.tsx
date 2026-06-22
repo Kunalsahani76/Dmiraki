@@ -59,7 +59,11 @@ export function AboutSection() {
               className="text-white/80"
               style={{ fontFamily: "'Roboto', sans-serif", fontSize: "clamp(14px,1.5vw,18px)", lineHeight: "1.8", maxWidth: "560px" }}
             >
-              We Empower Businesses To Achieve Sustainable Growth Through Strategic Digital Innovation. Our Mission Is To Build Partnerships, Not Just Services, Creating Lasting Value For Ambitious Businesses Ready To Transform Their Online Presence.
+              We empower businesses to achieve sustainable growth
+through strategic digital innovation. Our mission is to build
+partnerships, not just services, creating lasting value for
+ambitious businesses ready to transform their online
+presence.
             </p>
           </div>
           <div className="flex-shrink-0 lg:w-[400px]">

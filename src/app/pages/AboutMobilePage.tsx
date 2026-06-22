@@ -4,7 +4,7 @@ import imgHeroBackground from "../../imports/DesktopAbout/899ad3003fb6b8bbbc20a3
 import imgHeroPerson from "../../imports/DesktopAbout/1d7d1199b6359e2a5a182bbb1787c2a835d1add3.png";
 import imgStory from "../../imports/DesktopAbout/5d30b30b201bc563295ce7873381ee59fe7c305a.png";
 import howWeWorkImage from "../../images/HOW-WE-WORK.png";
-import { DreamingBigSection, Footer } from "../components/ContactFAQFooter";
+import { DreamingBigSection } from "../components/ContactFAQFooter";
 
 const values = [
   ["EXCELLENCE WITHOUT COMPROMISE", "Maintaining the highest standards in everything we do."],
@@ -63,7 +63,7 @@ function SectionHeading({ title, dark = false }: { title: string; dark?: boolean
   return (
     <h2
       className={dark ? "text-white uppercase" : "text-black uppercase"}
-      style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "clamp(26px, 9vw, 38px)", lineHeight: 1.16 }}
+      style={{ fontFamily: "'Pirulen:Regular', sans-serif", fontSize: "clamp(26px, 9vw, 38px)", lineHeight: 1.16 }}
     >
       {title}
     </h2>
@@ -74,10 +74,10 @@ function InfoCard({ title, body, dark = false }: { title: string; body: string; 
   return (
     <article className={dark ? "border border-white p-5 text-white" : "border border-black p-5 text-black"}>
       <div className={dark ? "mb-5 h-1 w-12 bg-white" : "mb-5 h-1 w-12 bg-black"} />
-      <h3 className="mb-3 text-[18px] uppercase leading-tight" style={{ fontFamily: "'Roboto', sans-serif" }}>
+      <h3 className="mb-3 text-[18px] leading-tight" style={{ fontFamily: "'Pirulen:Regular', sans-serif" }}>
         {title}
       </h3>
-      <p className={dark ? "text-sm leading-6 text-white/75" : "text-sm leading-6 text-black/70"} style={{ fontFamily: "'Inter', sans-serif" }}>
+      <p className={dark ? "text-sm leading-6 text-white/75" : "text-sm leading-6 text-black/70"} style={{ fontFamily: "'Roboto', sans-serif" }}>
         {body}
       </p>
     </article>
@@ -94,7 +94,7 @@ function MobileFAQItem({ q, a }: { q: string; a: string }) {
         <ChevronDown className="mt-1 size-5 shrink-0 transition-transform" style={{ transform: open ? "rotate(180deg)" : "rotate(0deg)" }} />
       </button>
       {open && (
-        <p className="pb-6 text-[15px] leading-7 text-black/75" style={{ fontFamily: "'Inter', sans-serif" }}>
+        <p className="pb-6 text-[15px] leading-7 text-black/75" style={{ fontFamily: "'Roboto', sans-serif" }}>
           {a}
         </p>
       )}
@@ -109,14 +109,18 @@ export default function AboutMobilePage() {
         <img alt="" className="absolute inset-0 h-full w-full object-cover opacity-70" src={imgHeroBackground} />
         <div className="relative z-10 flex flex-col gap-7">
           <div>
-            <h1 className="text-[44px] uppercase leading-[1.05]" style={{ fontFamily: "'Orbitron', sans-serif" }}>
+            <h1 className="text-[44px] uppercase leading-[1.05]" style={{ fontFamily: "'Pirulen:Regular', sans-serif" }}>
               ABOUT<br />DMIRAKI
             </h1>
-            <p className="mt-5 text-[20px] leading-7" style={{ fontFamily: "'Playfair Display', serif" }}>
-              YOUR STRATEGIC PARTNER IN DIGITAL SUCCESS — PASSIONATE EXPERTS DEDICATED TO YOUR GROWTH.
+            <p className="mt-5 text-[15px] leading-6" style={{ fontFamily: "'Roboto', sans-serif" }}>
+              Your strategic partner in digital success - passionate experts dedicated to your growth.
             </p>
-            <p className="mt-4 text-[15px] leading-7 text-white/80" style={{ fontFamily: "'Inter', sans-serif" }}>
-              We Empower Businesses To Achieve Sustainable Growth Through Strategic Digital Innovation. Our Mission Is To Build Partnerships, Not Just Services, Creating Lasting Value For Ambitious Businesses Ready To Transform Their Online Presence.
+            <p className="mt-4 text-[14px] leading-6 text-white/80" style={{ fontFamily: "'Roboto', sans-serif" }}>
+              We empower businesses to achieve sustainable growth
+through strategic digital innovation. Our mission is to build
+partnerships, not just services, creating lasting value for
+ambitious businesses ready to transform their online
+presence.
             </p>
           </div>
           <div className="about-hero-floating-image overflow-hidden border border-white/40 bg-white/10 shadow-2xl">
@@ -128,20 +132,20 @@ export default function AboutMobilePage() {
       <section className="grid gap-4 px-5 py-8">
         <article className="bg-gradient-to-r from-[#b9b9b9] to-[#2e2e2e] p-5 text-white">
           <div className="mb-4 flex items-center justify-between gap-3">
-            <h2 className="text-[26px] uppercase leading-tight" style={{ fontFamily: "'Orbitron', sans-serif" }}>OUR MISSION</h2>
+            <h2 className="text-[26px] uppercase leading-tight" style={{ fontFamily: "'Pirulen:Regular', sans-serif" }}>OUR MISSION</h2>
             <ArrowRight className="size-5 shrink-0" />
           </div>
-          <p className="border border-black bg-white p-4 text-[15px] leading-7 text-black" style={{ fontFamily: "'Inter', sans-serif" }}>
+          <p className="border border-black bg-white p-4 text-[15px] leading-7 text-black" style={{ fontFamily: "'Roboto', sans-serif" }}>
             Empowering businesses to achieve sustainable growth through strategic digital innovation. We build partnerships, not just services.
           </p>
         </article>
 
         <article className="bg-gradient-to-r from-[#b9b9b9] to-[#2e2e2e] p-5 text-white">
           <div className="mb-4 flex items-center justify-between gap-3">
-            <h2 className="text-[26px] uppercase leading-tight" style={{ fontFamily: "'Orbitron', sans-serif" }}>OUR VISION</h2>
+            <h2 className="text-[26px] uppercase leading-tight" style={{ fontFamily: "'Pirulen:Regular', sans-serif" }}>OUR VISION</h2>
             <ArrowRight className="size-5 shrink-0" />
           </div>
-          <p className="border border-black bg-white p-4 text-[15px] leading-7 text-black" style={{ fontFamily: "'Inter', sans-serif" }}>
+          <p className="border border-black bg-white p-4 text-[15px] leading-7 text-black" style={{ fontFamily: "'Roboto', sans-serif" }}>
             Empowering businesses to achieve sustainable growth through strategic digital innovation. We build partnerships, not just services.
           </p>
         </article>
@@ -150,8 +154,8 @@ export default function AboutMobilePage() {
       <section className="px-5 py-6">
         <div className="border border-black p-5">
           <SectionHeading title="OUR STORY" />
-          <p className="mt-4 text-[15px] leading-7 text-[#333]" style={{ fontFamily: "'Inter', sans-serif" }}>
-            Founded on the principle that every business deserves exceptional digital presence, DMiraki has grown from a small team of passionate experts to a comprehensive agency trusted worldwide.
+          <p className="mt-4 text-[15px] leading-7 text-[#333]" style={{ fontFamily: "'Roboto', sans-serif" }}>
+            Founded on the principle that every business deserves exceptional digital presence, DMIRAKI has grown from a small team of passionate experts to a comprehensive agency trusted worldwide.
           </p>
           <img alt="Our Story" className="mt-5 aspect-[469/296] w-full object-cover" src={imgStory} />
         </div>
@@ -160,8 +164,8 @@ export default function AboutMobilePage() {
       <section className="mx-5 bg-gradient-to-r from-black to-[#545454] px-5 py-8 text-white">
         <div className="text-center">
           <SectionHeading title="OUR VALUES" dark />
-          <p className="mt-4 text-[15px] leading-7 text-white/75" style={{ fontFamily: "'Inter', sans-serif" }}>
-            Founded on the principle that every business deserves exceptional digital presence, DMiraki has grown from a small team of passionate experts to a comprehensive agency trusted worldwide.
+          <p className="mt-4 text-[15px] leading-7 text-white/75" style={{ fontFamily: "'Roboto', sans-serif" }}>
+            Founded on the principle that every business deserves exceptional digital presence, DMIRAKI has grown from a small team of passionate experts to a comprehensive agency trusted worldwide.
           </p>
         </div>
         <div className="mt-7 grid gap-5">
@@ -172,7 +176,7 @@ export default function AboutMobilePage() {
               </span>
               <div>
                 <h3 className="text-[14px] font-bold uppercase leading-5 tracking-wide" style={{ fontFamily: "'Inter', sans-serif" }}>{title}</h3>
-                <p className="mt-1 text-[14px] leading-6 text-white/70" style={{ fontFamily: "'Inter', sans-serif" }}>{body}</p>
+                <p className="mt-1 text-[14px] leading-6 text-white/70" style={{ fontFamily: "'Roboto', sans-serif" }}>{body}</p>
               </div>
             </div>
           ))}
@@ -182,7 +186,7 @@ export default function AboutMobilePage() {
       <section className="px-5 py-10">
         <div className="text-center">
           <SectionHeading title="OUR EXPERTISE" />
-          <p className="mt-4 text-[15px] leading-7 text-black/75" style={{ fontFamily: "'Inter', sans-serif" }}>
+          <p className="mt-4 text-[15px] leading-7 text-black/75" style={{ fontFamily: "'Roboto', sans-serif" }}>
             Building intelligent digital ecosystems through strategy, technology, and scalable execution.
           </p>
         </div>
@@ -194,7 +198,7 @@ export default function AboutMobilePage() {
       <section className="px-5 pb-10">
         <div className="text-center">
           <SectionHeading title="WHY PARTNER WITH US?" />
-          <p className="mt-4 text-[15px] leading-7 text-black/75" style={{ fontFamily: "'Inter', sans-serif" }}>
+          <p className="mt-4 text-[15px] leading-7 text-black/75" style={{ fontFamily: "'Roboto', sans-serif" }}>
             Proven results, dedicated support, and industry recognition for sustained partnership success.
           </p>
         </div>
@@ -207,7 +211,7 @@ export default function AboutMobilePage() {
         <img alt="How we work" className="aspect-square w-full bg-[#202020] object-cover p-3 shadow-2xl" src={howWeWorkImage} />
         <div className="mt-8">
           <SectionHeading title="HOW WE WORK?" dark />
-          <p className="mt-3 text-[15px] leading-7 text-white/80" style={{ fontFamily: "'Inter', sans-serif" }}>
+          <p className="mt-3 text-[15px] leading-7 text-white/80" style={{ fontFamily: "'Roboto', sans-serif" }}>
             Our work process is simple, but it packs a punch.
           </p>
         </div>
@@ -234,7 +238,6 @@ export default function AboutMobilePage() {
           ))}
         </div>
       </section>
-      <Footer />
     </main>
   );
 }
