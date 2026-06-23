@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Check, ChevronDown, Mail, MapPin, Phone } from "lucide-react";
+import { ArrowRight, Check, ChevronDown, Mail, MapPin, Phone } from "lucide-react";
 import imgHeroBackground from "../../imports/DesktopAbout/899ad3003fb6b8bbbc20a36dec9d11b401674a56.png";
 import imgHeroPerson from "../../imports/DesktopAbout/1d7d1199b6359e2a5a182bbb1787c2a835d1add3.png";
 import imgStory from "../../imports/DesktopAbout/5d30b30b201bc563295ce7873381ee59fe7c305a.png";
@@ -102,30 +102,6 @@ function MobileFAQItem({ q, a }: { q: string; a: string }) {
   );
 }
 
-function MissionVisionDropdown({ title, body }: { title: string; body: string }) {
-  const [open, setOpen] = useState(false);
-
-  return (
-    <article className="text-white">
-      <button
-        className="flex w-full items-center justify-between gap-3 bg-gradient-to-r from-[#b9b9b9] to-[#2e2e2e] p-5 text-left"
-        onClick={() => setOpen((value) => !value)}
-        type="button"
-      >
-        <h2 className="text-[26px] uppercase leading-tight" style={{ fontFamily: "'Pirulen:Regular', sans-serif" }}>
-          {title}
-        </h2>
-        <ChevronDown className="size-5 shrink-0 transition-transform" style={{ transform: open ? "rotate(180deg)" : "rotate(0deg)" }} />
-      </button>
-      {open && (
-        <p className="mt-4 border border-black bg-white p-4 text-[15px] leading-7 text-black" style={{ fontFamily: "'Roboto', sans-serif" }}>
-          {body}
-        </p>
-      )}
-    </article>
-  );
-}
-
 export default function AboutMobilePage() {
   return (
     <main className="about-page-typography w-full overflow-x-hidden bg-[#fbfbfb] md:hidden">
@@ -154,15 +130,25 @@ presence.
       </section>
 
       <section className="grid gap-4 px-5 py-8">
-        <MissionVisionDropdown
-          title="OUR MISSION"
-          body="Empowering businesses to achieve sustainable growth through strategic digital innovation. We build partnerships, not just services."
-        />
+        <article className="bg-gradient-to-r from-[#b9b9b9] to-[#2e2e2e] p-5 text-white">
+          <div className="mb-4 flex items-center justify-between gap-3">
+            <h2 className="text-[26px] uppercase leading-tight" style={{ fontFamily: "'Pirulen:Regular', sans-serif" }}>OUR MISSION</h2>
+            <ArrowRight className="size-5 shrink-0" />
+          </div>
+          <p className="border border-black bg-white p-4 text-[15px] leading-7 text-black" style={{ fontFamily: "'Roboto', sans-serif" }}>
+            Empowering businesses to achieve sustainable growth through strategic digital innovation. We build partnerships, not just services.
+          </p>
+        </article>
 
-        <MissionVisionDropdown
-          title="OUR VISION"
-          body="Empowering businesses to achieve sustainable growth through strategic digital innovation. We build partnerships, not just services."
-        />
+        <article className="bg-gradient-to-r from-[#b9b9b9] to-[#2e2e2e] p-5 text-white">
+          <div className="mb-4 flex items-center justify-between gap-3">
+            <h2 className="text-[26px] uppercase leading-tight" style={{ fontFamily: "'Pirulen:Regular', sans-serif" }}>OUR VISION</h2>
+            <ArrowRight className="size-5 shrink-0" />
+          </div>
+          <p className="border border-black bg-white p-4 text-[15px] leading-7 text-black" style={{ fontFamily: "'Roboto', sans-serif" }}>
+            Empowering businesses to achieve sustainable growth through strategic digital innovation. We build partnerships, not just services.
+          </p>
+        </article>
       </section>
 
       <section className="px-5 py-6">

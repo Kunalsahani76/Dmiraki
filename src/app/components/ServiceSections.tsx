@@ -1,7 +1,23 @@
 /* Digital Marketing, Custom Software, IoT, Web Development sections */
 
+import type { ComponentType } from "react";
+import {
+  Blocks,
+  Building2,
+  Cloud,
+  CloudCog,
+  Code2,
+  Database,
+  Network,
+  Workflow,
+} from "lucide-react";
 import whatWeOfferImage from "../../images/What We Offer.png";
 import iotBasedSolutionsImage from "../../images/IoT-Based Solutions.png";
+import smartInfrastructureIcon from "../../images/Smart infrastructure systems.png";
+import iotMonitoringIcon from "../../images/IoT integration for monitoring.png";
+import industrialIotIcon from "../../images/Industrial IoT systems.png";
+import deviceConnectivityIcon from "../../images/Device connectivity.png";
+import realTimeDataIcon from "../../images/Real-time data environments.png";
 import seoIcon from "../../icons/seo.png";
 import pmIcon from "../../icons/pm.png";
 import smoIcon from "../../icons/smo.png";
@@ -79,18 +95,20 @@ function WhiteServiceCard({
   title,
   desc,
 }: {
-  icon: string;
+  icon: ComponentType<{ className?: string; strokeWidth?: number }>;
   title: string;
   desc: string;
 }) {
+  const Icon = icon;
+
   return (
-    <div className="relative flex min-h-[190px] flex-col gap-4 border-r border-b border-black p-6 sm:min-h-[245px] sm:p-8">
-      <div className="text-2xl">{icon}</div>
+    <div className="relative flex min-h-[228px] flex-col gap-5 border-r border-b border-black p-7 sm:min-h-[288px] sm:p-8">
+      <Icon className="h-6 w-6 text-black" strokeWidth={2} />
       <div>
-        <p className="text-[#1b1b1d] mb-2" style={{ fontFamily: "'Roboto', sans-serif", fontSize: "18px", fontWeight: 600, lineHeight: "1.4", overflowWrap: "anywhere" }}>
+        <p className="text-[#1b1b1d] mb-3" style={{ fontFamily: "'Roboto', sans-serif", fontSize: "clamp(22px,2.1vw,25px)", fontWeight: 700, lineHeight: "1.18", overflowWrap: "anywhere" }}>
           {title}
         </p>
-        <p className="text-[#44474d]" style={{ fontFamily: "'Roboto', sans-serif", fontSize: "14px", lineHeight: "20px" }}>
+        <p className="text-[#44474d]" style={{ fontFamily: "'Roboto', sans-serif", fontSize: "16px", lineHeight: "1.45" }}>
           {desc}
         </p>
       </div>
@@ -99,30 +117,37 @@ function WhiteServiceCard({
 }
 
 export function CustomSoftwareSection() {
-  const services = [
-    { icon: "⚙️", title: "Custom software", desc: "Tailored codebases built to solve specific organizational challenges." },
-    { icon: "🏢", title: "Enterprise systems", desc: "Robust, scalable platforms for high-volume corporate operations." },
-    { icon: "🔄", title: "CRM and ERP platforms", desc: "Centralized resource management and customer relationship architecture." },
-    { icon: "☁️", title: "SaaS products", desc: "Cloud-native software products designed for recurring value delivery." },
-    { icon: "🌩️", title: "Cloud-based applications", desc: "Highly available, auto-scaling solutions deployed on major cloud providers." },
-    { icon: "🔗", title: "API development", desc: "Secure and efficient data interfaces for ecosystem interoperability." },
-    { icon: "⚡", title: "Automation systems", desc: "Custom workflows that eliminate manual friction and human error." },
-    { icon: "🗄️", title: "Data management", desc: "Complex storage, retrieval, and analysis systems for big data." },
+  const row1 = [
+    { icon: Blocks, title: "Custom software", desc: "Tailored codebases built to solve specific organizational challenges." },
+    { icon: Building2, title: "Enterprise systems", desc: "Robust, scalable platforms for high-volume corporate operations." },
+    { icon: Network, title: "CRM and ERP platforms", desc: "Centralized resource management and customer relationship architecture." },
+    { icon: CloudCog, title: "SaaS products", desc: "Cloud-native software products designed for recurring value delivery." },
+  ];
+  const row2 = [
+    { icon: Cloud, title: "Cloud-based applications", desc: "Highly available, auto-scaling solutions deployed on major cloud providers." },
+    { icon: Code2, title: "API development", desc: "Secure and efficient data interfaces for ecosystem interoperability." },
+    { icon: Workflow, title: "Automation systems", desc: "Custom workflows that eliminate manual friction and human error." },
+    { icon: Database, title: "Data management", desc: "Complex storage, retrieval, and analysis systems for big data." },
   ];
 
   return (
-    <section id="custom-software" className="w-full bg-white py-8 border-b border-black">
+    <section id="custom-software" className="w-full bg-white py-10 border-b border-black">
       <div className="max-w-[1270px] mx-auto px-4 sm:px-6 lg:px-10">
-        <div className="border-b border-black py-5 mb-8">
+        <div className="py-1 mb-10">
           <h2
             className="text-[#222] text-center"
-            style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "clamp(18px,3vw,36px)" }}
+            style={{ fontFamily: "'Pirulen', 'Orbitron', sans-serif", fontSize: "clamp(24px,4vw,38px)", fontWeight: 400, lineHeight: "1.15" }}
           >
             CUSTOM SOFTWARE DEVELOPMENT
           </h2>
         </div>
         <div className="grid grid-cols-1 border-t border-l border-black sm:grid-cols-2 lg:grid-cols-4">
-          {services.map((c) => (
+          {row1.map((c) => (
+            <WhiteServiceCard key={c.title} {...c} />
+          ))}
+        </div>
+        <div className="mt-3 grid grid-cols-1 border-t border-l border-black sm:grid-cols-2 lg:grid-cols-4">
+          {row2.map((c) => (
             <WhiteServiceCard key={c.title} {...c} />
           ))}
         </div>
@@ -134,14 +159,17 @@ export function CustomSoftwareSection() {
 export function IoTSection() {
   const items = [
     {
+      icon: smartInfrastructureIcon,
       title: "Smart infrastructure systems",
       desc: "Intelligent facility management through sensor networks and real-time analytics.",
     },
     {
+      icon: iotMonitoringIcon,
       title: "IoT integration for monitoring",
       desc: "Seamless bridging of hardware sensors with centralized software dashboards.",
     },
     {
+      icon: industrialIotIcon,
       title: "Industrial IoT systems",
       desc: "Hardened, industrial-grade connectivity for manufacturing and logistics.",
     },
@@ -166,7 +194,7 @@ export function IoTSection() {
                     className="flex items-center justify-center rounded shrink-0"
                     style={{ width: 48, height: 48, backgroundColor: "rgba(143,143,143,0.2)" }}
                   >
-                    <span className="text-xl">📡</span>
+                    <img src={item.icon} alt="" className="h-5 w-5 object-contain" />
                   </div>
                   <div>
                     <p className="text-[#222] mb-2" style={{ fontFamily: "'Roboto', sans-serif", fontSize: "18px", fontWeight: 600, lineHeight: "1.4" }}>
@@ -181,9 +209,11 @@ export function IoTSection() {
             </div>
             <div className="mt-8 pt-8 border-t border-[#c5c6cd] flex flex-wrap gap-8">
               <div className="flex items-center gap-2">
+                <img src={deviceConnectivityIcon} alt="" className="h-4 w-4 object-contain" />
                 <span style={{ fontFamily: "'Inter', sans-serif", fontSize: "13px", fontWeight: 600, letterSpacing: "0.7px" }}>Device connectivity</span>
               </div>
               <div className="flex items-center gap-2">
+                <img src={realTimeDataIcon} alt="" className="h-4 w-4 object-contain" />
                 <span style={{ fontFamily: "'Inter', sans-serif", fontSize: "13px", fontWeight: 600, letterSpacing: "0.7px" }}>Real-time data environments</span>
               </div>
             </div>
@@ -234,7 +264,7 @@ export function WebDevSection() {
 
       <div className="relative z-10 max-w-[1270px] mx-auto px-4 sm:px-6 lg:px-10 py-12 sm:py-16">
         <h2
-          className="text-white mb-10"
+          className="mb-10 text-center text-white"
           style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "clamp(18px,3vw,36px)" }}
         >
           WEB DEVELOPMENT SERVICES

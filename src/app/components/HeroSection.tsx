@@ -26,8 +26,12 @@ export function HeroSection() {
 
       {/* Ticker at bottom */}
       <div
-        className="absolute bottom-0 left-0 right-0 overflow-hidden"
-        style={{ height: "clamp(58px, 9vw, 72px)", backgroundColor: "rgba(0,0,0,0.4)" }}
+        className="absolute left-0 right-0 overflow-hidden"
+        style={{
+          bottom: "clamp(78px, 12vh, 118px)",
+          height: "clamp(58px, 9vw, 72px)",
+          backgroundColor: "rgba(0,0,0,0.4)",
+        }}
       >
         <div className="flex items-center h-full animate-ticker whitespace-nowrap gap-12 px-6">
           {TICKER_ITEMS.map((item, i) => (
@@ -53,17 +57,24 @@ export function HeroSection() {
         style={{ minHeight: "clamp(560px, 86vh, 700px)", paddingBottom: "90px" }}
       >
         <h1
-          className="text-white mb-8"
+          className="home-hero-brand text-white mb-8 flex items-center justify-center"
           style={{
-            fontFamily: "'Pirulen', 'Orbitron', sans-serif",
-            fontSize: "clamp(42px,8vw,66px)",
-            letterSpacing: "clamp(10px,3.2vw,38px)",
-            lineHeight: "1.1",
+            fontFamily: "'Pirulen', 'Pirulen Rg', 'Orbitron', sans-serif",
+            fontSize: "clamp(42px, 6.6vw, 64px)",
+            letterSpacing: "0",
+            lineHeight: "1",
             fontWeight: 400,
-            paddingLeft: "clamp(10px,3.2vw,38px)",
+            fontStyle: "normal",
+            gap: "clamp(20px, 4.2vw, 54px)",
           }}
         >
-          D&apos;MIRAKI
+          <span>D&apos;</span>
+          <span style={{ marginLeft: "clamp(-10px, -0.8vw, -6px)" }}>M</span>
+          <span>I</span>
+          <span>R</span>
+          <span>A</span>
+          <span>K</span>
+          <span>I</span>
         </h1>
         <p
           className="text-white mb-8 max-w-2xl"

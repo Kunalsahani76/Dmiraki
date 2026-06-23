@@ -170,6 +170,18 @@ h6,
   font-family: "Space Grotesk", sans-serif !important;
 }
 
+#root .home-hero-brand {
+  font-family: "Pirulen", "Pirulen Rg", "Orbitron", sans-serif !important;
+  font-style: normal !important;
+  text-align: center;
+}
+
+#root .home-hero-brand * {
+  font-family: "Pirulen", "Pirulen Rg", "Orbitron", sans-serif !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+}
+
 .service-hero-typography [class*="Orbitron"],
 .service-hero-typography [style*="Orbitron"] {
   font-family: "Orbitron", sans-serif !important;
