@@ -11,17 +11,17 @@ import aeoIcon from "../../icons/aeo.png";
 import geoIcon from "../../icons/geo.png";
 import emIcon from "../../icons/em.png";
 
-const glassCard = "min-h-[162px] backdrop-blur-xl bg-white/25 border border-white/35 shadow-[0_14px_40px_rgba(0,0,0,0.28)] flex flex-col gap-2.5 px-3 py-2.5";
+const glassCard = "min-h-[194px] backdrop-blur-xl bg-white/25 border border-white/45 shadow-[0_14px_40px_rgba(0,0,0,0.28)] flex flex-col gap-3 px-3.5 py-3.5";
 
 function GlassServiceCard({ icon, title, desc }: { icon: string; title: string; desc: string }) {
   return (
     <div className={glassCard}>
-      <img src={icon} alt="" className="h-[27px] w-[35px] object-contain object-left" />
+      <img src={icon} alt="" className="h-[31px] w-[38px] object-contain object-left" />
       <div>
-        <p className="text-white mb-1.5" style={{ fontFamily: "'Pirulen', 'Orbitron', sans-serif", fontSize: "18px", fontWeight: 400, lineHeight: "1.35", overflowWrap: "anywhere" }}>
+        <p className="mb-2 text-white" style={{ fontFamily: "'Roboto', sans-serif", fontSize: "clamp(24px,2vw,28px)", fontWeight: 400, lineHeight: "1.15", overflowWrap: "normal" }}>
           {title}
         </p>
-        <p className="text-white/90" style={{ fontFamily: "'Roboto', sans-serif", fontSize: "14px", lineHeight: "20px" }}>
+        <p className="text-white/90" style={{ fontFamily: "'Roboto', sans-serif", fontSize: "clamp(15px,1.3vw,16px)", lineHeight: "1.5" }}>
           {desc}
         </p>
       </div>
@@ -44,7 +44,7 @@ export function DigitalMarketingSection() {
   ];
 
   return (
-    <section id="digital-marketing" className="relative w-full overflow-hidden" style={{ minHeight: "500px" }}>
+    <section id="digital-marketing" className="relative w-full overflow-hidden border-b border-black" style={{ minHeight: "640px" }}>
       <div
         className="absolute inset-0"
         style={{
@@ -54,19 +54,19 @@ export function DigitalMarketingSection() {
           filter: "grayscale(1)",
         }}
       />
-      <div className="absolute inset-0 bg-black/55" />
+      <div className="absolute inset-0 bg-black/50" />
 
-      <div className="relative z-10 max-w-[1080px] mx-auto px-5 sm:px-7 py-9 sm:py-10">
+      <div className="relative z-10 mx-auto w-full px-4 py-12 sm:px-8">
         <h2
-          className="text-white mb-9 text-center uppercase"
-          style={{ fontFamily: "'Pirulen', 'Orbitron', sans-serif", fontSize: "clamp(24px,4vw,34px)", fontWeight: 400, letterSpacing: "1px", lineHeight: "1.15" }}
+          className="mb-11 text-center uppercase text-white"
+          style={{ fontFamily: "'Pirulen', 'Orbitron', sans-serif", fontSize: "clamp(30px,4vw,38px)", fontWeight: 400, letterSpacing: "0", lineHeight: "1.15" }}
         >
           DIGITAL MARKETING
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-5">
+        <div className="mx-auto mb-6 grid w-full max-w-[1270px] grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {row1.map((c) => <GlassServiceCard key={c.title} {...c} />)}
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="mx-auto grid w-full max-w-[1270px] grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {row2.map((c) => <GlassServiceCard key={c.title} {...c} />)}
         </div>
       </div>

@@ -147,6 +147,7 @@ function Frame21() {
           </div>
         </div>
       </div>
+      <div aria-hidden className="absolute border border-black border-solid inset-0 pointer-events-none" />
     </div>
   );
 }
@@ -343,31 +344,48 @@ function Frame22() {
 }
 
 function Frame6() {
+  const [missionOpen, setMissionOpen] = useState(false);
+  const [visionOpen, setVisionOpen] = useState(false);
+
   return (
-    <div className="content-stretch flex gap-[12px] items-center relative shrink-0">
-      <button className="content-stretch cursor-pointer flex flex-col gap-[22px] h-[148px] items-start overflow-clip relative shrink-0 w-[594px]" data-name="Component 79">
-        <div className="bg-gradient-to-r from-[#b9b9b9] relative shrink-0 to-[#2e2e2e] to-[59.11%] w-full" data-name="Background+Border">
+    <div className="content-stretch flex gap-[12px] items-start relative shrink-0">
+      <div className="content-stretch flex flex-col gap-[22px] items-start relative shrink-0 w-[594px]" data-name="Component 79">
+        <button
+          className="bg-gradient-to-r cursor-pointer from-[#b9b9b9] relative shrink-0 to-[#2e2e2e] to-[59.11%] w-full"
+          data-name="Background+Border"
+          onClick={() => setMissionOpen((value) => !value)}
+          type="button"
+        >
           <div aria-hidden className="absolute border-2 border-black border-solid inset-0 pointer-events-none" />
           <div className="flex flex-row items-center justify-center size-full">
             <div className="content-stretch flex gap-[16px] items-center justify-center p-[50px] relative size-full">
               <Heading2 />
-              <Container3 />
+              <div className="transition-transform" style={{ transform: missionOpen ? "rotate(180deg)" : "rotate(0deg)" }}>
+                <Container3 />
+              </div>
             </div>
           </div>
-        </div>
-        <Frame21 />
-      </button>
-      <div className="content-stretch flex flex-col gap-[22px] h-[148px] items-start overflow-clip relative shrink-0 w-[594px]" data-name="Component 80">
-        <button className="bg-gradient-to-r cursor-pointer from-[#b9b9b9] relative shrink-0 to-[#2e2e2e] to-[59.11%] w-full" data-name="Background+Border">
+        </button>
+        {missionOpen && <Frame21 />}
+      </div>
+      <div className="content-stretch flex flex-col gap-[22px] items-start relative shrink-0 w-[594px]" data-name="Component 80">
+        <button
+          className="bg-gradient-to-r cursor-pointer from-[#b9b9b9] relative shrink-0 to-[#2e2e2e] to-[59.11%] w-full"
+          data-name="Background+Border"
+          onClick={() => setVisionOpen((value) => !value)}
+          type="button"
+        >
           <div aria-hidden className="absolute border-2 border-black border-solid inset-0 pointer-events-none" />
           <div className="flex flex-row items-center justify-center size-full">
             <div className="content-stretch flex gap-[16px] items-center justify-center p-[50px] relative size-full">
               <Heading3 />
-              <Container4 />
+              <div className="transition-transform" style={{ transform: visionOpen ? "rotate(180deg)" : "rotate(0deg)" }}>
+                <Container4 />
+              </div>
             </div>
           </div>
         </button>
-        <Frame22 />
+        {visionOpen && <Frame22 />}
       </div>
     </div>
   );

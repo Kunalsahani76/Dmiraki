@@ -315,6 +315,32 @@ canvas {
     padding-right: 30px !important;
   }
 
+  .about-page-responsive > div:nth-child(3),
+  .about-page-responsive > div:nth-child(4),
+  .about-page-responsive > div:nth-child(9) {
+    width: min(1200px, calc(100% - 28px)) !important;
+    max-width: 1200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .about-page-responsive > div:nth-child(4) {
+    background: #e5e5e5 !important;
+  }
+
+  .about-page-responsive > div:nth-child(4) [aria-hidden] {
+    border-color: #000 !important;
+  }
+
+  .about-page-responsive > div:nth-child(4) [class*="text-white"],
+  .about-page-responsive > div:nth-child(4) [class*="text-[#c9c9c9]"] {
+    color: #000 !important;
+  }
+
+  .about-page-responsive > div:nth-child(4) [data-name="Component 56"] > div {
+    background: #b7b7b7 !important;
+  }
+
   /* About reference typography. Hero is intentionally excluded. */
   .about-page-responsive > div:nth-child(2) [class*="text-[40px]"] {
     font-size: 24px !important;
@@ -328,7 +354,7 @@ canvas {
 
   .about-page-responsive > div:nth-child(3) [class*="text-[40px]"],
   .about-page-responsive > div:nth-child(4) [class*="text-[40px]"] {
-    font-size: 32px !important;
+    font-size: 40px !important;
     line-height: 1.15 !important;
   }
 
@@ -338,12 +364,12 @@ canvas {
   }
 
   .about-page-responsive > div:nth-child(4) [class*="text-[15px]"] {
-    font-size: 11px !important;
+    font-size: 15px !important;
     letter-spacing: 0.08em !important;
   }
 
   .about-page-responsive > div:nth-child(4) [class*="text-[16px]"] {
-    font-size: 11px !important;
+    font-size: 16px !important;
   }
 
   .about-page-responsive > div:nth-child(5) [class*="text-[72px]"],
