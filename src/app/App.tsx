@@ -22,6 +22,7 @@ import SEOPage from "./pages/SEOPage";
 import AboutMobilePage from "./pages/AboutMobilePage";
 import { DigitalMarketingMobilePage, IotMobilePage } from "./pages/ServiceMobilePages";
 import BlogPage from "./pages/BlogPage";
+import AdminPage from "./pages/AdminPage";
 
 function HomePage() {
   const location = useLocation();
@@ -177,7 +178,10 @@ export default function App() {
       <Route path="/web-development" element={<WebDevelopmentRoutePage />} />
       <Route path="/contact" element={<ContactRoutePage />} />
       <Route path="/seo" element={<SEORoutePage />} />
-      <Route path="/blog" element={<><Navbar /><div style={{ height: "62px" }} /><BlogPage /><SiteFooter /></>} />
+      <Route path="/blogs" element={<><Navbar /><div style={{ height: "62px" }} /><BlogPage /><SiteFooter /></>} />
+      <Route path="/blogs/:slug" element={<><Navbar /><div style={{ height: "62px" }} /><BlogPage /><SiteFooter /></>} />
+      <Route path="/admin" element={<><Navbar /><div style={{ height: "62px" }} /><AdminPage /><SiteFooter /></>} />
+      <Route path="/blog" element={<><Navbar /><div style={{ height: "62px" }} /><AdminPage /><SiteFooter /></>} />
     </Routes>
   );
 }

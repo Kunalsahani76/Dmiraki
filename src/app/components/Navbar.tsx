@@ -7,6 +7,7 @@ export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [blogsOpen, setBlogsOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
   const serviceLinks = [
@@ -182,13 +183,20 @@ export function Navbar() {
               </div>
             )}
           </div>
-          <button
-            onClick={() => { setServicesOpen(false); navigate("/blog"); }}
-            className={navTextClass(location.pathname.startsWith("/blog"))}
-            style={navItemStyle}
-          >
-            BLOG
-          </button>
+          <div className="relative">
+            <button
+              onClick={() => { setServicesOpen(false); setBlogsOpen(!blogsOpen); }}
+              className={`flex items-center gap-1 ${navTextClass(location.pathname.startsWith("/blog") || location.pathname.startsWith("/admin"))}`}
+              aria-expanded={blogsOpen}
+              style={navItemStyle}
+            >
+              BLOGS <ChevronDown className={`transition-transform duration-300 ${blogsOpen ? "rotate-180" : ""}`} size={15} strokeWidth={3} />
+            </button>
+            {blogsOpen && <div className="absolute left-0 top-full z-50 mt-3 min-w-[180px] border border-black bg-[#fbfbfb] p-2 shadow-lg">
+              <button onClick={() => { setBlogsOpen(false); navigate("/blogs"); }} className="block w-full px-4 py-3 text-left text-sm text-[#333] hover:bg-black hover:text-white">All Blogs</button>
+              <button onClick={() => { setBlogsOpen(false); navigate("/admin"); }} className="block w-full px-4 py-3 text-left text-sm text-[#333] hover:bg-black hover:text-white">Admin Panel</button>
+            </div>}
+          </div>
           <button
             onClick={() => scrollTo("contact")}
             className={navTextClass(isContactActive)}
@@ -264,12 +272,17 @@ export function Navbar() {
             </div>
           )}
           <button
-            onClick={() => { setMenuOpen(false); setServicesOpen(false); navigate("/blog"); }}
-            className={`text-left hover:text-black transition-colors py-2 uppercase ${location.pathname.startsWith("/blog") ? "text-black" : "text-[#a5a5a5]"}`}
+            onClick={() => setBlogsOpen((value) => !value)}
+            className={`flex items-center justify-between text-left hover:text-black transition-colors py-2 uppercase ${location.pathname.startsWith("/blog") || location.pathname.startsWith("/admin") ? "text-black" : "text-[#a5a5a5]"}`}
             style={navItemStyle}
+            aria-expanded={blogsOpen}
           >
-            BLOG
+            BLOGS <ChevronDown size={18} strokeWidth={3} />
           </button>
+          {blogsOpen && <div className="flex flex-col gap-1 border-l border-black/30 pl-4">
+            <button onClick={() => { setMenuOpen(false); setBlogsOpen(false); navigate("/blogs"); }} className="py-2 text-left text-sm text-[#555] hover:text-black">All Blogs</button>
+            <button onClick={() => { setMenuOpen(false); setBlogsOpen(false); navigate("/admin"); }} className="py-2 text-left text-sm text-[#555] hover:text-black">Admin Panel</button>
+          </div>}
           <button
             onClick={() => scrollTo("contact")}
             className={`text-left hover:text-black transition-colors py-2 uppercase ${
