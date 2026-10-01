@@ -5,6 +5,19 @@ import approachImage from "../../imports/Home/d122b3ff70f38e655ad6398506d3fa09c7
 import statPanelImage from "../../imports/Home/ba94765630e49ad56eb0745d378f772c95ef7582.png";
 import statCircuitImage from "../../imports/Home/7e7289376327a991cbaea03f686e9c032ef6270e.png";
 
+const clientLogoFiles = import.meta.glob("../../icons/Clients/*.{png,jpg,jpeg}", {
+  eager: true,
+  query: "?url",
+  import: "default",
+}) as Record<string, string>;
+
+const clientLogos = Object.entries(clientLogoFiles)
+  .sort(([first], [second]) => first.localeCompare(second))
+  .map(([path, src]) => ({
+    src,
+    name: path.split("/").pop()!.replace(/\.(png|jpe?g)$/i, "").replace(/[-_]/g, " "),
+  }));
+
 type StatCardProps = {
   value: React.ReactNode;
   detail: string;
@@ -171,6 +184,38 @@ export function ApproachSection() {
           </div>
         </div>
       </div>
+    </section>
+  );
+}
+
+export function ClientLogosSection() {
+  return (
+    <section className="w-full overflow-hidden bg-white py-8" aria-label="Our clients">
+      <div className="client-logo-track flex w-max" role="list">
+        {[0, 1].map((copy) => (
+          <div
+            key={copy}
+            className="flex shrink-0 items-start gap-6 pr-6 sm:gap-8 sm:pr-8"
+            role={copy === 0 ? undefined : "presentation"}
+            aria-hidden={copy === 1 ? true : undefined}
+          >
+            {clientLogos.map(({ src, name }) => (
+              <div key={`${copy}-${name}`} className="flex w-[120px] shrink-0 flex-col items-center gap-1">
+                <div className="flex h-[76px] w-full items-center justify-center">
+                  <img src={src} alt={copy === 0 ? name : ""} className="max-h-[70px] max-w-full object-contain" />
+                </div>
+                <span className="text-center text-[12px] leading-tight text-black">{name}</span>
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+      <style>{`
+        .client-logo-track { animation: client-logo-scroll 38s linear infinite; }
+        .client-logo-track:hover { animation-play-state: paused; }
+        @keyframes client-logo-scroll { to { transform: translateX(-50%); } }
+        @media (prefers-reduced-motion: reduce) { .client-logo-track { animation: none; } }
+      `}</style>
     </section>
   );
 }
