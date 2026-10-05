@@ -166,7 +166,8 @@ presence.
         <div className="text-center">
           <SectionHeading title="OUR VALUES" dark />
           <p className="mt-4 text-[15px] leading-7 text-white/75" style={{ fontFamily: "'Roboto', sans-serif" }}>
-            Founded on the principle that every business deserves exceptional digital presence, DMIRAKI has grown from a small team of passionate experts to a comprehensive agency trusted worldwide.
+            Founded on the principle that every business deserves exceptional digital presence.<br />
+            DMIRAKI has grown from a small team of passionate experts to a comprehensive agency trusted worldwide.
           </p>
         </div>
         <div className="mt-7 grid gap-5">

@@ -677,6 +677,15 @@ canvas {
     gap: 14px !important;
   }
 
+  .about-page-responsive > div:nth-child(7) [data-name="Heading 4"] p {
+    white-space: nowrap !important;
+    overflow-wrap: normal !important;
+  }
+
+  .about-page-responsive > div:nth-child(7) [data-name="Heading 4"] {
+    min-height: 0 !important;
+  }
+
   .about-page-responsive > div:nth-child(8) > div > div,
   .about-page-responsive > div:nth-child(8) [data-name="Container"] {
     grid-template-columns: 1fr !important;
@@ -736,6 +745,10 @@ canvas {
     padding-bottom: 0 !important;
   }
 }
+.about-page-responsive > div:nth-child(7) [data-name="Heading 4"] {
+  min-height: 0 !important;
+}
+
  .blog-page {
   background: linear-gradient(110deg, #000 0%, #050505 43%, #1a1a1a 62%, #6f6f6f 100%);
   font-family: 'Inter', Arial, sans-serif;

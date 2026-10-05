@@ -181,7 +181,8 @@ presence.
               className="text-[#c9c9c9] text-center mb-10"
               style={{ fontFamily: "'Roboto', sans-serif", fontSize: "17px", lineHeight: "1.7", maxWidth: "720px", margin: "0 auto 40px" }}
             >
-              Founded on the principle that every business deserves exceptional digital presence, DMiraki has grown from a small team of passionate experts to a comprehensive agency trusted worldwide.
+              Founded on the principle that every business deserves exceptional digital presence.<br />
+              DMIRAKI has grown from a small team of passionate experts to a comprehensive agency trusted worldwide.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {[
@@ -351,7 +352,7 @@ presence.
                     <div className="text-white text-xl">{item.icon}</div>
                     <h4
                       className="text-white uppercase"
-                      style={{ fontFamily: "'Roboto', sans-serif", fontSize: "17px", lineHeight: "1.4" }}
+                      style={{ fontFamily: "'Roboto', sans-serif", fontSize: "17px", lineHeight: "1.4", whiteSpace: "nowrap" }}
                     >
                       {item.title}
                     </h4>

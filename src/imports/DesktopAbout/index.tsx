@@ -430,7 +430,10 @@ function Frame12() {
         <p className="[text-decoration-skip-ink:none] decoration-[7.5%] decoration-solid leading-[48px] underline">OUR VALUES</p>
       </div>
       <div className="flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center relative shrink-0 text-center text-[#c9c9c9] text-[20px] tracking-[-0.2px] w-full">
-        <p className="leading-[32px]">Founded on the principle that every business deserves exceptional digital presence, DMIRAKI has grown from a small team of passionate experts to a comprehensive agency trusted worldwide.</p>
+        <p className="leading-[32px]">
+          Founded on the principle that every business deserves exceptional digital presence.<br />
+          DMIRAKI has grown from a small team of passionate experts to a comprehensive agency trusted worldwide.
+        </p>
       </div>
     </div>
   );
@@ -1195,8 +1198,7 @@ function Heading16() {
     <div className="relative min-h-[60px] shrink-0 w-full" data-name="Heading 4">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[20px] text-white uppercase w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
-          <p className="leading-[30px] mb-0">CLIENT-CENTRIC</p>
-          <p className="leading-[30px]">APPROACH</p>
+          <p className="leading-[30px] mb-0">CLIENT-CENTRIC APPROACH</p>
         </div>
       </div>
     </div>
@@ -1240,8 +1242,7 @@ function Heading17() {
     <div className="relative min-h-[60px] shrink-0 w-full" data-name="Heading 4">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[20px] text-white uppercase w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
-          <p className="leading-[30px] mb-0">TRANSPARENT</p>
-          <p className="leading-[30px]">COMMUNICATION</p>
+          <p className="leading-[30px] mb-0">TRANSPARENT COMMUNICATION</p>
         </div>
       </div>
     </div>
@@ -1329,8 +1330,7 @@ function Heading19() {
     <div className="relative min-h-[60px] shrink-0 w-full" data-name="Heading 4">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[20px] text-white uppercase w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
-          <p className="leading-[30px] mb-0">DATA-DRIVEN</p>
-          <p className="leading-[30px]">STRATEGIES</p>
+          <p className="leading-[30px] mb-0">DATA-DRIVEN STRATEGIES</p>
         </div>
       </div>
     </div>
