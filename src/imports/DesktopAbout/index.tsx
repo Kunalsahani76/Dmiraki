@@ -985,9 +985,9 @@ function Container30() {
 
 function Heading11() {
   return (
-    <div className="relative min-h-[68px] shrink-0 w-[180px]" data-name="Heading 4">
+    <div className="relative min-h-[38px] shrink-0 w-[180px]" data-name="Heading 4">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start pt-[8px] relative size-full">
-  <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[20px] text-black w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
+  <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[14px] text-black w-full whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
           <p className="leading-[30px]">PROVEN TRACK RECORD</p>
         </div>
       </div>
@@ -1023,11 +1023,10 @@ function Border() {
 
 function Heading12() {
   return (
-    <div className="relative min-h-[68px] shrink-0 w-full" data-name="Heading 4">
+    <div className="relative min-h-[38px] shrink-0 w-full" data-name="Heading 4">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start pt-[8px] relative size-full">
-  <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[20px] text-black w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
-          <p className="leading-[30px] mb-0">DEDICATED TEAM</p>
-          <p className="leading-[30px]">APPROACH</p>
+  <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[14px] text-black w-full whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
+          <p className="leading-[30px]">DEDICATED TEAM APPROACH</p>
         </div>
       </div>
     </div>
@@ -1050,7 +1049,7 @@ function Container33() {
 
 function Border1() {
   return (
-    <div className="content-stretch flex flex-col gap-[16px] items-start p-[34px] relative shrink-0 w-[299.5px]" data-name="Border">
+    <div className="content-stretch flex flex-col gap-[16px] items-start p-[34px] relative shrink-0 w-[299.5px] h-full" data-name="Border">
       <div aria-hidden className="absolute border-2 border-black border-solid inset-0 pointer-events-none" />
       <div className="bg-black h-[4px] relative shrink-0 w-full" data-name="Background" />
       <Heading12 />
@@ -1061,11 +1060,10 @@ function Border1() {
 
 function Heading13() {
   return (
-    <div className="relative min-h-[68px] shrink-0 w-full" data-name="Heading 4">
+    <div className="relative min-h-[38px] shrink-0 w-full" data-name="Heading 4">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start pt-[8px] relative size-full">
-  <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[20px] text-black w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
-          <p className="leading-[30px] mb-0">{`ONGOING SUPPORT &`}</p>
-          <p className="leading-[30px]">OPTIMIZATION</p>
+  <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[14px] text-black w-full whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
+          <p className="leading-[30px]">ONGOING SUPPORT & OPTIMIZATION</p>
         </div>
       </div>
     </div>
@@ -1100,9 +1098,9 @@ function Border2() {
 
 function Heading14() {
   return (
-    <div className="relative min-h-[68px] shrink-0 w-full" data-name="Heading 4">
+    <div className="relative min-h-[38px] shrink-0 w-full" data-name="Heading 4">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start pt-[8px] relative size-full">
-        <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[20px] text-black uppercase w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
+        <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[14px] text-black uppercase w-full whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
           <p className="leading-[30px]">INDUSTRY RECOGNITION</p>
         </div>
       </div>

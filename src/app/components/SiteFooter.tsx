@@ -1,11 +1,10 @@
 const communityLinks = ["Linkedin", "Instagram"];
 const serviceLinks = [
-  { label: "Social Media", href: "/digital-marketing" },
-  { label: "Branding", href: "/digital-marketing" },
-  { label: "Marketing", href: "/digital-marketing" },
-  { label: "Web Development", href: "/web-development" },
-  { label: "Content Creation", href: "/digital-marketing" },
-  { label: "UI/UX Design", href: "/custom-software" },
+  { label: "Digital Marketing", href: "/digital-marketing" },
+  { label: "SEO", href: "/seo" },
+  { label: "Custom Software", href: "/custom-software" },
+  { label: "IoT-Based Solutions", href: "/iot" },
+  { label: "Web Development Services", href: "/web-development" },
 ];
 const legalLinks = [
   { label: "Terms & Conditions", href: "/terms-and-conditions" },
