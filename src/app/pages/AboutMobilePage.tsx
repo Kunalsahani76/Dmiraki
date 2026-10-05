@@ -94,7 +94,7 @@ function MobileFAQItem({ q, a }: { q: string; a: string }) {
         <ChevronDown className="mt-1 size-5 shrink-0 transition-transform" style={{ transform: open ? "rotate(180deg)" : "rotate(0deg)" }} />
       </button>
       {open && (
-        <p className="pb-6 text-[15px] leading-7 text-black/75" style={{ fontFamily: "'Roboto', sans-serif" }}>
+        <p className="border-l-0 pb-6 text-[15px] leading-7 text-black/75" style={{ fontFamily: "'Roboto', sans-serif" }}>
           {a}
         </p>
       )}
@@ -155,7 +155,8 @@ presence.
         <div className="border border-black p-5">
           <SectionHeading title="OUR STORY" />
           <p className="mt-4 text-[15px] leading-7 text-[#333]" style={{ fontFamily: "'Roboto', sans-serif" }}>
-            Founded on the principle that every business deserves exceptional digital presence, DMIRAKI has grown from a small team of passionate experts to a comprehensive agency trusted worldwide.
+            Founded on the principle that every business deserves exceptional digital presence.<br />
+            DMIRAKI has grown from a small team of passionate experts to a comprehensive agency trusted worldwide.
           </p>
           <img alt="Our Story" className="mt-5 aspect-[469/296] w-full object-cover" src={imgStory} />
         </div>

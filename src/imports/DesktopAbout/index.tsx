@@ -397,9 +397,9 @@ function Frame10() {
       <div className="flex flex-col font-['Pirulen:Regular',sans-serif] justify-center min-w-full relative shrink-0 text-[40px] text-black w-[min-content]">
         <p className="leading-[48px]">OUR STORY</p>
       </div>
-      <div className="flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center relative shrink-0 text-left text-[#333] text-[20px] tracking-[-0.2px] w-[537px]">
-  <p className="leading-[32px] mb-0">Founded on the principle that every business deserves exceptional digital presence, DMIRAKI has grown from a small team of passionate experts</p>
-        <p className="leading-[32px]">to a comprehensive agency trusted worldwide.</p>
+      <div className="flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center relative shrink-0 text-left text-[#333] text-[16px] tracking-[-0.2px] w-[620px]">
+  <p className="leading-[32px] mb-0">Founded on the principle that every business deserves exceptional digital presence.</p>
+        <p className="leading-[32px]">DMIRAKI has grown from a small team of passionate experts to a comprehensive agency trusted worldwide.</p>
       </div>
     </div>
   );
@@ -1769,8 +1769,8 @@ function Container43() {
 function Heading21() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Heading 2">
-      <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[72px] text-black tracking-[-1.44px] uppercase w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
-        <p className="leading-[80px]">FREQUENTLY ASKED QUESTIONS</p>
+      <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[40px] text-black tracking-[-0.8px] uppercase w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
+        <p className="leading-[48px]">FREQUENTLY ASKED QUESTIONS</p>
       </div>
     </div>
   );
@@ -3333,16 +3333,16 @@ function HorizontalBorder() {
         <div className="relative shrink-0 w-full" data-name="FAQ Item" key={question}>
           <button
             aria-expanded={isOpen}
-            className="flex w-full cursor-pointer items-center justify-between gap-[24px] border-b-2 border-black px-[16px] py-[32px] text-left transition-colors duration-300 hover:bg-black/[0.03]"
+            className={`flex w-full cursor-pointer items-center justify-between gap-[24px] ${isOpen ? "border-b-0" : "border-b-2 border-black"} px-[16px] py-[34px] text-left outline-none transition-colors duration-300 hover:bg-black/[0.03]`}
             onClick={() => setOpenIndex(isOpen ? null : index)}
             type="button"
           >
-            <p className="font-['Roboto:Regular',sans-serif] font-normal leading-[36px] text-[24px] text-black">{question}</p>
+            <p className="font-['Roboto:Regular',sans-serif] font-normal leading-[22px] text-[14px] text-black">{question}</p>
             <span className="font-['Inter:Regular',sans-serif] text-[24px] leading-none text-black">{isOpen ? "⌃" : "⌄"}</span>
           </button>
           {isOpen && (
-            <div className="flex items-center justify-between gap-[24px] border-b-2 border-black px-[16px] py-[32px]">
-              <p className="font-['Roboto:Regular',sans-serif] font-normal leading-[36px] text-[24px] text-black">{answer}</p>
+            <div className="flex items-center justify-between gap-[24px] border-b-2 border-l-0 border-black px-[16px] py-[32px]">
+              <p className="font-['Roboto:Regular',sans-serif] font-normal leading-[22px] text-[14px] text-black">{answer}</p>
             </div>
           )}
         </div>

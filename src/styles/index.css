@@ -479,7 +479,7 @@ canvas {
     white-space: normal !important;
   }
 
-  .about-page-responsive p {
+.about-page-responsive p {
     overflow-wrap: anywhere;
   }
 
