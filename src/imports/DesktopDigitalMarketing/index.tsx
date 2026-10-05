@@ -31,7 +31,7 @@ function Button() {
     <div className="backdrop-blur-[6px] bg-[rgba(255,255,255,0.03)] content-stretch flex flex-col h-[66px] items-center justify-center relative shrink-0 w-[490px]" data-name="Button">
       <div aria-hidden className="absolute border border-[rgba(255,255,255,0.3)] border-solid inset-0 pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#e5e1e4] text-[16px] text-center tracking-[3px] uppercase whitespace-nowrap">
-        <p className="leading-[24px]">BOO FREE CONSULTATION</p>
+        <p className="leading-[24px]">BOOK FREE CONSULTATION</p>
       </div>
     </div>
   );
@@ -1434,7 +1434,7 @@ function Button1() {
     <div className="backdrop-blur-[6px] bg-[rgba(255,255,255,0.03)] content-stretch flex flex-col items-center justify-center px-[33px] py-[17px] relative shrink-0" data-name="Button">
       <div aria-hidden className="absolute border border-[rgba(255,255,255,0.3)] border-solid inset-0 pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#e5e1e4] text-[18px] text-center whitespace-nowrap">
-        <p className="leading-[28px]">BOO FREE CONSULTATION</p>
+          <p className="leading-[28px]">BOOK FREE CONSULTATION</p>
       </div>
     </div>
   );
@@ -1618,12 +1618,12 @@ function Item10() {
 function List2() {
   return (
     <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full" data-name="List">
-      <Item5 />
-      <Item6 />
-      <Item7 />
-      <Item8 />
-      <Item9 />
-      <Item10 />
+      <a className="block w-full no-underline" href="/digital-marketing"><Item5 /></a>
+      <a className="block w-full no-underline" href="/digital-marketing"><Item6 /></a>
+      <a className="block w-full no-underline" href="/digital-marketing"><Item7 /></a>
+      <a className="block w-full no-underline" href="/web-development"><Item8 /></a>
+      <a className="block w-full no-underline" href="/digital-marketing"><Item9 /></a>
+      <a className="block w-full no-underline" href="/custom-software"><Item10 /></a>
     </div>
   );
 }
@@ -1680,9 +1680,9 @@ function Item13() {
 function List3() {
   return (
     <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full" data-name="List">
-      <Item11 />
-      <Item12 />
-      <Item13 />
+      <a className="block w-full no-underline" href="/terms-and-conditions"><Item11 /></a>
+      <a className="block w-full no-underline" href="/privacy-policy"><Item12 /></a>
+      <a className="block w-full no-underline" href="/disclaimer"><Item13 /></a>
     </div>
   );
 }

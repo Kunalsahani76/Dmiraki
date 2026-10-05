@@ -79,7 +79,7 @@ function HeroSection() {
               className="text-[#e5e1e4] text-[16px] sm:text-[18px] leading-7 whitespace-nowrap"
               style={{ fontFamily: "'Orbitron', monospace", fontWeight: 400 }}
             >
-              BOO FREE CONSULTATION
+              BOOK FREE CONSULTATION
             </span>
           </a>
           </div>
@@ -401,7 +401,7 @@ function CtaBanner() {
             className="text-[#e5e1e4] text-[16px] sm:text-[18px] leading-7 whitespace-nowrap"
             style={{ fontFamily: "'Orbitron', monospace", fontWeight: 400 }}
           >
-            BOO FREE CONSULTATION
+            BOOK FREE CONSULTATION
           </span>
         </a>
       </div>

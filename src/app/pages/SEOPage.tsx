@@ -98,7 +98,7 @@ export default function SEOPage() {
               className="mt-8 h-[66px] w-full max-w-[365px] border border-white/30 bg-white/[0.03] px-8 text-[#efefef] backdrop-blur-[6px] transition-colors hover:bg-white hover:text-black"
               style={{ ...orbitron, fontSize: "16px", fontWeight: 500, letterSpacing: "0.12em" }}
             >
-              BOO FREE CONSULTATION
+              BOOK FREE CONSULTATION
             </button>
           </div>
 

@@ -23,6 +23,7 @@ import AboutMobilePage from "./pages/AboutMobilePage";
 import { DigitalMarketingMobilePage, IotMobilePage } from "./pages/ServiceMobilePages";
 import BlogPage from "./pages/BlogPage";
 import AdminPage from "./pages/AdminPage";
+import LegalPage from "./pages/LegalPage";
 
 function HomePage() {
   const location = useLocation();
@@ -170,6 +171,17 @@ function SEORoutePage() {
   );
 }
 
+function LegalRoutePage({ page }: { page: "terms" | "privacy" | "disclaimer" }) {
+  return (
+    <div className="w-full min-h-screen bg-[#101010] overflow-x-hidden">
+      <Navbar />
+      <div style={{ height: "62px" }} />
+      <LegalPage page={page} />
+      <SiteFooter />
+    </div>
+  );
+}
+
 export default function App() {
   return (
     <Routes>
@@ -181,6 +193,9 @@ export default function App() {
       <Route path="/web-development" element={<WebDevelopmentRoutePage />} />
       <Route path="/contact" element={<ContactRoutePage />} />
       <Route path="/seo" element={<SEORoutePage />} />
+      <Route path="/terms-and-conditions" element={<LegalRoutePage page="terms" />} />
+      <Route path="/privacy-policy" element={<LegalRoutePage page="privacy" />} />
+      <Route path="/disclaimer" element={<LegalRoutePage page="disclaimer" />} />
       <Route path="/blogs" element={<><Navbar /><div style={{ height: "62px" }} /><BlogPage /><SiteFooter /></>} />
       <Route path="/blogs/:slug" element={<><Navbar /><div style={{ height: "62px" }} /><BlogPage /><SiteFooter /></>} />
       <Route path="/admin" element={<><Navbar /><div style={{ height: "62px" }} /><AdminPage /><SiteFooter /></>} />

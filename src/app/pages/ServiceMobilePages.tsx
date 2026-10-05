@@ -90,7 +90,7 @@ function Hero({
           {copy}
         </p>
         <button className="mt-8 flex w-full items-center justify-center gap-2 border border-white/35 bg-white/5 px-5 py-4 text-[14px] uppercase text-white backdrop-blur-md" style={{ fontFamily: "'Orbitron', sans-serif" }}>
-          BOO FREE CONSULTATION
+          BOOK FREE CONSULTATION
           <ArrowRight className="size-4" />
         </button>
       </div>
@@ -157,7 +157,7 @@ function FooterCta({ title, copy }: { title: string; copy: string }) {
       <Heading dark>{title}</Heading>
       <p className="mt-4 text-[15px] leading-7 text-white/75" style={{ fontFamily: "'Roboto', sans-serif" }}>{copy}</p>
       <button className="mt-7 flex w-full items-center justify-center gap-2 border border-white/40 px-5 py-4 text-[14px] uppercase" style={{ fontFamily: "'Orbitron', sans-serif" }}>
-        BOO FREE CONSULTATION
+        BOOK FREE CONSULTATION
         <ArrowRight className="size-4" />
       </button>
     </section>

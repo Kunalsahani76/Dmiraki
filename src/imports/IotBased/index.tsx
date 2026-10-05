@@ -31,7 +31,7 @@ function Button() {
     <div className="backdrop-blur-[6px] bg-[rgba(255,255,255,0.03)] content-stretch flex flex-col items-center justify-center px-[33px] py-[17px] relative shrink-0" data-name="Button">
       <div aria-hidden className="absolute border border-[rgba(255,255,255,0.3)] border-solid inset-0 pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#e5e1e4] text-[18px] text-center whitespace-nowrap">
-        <p className="leading-[28px]">BOO FREE CONSULTATION</p>
+        <p className="leading-[28px]">BOOK FREE CONSULTATION</p>
       </div>
     </div>
   );
@@ -1353,12 +1353,12 @@ function Item7() {
 function List1() {
   return (
     <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full" data-name="List">
-      <Item2 />
-      <Item3 />
-      <Item4 />
-      <Item5 />
-      <Item6 />
-      <Item7 />
+      <a className="block w-full no-underline" href="/digital-marketing"><Item2 /></a>
+      <a className="block w-full no-underline" href="/digital-marketing"><Item3 /></a>
+      <a className="block w-full no-underline" href="/digital-marketing"><Item4 /></a>
+      <a className="block w-full no-underline" href="/web-development"><Item5 /></a>
+      <a className="block w-full no-underline" href="/digital-marketing"><Item6 /></a>
+      <a className="block w-full no-underline" href="/custom-software"><Item7 /></a>
     </div>
   );
 }
@@ -1415,9 +1415,9 @@ function Item10() {
 function List2() {
   return (
     <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full" data-name="List">
-      <Item8 />
-      <Item9 />
-      <Item10 />
+      <a className="block w-full no-underline" href="/terms-and-conditions"><Item8 /></a>
+      <a className="block w-full no-underline" href="/privacy-policy"><Item9 /></a>
+      <a className="block w-full no-underline" href="/disclaimer"><Item10 /></a>
     </div>
   );
 }

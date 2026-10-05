@@ -1,15 +1,19 @@
 const communityLinks = ["Linkedin", "Instagram"];
 const serviceLinks = [
-  "Social Media",
-  "Branding",
-  "Marketing",
-  "Web Development",
-  "Content Creation",
-  "UI/UX Design",
+  { label: "Social Media", href: "/digital-marketing" },
+  { label: "Branding", href: "/digital-marketing" },
+  { label: "Marketing", href: "/digital-marketing" },
+  { label: "Web Development", href: "/web-development" },
+  { label: "Content Creation", href: "/digital-marketing" },
+  { label: "UI/UX Design", href: "/custom-software" },
 ];
-const legalLinks = ["Terms & Conditions", "Privacy Policy", "Disclaimer"];
+const legalLinks = [
+  { label: "Terms & Conditions", href: "/terms-and-conditions" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Disclaimer", href: "/disclaimer" },
+];
 
-function FooterColumn({ title, items }: { title: string; items: string[] }) {
+function FooterColumn({ title, items }: { title: string; items: string[] | { label: string; href: string }[] }) {
   return (
     <div className="flex flex-col gap-4">
       <h3
@@ -19,15 +23,20 @@ function FooterColumn({ title, items }: { title: string; items: string[] }) {
         {title}
       </h3>
       <div className="flex flex-col gap-3">
-        {items.map((item) => (
-          <p
-            key={item}
-            className="site-footer__text text-[#a1a1aa] text-[16px] leading-6"
-            style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400 }}
-          >
-            {item}
-          </p>
-        ))}
+        {items.map((item) => {
+          const label = typeof item === "string" ? item : item.label;
+          const href = typeof item === "string" ? undefined : item.href;
+          const text = (
+            <span
+              className="site-footer__text text-[#a1a1aa] text-[16px] leading-6"
+              style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400 }}
+            >
+              {label}
+            </span>
+          );
+
+          return href ? <a key={label} className="block no-underline" href={href}>{text}</a> : <p key={label}>{text}</p>;
+        })}
       </div>
     </div>
   );

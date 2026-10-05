@@ -10,7 +10,6 @@ import {
   Network,
   Phone,
   ShieldCheck,
-  TimerReset,
 } from "lucide-react";
 import heroVisual from "../../imports/Home/ba94765630e49ad56eb0745d378f772c95ef7582.png";
 import analyticsVisual from "../../imports/Home/7e7289376327a991cbaea03f686e9c032ef6270e.png";
@@ -19,10 +18,9 @@ const orbitron = { fontFamily: "'Orbitron', sans-serif" };
 const inter = { fontFamily: "'Inter', sans-serif" };
 
 const contactCards = [
-  { icon: Mail, label: "EMAIL", value: "concierge@aether.sys" },
-  { icon: Phone, label: "PHONE", value: "+1 (888) AETHER-0" },
-  { icon: MapPin, label: "LOCATION", value: "Neo-Tokyo, Sector 7" },
-  { icon: TimerReset, label: "HOURS", value: "24/7 Global Access" },
+  { icon: Mail, label: "EMAIL", value: "info@dmiraki.com" },
+  { icon: Phone, label: "PHONE", value: "+91 92113 41245" },
+  { icon: MapPin, label: "LOCATION", value: "B-103, Sector-2 Noida-201301, India" },
 ];
 
 const developItems = [
@@ -137,7 +135,7 @@ export default function ContactPage() {
               className="mt-8 h-[64px] min-w-[365px] border border-white/40 px-8 text-[#eeeeee] transition-colors hover:bg-white hover:text-black max-sm:min-w-full"
               style={{ ...orbitron, fontSize: "13px", fontWeight: 600, letterSpacing: "0.08em" }}
             >
-              BOO FREE CONSULTATION
+              BOOK FREE CONSULTATION
             </button>
           </div>
 
@@ -158,7 +156,7 @@ export default function ContactPage() {
           >
             CONNECT WITH OUR TEAM
           </h2>
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {contactCards.map(({ icon: Icon, label, value }) => (
               <div key={label} className="flex min-h-[165px] flex-col items-center justify-center border border-white/25 bg-white/[0.03] px-5 text-center">
                 <Icon className="mb-4 h-5 w-5 text-[#bdbdbd]" strokeWidth={1.5} />

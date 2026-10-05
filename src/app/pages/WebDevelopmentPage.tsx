@@ -131,7 +131,7 @@ export default function WebDevelopmentPage() {
               className="border border-white/35 px-14 py-5 uppercase text-white transition-colors hover:bg-white hover:text-black"
               style={{ fontFamily: "'Orbitron', sans-serif", fontSize: 13, letterSpacing: "1.4px" }}
             >
-              BOO FREE CONSULTATION
+              BOOK FREE CONSULTATION
             </a>
           </div>
           <DashboardVisual />

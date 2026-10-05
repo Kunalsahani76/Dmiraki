@@ -190,7 +190,13 @@ export function ApproachSection() {
 
 export function ClientLogosSection() {
   return (
-    <section className="w-full overflow-hidden bg-white py-8" aria-label="Our clients">
+    <section className="w-full overflow-hidden bg-white py-12" aria-label="Our clients">
+      <h2
+        className="mb-6 text-center"
+        style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "clamp(22px,3vw,34px)", color: "#0a0a0a", letterSpacing: "-1.5px" }}
+      >
+        Our Clients
+      </h2>
       <div className="client-logo-track flex w-max" role="list">
         {[0, 1].map((copy) => (
           <div
