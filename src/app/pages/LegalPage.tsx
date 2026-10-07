@@ -81,9 +81,9 @@ export default function LegalPage({ page }: { page: LegalPageKey }) {
             For questions about these terms or this policy, contact D'Miraki:
           </p>
           <div className="mt-5 space-y-2 text-sm text-white/80" style={{ fontFamily: "'Inter', sans-serif" }}>
-            <p><a className="hover:text-white" href="mailto:info@dmiraki.com">info@dmiraki.com</a></p>
-            <p><a className="hover:text-white" href="tel:+919211341245">+91 92113 41245</a></p>
-            <p>B-103, Sector-2 Noida-201301, India</p>
+            <p><span className="font-semibold text-white">Number: </span><a className="hover:text-white" href="tel:+919211341245">+91 92113 41245</a></p>
+            <p><span className="font-semibold text-white">Email: </span><a className="hover:text-white" href="mailto:info@dmiraki.com">info@dmiraki.com</a></p>
+            <p><span className="font-semibold text-white">Address: </span>B-103, Sector-2 Noida-201301, India</p>
           </div>
         </section>
       </article>

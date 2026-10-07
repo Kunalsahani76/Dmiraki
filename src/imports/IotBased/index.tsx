@@ -332,8 +332,7 @@ function Container16() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Geist:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#c4c7c8] text-[14px] tracking-[0.14px] w-full">
-          <p className="leading-[22.4px] mb-0">Seamless integration of residential devices for</p>
-          <p className="leading-[22.4px]">enhanced security, comfort, and energy management.</p>
+          <p className="leading-[22.4px]">Seamless integration of residential devices for enhanced security, comfort, and energy management.</p>
         </div>
       </div>
     </div>
@@ -392,8 +391,7 @@ function Container18() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Geist:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#c4c7c8] text-[14px] tracking-[0.14px] w-full">
-          <p className="leading-[22.4px] mb-0">Digitizing manufacturing floors with robust sensor</p>
-          <p className="leading-[22.4px]">networks for optimized throughput and safety.</p>
+          <p className="leading-[22.4px]">Digitizing manufacturing floors with robust sensor networks for optimized throughput and safety.</p>
         </div>
       </div>
     </div>
@@ -452,8 +450,7 @@ function Container20() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Geist:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#c4c7c8] text-[14px] tracking-[0.14px] w-full">
-          <p className="leading-[22.4px] mb-0">Custom mobile interfaces designed for precise control</p>
-          <p className="leading-[22.4px]">and monitoring of connected hardware on the go.</p>
+          <p className="leading-[22.4px]">Custom mobile interfaces designed for precise control and monitoring of connected hardware on the go.</p>
         </div>
       </div>
     </div>
@@ -512,8 +509,7 @@ function Container22() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Geist:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#c4c7c8] text-[14px] tracking-[0.14px] w-full">
-          <p className="leading-[22.4px] mb-0">High-fidelity data streams from field devices visualized</p>
-          <p className="leading-[22.4px]">in milliseconds for immediate action.</p>
+          <p className="leading-[22.4px]">High-fidelity data streams from field devices visualized in milliseconds for immediate action.</p>
         </div>
       </div>
     </div>
@@ -572,8 +568,7 @@ function Container24() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Geist:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#c4c7c8] text-[14px] tracking-[0.14px] w-full">
-          <p className="leading-[22.4px] mb-0">End-to-end integration of custom sensors and</p>
-          <p className="leading-[22.4px]">embedded systems into centralized cloud architectures.</p>
+          <p className="leading-[22.4px]">End-to-end integration of custom sensors and embedded systems into centralized cloud architectures.</p>
         </div>
       </div>
     </div>
@@ -632,8 +627,7 @@ function Container26() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Geist:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#c4c7c8] text-[14px] tracking-[0.14px] w-full">
-          <p className="leading-[22.4px] mb-0">Scalable backend infrastructures designed to manage</p>
-          <p className="leading-[22.4px]">millions of concurrent device connections securely.</p>
+          <p className="leading-[22.4px]">Scalable backend infrastructures designed to manage millions of concurrent device connections securely.</p>
         </div>
       </div>
     </div>
@@ -1115,8 +1109,7 @@ function Container46() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container">
       <div className="[word-break:break-word] capitalize flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#c4c7c8] text-[14px] tracking-[0.14px] w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
-        <p className="leading-[22.4px] mb-0">AES-256 encrypted tunnels for all device-to-</p>
-        <p className="leading-[22.4px]">cloud telemetry.</p>
+        <p className="leading-[22.4px]">AES-256 encrypted tunnels for all device-to-cloud telemetry.</p>
       </div>
     </div>
   );
