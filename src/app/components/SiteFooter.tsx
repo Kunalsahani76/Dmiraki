@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 const communityLinks = ["Linkedin", "Instagram"];
 const serviceLinks = [
   { label: "Digital Marketing", href: "/digital-marketing" },
@@ -34,7 +36,7 @@ function FooterColumn({ title, items }: { title: string; items: string[] | { lab
             </span>
           );
 
-          return href ? <a key={label} className="block no-underline" href={href}>{text}</a> : <p key={label}>{text}</p>;
+          return href ? <Link key={label} className="block no-underline" to={href}>{text}</Link> : <p key={label}>{text}</p>;
         })}
       </div>
     </div>

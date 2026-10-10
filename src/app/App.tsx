@@ -24,6 +24,7 @@ import { DigitalMarketingMobilePage, IotMobilePage } from "./pages/ServiceMobile
 import BlogPage from "./pages/BlogPage";
 import AdminPage from "./pages/AdminPage";
 import LegalPage from "./pages/LegalPage";
+import { SeoMetadata } from "./components/SeoMetadata";
 
 function HomePage() {
   const location = useLocation();
@@ -184,6 +185,8 @@ function LegalRoutePage({ page }: { page: "terms" | "privacy" | "disclaimer" }) 
 
 export default function App() {
   return (
+    <>
+    <SeoMetadata />
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/about" element={<AboutPage />} />
@@ -201,5 +204,6 @@ export default function App() {
       <Route path="/admin" element={<><Navbar /><div style={{ height: "62px" }} /><AdminPage /><SiteFooter /></>} />
       <Route path="/blog" element={<><Navbar /><div style={{ height: "62px" }} /><AdminPage /><SiteFooter /></>} />
     </Routes>
+    </>
   );
 }
