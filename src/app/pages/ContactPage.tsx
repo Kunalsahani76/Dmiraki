@@ -116,6 +116,20 @@ function SectionHeading({ children }: { children: string }) {
 }
 
 export default function ContactPage() {
+  const sendInquiryToWhatsApp = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const fields = new FormData(event.currentTarget);
+    const message = [
+      "Website inquiry",
+      `Name: ${fields.get("name")}`,
+      `Email: ${fields.get("email")}`,
+      `Phone: ${fields.get("phone")}`,
+      `Service: ${fields.get("service")}`,
+      `Project details: ${fields.get("details")}`,
+    ].join("\n");
+    window.location.href = `https://wa.me/919211341245?text=${encodeURIComponent(message)}`;
+  };
+
   return (
     <main className="min-h-screen bg-[#060606] text-white">
       <section className="relative overflow-hidden bg-[radial-gradient(circle_at_68%_18%,rgba(97,97,97,0.42),transparent_28%),linear-gradient(135deg,#020202_0%,#060606_52%,#1d1d1d_100%)]">
@@ -176,13 +190,16 @@ export default function ContactPage() {
         <div className="mx-auto grid max-w-[1110px] grid-cols-1 gap-16 lg:grid-cols-[1fr_0.9fr]">
           <div>
             <SectionHeading>SEND US A MESSAGE</SectionHeading>
-            <form className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
+            <form className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2" onSubmit={sendInquiryToWhatsApp}>
               {["FULL NAME", "EMAIL ADDRESS", "PHONE NUMBER"].map((label, index) => (
                 <label key={label} className="flex flex-col gap-3">
                   <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#d6d6d6]" style={inter}>
                     {label}
                   </span>
                   <input
+                    name={index === 0 ? "name" : index === 1 ? "email" : "phone"}
+                    type={index === 1 ? "email" : index === 2 ? "tel" : "text"}
+                    required
                     className="h-[58px] border border-white/25 bg-black/20 px-5 text-sm text-white outline-none transition-colors placeholder:text-[#7d7d7d] focus:border-white/70"
                     placeholder={index === 0 ? "John Doe" : index === 1 ? "john@enterprise.com" : "+1 (555) 000-0000"}
                   />
@@ -192,7 +209,7 @@ export default function ContactPage() {
                 <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#d6d6d6]" style={inter}>
                   SERVICE
                 </span>
-                <select className="h-[58px] border border-white/25 bg-black/20 px-5 text-sm text-[#9f9f9f] outline-none transition-colors focus:border-white/70">
+                <select name="service" className="h-[58px] border border-white/25 bg-black/20 px-5 text-sm text-[#9f9f9f] outline-none transition-colors focus:border-white/70">
                   <option>System Architecture</option>
                   <option>Custom Software</option>
                   <option>Web Development</option>
@@ -204,11 +221,14 @@ export default function ContactPage() {
                   PROJECT DETAILS
                 </span>
                 <textarea
+                  name="details"
+                  required
                   className="min-h-[132px] resize-none border border-white/25 bg-black/20 px-5 py-5 text-sm text-white outline-none transition-colors placeholder:text-[#7d7d7d] focus:border-white/70"
                   placeholder="Briefly describe your objectives..."
                 />
               </label>
               <button
+                type="submit"
                 className="h-[66px] bg-[linear-gradient(180deg,#ffffff_0%,#d9dce2_100%)] text-[#5b5b5b] transition-opacity hover:opacity-85 sm:col-span-2"
                 style={{ ...orbitron, fontSize: "13px", fontWeight: 700, letterSpacing: "0.08em" }}
               >

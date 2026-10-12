@@ -3,6 +3,20 @@ import { ChevronDown, Mail, MapPin, Phone } from "lucide-react";
 import { SiteFooter } from "./SiteFooter";
 
 export function DreamingBigSection() {
+  const sendInquiryToWhatsApp = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const fields = new FormData(event.currentTarget);
+    const message = [
+      "Website inquiry",
+      `Name: ${[fields.get("firstName"), fields.get("lastName")].filter(Boolean).join(" ")}`,
+      `Email: ${fields.get("email")}`,
+      `Phone: ${fields.get("phone")}`,
+      `Subject: ${fields.get("subject")}`,
+      `Project details: ${fields.get("details")}`,
+    ].join("\n");
+    window.location.href = `https://wa.me/919211341245?text=${encodeURIComponent(message)}`;
+  };
+
   return (
     <section id="contact" className="w-full border-y border-black bg-white">
       <div
@@ -39,16 +53,20 @@ export function DreamingBigSection() {
           </div>
         </div>
 
-        <form className="flex flex-col gap-4" onSubmit={(e) => e.preventDefault()}>
+        <form className="flex flex-col gap-4" onSubmit={sendInquiryToWhatsApp}>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <input
               type="text"
+              name="firstName"
+              required
               placeholder="First name"
               className="h-12 rounded-[2px] bg-[#262626] px-4 text-[#f4f4f4] outline-none placeholder:text-[#f4f4f4]/90"
               style={{ fontFamily: "'Inter', sans-serif", fontSize: "16px" }}
             />
             <input
               type="text"
+              name="lastName"
+              required
               placeholder="Last Name"
               className="h-12 rounded-[2px] bg-[#262626] px-4 text-[#f4f4f4] outline-none placeholder:text-[#f4f4f4]/90"
               style={{ fontFamily: "'Inter', sans-serif", fontSize: "16px" }}
@@ -56,23 +74,31 @@ export function DreamingBigSection() {
           </div>
           <input
             type="email"
+            name="email"
+            required
             placeholder="Email"
             className="h-12 rounded-[2px] bg-[#262626] px-4 text-[#f4f4f4] outline-none placeholder:text-[#f4f4f4]/90"
             style={{ fontFamily: "'Inter', sans-serif", fontSize: "16px" }}
           />
           <input
             type="tel"
+            name="phone"
+            required
             placeholder="Phone number"
             className="h-12 rounded-[2px] bg-[#262626] px-4 text-[#f4f4f4] outline-none placeholder:text-[#f4f4f4]/90"
             style={{ fontFamily: "'Inter', sans-serif", fontSize: "16px" }}
           />
           <input
             type="text"
+            name="subject"
+            required
             placeholder="Enter subject"
             className="h-12 rounded-[2px] bg-[#262626] px-4 text-[#f4f4f4] outline-none placeholder:text-[#f4f4f4]/90"
             style={{ fontFamily: "'Inter', sans-serif", fontSize: "16px" }}
           />
           <textarea
+            name="details"
+            required
             placeholder="Short description of the project"
             rows={5}
             className="min-h-[124px] resize-none rounded-[2px] bg-[#262626] px-4 py-3 text-[#f4f4f4] outline-none placeholder:text-[#f4f4f4]/90"
