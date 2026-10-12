@@ -22,7 +22,7 @@ function Container1() {
   return (
     <div className="content-stretch flex flex-col items-start max-w-[560px] relative shrink-0 w-[560px]" data-name="Container">
       <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-white w-full">
-        <p className="leading-[26px]">Your strategic partner in digital success - passionate experts dedicated to your growth.</p>
+        <p className="leading-[26px]">At DMiraki, we believe technology should solve real problems, not add to them.</p>
       </div>
     </div>
   );
@@ -32,11 +32,7 @@ function Container2() {
   return (
     <div className="content-stretch flex flex-col items-start max-w-[560px] opacity-80 relative shrink-0 w-[560px]" data-name="Container">
       <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-white w-full">
-        <p className="leading-[26px]">We empower businesses to achieve sustainable growth
-through strategic digital innovation. Our mission is to build
-partnerships, not just services, creating lasting value for
-ambitious businesses ready to transform their online
-presence.</p>
+        <p className="leading-[26px]">With <strong>15+ years of experience in top-tier MNCs</strong>, we understand the challenges businesses face when trying to grow, manage operations, and reach the right customers. We bring together software development, mobile apps, CRM, parking management solutions, and digital marketing to help businesses simplify their work and build a stronger digital presence. We take the time to understand your business before we suggest a solution. Because the right technology starts with the right understanding.</p>
       </div>
     </div>
   );
@@ -143,7 +139,7 @@ function Frame21() {
         <div className="content-stretch flex gap-[10px] items-start px-[16px] py-[20px] relative size-full">
           <Frame8 />
           <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[20px] text-black text-left tracking-[-0.2px] w-[480px]" style={{ fontVariationSettings: '"wdth" 100' }}>
-            <p className="leading-[32px]">Empowering businesses to achieve sustainable growth through strategic digital innovation. We build partnerships, not just services.</p>
+            <p className="leading-[32px]">To understand our customers' challenges and help them find the right technology and digital solutions for their business. From software and mobile app development to CRM and digital marketing, our focus is on solving real problems and making work easier for our customers.</p>
           </div>
         </div>
       </div>
@@ -334,7 +330,7 @@ function Frame22() {
         <div className="content-stretch flex gap-[10px] items-center justify-center px-[16px] py-[20px] relative size-full">
           <Frame7 />
           <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[20px] text-black tracking-[-0.2px] w-[480px]" style={{ fontVariationSettings: '"wdth" 100' }}>
-            <p className="leading-[32px]">Empowering businesses to achieve sustainable growth through strategic digital innovation. We build partnerships, not just services.</p>
+            <p className="leading-[32px]">To build a business where every customer feels heard, respected, and supported not just until a project is delivered, but throughout the relationship. We want DMiraki to be a name people trust for honest advice, dependable support, and solutions that make sense for their business.</p>
           </div>
         </div>
       </div>
@@ -398,8 +394,7 @@ function Frame10() {
         <p className="leading-[48px]">OUR STORY</p>
       </div>
       <div className="flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center relative shrink-0 text-left text-[#333] text-[16px] tracking-[-0.2px] w-[620px]">
-  <p className="leading-[32px] mb-0">Founded on the principle that every business deserves exceptional digital presence.</p>
-        <p className="leading-[32px]">DMIRAKI has grown from a small team of passionate experts to a comprehensive agency trusted worldwide.</p>
+  <p className="leading-[32px]">We believe good work starts with understanding people. DMiraki was built on a simple belief: businesses don't need more promises; they need people who understand their challenges and care about getting things right. With experience across technology and digital marketing, we look beyond the brief to understand what a business is trying to achieve, what's holding it back, and where we can make a real difference. We don't believe in recommending solutions just because we offer them. We believe in honest conversations, thoughtful work, and relationships built on trust. Because behind every business is a person who has invested their time, money, and belief in making it work. <strong>We respect that.</strong></p>
       </div>
     </div>
   );
@@ -431,9 +426,7 @@ function Frame12() {
       </div>
       <div className="flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center relative shrink-0 text-center text-[#c9c9c9] text-[20px] tracking-[-0.2px] w-full">
         <p className="leading-[32px]">
-          Founded on the principle that every business deserves exceptional digital presence.<br />
-          DMIRAKI has grown from a small team of passionate experts to a comprehensive agency trusted worldwide.
-        </p>
+          We put people before projects and relationships before transactions. We listen before we suggest, speak honestly about what is possible, and recommend solutions based on what our customers actually need. For us, trust is earned through actions, not words.\n        </p>
       </div>
     </div>
   );
@@ -3323,7 +3316,7 @@ function HorizontalBorder() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <div className="content-stretch flex flex-col items-start pt-[2px] relative shrink-0 w-full border-t-2 border-black" data-name="HorizontalBorder">
+    <div className="content-stretch grid grid-cols-1 lg:grid-cols-2 gap-x-8 items-start pt-[2px] relative shrink-0 w-full border-t-2 border-black" data-name="HorizontalBorder">
       {aboutFaqItems.map(([question, answer], index) => {
         const isOpen = openIndex === index;
 
@@ -3335,12 +3328,12 @@ function HorizontalBorder() {
             onClick={() => setOpenIndex(isOpen ? null : index)}
             type="button"
           >
-            <p className="font-['Roboto:Regular',sans-serif] font-normal leading-[22px] text-[14px] text-black">{question}</p>
+            <p className="font-['Roboto:Regular',sans-serif] font-normal leading-[22px] font-bold text-[18px] text-black">{question}</p>
             <span className="font-['Inter:Regular',sans-serif] text-[24px] leading-none text-black">{isOpen ? "⌃" : "⌄"}</span>
           </button>
           {isOpen && (
             <div className="flex items-center justify-between gap-[24px] border-b-2 border-l-0 border-black px-[16px] py-[32px]">
-              <p className="font-['Roboto:Regular',sans-serif] font-normal leading-[22px] text-[14px] text-black">{answer}</p>
+              <p className="font-['Roboto:Regular',sans-serif] font-normal leading-[28px] text-[17px] text-black">{answer}</p>
             </div>
           )}
         </div>
@@ -3761,6 +3754,11 @@ export default function About() {
       <Frame6 />
       <Frame11 />
       <Frame13 />
+      <section className="w-full max-w-[1226px] border border-black p-8 text-black">
+        <h2 className="mb-4 font-['Pirulen:Regular',sans-serif] text-[32px]">WHAT DMIRAKI STANDS FOR</h2>
+        <p className="text-[20px] font-bold leading-8">Customers are not just projects or payments. They are the reason we do what we do.</p>
+        <p className="mt-2 text-[18px] leading-7">We listen, we stay honest, and we work towards finding the right solution together.</p>
+      </section>
       <Frame18 />
       <Frame23 />
       <Frame25 />

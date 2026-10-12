@@ -90,7 +90,7 @@ function MobileFAQItem({ q, a }: { q: string; a: string }) {
   return (
     <div className="border-b-2 border-black">
       <button className="flex w-full items-start justify-between gap-4 py-6 text-left" onClick={() => setOpen((value) => !value)}>
-        <span className="text-[18px] leading-7 text-black" style={{ fontFamily: "'Roboto', sans-serif" }}>{q}</span>
+        <span className="text-[19px] font-bold leading-7 text-black" style={{ fontFamily: "'Roboto', sans-serif" }}>{q}</span>
         <ChevronDown className="mt-1 size-5 shrink-0 transition-transform" style={{ transform: open ? "rotate(180deg)" : "rotate(0deg)" }} />
       </button>
       {open && (
@@ -113,14 +113,10 @@ export default function AboutMobilePage() {
               ABOUT<br />DMIRAKI
             </h1>
             <p className="mt-5 text-[15px] leading-6" style={{ fontFamily: "'Roboto', sans-serif" }}>
-              Your strategic partner in digital success - passionate experts dedicated to your growth.
+              At DMiraki, we believe technology should solve real problems, not add to them.
             </p>
             <p className="mt-4 text-[14px] leading-6 text-white/80" style={{ fontFamily: "'Roboto', sans-serif" }}>
-              We empower businesses to achieve sustainable growth
-through strategic digital innovation. Our mission is to build
-partnerships, not just services, creating lasting value for
-ambitious businesses ready to transform their online
-presence.
+              With <strong>15+ years of experience in top-tier MNCs</strong>, we understand the challenges businesses face when trying to grow, manage operations, and reach the right customers. We bring together software development, mobile apps, CRM, parking management solutions, and digital marketing to help businesses simplify their work and build a stronger digital presence. We take the time to understand your business before we suggest a solution. Because the right technology starts with the right understanding.
             </p>
           </div>
           <div className="about-hero-floating-image overflow-hidden border border-white/40 bg-white/10 shadow-2xl">
@@ -155,8 +151,7 @@ presence.
         <div className="border border-black p-5">
           <SectionHeading title="OUR STORY" />
           <p className="mt-4 text-[15px] leading-7 text-[#333]" style={{ fontFamily: "'Roboto', sans-serif" }}>
-            Founded on the principle that every business deserves exceptional digital presence.<br />
-            DMIRAKI has grown from a small team of passionate experts to a comprehensive agency trusted worldwide.
+            We believe good work starts with understanding people. DMiraki was built on a simple belief: businesses don't need more promises; they need people who understand their challenges and care about getting things right. With experience across technology and digital marketing, we look beyond the brief to understand what a business is trying to achieve, what's holding it back, and where we can make a real difference. We don't believe in recommending solutions just because we offer them. We believe in honest conversations, thoughtful work, and relationships built on trust. Because behind every business is a person who has invested their time, money, and belief in making it work. <strong>We respect that.</strong>
           </p>
           <img alt="Our Story" className="mt-5 aspect-[469/296] w-full object-cover" src={imgStory} />
         </div>
@@ -166,9 +161,7 @@ presence.
         <div className="text-center">
           <SectionHeading title="OUR VALUES" dark />
           <p className="mt-4 text-[15px] leading-7 text-white/75" style={{ fontFamily: "'Roboto', sans-serif" }}>
-            Founded on the principle that every business deserves exceptional digital presence.<br />
-            DMIRAKI has grown from a small team of passionate experts to a comprehensive agency trusted worldwide.
-          </p>
+            We put people before projects and relationships before transactions. We listen before we suggest, speak honestly about what is possible, and recommend solutions based on what our customers actually need. For us, trust is earned through actions, not words.\n          </p>
         </div>
         <div className="mt-7 grid gap-5">
           {values.map(([title, body]) => (
@@ -183,6 +176,12 @@ presence.
             </div>
           ))}
         </div>
+      </section>
+
+      <section className="mx-5 my-8 border border-black p-6 text-black">
+        <SectionHeading title="WHAT DMIRAKI STANDS FOR" />
+        <p className="mt-4 text-[16px] font-bold leading-7" style={{ fontFamily: "'Roboto', sans-serif" }}>Customers are not just projects or payments. They are the reason we do what we do.</p>
+        <p className="mt-2 text-[16px] leading-7" style={{ fontFamily: "'Roboto', sans-serif" }}>We listen, we stay honest, and we work towards finding the right solution together.</p>
       </section>
 
       <section className="px-5 py-10">
@@ -234,7 +233,7 @@ presence.
       <DreamingBigSection />
       <section className="bg-white px-5 py-10">
         <SectionHeading title="FREQUENTLY ASKED QUESTIONS" />
-        <div className="mt-6 border-t-2 border-black">
+        <div className="mt-6 grid grid-cols-1 gap-x-10 border-t-2 border-black md:grid-cols-2">
           {faqs.map(([q, a]) => (
             <MobileFAQItem key={q} q={q} a={a} />
           ))}
