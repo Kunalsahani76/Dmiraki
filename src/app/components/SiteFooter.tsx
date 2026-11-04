@@ -73,7 +73,7 @@ export function SiteFooter() {
               </a>
               <div className="flex items-center gap-4 text-[#a1a1aa]">
                 <MapPin aria-hidden="true" className="h-6 w-6 shrink-0 text-white" strokeWidth={1.8} />
-                <span className="site-footer__text text-[16px] leading-6 sm:text-[18px]" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400 }}>B-103, Sector-2 Noida-201301, India</span>
+                <span className="site-footer__text text-[16px] leading-6 sm:text-[18px]" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400 }}>A-20, Global Business Park, Sector 63, Noida, Uttar Pradesh – 201309, India.</span>
               </div>
             </div>
           </div>

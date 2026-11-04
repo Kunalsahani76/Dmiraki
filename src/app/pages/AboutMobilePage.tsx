@@ -226,7 +226,7 @@ export default function AboutMobilePage() {
         <div className="mt-6 grid gap-4 text-[15px] text-black" style={{ fontFamily: "'Inter', sans-serif" }}>
           <div className="flex min-w-0 items-center gap-3"><Phone className="size-5 shrink-0" /><span>+91 92113 41245</span></div>
           <div className="flex min-w-0 items-center gap-3"><Mail className="size-5 shrink-0" /><span className="break-all">info@dmiraki.com</span></div>
-          <div className="flex min-w-0 items-start gap-3"><MapPin className="mt-1 size-5 shrink-0" /><span>B-103, Sector-2 Noida-201301, India</span></div>
+          <div className="flex min-w-0 items-start gap-3"><MapPin className="mt-1 size-5 shrink-0" /><span>A-20, Global Business Park, Sector 63, Noida, Uttar Pradesh – 201309, India.</span></div>
         </div>
       </section>
 

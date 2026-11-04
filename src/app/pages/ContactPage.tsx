@@ -20,7 +20,7 @@ const inter = { fontFamily: "'Inter', sans-serif" };
 const contactCards = [
   { icon: Mail, label: "EMAIL", value: "info@dmiraki.com" },
   { icon: Phone, label: "PHONE", value: "+91 92113 41245" },
-  { icon: MapPin, label: "LOCATION", value: "B-103, Sector-2 Noida-201301, India" },
+  { icon: MapPin, label: "LOCATION", value: "A-20, Global Business Park, Sector 63, Noida, Uttar Pradesh – 201309, India." },
 ];
 
 const developItems = [

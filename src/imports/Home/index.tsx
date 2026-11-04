@@ -2184,7 +2184,7 @@ function Margin3() {
   return (
     <div className="content-stretch flex flex-col items-start pl-[16px] relative shrink-0" data-name="Margin">
       <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[18px] text-black whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
-        <p className="leading-[28px]">B-103, Sector-2 Noida-201301, India</p>
+        <p className="leading-[28px]">A-20, Global Business Park, Sector 63, Noida, Uttar Pradesh – 201309, India.</p>
       </div>
     </div>
   );
