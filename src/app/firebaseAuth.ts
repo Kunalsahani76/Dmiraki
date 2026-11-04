@@ -1,13 +1,10 @@
 import { getApp, getApps, initializeApp } from "firebase/app";
 import {
-  createUserWithEmailAndPassword,
   getAuth,
-  GoogleAuthProvider,
   onAuthStateChanged,
   signInWithEmailAndPassword,
-  signInWithPopup,
   signOut,
-  updateProfile,
+  getIdTokenResult,
   type User,
 } from "firebase/auth";
 
@@ -43,22 +40,14 @@ export function getAuthError(error: unknown) {
   return error instanceof Error ? error.message : "Authentication failed. Please try again.";
 }
 
-export async function registerWithEmail(name: string, email: string, password: string) {
-  const credential = await createUserWithEmailAndPassword(auth, email, password);
-  await updateProfile(credential.user, { displayName: name });
-  return credential.user;
-}
-
 export async function loginWithEmail(email: string, password: string) {
   const credential = await signInWithEmailAndPassword(auth, email, password);
   return credential.user;
 }
 
-export async function loginWithGoogle() {
-  const provider = new GoogleAuthProvider();
-  provider.setCustomParameters({ prompt: "select_account" });
-  const result = await signInWithPopup(auth, provider);
-  return result.user;
+export async function isAuthorizedBlogAdmin(user: User) {
+  const token = await getIdTokenResult(user);
+  return token.claims.admin === true;
 }
 
 export function observeAuthUser(callback: (user: User | null) => void) {

@@ -17,14 +17,14 @@ export function Navbar() {
     ["IOT-BASED SOLUTIONS", "iot"],
     ["WEB DEVELOPMENT SERVICES", "web-dev"],
   ];
-  const servicePaths = ["/digital-marketing", "/seo", "/custom-software", "/iot", "/web-development"];
+  const servicePaths = ["/digital-marketing", "/seo-services", "/custom-software", "/iot-solutions", "/web-development"];
   const pathById: Record<string, string> = {
     hero: "/",
     about: "/about",
     "digital-marketing": "/digital-marketing",
-    seo: "/seo",
+    seo: "/seo-services",
     "custom-software": "/custom-software",
-    iot: "/iot",
+    iot: "/iot-solutions",
     "web-dev": "/web-development",
     contact: "/contact",
   };
@@ -64,7 +64,7 @@ export function Navbar() {
     }
 
     if (id === "seo") {
-      navigate("/seo");
+      navigate("/seo-services");
       return;
     }
 
@@ -74,7 +74,7 @@ export function Navbar() {
     }
 
     if (id === "iot") {
-      navigate("/iot");
+      navigate("/iot-solutions");
       return;
     }
 
@@ -194,7 +194,6 @@ export function Navbar() {
             </button>
             {blogsOpen && <div className="absolute left-0 top-full z-50 mt-3 min-w-[180px] border border-black bg-[#fbfbfb] p-2 shadow-lg">
               <button onClick={() => { setBlogsOpen(false); navigate("/blogs"); }} className="block w-full px-4 py-3 text-left text-sm text-[#333] hover:bg-black hover:text-white">All Blogs</button>
-              <button onClick={() => { setBlogsOpen(false); navigate("/admin"); }} className="block w-full px-4 py-3 text-left text-sm text-[#333] hover:bg-black hover:text-white">Admin Panel</button>
             </div>}
           </div>
           <button
@@ -281,7 +280,6 @@ export function Navbar() {
           </button>
           {blogsOpen && <div className="flex flex-col gap-1 border-l border-black/30 pl-4">
             <button onClick={() => { setMenuOpen(false); setBlogsOpen(false); navigate("/blogs"); }} className="py-2 text-left text-sm text-[#555] hover:text-black">All Blogs</button>
-            <button onClick={() => { setMenuOpen(false); setBlogsOpen(false); navigate("/admin"); }} className="py-2 text-left text-sm text-[#555] hover:text-black">Admin Panel</button>
           </div>}
           <button
             onClick={() => scrollTo("contact")}

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Route, Routes, useLocation } from "react-router";
+import { Navigate, Route, Routes, useLocation } from "react-router";
 import { Navbar } from "./components/Navbar";
 import { HeroSection } from "./components/HeroSection";
 import { WhatWeOfferTitle } from "./components/AboutSection";
@@ -192,17 +192,19 @@ export default function App() {
       <Route path="/about" element={<AboutPage />} />
       <Route path="/digital-marketing" element={<DigitalMarketingPage />} />
       <Route path="/custom-software" element={<CustomSoftwarePage />} />
-      <Route path="/iot" element={<IotPage />} />
+      <Route path="/iot-solutions" element={<IotPage />} />
+      <Route path="/iot" element={<Navigate to="/iot-solutions" replace />} />
       <Route path="/web-development" element={<WebDevelopmentRoutePage />} />
       <Route path="/contact" element={<ContactRoutePage />} />
-      <Route path="/seo" element={<SEORoutePage />} />
+      <Route path="/seo-services" element={<SEORoutePage />} />
+      <Route path="/seo" element={<Navigate to="/seo-services" replace />} />
       <Route path="/terms-and-conditions" element={<LegalRoutePage page="terms" />} />
       <Route path="/privacy-policy" element={<LegalRoutePage page="privacy" />} />
       <Route path="/disclaimer" element={<LegalRoutePage page="disclaimer" />} />
       <Route path="/blogs" element={<><Navbar /><div style={{ height: "62px" }} /><BlogPage /><SiteFooter /></>} />
       <Route path="/blogs/:slug" element={<><Navbar /><div style={{ height: "62px" }} /><BlogPage /><SiteFooter /></>} />
-      <Route path="/admin" element={<><Navbar /><div style={{ height: "62px" }} /><AdminPage /><SiteFooter /></>} />
-      <Route path="/blog" element={<><Navbar /><div style={{ height: "62px" }} /><AdminPage /><SiteFooter /></>} />
+      <Route path="/admin" element={<AdminPage />} />
+      <Route path="/blog" element={<AdminPage />} />
     </Routes>
     </>
   );

@@ -1,15 +1,11 @@
 import { useEffect, useMemo, useState, type FormEvent } from "react";
 import { useNavigate } from "react-router";
 import { Eye, EyeOff, Plus, X } from "lucide-react";
-import { getAuthError, loginWithEmail, loginWithGoogle, logoutUser, observeAuthUser, registerWithEmail } from "../firebaseAuth";
+import { getAuthError, isAuthorizedBlogAdmin, loginWithEmail, logoutUser, observeAuthUser } from "../firebaseAuth";
 import type { User } from "firebase/auth";
 
 const postsKey = "dmiraki-blog-posts";
-const usersKey = "dmiraki-admin-users";
-const credentialsKey = "dmiraki-admin-credentials";
 type BlogPost = { title: string; slug: string; description: string; content: string; category: string; image?: string; publishedAt: string; author?: string; tags?: string[]; focusKeyword?: string };
-type AdminUser = { name: string; email: string };
-type Credential = { label: string; username: string; value: string };
 type PostForm = Omit<BlogPost, "image" | "publishedAt"> & { image: string };
 const blankForm: PostForm = { title: "", slug: "", description: "", content: "", category: "Digital Marketing", image: "", author: "", tags: [], focusKeyword: "" };
 
@@ -26,7 +22,7 @@ function formatDate(value: string) {
 
 export default function AdminPage() {
   const [user, setUser] = useState<User | null>(null);
-  const [mode, setMode] = useState<"login" | "signup">("login");
+  const [authLoading, setAuthLoading] = useState(true);
   const [error, setError] = useState("");
   const [passwordVisible, setPasswordVisible] = useState(false);
   const [posts, setPosts] = useState<BlogPost[]>(() => readList<BlogPost>(postsKey));
@@ -39,23 +35,36 @@ export default function AdminPage() {
   const [form, setForm] = useState<PostForm>(blankForm);
   const [tagInput, setTagInput] = useState("");
   const [notice, setNotice] = useState("");
-  const [modal, setModal] = useState<"user" | "credential" | null>(null);
-  const [adminUsers, setAdminUsers] = useState<AdminUser[]>(() => readList<AdminUser>(usersKey));
-  const [credentials, setCredentials] = useState<Credential[]>(() => readList<Credential>(credentialsKey));
   const navigate = useNavigate();
 
-  useEffect(() => observeAuthUser(setUser), []);
+  useEffect(() => observeAuthUser(async (authenticatedUser) => {
+    if (!authenticatedUser) {
+      setUser(null);
+      setAuthLoading(false);
+      return;
+    }
+    try {
+      if (await isAuthorizedBlogAdmin(authenticatedUser)) setUser(authenticatedUser);
+      else {
+        setUser(null);
+        setError("This account is not authorized to access Blog Admin.");
+        await logoutUser();
+      }
+    } catch (cause) {
+      setUser(null);
+      setError(getAuthError(cause));
+      await logoutUser().catch(() => undefined);
+    } finally { setAuthLoading(false); }
+  }), []);
 
   async function authenticate(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     const email = String(data.get("email") || "").trim();
     const password = String(data.get("password") || "");
-    const name = String(data.get("name") || "").trim();
     setError("");
     try {
-      if (mode === "signup") await registerWithEmail(name, email, password);
-      else await loginWithEmail(email, password);
+      await loginWithEmail(email, password);
     } catch (cause) { setError(getAuthError(cause)); }
   }
 
@@ -99,26 +108,6 @@ export default function AdminPage() {
     window.setTimeout(() => setNotice(""), 3000);
   }
 
-  function saveUser(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    const next = [...adminUsers, { name: String(data.get("name") || "").trim(), email: String(data.get("email") || "").trim() }];
-    localStorage.setItem(usersKey, JSON.stringify(next));
-    setAdminUsers(next);
-    setModal(null);
-    setNotice("User added.");
-  }
-
-  function saveCredential(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    const next = [...credentials, { label: String(data.get("label") || "").trim(), username: String(data.get("username") || "").trim(), value: String(data.get("value") || "") }];
-    localStorage.setItem(credentialsKey, JSON.stringify(next));
-    setCredentials(next);
-    setModal(null);
-    setNotice("Credential added.");
-  }
-
   const filteredPosts = useMemo(() => posts.filter((post) => {
     const matchesCategory = categoryFilter === "All" || post.category === categoryFilter;
     const query = search.trim().toLowerCase();
@@ -131,19 +120,16 @@ export default function AdminPage() {
 
   return (
     <main className="min-h-screen bg-[#080808] text-white">
-      {!user ? (
+      {authLoading ? <section className="flex min-h-[calc(100vh-62px)] items-center justify-center px-5 text-sm text-white/65">Checking admin access…</section> : !user ? (
         <section className="flex min-h-[calc(100vh-62px)] items-center justify-center px-5 py-12">
           <form onSubmit={authenticate} className="relative w-full max-w-[440px] border border-white/25 bg-[#151515] px-8 py-8 sm:px-10">
             <button type="button" aria-label="Back to home" onClick={() => navigate("/")} className="absolute right-5 top-5 text-white/60 hover:text-white"><X /></button>
-            <h1 className="mb-7 text-center text-2xl font-semibold">{mode === "login" ? "Admin Log In" : "Admin Sign Up"}</h1>
-            {mode === "signup" && <input name="name" required autoComplete="name" placeholder="Name" className={`${inputClass} mb-3`} />}
+            <h1 className="mb-7 text-center text-2xl font-semibold">Admin Log In</h1>
             <input name="email" type="email" required autoComplete="email" placeholder="Email" className={`${inputClass} mb-3`} />
-            <div className="relative mb-3"><input name="password" type={passwordVisible ? "text" : "password"} required minLength={6} autoComplete={mode === "login" ? "current-password" : "new-password"} placeholder="Password" className={`${inputClass} pr-11`} /><button type="button" aria-label={passwordVisible ? "Hide password" : "Show password"} onClick={() => setPasswordVisible(!passwordVisible)} className="absolute right-3 top-1/2 -translate-y-1/2 text-white/55">{passwordVisible ? <EyeOff size={16} /> : <Eye size={16} />}</button></div>
+            <div className="relative mb-3"><input name="password" type={passwordVisible ? "text" : "password"} required autoComplete="current-password" placeholder="Password" className={`${inputClass} pr-11`} /><button type="button" aria-label={passwordVisible ? "Hide password" : "Show password"} onClick={() => setPasswordVisible(!passwordVisible)} className="absolute right-3 top-1/2 -translate-y-1/2 text-white/55">{passwordVisible ? <EyeOff size={16} /> : <Eye size={16} />}</button></div>
             {error && <p role="alert" className="mb-3 text-sm text-red-300">{error}</p>}
-            <button className="h-11 w-full rounded-sm bg-teal-600 text-sm font-semibold hover:bg-teal-500">{mode === "login" ? "Log In" : "Sign Up"}</button>
-            <p className="mt-4 text-center text-xs text-white/60">{mode === "login" ? "New here?" : "Already have an account?"} <button type="button" onClick={() => { setMode(mode === "login" ? "signup" : "login"); setError(""); }} className="text-teal-300">{mode === "login" ? "Sign Up" : "Log In"}</button></p>
-            <div className="my-5 flex items-center gap-3 text-xs text-white/45"><span className="h-px flex-1 bg-white/20" />or<span className="h-px flex-1 bg-white/20" /></div>
-            <button type="button" onClick={async () => { setError(""); try { await loginWithGoogle(); } catch (cause) { setError(getAuthError(cause)); } }} className="h-11 w-full rounded-sm border border-white/25 bg-white text-sm text-[#333] hover:bg-gray-100">Continue with Google</button>
+            <button className="h-11 w-full rounded-sm bg-teal-600 text-sm font-semibold hover:bg-teal-500">Log In</button>
+            <p className="mt-4 text-center text-xs text-white/55">Admin accounts are provisioned by an authorized administrator.</p>
           </form>
         </section>
       ) : (
@@ -152,8 +138,6 @@ export default function AdminPage() {
             <h1 className="text-xl font-medium tracking-wide">Admin Panel</h1>
             <div className="flex flex-wrap items-center gap-2">
               <button onClick={openNewPost} className="inline-flex h-9 items-center gap-1.5 rounded-sm bg-teal-700 px-3 text-xs font-medium hover:bg-teal-600"><Plus size={14} /> Add Post</button>
-              <button onClick={() => setModal("user")} className="inline-flex h-9 items-center gap-1.5 rounded-sm bg-teal-700 px-3 text-xs font-medium hover:bg-teal-600"><Plus size={14} /> Add User</button>
-              <button onClick={() => setModal("credential")} className="inline-flex h-9 items-center gap-1.5 rounded-sm bg-teal-700 px-3 text-xs font-medium hover:bg-teal-600"><Plus size={14} /> Add Credential</button>
               <button onClick={() => { void logoutUser().catch((cause) => setError(getAuthError(cause))); }} className="ml-1 h-9 border border-white/20 px-3 text-xs text-white/75 hover:bg-white/10">Log out</button>
             </div>
           </header>
@@ -200,11 +184,6 @@ export default function AdminPage() {
           <p className="mt-3 text-right text-xs text-white/45">Showing {filteredPosts.length} of {posts.length} posts</p>
           {notice && !editorOpen && <p role="status" className="mt-3 text-right text-sm text-teal-200">{notice}</p>}
 
-          {modal && <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/75 p-4" onMouseDown={(event) => { if (event.target === event.currentTarget) setModal(null); }}><form onSubmit={modal === "user" ? saveUser : saveCredential} className="w-full max-w-md border border-white/20 bg-[#151515] p-6 shadow-2xl">
-            <div className="mb-5 flex items-center justify-between"><h2 className="text-lg font-semibold">{modal === "user" ? "Add User" : "Add Credential"}</h2><button type="button" onClick={() => setModal(null)} aria-label="Close" className="text-white/55 hover:text-white"><X size={18} /></button></div>
-            {modal === "user" ? <><label className={labelClass}>Name<input name="name" required className={`${inputClass} mb-4`} placeholder="Full name" /></label><label className={labelClass}>Email<input name="email" type="email" required className={inputClass} placeholder="name@example.com" /></label>{adminUsers.length > 0 && <p className="mt-3 text-xs text-white/50">{adminUsers.length} user{adminUsers.length === 1 ? "" : "s"} added</p>}</> : <><label className={labelClass}>Credential Name<input name="label" required className={`${inputClass} mb-4`} placeholder="e.g. CMS access" /></label><label className={labelClass}>Username / Email<input name="username" required className={`${inputClass} mb-4`} placeholder="Account username" /></label><label className={labelClass}>Credential<input name="value" required type="password" className={inputClass} placeholder="Password or key" /></label>{credentials.length > 0 && <p className="mt-3 text-xs text-white/50">{credentials.length} credential{credentials.length === 1 ? "" : "s"} saved</p>}</>}
-            <div className="mt-6 flex justify-end gap-2"><button type="button" onClick={() => setModal(null)} className="h-9 border border-white/20 px-4 text-xs hover:bg-white/10">Cancel</button><button className="h-9 rounded-sm bg-teal-700 px-4 text-xs font-medium hover:bg-teal-600">Save</button></div>
-          </form></div>}
         </section>
       )}
     </main>

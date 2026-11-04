@@ -17,7 +17,7 @@ const pageMetadata: Record<string, { title: string; description: string }> = {
     title: "Contact DMiraki | Talk to Our Digital Marketing Experts",
     description: "Contact DMiraki for SEO, web development, branding and performance marketing. Call +91 92113 41245 or email info@dmiraki.com to start your project today.",
   },
-  "/seo": {
+  "/seo-services": {
     title: "SEO Services in India | Technical, Local & Ecommerce SEO",
     description: "Grow organic leads with SEO services in India: technical audits, keyword research, local and ecommerce SEO. Request a free SEO audit from DMiraki today.",
   },
@@ -29,7 +29,7 @@ const pageMetadata: Record<string, { title: string; description: string }> = {
     title: "Custom Software Development Company in India | DMiraki",
     description: "DMiraki builds custom software and scalable digital systems for businesses. Explore tailored software development and enterprise solutions in India.",
   },
-  "/iot": {
+  "/iot-solutions": {
     title: "IoT Software Development Company in India | DMiraki",
     description: "Build connected products with DMiraki IoT software development, including device software, platform integration and dashboards for businesses in India.",
   },
@@ -65,7 +65,8 @@ export function SeoMetadata() {
     };
 
     setMeta("description", metadata.description);
-    setMeta("robots", indexableRobots);
+    const isAdminRoute = path === "/admin" || path === "/blog";
+    setMeta("robots", isAdminRoute ? "noindex, nofollow, noarchive" : indexableRobots);
 
     let canonical = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]');
     if (!canonical) {
@@ -73,7 +74,8 @@ export function SeoMetadata() {
       canonical.rel = "canonical";
       document.head.appendChild(canonical);
     }
-    canonical.href = `${siteUrl}${path === "/" ? "/" : path + "/"}`;
+    if (isAdminRoute) canonical.remove();
+    else canonical.href = `${siteUrl}${path === "/" ? "/" : path + "/"}`;
   }, [pathname]);
 
   return null;

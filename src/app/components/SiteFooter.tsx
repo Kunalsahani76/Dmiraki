@@ -3,9 +3,9 @@ import { Link } from "react-router";
 const communityLinks = ["Linkedin", "Instagram"];
 const serviceLinks = [
   { label: "Digital Marketing", href: "/digital-marketing" },
-  { label: "SEO", href: "/seo" },
+  { label: "SEO", href: "/seo-services" },
   { label: "Custom Software", href: "/custom-software" },
-  { label: "IoT-Based Solutions", href: "/iot" },
+  { label: "IoT-Based Solutions", href: "/iot-solutions" },
   { label: "Web Development Services", href: "/web-development" },
 ];
 const legalLinks = [
