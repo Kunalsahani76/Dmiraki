@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 const communityLinks = ["Linkedin", "Instagram"];
 const serviceLinks = [
@@ -61,6 +62,20 @@ export function SiteFooter() {
             >
               Creating digital excellence
             </p>
+            <div className="mt-3 flex flex-col gap-4">
+              <a href="tel:+919211341245" className="flex items-center gap-4 text-[#a1a1aa] no-underline hover:text-white">
+                <Phone aria-hidden="true" className="h-6 w-6 shrink-0 text-white" strokeWidth={1.8} />
+                <span className="site-footer__text text-[16px] leading-6 sm:text-[18px]" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400 }}>+91 92113 41245</span>
+              </a>
+              <a href="mailto:info@dmiraki.com" className="flex items-center gap-4 text-[#a1a1aa] no-underline hover:text-white">
+                <Mail aria-hidden="true" className="h-6 w-6 shrink-0 text-white" strokeWidth={1.8} />
+                <span className="site-footer__text text-[16px] leading-6 sm:text-[18px]" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400 }}>info@dmiraki.com</span>
+              </a>
+              <div className="flex items-center gap-4 text-[#a1a1aa]">
+                <MapPin aria-hidden="true" className="h-6 w-6 shrink-0 text-white" strokeWidth={1.8} />
+                <span className="site-footer__text text-[16px] leading-6 sm:text-[18px]" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400 }}>B-103, Sector-2 Noida-201301, India</span>
+              </div>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-3 lg:col-[6/span_7]">
