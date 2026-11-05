@@ -137,7 +137,7 @@ function Frame6() {
           <Frame9 />
           <div className="hidden" data-name="header">
             <div aria-hidden className="absolute border border-black border-solid inset-0 pointer-events-none" />
-            <div className="h-[38.408px] relative shrink-0 w-[118px]" data-name="DMIRAKI POSTS 1">
+            <div className="h-[38.408px] relative shrink-0 w-[118px]" data-name="D'MIRAKI POSTS 1">
               <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgDmirakiPosts1} />
             </div>
             <Frame2 />
@@ -1403,7 +1403,7 @@ export default function CustomSoftwere() {
       <TopContentSectionMargin />
       <div className="hidden" data-name="header">
         <div aria-hidden className="absolute border border-black border-solid inset-0 pointer-events-none" />
-        <div className="h-[38.408px] relative shrink-0 w-[118px]" data-name="DMIRAKI POSTS 1">
+        <div className="h-[38.408px] relative shrink-0 w-[118px]" data-name="D'MIRAKI POSTS 1">
           <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgDmirakiPosts1} />
         </div>
         <Frame3 />

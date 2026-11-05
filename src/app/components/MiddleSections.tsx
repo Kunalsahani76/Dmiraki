@@ -105,10 +105,10 @@ export function AttentionSection() {
           {/* Left content */}
           <div className="flex-1 lg:max-w-[555px]">
             <h2
-              className="mb-5"
+              className="mb-5 uppercase"
               style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "clamp(22px,3vw,34px)", color: "#0a0a0a", letterSpacing: "-1.5px" }}
             >
-              WHAT WE PAY <span style={{ color: "#787872" }}>ATTENTION</span> TO
+              Why Choose D'Miraki
             </h2>
             <div className="flex flex-col gap-5">
               <div className="p-3" style={{ border: "1px solid black" }}>
@@ -116,7 +116,7 @@ export function AttentionSection() {
                   className="text-[#4a4a46]"
                   style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, fontSize: "15px", lineHeight: "1.8" }}
                 >
-                  Most agencies optimise for visibility. We optimise for understanding. In a landscape where search behaviour is fragmenting and AI intermediaries are reshaping how information reaches people, we focus on what endures.
+                  Most agencies chase visibility. We build understanding. As search changes and AI tools reshape how people find information, we focus on clarity, authority and lasting brand trust.
                 </p>
               </div>
               <div className="p-3" style={{ border: "1px solid black" }}>
@@ -124,7 +124,7 @@ export function AttentionSection() {
                   className="text-[#4a4a46]"
                   style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500, fontSize: "15px", lineHeight: "1.8" }}
                 >
-                  Clarity. Authority. The quiet confidence of a brand that does not need to shout to be heard.
+                  Clear, authoritative brands earn trust without shouting.
                 </p>
               </div>
             </div>
@@ -160,23 +160,24 @@ export function ApproachSection() {
 
           <div className="flex-1">
             <h2
-              className="mb-8"
+              className="mb-8 uppercase"
               style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "clamp(22px,3vw,34px)", color: "#0a0a0a", letterSpacing: "-1.5px" }}
             >
-              THE <span style={{ color: "#787872" }}>APPROACH</span>
+              Our Approach
             </h2>
             <div className="flex flex-col gap-5">
               {[
-                "What does your brand represent when no one is there to explain it?",
-                "What does a visitor understand within the first few seconds of arrival?",
-                "Why should you be chosen, without the need for comparison?",
+                { label: "Brand Positioning", question: "What does your brand represent when no one is there to explain it?" },
+                { label: "First Impressions", question: "What does a visitor understand within the first few seconds of arrival?" },
+                { label: "Clear Value", question: "Why should you be chosen, without the need for comparison?" },
               ].map((question) => (
-                <div key={question} className="p-3" style={{ border: "1px solid black" }}>
+                <div key={question.label} className="p-3" style={{ border: "1px solid black" }}>
+                  <h3 className="sr-only">{question.label}</h3>
                   <p
                     className="text-[#4a4a46]"
                     style={{ fontFamily: "'Roboto', sans-serif", fontWeight: 500, fontSize: "15px", lineHeight: "1.8" }}
                   >
-                    {question}
+                    {question.question}
                   </p>
                 </div>
               ))}

@@ -25,16 +25,16 @@ export function DreamingBigSection() {
         <div className="flex flex-col gap-[54px]">
           <div>
             <h2
-              className="mb-6 text-black"
+              className="mb-6 text-black uppercase"
               style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "clamp(32px,4.5vw,40px)", lineHeight: "1.5" }}
             >
-              DREAMING BIG?<br />LET'S BUILD IT.
+              Book a Free Strategy Call
             </h2>
             <p
               className="max-w-[520px] text-[#191c1e]"
               style={{ fontFamily: "'Inter', sans-serif", fontSize: "18px", lineHeight: "1.55" }}
             >
-              Have big ideas but unsure where to begin? Let's talk and find the perfect solution for your business.
+              Book a free call with our Delhi NCR team and find the right solution for your business.
             </p>
           </div>
           <div className="flex flex-col gap-[26px] text-black">

@@ -130,8 +130,8 @@ function getStructuredData(path: string) {
 
 const pageMetadata: Record<string, { title: string; description: string; keywords?: string }> = {
   "/": {
-    title: "Digital Marketing Agency in India for B2B Growth | DMiraki",
-    description: "DMiraki is a Delhi NCR digital marketing agency helping businesses across India grow with SEO, performance marketing and web development. Book a free call.",
+    title: "Digital Marketing Agency in India | D'Miraki",
+    description: "D'Miraki is a Delhi NCR digital marketing agency for B2B businesses. We bring SEO, performance marketing, web development and custom software together in one structured system.",
     keywords: "digital marketing agency in india, digital marketing company in india, digital marketing agency delhi ncr, performance marketing agency india, seo and web development agency, b2b digital marketing agency",
   },
   "/about": {

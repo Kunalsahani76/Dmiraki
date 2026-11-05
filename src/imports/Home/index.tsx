@@ -313,7 +313,7 @@ function Frame3() {
       </div>
       <div className="-translate-x-1/2 absolute bg-[#fbfbfb] content-stretch flex items-center justify-between left-1/2 px-[10px] py-[12px] top-0 w-[1270px]" data-name="header">
         <div aria-hidden className="absolute border border-black border-solid inset-0 pointer-events-none" />
-        <div className="h-[38.408px] relative shrink-0 w-[118px]" data-name="DMIRAKI POSTS 1">
+        <div className="h-[38.408px] relative shrink-0 w-[118px]" data-name="D'MIRAKI POSTS 1">
           <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgDmirakiPosts1} />
         </div>
         <Frame1 />

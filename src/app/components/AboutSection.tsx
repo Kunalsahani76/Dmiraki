@@ -13,7 +13,7 @@ export function WhatWeOfferTitle() {
           lineHeight: "1.15",
         }}
       >
-        WHAT WE OFFER
+        Our Services
       </h2>
     </div>
   );
@@ -47,7 +47,7 @@ export function AboutSection() {
                 lineHeight: "1.2",
               }}
             >
-              ABOUT<br />DMIRAKI
+              ABOUT<br />D'MIRAKI
             </h1>
             <p
               className="text-white mb-4"
@@ -182,7 +182,7 @@ presence.
               style={{ fontFamily: "'Roboto', sans-serif", fontSize: "17px", lineHeight: "1.7", maxWidth: "720px", margin: "0 auto 40px" }}
             >
               Founded on the principle that every business deserves exceptional digital presence.<br />
-              DMIRAKI has grown from a small team of passionate experts to a comprehensive agency trusted worldwide.
+              D'MIRAKI has grown from a small team of passionate experts to a comprehensive agency trusted worldwide.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {[

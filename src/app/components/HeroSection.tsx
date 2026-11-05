@@ -56,7 +56,8 @@ export function HeroSection() {
       <div className="relative z-10 flex flex-col items-center justify-center text-center px-4"
         style={{ minHeight: "clamp(560px, 86vh, 700px)", paddingBottom: "90px" }}
       >
-        <h1
+        <h1 className="sr-only">Digital Marketing Agency in India</h1>
+        <div
           className="home-hero-brand text-white mb-8 flex items-center justify-center"
           style={{
             fontFamily: "'Pirulen', 'Pirulen Rg', 'Orbitron', sans-serif",
@@ -75,7 +76,7 @@ export function HeroSection() {
           <span>A</span>
           <span>K</span>
           <span>I</span>
-        </h1>
+        </div>
         <p
           className="text-white mb-8 max-w-2xl"
           style={{
@@ -86,8 +87,7 @@ export function HeroSection() {
             letterSpacing: "0",
           }}
         >
-          Brings Together Digital Marketing, Web Development, Software Engineering,
-          And Application Development Into A Single, Structured System.
+          D'Miraki is a Delhi NCR digital marketing agency for B2B businesses. We bring SEO, performance marketing, web development and custom software together in one structured system.
         </p>
         <a
           href="#contact"

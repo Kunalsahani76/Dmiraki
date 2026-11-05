@@ -80,7 +80,7 @@ function HomePage() {
         <DreamingBigSection />
 
         {/* 12. Footer */}
-        <SiteFooter />
+        <SiteFooter homePage />
       </div>
     </div>
   );

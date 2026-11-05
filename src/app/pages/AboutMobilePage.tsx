@@ -110,10 +110,10 @@ export default function AboutMobilePage() {
         <div className="relative z-10 flex flex-col gap-7">
           <div>
             <h1 className="text-[44px] uppercase leading-[1.05]" style={{ fontFamily: "'Pirulen:Regular', sans-serif" }}>
-              ABOUT<br />DMIRAKI
+              ABOUT<br />D'MIRAKI
             </h1>
             <p className="mt-5 text-[15px] leading-6" style={{ fontFamily: "'Roboto', sans-serif" }}>
-              At DMiraki, we believe technology should solve real problems, not add to them.
+              At D'Miraki, we believe technology should solve real problems, not add to them.
             </p>
             <p className="mt-4 text-[14px] leading-6 text-white/80" style={{ fontFamily: "'Roboto', sans-serif" }}>
               With <strong>15+ years of experience in top-tier MNCs</strong>, we understand the challenges businesses face when trying to grow, manage operations, and reach the right customers. We bring together software development, mobile apps, CRM, parking management solutions, and digital marketing to help businesses simplify their work and build a stronger digital presence. We take the time to understand your business before we suggest a solution. Because the right technology starts with the right understanding.
@@ -179,7 +179,7 @@ export default function AboutMobilePage() {
       </section>
 
       <section className="mx-5 my-8 border border-black p-6 text-black">
-        <SectionHeading title="WHAT DMIRAKI STANDS FOR" />
+        <SectionHeading title="WHAT D'MIRAKI STANDS FOR" />
         <p className="mt-4 text-[16px] font-bold leading-7" style={{ fontFamily: "'Roboto', sans-serif" }}>Customers are not just projects or payments. They are the reason we do what we do.</p>
         <p className="mt-2 text-[16px] leading-7" style={{ fontFamily: "'Roboto', sans-serif" }}>We listen, we stay honest, and we work towards finding the right solution together.</p>
       </section>
