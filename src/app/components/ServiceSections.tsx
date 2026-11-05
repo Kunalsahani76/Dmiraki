@@ -1,16 +1,5 @@
 /* Digital Marketing, Custom Software, IoT, Web Development sections */
 
-import type { ComponentType } from "react";
-import {
-  Blocks,
-  Building2,
-  Cloud,
-  CloudCog,
-  Code2,
-  Database,
-  Network,
-  Workflow,
-} from "lucide-react";
 import whatWeOfferImage from "../../images/What We Offer.png";
 import iotBasedSolutionsImage from "../../images/IoT-Based Solutions.png";
 import smartInfrastructureIcon from "../../images/Smart infrastructure systems.png";
@@ -18,21 +7,12 @@ import iotMonitoringIcon from "../../images/IoT integration for monitoring.png";
 import industrialIotIcon from "../../images/Industrial IoT systems.png";
 import deviceConnectivityIcon from "../../images/Device connectivity.png";
 import realTimeDataIcon from "../../images/Real-time data environments.png";
-import seoIcon from "../../icons/seo.png";
-import pmIcon from "../../icons/pm.png";
-import smoIcon from "../../icons/smo.png";
-import ppcIcon from "../../icons/ppc.png";
-import wdIcon from "../../icons/wd.png";
-import aeoIcon from "../../icons/aeo.png";
-import geoIcon from "../../icons/geo.png";
-import emIcon from "../../icons/em.png";
 
 const glassCard = "min-h-[194px] backdrop-blur-xl bg-white/25 border border-white/45 shadow-[0_14px_40px_rgba(0,0,0,0.28)] flex flex-col gap-3 px-3.5 py-3.5";
 
-function GlassServiceCard({ icon, title, desc }: { icon: string; title: string; desc: string }) {
+function GlassServiceCard({ title, desc }: { title: string; desc: string }) {
   return (
     <div className={glassCard}>
-      <img src={icon} alt="" className="h-[31px] w-[38px] object-contain object-left" />
       <div>
         <p className="mb-2 text-white" style={{ fontFamily: "'Roboto', sans-serif", fontSize: "clamp(24px,2vw,28px)", fontWeight: 400, lineHeight: "1.15", overflowWrap: "normal" }}>
           {title}
@@ -47,16 +27,16 @@ function GlassServiceCard({ icon, title, desc }: { icon: string; title: string; 
 
 export function DigitalMarketingSection() {
   const row1 = [
-    { icon: seoIcon, title: "Search Engine Optimization (SEO)", desc: "Keyword architecture, technical structure, and content alignment for sustained search visibility" },
-    { icon: pmIcon, title: "Performance Marketing", desc: "Paid media campaigns structured for efficiency, control, and measurable return." },
-    { icon: smoIcon, title: "Social Media Management (SMO)", desc: "Planned and managed communication across platforms with consistency and clarity." },
-    { icon: ppcIcon, title: "Pay Per Click Advertising (PPC)", desc: "Targeted campaigns with controlled spend and continuous optimisation." },
+    { title: "Search Engine Optimization (SEO)", desc: "Keyword architecture, technical structure, and content alignment for sustained search visibility" },
+    { title: "Performance Marketing", desc: "Paid media campaigns structured for efficiency, control, and measurable return." },
+    { title: "Social Media Management (SMO)", desc: "Planned and managed communication across platforms with consistency and clarity." },
+    { title: "Pay Per Click Advertising (PPC)", desc: "Targeted campaigns with controlled spend and continuous optimisation." },
   ];
   const row2 = [
-    { icon: wdIcon, title: "Website Development", desc: "Responsive, secure websites built for performance, search compatibility, and usability." },
-    { icon: aeoIcon, title: "Answer Engine Optimization (AEO)", desc: "Content structured for AI-generated answers, voice search, and featured results." },
-    { icon: geoIcon, title: "Generative Engine Optimization (GEO)", desc: "Brand presence aligned with AI platforms through structured data and content signals." },
-    { icon: emIcon, title: "Email Marketing", desc: "Direct communication systems designed for engagement and continuity." },
+    { title: "Website Development", desc: "Responsive, secure websites built for performance, search compatibility, and usability." },
+    { title: "Answer Engine Optimization (AEO)", desc: "Content structured for AI-generated answers, voice search, and featured results." },
+    { title: "Generative Engine Optimization (GEO)", desc: "Brand presence aligned with AI platforms through structured data and content signals." },
+    { title: "Email Marketing", desc: "Direct communication systems designed for engagement and continuity." },
   ];
 
   return (
@@ -90,20 +70,9 @@ export function DigitalMarketingSection() {
   );
 }
 
-function WhiteServiceCard({
-  icon,
-  title,
-  desc,
-}: {
-  icon: ComponentType<{ className?: string; strokeWidth?: number }>;
-  title: string;
-  desc: string;
-}) {
-  const Icon = icon;
-
+function WhiteServiceCard({ title, desc }: { title: string; desc: string }) {
   return (
-    <div className="relative flex min-h-[228px] flex-col gap-5 border-r border-b border-black p-7 sm:min-h-[288px] sm:p-8">
-      <Icon className="h-6 w-6 text-black" strokeWidth={2} />
+    <div className="relative flex min-h-[170px] flex-col border-r border-b border-black p-5 sm:min-h-[190px] sm:p-6">
       <div>
         <p className="text-[#1b1b1d] mb-3" style={{ fontFamily: "'Roboto', sans-serif", fontSize: "clamp(22px,2.1vw,25px)", fontWeight: 700, lineHeight: "1.18", overflowWrap: "anywhere" }}>
           {title}
@@ -118,16 +87,16 @@ function WhiteServiceCard({
 
 export function CustomSoftwareSection() {
   const row1 = [
-    { icon: Blocks, title: "Custom software", desc: "Tailored codebases built to solve specific organizational challenges." },
-    { icon: Building2, title: "Enterprise systems", desc: "Robust, scalable platforms for high-volume corporate operations." },
-    { icon: Network, title: "CRM and ERP platforms", desc: "Centralized resource management and customer relationship architecture." },
-    { icon: CloudCog, title: "SaaS products", desc: "Cloud-native software products designed for recurring value delivery." },
+    { title: "Custom software", desc: "Tailored codebases built to solve specific organizational challenges." },
+    { title: "Enterprise systems", desc: "Robust, scalable platforms for high-volume corporate operations." },
+    { title: "CRM and ERP platforms", desc: "Centralized resource management and customer relationship architecture." },
+    { title: "SaaS products", desc: "Cloud-native software products designed for recurring value delivery." },
   ];
   const row2 = [
-    { icon: Cloud, title: "Cloud-based applications", desc: "Highly available, auto-scaling solutions deployed on major cloud providers." },
-    { icon: Code2, title: "API development", desc: "Secure and efficient data interfaces for ecosystem interoperability." },
-    { icon: Workflow, title: "Automation systems", desc: "Custom workflows that eliminate manual friction and human error." },
-    { icon: Database, title: "Data management", desc: "Complex storage, retrieval, and analysis systems for big data." },
+    { title: "Cloud-based applications", desc: "Highly available, auto-scaling solutions deployed on major cloud providers." },
+    { title: "API development", desc: "Secure and efficient data interfaces for ecosystem interoperability." },
+    { title: "Automation systems", desc: "Custom workflows that eliminate manual friction and human error." },
+    { title: "Data management", desc: "Complex storage, retrieval, and analysis systems for big data." },
   ];
 
   return (

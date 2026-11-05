@@ -644,7 +644,7 @@ function Heading1() {
 function Container23() {
   return (
     <div className="content-stretch flex flex-col items-center opacity-80 relative shrink-0" data-name="Container">
-      <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[20px] text-black text-center tracking-[-0.2px] w-[504px]" style={{ fontVariationSettings: '"wdth" 100' }}>
+      <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[18px] text-black text-center tracking-[-0.2px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
         <p className="leading-[32px] mb-0">Building intelligent digital ecosystems through strategy, technology, and scalable execution.</p>
         <p className="leading-[32px]">​</p>
       </div>
@@ -959,9 +959,8 @@ function Heading10() {
 function Container31() {
   return (
     <div className="content-stretch flex flex-col items-center opacity-80 relative shrink-0 w-full" data-name="Container">
-  <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[20px] text-black text-center tracking-[-0.2px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
-        <p className="leading-[32px] mb-0">Proven results, dedicated support, and industry recognition for</p>
-        <p className="leading-[32px]">sustained partnership success</p>
+  <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[18px] text-black text-center tracking-[-0.2px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
+        <p className="leading-[32px]">Proven results, dedicated support, and industry recognition for sustained partnership success.</p>
       </div>
     </div>
   );
@@ -980,7 +979,7 @@ function Heading11() {
   return (
     <div className="relative min-h-[38px] shrink-0 w-[180px]" data-name="Heading 4">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start pt-[8px] relative size-full">
-  <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[14px] text-black w-full whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
+  <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-bold justify-center leading-[0] relative shrink-0 text-[14px] text-black w-full whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
           <p className="leading-[30px]">PROVEN TRACK RECORD</p>
         </div>
       </div>
@@ -1005,8 +1004,7 @@ function Border() {
   return (
     <div className="h-full relative shrink-0 w-[299.5px]" data-name="Border">
       <div aria-hidden className="absolute border-2 border-black border-solid inset-0 pointer-events-none" />
-      <div className="content-stretch flex flex-col gap-[16px] items-start p-[34px] relative size-full">
-        <div className="bg-black h-[4px] relative shrink-0 w-full" data-name="Background" />
+      <div className="content-stretch flex flex-col gap-[12px] items-start p-[28px] relative size-full">
         <Heading11 />
         <Container32 />
       </div>
@@ -1018,7 +1016,7 @@ function Heading12() {
   return (
     <div className="relative min-h-[38px] shrink-0 w-full" data-name="Heading 4">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start pt-[8px] relative size-full">
-  <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[14px] text-black w-full whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
+  <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-bold justify-center leading-[0] relative shrink-0 text-[14px] text-black w-full whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
           <p className="leading-[30px]">DEDICATED TEAM APPROACH</p>
         </div>
       </div>
@@ -1042,9 +1040,8 @@ function Container33() {
 
 function Border1() {
   return (
-    <div className="content-stretch flex flex-col gap-[16px] items-start p-[34px] relative shrink-0 w-[299.5px] h-full" data-name="Border">
+    <div className="content-stretch flex flex-col gap-[12px] items-start p-[28px] relative shrink-0 w-[299.5px] h-full" data-name="Border">
       <div aria-hidden className="absolute border-2 border-black border-solid inset-0 pointer-events-none" />
-      <div className="bg-black h-[4px] relative shrink-0 w-full" data-name="Background" />
       <Heading12 />
       <Container33 />
     </div>
@@ -1055,7 +1052,7 @@ function Heading13() {
   return (
     <div className="relative min-h-[38px] shrink-0 w-full" data-name="Heading 4">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start pt-[8px] relative size-full">
-  <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[14px] text-black w-full whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
+  <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-bold justify-center leading-[0] relative shrink-0 text-[14px] text-black w-full whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
           <p className="leading-[30px]">ONGOING SUPPORT & OPTIMIZATION</p>
         </div>
       </div>
@@ -1080,8 +1077,7 @@ function Border2() {
   return (
     <div className="h-full relative shrink-0 w-[299.5px]" data-name="Border">
       <div aria-hidden className="absolute border-2 border-black border-solid inset-0 pointer-events-none" />
-      <div className="content-stretch flex flex-col gap-[16px] items-start p-[34px] relative size-full">
-        <div className="bg-black h-[4px] relative shrink-0 w-full" data-name="Background" />
+      <div className="content-stretch flex flex-col gap-[12px] items-start p-[28px] relative size-full">
         <Heading13 />
         <Container34 />
       </div>
@@ -1093,7 +1089,7 @@ function Heading14() {
   return (
     <div className="relative min-h-[38px] shrink-0 w-full" data-name="Heading 4">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start pt-[8px] relative size-full">
-        <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[14px] text-black uppercase w-full whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
+        <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-bold justify-center leading-[0] relative shrink-0 text-[14px] text-black uppercase w-full whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
           <p className="leading-[30px]">INDUSTRY RECOGNITION</p>
         </div>
       </div>
@@ -1118,8 +1114,7 @@ function Border3() {
   return (
     <div className="h-full relative shrink-0 w-[299.5px]" data-name="Border">
       <div aria-hidden className="absolute border-2 border-black border-solid inset-0 pointer-events-none" />
-      <div className="content-stretch flex flex-col gap-[16px] items-start p-[34px] relative size-full">
-        <div className="bg-black h-[4px] relative shrink-0 w-full" data-name="Background" />
+      <div className="content-stretch flex flex-col gap-[12px] items-start p-[28px] relative size-full">
         <Heading14 />
         <Container35 />
       </div>
@@ -1129,7 +1124,7 @@ function Border3() {
 
 function Frame24() {
   return (
-    <div className="content-stretch flex h-[244px] items-start justify-between px-[30px] relative shrink-0 w-[1270px]">
+    <div className="content-stretch flex h-[220px] items-start justify-between px-[30px] relative shrink-0 w-[1270px]">
       <Border />
       <Border1 />
       <Border2 />
@@ -1527,8 +1522,9 @@ function Margin2() {
 function Margin3() {
   return (
     <div className="content-stretch flex flex-col items-start pl-[16px] relative shrink-0" data-name="Margin">
-      <div className="[word-break:break-word] flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[18px] text-black whitespace-nowrap">
-        <p className="leading-[28px]">A-20, Global Business Park, Sector 63, Noida, Uttar Pradesh – 201309, India.</p>
+      <div className="[word-break:break-word] flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[18px] text-black whitespace-normal">
+        <p className="leading-[28px]">A-20, Global Business Park, Sector 63,</p>
+        <p className="leading-[28px]">Noida, Uttar Pradesh – 201309, India.</p>
       </div>
     </div>
   );

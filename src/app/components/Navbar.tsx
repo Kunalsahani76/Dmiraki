@@ -88,6 +88,11 @@ export function Navbar() {
       return;
     }
 
+    if (id === "hero") {
+      navigate("/");
+      return;
+    }
+
     if (location.pathname !== "/") {
       navigate(`/#${id}`);
       return;

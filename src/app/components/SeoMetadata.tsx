@@ -4,6 +4,130 @@ import { useLocation } from "react-router";
 const siteUrl = "https://www.dmiraki.com";
 const indexableRobots = "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1";
 
+const organizationSchema = {
+  "@type": ["Organization", "ProfessionalService"],
+  "@id": `${siteUrl}/#organization`,
+  name: "D'Miraki",
+  alternateName: ["D'Miraki", "d'miraki"],
+  legalName: "D'Miraki",
+  url: `${siteUrl}/`,
+  logo: {
+    "@type": "ImageObject",
+    "@id": `${siteUrl}/#logo`,
+    url: `${siteUrl}/assets/bf4cf617b34b1b26e10ed7fbbabad160e79fb2e8-CpEHxnvB.png`,
+    contentUrl: `${siteUrl}/assets/bf4cf617b34b1b26e10ed7fbbabad160e79fb2e8-CpEHxnvB.png`,
+    caption: "d'miraki",
+  },
+  image: `${siteUrl}/assets/bf4cf617b34b1b26e10ed7fbbabad160e79fb2e8-CpEHxnvB.png`,
+  description: "D'Miraki is a Delhi NCR digital marketing and web development agency helping businesses across India grow with SEO, digital marketing, web development, custom software and IoT solutions.",
+  foundingDate: "2010",
+  telephone: "+91 92113 41245",
+  email: "info@dmiraki.com",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "A-20, Global Business Park, Sector 63",
+    addressLocality: "Noida",
+    addressRegion: "Uttar Pradesh",
+    postalCode: "201309",
+    addressCountry: "IN",
+  },
+  areaServed: [
+    { "@type": "Country", name: "India" },
+    { "@type": "AdministrativeArea", name: "Delhi NCR" },
+  ],
+  openingHoursSpecification: [{
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    opens: "10:00",
+    closes: "19:00",
+  }],
+  contactPoint: [{
+    "@type": "ContactPoint",
+    telephone: "+91 92113 41245",
+    email: "info@dmiraki.com",
+    contactType: "sales",
+    areaServed: "IN",
+    availableLanguage: ["English", "Hindi"],
+  }],
+  sameAs: [
+    "https://www.linkedin.com/company/dmiraki",
+    "https://www.instagram.com/dmirakihq",
+    "https://share.google/k6P2VAXO1jxvcvy5K",
+  ],
+};
+
+const serviceSchemas: Record<string, { name: string; serviceType: string; description: string }> = {
+  "/digital-marketing": {
+    name: "Digital Marketing",
+    serviceType: "Digital marketing: social media optimisation (SMO), pay-per-click advertising and content marketing",
+    description: "Digital marketing services for businesses in India and Delhi NCR, covering PPC advertising, social media marketing, content and branding that generate leads.",
+  },
+  "/seo-services": {
+    name: "SEO Services",
+    serviceType: "Search engine optimization",
+    description: "SEO services for businesses in India and Delhi NCR, including technical audits, on-page optimisation, content and link building to improve Google rankings and leads.",
+  },
+  "/custom-software": {
+    name: "Custom Software",
+    serviceType: "Custom software development",
+    description: "Custom software development for businesses in India and Delhi NCR, from web and business applications to tailored tools built around your workflow.",
+  },
+  "/iot-solutions": {
+    name: "IoT Solutions",
+    serviceType: "IoT solutions development",
+    description: "IoT solutions development for businesses in India and Delhi NCR, connecting sensors and devices to cloud apps and live dashboards.",
+  },
+  "/web-development": {
+    name: "Web Development",
+    serviceType: "Custom web development",
+    description: "Custom website development for businesses in India and Delhi NCR: fast, mobile-first, SEO-ready business and e-commerce websites built on modern frameworks such as Next.js.",
+  },
+};
+
+const breadcrumbNames: Record<string, string> = {
+  "/digital-marketing": "Digital Marketing",
+  "/seo-services": "SEO Services",
+  "/custom-software": "Custom Software",
+  "/iot-solutions": "IoT Solutions",
+  "/web-development": "Web Development",
+  "/contact": "Contact",
+  "/about": "About",
+};
+
+function getStructuredData(path: string) {
+  const graph: Record<string, unknown>[] = [];
+  if (path === "/" || path === "/contact" || path === "/about") graph.push(organizationSchema);
+
+  const service = serviceSchemas[path];
+  if (service) {
+    graph.push({
+      "@type": "Service",
+      "@id": `${siteUrl}${path}#service`,
+      ...service,
+      url: `${siteUrl}${path}`,
+      provider: { "@type": "Organization", "@id": `${siteUrl}/#organization`, name: "D'Miraki", url: `${siteUrl}/` },
+      areaServed: [
+        { "@type": "Country", name: "India" },
+        { "@type": "AdministrativeArea", name: "Delhi NCR" },
+      ],
+    });
+  }
+
+  const breadcrumbName = breadcrumbNames[path];
+  if (breadcrumbName) {
+    graph.push({
+      "@type": "BreadcrumbList",
+      "@id": `${siteUrl}${path}#breadcrumb`,
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: `${siteUrl}/` },
+        { "@type": "ListItem", position: 2, name: breadcrumbName, item: `${siteUrl}${path}` },
+      ],
+    });
+  }
+
+  return graph.length ? { "@context": "https://schema.org", "@graph": graph } : null;
+}
+
 const pageMetadata: Record<string, { title: string; description: string; keywords?: string }> = {
   "/": {
     title: "Digital Marketing Agency in India for B2B Growth | DMiraki",
@@ -79,6 +203,20 @@ export function SeoMetadata() {
     setMeta("description", metadata.description);
     if (metadata.keywords) setMeta("keywords", metadata.keywords);
     else document.head.querySelector('meta[name="keywords"]')?.remove();
+
+    const structuredData = getStructuredData(path);
+    let structuredDataScript = document.head.querySelector<HTMLScriptElement>('script[data-seo-structured-data="true"]');
+    if (structuredData) {
+      if (!structuredDataScript) {
+        structuredDataScript = document.createElement("script");
+        structuredDataScript.type = "application/ld+json";
+        structuredDataScript.dataset.seoStructuredData = "true";
+        document.head.appendChild(structuredDataScript);
+      }
+      structuredDataScript.textContent = JSON.stringify(structuredData);
+    } else {
+      structuredDataScript?.remove();
+    }
 
     const setProperty = (property: string, content: string) => {
       let element = document.head.querySelector<HTMLMetaElement>(`meta[property="${property}"]`);

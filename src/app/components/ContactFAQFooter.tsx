@@ -48,7 +48,10 @@ export function DreamingBigSection() {
             </div>
             <div className="flex min-w-0 items-start gap-5">
               <MapPin className="mt-1 size-5 shrink-0" strokeWidth={1.8} />
-              <span style={{ fontFamily: "'Inter', sans-serif", fontSize: "18px", overflowWrap: "anywhere" }}>A-20, Global Business Park, Sector 63, Noida, Uttar Pradesh – 201309, India.</span>
+              <span style={{ display: "block", maxWidth: "390px", whiteSpace: "normal", fontFamily: "'Inter', sans-serif", fontSize: "18px", lineHeight: 1.5, overflowWrap: "anywhere" }}>
+                <span className="block">A-20, Global Business Park, Sector 63,</span>
+                <span className="block">Noida, Uttar Pradesh – 201309, India.</span>
+              </span>
             </div>
           </div>
         </div>
