@@ -7,33 +7,33 @@ import howWeWorkImage from "../../images/HOW-WE-WORK.png";
 import { DreamingBigSection } from "../components/ContactFAQFooter";
 
 const values = [
-  ["EXCELLENCE WITHOUT COMPROMISE", "Maintaining the highest standards in everything we do."],
-  ["INNOVATION THAT MATTERS", "Staying ahead of trends to give you a competitive edge."],
-  ["TRANSPARENCY IN EVERY INTERACTION", "Clear communication and honest timelines."],
-  ["RESULTS-DRIVEN PARTNERSHIP", "Every decision is focused on measurable outcomes."],
+  ["Excellence", "Maintaining the highest standards in everything we do."],
+  ["Innovation", "Staying ahead of trends to give you a competitive edge."],
+  ["Transparency", "Clear communication and honest timelines."],
+  ["Results", "Every decision is focused on measurable outcomes."],
 ];
 
 const expertise = [
-  ["STRATEGIC DIGITAL GROWTH", "Performance-driven marketing solutions designed to increase visibility, strengthen positioning, and generate meaningful business growth."],
-  ["CUSTOM SOFTWARE DEVELOPMENT", "Tailored digital systems and scalable software solutions engineered to simplify operations and improve efficiency."],
-  ["WEB & MOBILE EXPERIENCES", "Modern websites and mobile applications built for seamless functionality, user engagement, and long-term scalability."],
-  ["BRAND IDENTITY & POSITIONING", "Distinct brand experiences crafted to create recognition, credibility, and stronger market presence."],
-  ["IoT & SMART SOLUTIONS", "Intelligent connected systems designed to automate processes, improve monitoring, and enhance operational control."],
-  ["BUSINESS STRATEGY INTEGRATION", "Aligning technology, marketing, and business objectives into one unified digital growth framework."],
+  ["Digital Marketing Services", "Performance-driven marketing solutions designed to increase visibility, strengthen positioning, and generate meaningful business growth."],
+  ["Custom Software Development", "Tailored digital systems and scalable software solutions engineered to simplify operations and improve efficiency."],
+  ["Website & Mobile App Development", "Modern websites and mobile applications built for seamless functionality, user engagement, and long-term scalability."],
+  ["Branding Services", "Distinct brand experiences crafted to create recognition, credibility, and stronger market presence."],
+  ["IoT Solutions", "Intelligent connected systems designed to automate processes, improve monitoring, and enhance operational control."],
+  ["Digital Strategy Consulting", "Aligning technology, marketing, and business objectives into one unified digital growth framework."],
 ];
 
 const partnerReasons = [
-  ["PROVEN TRACK RECORD", "200+ successful projects across industries with measurable results."],
-  ["DEDICATED TEAM APPROACH", "You'll work with a consistent team invested in your success."],
-  ["ONGOING SUPPORT & OPTIMIZATION", "Continuous optimization and support for sustained growth."],
-  ["INDUSTRY RECOGNITION", "Recognized for innovation and results by peers and publications."],
+  ["200+ Projects Delivered", "200+ successful projects across industries with measurable results."],
+  ["Dedicated Team", "You'll work with a consistent team invested in your success."],
+  ["Support & Optimization", "Continuous optimization and support for sustained growth."],
+  ["Industry Recognition", "Recognized for innovation and results by peers and publications."],
 ];
 
 const process = [
-  ["CLIENT-CENTRIC APPROACH", "We prioritize our clients' needs, ensuring personalized strategies that align with their business goals and deliver measurable results."],
-  ["TRANSPARENT COMMUNICATION", "Open and honest communication is at the heart of our operations, fostering trust and collaboration throughout every project."],
-  ["INNOVATIVE SOLUTIONS", "We leverage latest technologies and creative strategies to provide cutting-edge solutions that drive business growth."],
-  ["DATA-DRIVEN STRATEGIES", "We utilize comprehensive data analysis to inform our decisions, ensuring effective and efficient marketing campaigns."],
+  ["Client-Centric Approach", "We prioritize our clients' needs, ensuring personalized strategies that align with their business goals and deliver measurable results."],
+  ["Transparent Communication", "Open and honest communication is at the heart of our operations, fostering trust and collaboration throughout every project."],
+  ["Modern Technology", "We leverage latest technologies and creative strategies to provide cutting-edge solutions that drive business growth."],
+  ["Data-Driven Marketing", "We utilize comprehensive data analysis to inform our decisions, ensuring effective and efficient marketing campaigns."],
 ];
 
 const faqs = [
@@ -74,7 +74,7 @@ function InfoCard({ title, body, dark = false }: { title: string; body: string; 
   return (
     <article className={dark ? "border border-white p-5 text-white" : "border border-black p-5 text-black"}>
       <div className={dark ? "mb-5 h-1 w-12 bg-white" : "mb-5 h-1 w-12 bg-black"} />
-      <h3 className="mb-3 text-[18px] leading-tight" style={{ fontFamily: "'Pirulen:Regular', sans-serif" }}>
+      <h3 className="mb-3 text-[18px] leading-tight uppercase" style={{ fontFamily: "'Pirulen:Regular', sans-serif" }}>
         {title}
       </h3>
       <p className={dark ? "text-sm leading-6 text-white/75" : "text-sm leading-6 text-black/70"} style={{ fontFamily: "'Roboto', sans-serif" }}>
@@ -89,10 +89,12 @@ function MobileFAQItem({ q, a }: { q: string; a: string }) {
 
   return (
     <div className="border-b-2 border-black">
-      <button className="flex w-full items-start justify-between gap-4 py-6 text-left" onClick={() => setOpen((value) => !value)}>
-        <span className="text-[19px] font-bold leading-7 text-black" style={{ fontFamily: "'Roboto', sans-serif" }}>{q}</span>
-        <ChevronDown className="mt-1 size-5 shrink-0 transition-transform" style={{ transform: open ? "rotate(180deg)" : "rotate(0deg)" }} />
-      </button>
+      <h3 className="m-0">
+        <button className="flex w-full items-start justify-between gap-4 py-6 text-left" onClick={() => setOpen((value) => !value)}>
+          <span className="text-[19px] font-bold leading-7 text-black" style={{ fontFamily: "'Roboto', sans-serif" }}>{q}</span>
+          <ChevronDown className="mt-1 size-5 shrink-0 transition-transform" style={{ transform: open ? "rotate(180deg)" : "rotate(0deg)" }} />
+        </button>
+      </h3>
       {open && (
         <p className="border-l-0 pb-6 text-[15px] leading-7 text-black/75" style={{ fontFamily: "'Roboto', sans-serif" }}>
           {a}
@@ -110,7 +112,7 @@ export default function AboutMobilePage() {
         <div className="relative z-10 flex flex-col gap-7">
           <div>
             <h1 className="text-[44px] uppercase leading-[1.05]" style={{ fontFamily: "'Pirulen:Regular', sans-serif" }}>
-              ABOUT<br />D'MIRAKI
+              About <br />D&apos;Miraki <span className="sr-only"> Digital Marketing Agency in Noida</span>
             </h1>
             <p className="mt-5 text-[15px] leading-6" style={{ fontFamily: "'Roboto', sans-serif" }}>
               At D'Miraki, we believe technology should solve real problems, not add to them.
@@ -128,7 +130,7 @@ export default function AboutMobilePage() {
       <section className="grid gap-4 px-5 py-8">
         <article className="bg-gradient-to-r from-[#b9b9b9] to-[#2e2e2e] p-5 text-white">
           <div className="mb-4 flex items-center justify-between gap-3">
-            <h2 className="text-[26px] uppercase leading-tight" style={{ fontFamily: "'Pirulen:Regular', sans-serif" }}>OUR MISSION</h2>
+            <h2 className="text-[26px] uppercase leading-tight" style={{ fontFamily: "'Pirulen:Regular', sans-serif" }}>Our Mission</h2>
             <ArrowRight className="size-5 shrink-0" />
           </div>
           <p className="border border-black bg-white p-4 text-[15px] leading-7 text-black" style={{ fontFamily: "'Roboto', sans-serif" }}>
@@ -138,7 +140,7 @@ export default function AboutMobilePage() {
 
         <article className="bg-gradient-to-r from-[#b9b9b9] to-[#2e2e2e] p-5 text-white">
           <div className="mb-4 flex items-center justify-between gap-3">
-            <h2 className="text-[26px] uppercase leading-tight" style={{ fontFamily: "'Pirulen:Regular', sans-serif" }}>OUR VISION</h2>
+            <h2 className="text-[26px] uppercase leading-tight" style={{ fontFamily: "'Pirulen:Regular', sans-serif" }}>Our Vision</h2>
             <ArrowRight className="size-5 shrink-0" />
           </div>
           <p className="border border-black bg-white p-4 text-[15px] leading-7 text-black" style={{ fontFamily: "'Roboto', sans-serif" }}>
@@ -159,7 +161,7 @@ export default function AboutMobilePage() {
 
       <section className="mx-5 bg-gradient-to-r from-black to-[#545454] px-5 py-8 text-white">
         <div className="text-center">
-          <SectionHeading title="OUR VALUES" dark />
+          <SectionHeading title="Our Values" dark />
           <p className="mt-4 text-[15px] leading-7 text-white/75" style={{ fontFamily: "'Roboto', sans-serif" }}>
             We put people before projects and relationships before transactions. We listen before we suggest, speak honestly about what is possible, and recommend solutions based on what our customers actually need. For us, trust is earned through actions, not words.\n          </p>
         </div>
@@ -179,7 +181,7 @@ export default function AboutMobilePage() {
       </section>
 
       <section className="mx-5 my-8 border border-black p-6 text-black">
-        <SectionHeading title="WHAT D'MIRAKI STANDS FOR" />
+        <SectionHeading title="What We Stand For" />
         <p className="mt-4 text-[16px] font-bold leading-7" style={{ fontFamily: "'Roboto', sans-serif" }}>Customers are not just projects or payments. They are the reason we do what we do.</p>
         <p className="mt-2 text-[16px] leading-7" style={{ fontFamily: "'Roboto', sans-serif" }}>We listen, we stay honest, and we work towards finding the right solution together.</p>
       </section>
@@ -198,7 +200,7 @@ export default function AboutMobilePage() {
 
       <section className="px-5 pb-10">
         <div className="text-center">
-          <SectionHeading title="WHY PARTNER WITH US?" />
+        <SectionHeading title="Why Partner With DMiraki" />
           <p className="mt-4 text-[15px] leading-7 text-black/75" style={{ fontFamily: "'Roboto', sans-serif" }}>
             Proven results, dedicated support, and industry recognition for sustained partnership success.
           </p>
@@ -211,7 +213,7 @@ export default function AboutMobilePage() {
       <section className="bg-black px-5 py-10 text-white">
         <img alt="How we work" className="aspect-square w-full bg-[#202020] object-cover p-3 shadow-2xl" src={howWeWorkImage} />
         <div className="mt-8">
-          <SectionHeading title="HOW WE WORK?" dark />
+          <SectionHeading title="How We Work" dark />
           <p className="mt-3 text-[15px] leading-7 text-white/80" style={{ fontFamily: "'Roboto', sans-serif" }}>
             Our work process is simple, but it packs a punch.
           </p>
@@ -222,7 +224,7 @@ export default function AboutMobilePage() {
       </section>
 
       <section className="border-y border-black bg-white px-5 py-8">
-        <SectionHeading title="LET'S TALK" />
+        <SectionHeading title="Contact DMiraki in Noida" />
         <div className="mt-6 grid gap-4 text-[15px] text-black" style={{ fontFamily: "'Inter', sans-serif" }}>
           <div className="flex min-w-0 items-center gap-3"><Phone className="size-5 shrink-0" /><span>+91 92113 41245</span></div>
           <div className="flex min-w-0 items-center gap-3"><Mail className="size-5 shrink-0" /><span className="break-all">info@dmiraki.com</span></div>
@@ -232,7 +234,7 @@ export default function AboutMobilePage() {
 
       <DreamingBigSection />
       <section className="bg-white px-5 py-10">
-        <SectionHeading title="FREQUENTLY ASKED QUESTIONS" />
+        <SectionHeading title="FAQs" />
         <div className="mt-6 grid grid-cols-1 gap-x-10 border-t-2 border-black md:grid-cols-2">
           {faqs.map(([q, a]) => (
             <MobileFAQItem key={q} q={q} a={a} />

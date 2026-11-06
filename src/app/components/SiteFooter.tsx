@@ -15,8 +15,8 @@ const legalLinks = [
   { label: "Disclaimer", href: "/disclaimer" },
 ];
 
-function FooterColumn({ title, items, homePage }: { title: string; items: string[] | { label: string; href: string }[]; homePage: boolean }) {
-  const HeadingTag = homePage ? "div" : "h3";
+function FooterColumn({ title, items, nonHeadingLabels }: { title: string; items: string[] | { label: string; href: string }[]; nonHeadingLabels: boolean }) {
+  const HeadingTag = nonHeadingLabels ? "div" : "h3";
   return (
     <div className="flex flex-col gap-4">
       <HeadingTag
@@ -45,8 +45,8 @@ function FooterColumn({ title, items, homePage }: { title: string; items: string
   );
 }
 
-export function SiteFooter({ homePage = false }: { homePage?: boolean }) {
-  const BrandTag = homePage ? "div" : "h2";
+export function SiteFooter({ homePage = false, nonHeadingLabels = homePage }: { homePage?: boolean; nonHeadingLabels?: boolean }) {
+  const BrandTag = nonHeadingLabels ? "div" : "h2";
   return (
     <footer className="site-footer normal-case bg-[#222] w-full">
       <div className="px-5 py-8 sm:p-[30px]">
@@ -81,9 +81,9 @@ export function SiteFooter({ homePage = false }: { homePage?: boolean }) {
           </div>
 
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-3 lg:col-[6/span_7]">
-            <FooterColumn title="Community" items={communityLinks} homePage={homePage} />
-            <FooterColumn title="Services" items={serviceLinks} homePage={homePage} />
-            <FooterColumn title="Legal" items={legalLinks} homePage={homePage} />
+            <FooterColumn title="Community" items={communityLinks} nonHeadingLabels={nonHeadingLabels} />
+            <FooterColumn title="Services" items={serviceLinks} nonHeadingLabels={nonHeadingLabels} />
+            <FooterColumn title="Legal" items={legalLinks} nonHeadingLabels={nonHeadingLabels} />
           </div>
         </div>
 

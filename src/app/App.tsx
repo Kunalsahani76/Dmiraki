@@ -95,7 +95,7 @@ function AboutPage() {
       <div className="hidden md:block">
         <About />
       </div>
-      <SiteFooter />
+      <SiteFooter nonHeadingLabels />
     </div>
   );
 }
