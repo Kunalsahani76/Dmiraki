@@ -7,52 +7,52 @@ const digitalTech = ["GOOGLE ADS", "META ADS", "SEMRUSH", "SHOPIFY", "MAILCHIMP"
 const iotTech = ["AWS IOT", "AZURE IOT", "GOOGLE CLOUD", "RASPBERRY PI", "ARDUINO", "DOCKER", "MQTT", "NODE-RED"];
 
 const digitalSolutions = [
-  ["SEO Optimization", "Dominating search engines through data-driven keyword research and technical structural superiority.", Search],
-  ["Social Media Marketing", "Creating viral resonance and meaningful community engagement across premium social platforms.", Share2],
-  ["Performance Marketing", "Hyper-targeted ad spending designed to maximize conversion rates and overall marketing ROI.", BarChart3],
-  ["Google Ads & PPC", "Strategic bidding and high-impact creative deployment to win the most valuable search real estate.", Zap],
-  ["Content Marketing", "Authority-building narratives and value-led assets that nurture prospects into loyal advocates.", CheckCircle2],
-  ["Branding & Strategy", "Defining the visual and strategic core of your business to ensure long-term market differentiation.", ShieldCheck],
+  ["SEO Services", "Keyword research, technical SEO and content optimisation that build lasting search visibility in India.", Search],
+  ["Social Media Marketing", "Social media marketing that builds community engagement and brand awareness across major platforms.", Share2],
+  ["Performance Marketing", "Targeted paid campaigns built to improve conversion rates and marketing ROI.", BarChart3],
+  ["PPC Management", "Google Ads and PPC management with smart bidding and strong ad creative to capture high-value searches.", Zap],
+  ["Content Marketing", "Content marketing that builds authority and turns prospects into loyal customers.", CheckCircle2],
+  ["Branding & Strategy", "Branding that defines your visual identity and strategy so you stand out in your market.", ShieldCheck],
 ];
 
 const digitalMethod = [
-  ["01", "Research", "Deep market and competitor analysis."],
-  ["02", "Strategy", "Architecting your growth roadmap."],
-  ["03", "Campaign Design", "Visual and tactical deployment."],
-  ["04", "Launch", "Activating high-fidelity market presence."],
-  ["05", "Optimization", "Continuous data-backed refinements."],
-  ["06", "Scaling", "Accelerating success to peak volume."],
+  ["01", "Research", "Market and competitor analysis."],
+  ["02", "Strategy", "A clear growth roadmap for your business."],
+  ["03", "Campaign Design", "Designing creatives and campaign structure."],
+  ["04", "Launch", "Going live across your chosen channels."],
+  ["05", "Optimization", "Continuous improvements backed by data."],
+  ["06", "Scaling", "Scaling what works to reach more customers."],
 ];
 
 const digitalStats = [
-  ["300%", "AVG. ROI GROWTH"],
-  ["92%", "RETENTION RATE"],
-  ["REAL-TIME", "ANALYTICS VISIBILITY"],
-  ["150+", "CERTIFIED EXPERTS"],
-  ["AI-READY", "OPTIMIZATION ENGINE"],
+  ["300%", "Average ROI Growth"],
+  ["92%", "Client Retention Rate"],
+  ["REAL-TIME", "Analytics"],
+  ["150+", "Certified Experts"],
+  ["AI-READY", "Search Engine Optimization"],
 ];
 
 const iotServices = [
-  ["Smart Home Automation", "Seamless integration of residential devices for enhanced security, comfort, and energy management.", Cpu],
-  ["Industrial IoT Solutions", "Digitizing manufacturing floors with robust sensor networks for optimized throughput and safety.", RadioTower],
-  ["IoT Mobile Applications", "Custom mobile interfaces designed for precise control and monitoring of connected hardware on the go.", Zap],
-  ["Real-Time Monitoring", "High-fidelity data streams from field devices visualized in milliseconds for immediate action.", BarChart3],
-  ["Sensor & Hardware", "End-to-end integration of custom sensors and embedded systems into centralized cloud architectures.", Cpu],
-  ["Cloud-Based IoT", "Scalable backend infrastructures designed to manage millions of concurrent device connections securely.", ShieldCheck],
+  ["Smart Home Automation", "Smart home automation that connects residential devices for better security, comfort and energy management.", Cpu],
+  ["Industrial IoT Solutions", "Industrial IoT solutions that digitise manufacturing floors with sensor networks for better throughput and safety.", RadioTower],
+  ["IoT App Development", "IoT app development for mobile apps that control and monitor connected hardware from anywhere.", Zap],
+  ["IoT Dashboard Development", "IoT dashboards that show live data from field devices so you can act immediately.", BarChart3],
+  ["Sensor & Hardware Integration", "End-to-end integration of custom sensors and embedded systems with centralised cloud platforms.", Cpu],
+  ["Cloud-Based IoT", "Scalable, secure cloud backends that manage large numbers of connected devices.", ShieldCheck],
 ];
 
 const iotProcess = [
-  ["01", "Discovery", "Analyzing business requirements and edge environment constraints."],
+  ["01", "Discovery", "Analysing business requirements and device environment constraints."],
   ["02", "Architecture", "Mapping device protocols and cloud synchronization strategies."],
   ["03", "Integration", "Hardware provisioning and custom firmware development."],
-  ["04", "Connectivity", "Securing data transmission tunnels and low-latency API routes."],
+  ["04", "Connectivity", "Secure data transmission and low-latency API routes."],
   ["05", "Security", "End-to-end encryption and penetration testing on hardware."],
 ];
 
 const iotResults = [
-  ["Real-Time Monitoring", "Continuous observation of performance metrics across global fleets."],
-  ["Predictive Maintenance", "Identify potential system failures before they result in downtime."],
-  ["Secure Communication", "AES-256 encrypted tunnels for all device-to-cloud telemetry."],
+  ["Real-Time Monitoring", "Continuous monitoring of performance metrics across your device fleet."],
+  ["Predictive Maintenance", "Spot potential failures before they cause downtime."],
+  ["Secure IoT Communication", "Encrypted communication between connected devices and cloud platforms."],
   ["AI-Driven Automation", "Smart edge nodes that make local decisions to reduce latency."],
 ];
 
@@ -124,15 +124,19 @@ function Cards({
 }) {
   return (
     <div className="mt-7 grid gap-4">
-      {items.map(([title, body, Icon]) => (
-        <article className={dark ? "border border-white/75 bg-black p-5 text-white" : "border border-black bg-white p-5 text-black"} key={title}>
-          <Icon className="mb-5 size-8" />
-          <h3 className="mb-3 text-[20px] leading-7" style={{ fontFamily: "'Roboto', sans-serif" }}>{title}</h3>
-          <p className={dark ? "text-[15px] leading-7 text-white/70" : "text-[15px] leading-7 text-black/70"} style={{ fontFamily: "'Roboto', sans-serif" }}>
-            {body}
-          </p>
-        </article>
-      ))}
+      {items.map(([title, body, Icon]) => {
+        const card = (
+          <article className={dark ? "border border-white/75 bg-black p-5 text-white" : "border border-black bg-white p-5 text-black"} key={title}>
+            <Icon className="mb-5 size-8" />
+            <h3 className="mb-3 text-[20px] leading-7" style={{ fontFamily: "'Roboto', sans-serif" }}>{title}</h3>
+            <p className={dark ? "text-[15px] leading-7 text-white/70" : "text-[15px] leading-7 text-black/70"} style={{ fontFamily: "'Roboto', sans-serif" }}>
+              {body}
+            </p>
+          </article>
+        );
+
+        return title === "SEO Services" ? <a className="block text-inherit no-underline" href="/seo-services" key={title}>{card}</a> : card;
+      })}
     </div>
   );
 }
@@ -151,13 +155,13 @@ function Steps({ items }: { items: Array<[string, string, string]> }) {
   );
 }
 
-function FooterCta({ title, copy }: { title: string; copy: string }) {
+function FooterCta({ title, copy, buttonLabel = "BOOK FREE CONSULTATION" }: { title: string; copy: string; buttonLabel?: string }) {
   return (
     <section className="bg-black px-5 py-10 text-white">
       <Heading dark>{title}</Heading>
       <p className="mt-4 text-[15px] leading-7 text-white/75" style={{ fontFamily: "'Roboto', sans-serif" }}>{copy}</p>
       <button className="mt-7 flex w-full items-center justify-center gap-2 border border-white/40 px-5 py-4 text-[14px] uppercase" style={{ fontFamily: "'Orbitron', sans-serif" }}>
-        BOOK FREE CONSULTATION
+        {buttonLabel}
         <ArrowRight className="size-4" />
       </button>
     </section>
@@ -168,31 +172,31 @@ export function DigitalMarketingMobilePage() {
   return (
     <main className="w-full overflow-x-hidden bg-white md:hidden">
       <Hero
-        title="DIGITAL MARKETING THAT DRIVES REAL GROWTH"
-        copy="AetherForge blends high-precision engineering with visionary digital strategies to scale enterprise brands. We don't just run ads; we architect ecosystems of performance."
+        title="Digital Marketing Services"
+        copy="DMiraki is a digital marketing agency in India built around leads, not vanity metrics. We combine SEO, PPC, social media, content and branding to grow businesses across Delhi NCR and India."
         image={digitalHero}
         titleStyle={{ fontFamily: "'Orbitron', sans-serif", fontWeight: 500, letterSpacing: "0.01em" }}
       />
-      <TechStrip label="ENGINEERED WITH INDUSTRY-LEADING TECH STACKS" items={digitalTech} />
+      <TechStrip label="Tools We Work With" items={digitalTech} />
 
       <section className="bg-[#fbfbfb] px-5 py-10">
         <div className="text-center">
-          <Heading>STRATEGIC SOLUTIONS</Heading>
+          <Heading>Our Digital Marketing Services</Heading>
         </div>
         <Cards items={digitalSolutions} />
       </section>
 
       <section className="bg-white px-5 py-10">
         <div className="text-center">
-          <Heading>THE AETHER METHOD</Heading>
+          <Heading>Our Process</Heading>
         </div>
         <Steps items={digitalMethod} />
       </section>
 
       <section className="bg-black px-5 py-10 text-white">
-        <Heading dark>PERFORMANCE THAT SPEAKS FOR ITSELF</Heading>
+        <Heading dark>Measurable Results</Heading>
         <p className="mt-4 text-[15px] leading-7 text-white/75" style={{ fontFamily: "'Roboto', sans-serif" }}>
-          We don't deal in vanity metrics. Our focus is on the numbers that move the needle: revenue, cost-per-acquisition, and lifetime value. Every campaign is a precision-engineered instrument of growth.
+          We don't chase vanity metrics. We focus on revenue, cost per acquisition and customer lifetime value. Every campaign is built to drive measurable growth.
         </p>
         <div className="mt-7 grid gap-3">
           {digitalStats.map(([value, label]) => (
@@ -203,13 +207,13 @@ export function DigitalMarketingMobilePage() {
           ))}
         </div>
         <ul className="mt-7 grid gap-3 text-[15px] leading-7 text-white/80" style={{ fontFamily: "'Roboto', sans-serif" }}>
-          {["Granular Audience Targeting Systems", "Automated Performance Optimization", "Dynamic Multi-Channel Attribution"].map((item) => (
+          {["Audience Targeting", "Automated Campaign Optimization", "Multi-Channel Attribution"].map((item) => (
             <li className="flex gap-3" key={item}><CheckCircle2 className="mt-1 size-5 shrink-0" />{item}</li>
           ))}
         </ul>
       </section>
 
-      <FooterCta title="LET'S SCALE YOUR BRAND TO THE NEXT LEVEL" copy="Ready to engineer a digital presence that dominates? Your journey to unprecedented growth starts with a single audit." />
+      <FooterCta title="Book a Free Strategy Call" copy="Ready to grow your business online? Start with a free consultation with our Delhi NCR team." />
     </main>
   );
 }
@@ -218,18 +222,18 @@ export function IotMobilePage() {
   return (
     <main className="w-full overflow-x-hidden bg-white md:hidden">
       <Hero
-        title="IOT-BASED SMART SOLUTIONS"
-        copy="We build intelligent IoT ecosystems that connect devices, automate operations, and deliver real-time insights for smarter business decisions."
+        title="IoT Solutions and Development Services"
+        copy="DMiraki is an IoT development company in India. We connect devices, dashboards and data, so businesses in Delhi NCR and across India can automate operations and decide from real-time insights."
         image={iotHero}
         titleStyle={{ fontFamily: "'Orbitron', sans-serif", fontWeight: 500, letterSpacing: "0.01em" }}
       />
-      <TechStrip label="POWERED BY ADVANCED IOT TECHNOLOGIES" items={iotTech} />
+      <TechStrip label="Technologies We Use" items={iotTech} />
 
       <section className="bg-[#fbfbfb] px-5 py-10">
         <div className="text-center">
-          <Heading>INTELLIGENT IOT SERVICES</Heading>
+          <Heading>IoT Development Services</Heading>
           <p className="mt-4 text-[15px] leading-7 text-black/70" style={{ fontFamily: "'Roboto', sans-serif" }}>
-            Advanced connected systems engineered for automation, efficiency, and real-time monitoring.
+            Connected systems for automation, efficiency and real-time monitoring.
           </p>
         </div>
         <Cards items={iotServices} />
@@ -237,16 +241,16 @@ export function IotMobilePage() {
 
       <section className="bg-white px-5 py-10">
         <div className="text-center">
-          <Heading>OUR CONNECTED DEVELOPMENT PROCESS</Heading>
+          <Heading>Our IoT Development Process</Heading>
           <p className="mt-4 text-[15px] leading-7 text-black/70" style={{ fontFamily: "'Roboto', sans-serif" }}>
-            A rigorous engineering framework from hardware discovery to global cloud deployment.
+            A clear engineering process from hardware discovery to cloud deployment.
           </p>
         </div>
         <Steps items={iotProcess} />
       </section>
 
       <section className="bg-black px-5 py-10 text-white">
-        <Heading dark>SMART TECHNOLOGY. REAL RESULTS.</Heading>
+        <Heading dark>Key IoT Capabilities</Heading>
         <div className="mt-7 grid gap-4">
           {iotResults.map(([title, body]) => (
             <article className="border border-white/30 p-5" key={title}>
@@ -257,7 +261,7 @@ export function IotMobilePage() {
         </div>
       </section>
 
-      <FooterCta title="BUILD A SMARTER CONNECTED ECOSYSTEM" copy="From connected hardware to cloud dashboards, we can help you turn real-time data into practical business control." />
+      <FooterCta title="Book a Free IoT Consultation" copy="From connected hardware to cloud dashboards, we help you turn real-time data into practical business control. Talk to our Delhi NCR IoT team today." buttonLabel="BOOK FREE IOT CONSULTATION" />
     </main>
   );
 }

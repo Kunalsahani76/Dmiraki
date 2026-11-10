@@ -39,10 +39,10 @@ function HomePage() {
   }, [location.hash]);
 
   return (
-    <div className="w-full min-h-screen bg-white overflow-x-hidden">
+    <div className="w-full min-h-screen bg-white overflow-x-clip">
       <Navbar />
 
-      <div className="home-page-reference w-full bg-white overflow-x-hidden">
+      <div className="home-page-reference w-full bg-white">
         {/* Spacer for sticky navbar */}
         <div style={{ height: "62px" }} />
 
@@ -120,7 +120,7 @@ function CustomSoftwarePage() {
       <Navbar />
       <div style={{ height: "62px" }} />
       <CustomSoftware />
-      <SiteFooter />
+      <SiteFooter nonHeadingLabels />
     </div>
   );
 }
@@ -134,7 +134,7 @@ function IotPage() {
       <div className="hidden md:block">
         <IotBased />
       </div>
-      <SiteFooter />
+      <SiteFooter nonHeadingLabels tagline="Digital marketing, web development and software solutions." />
     </div>
   );
 }
@@ -145,7 +145,7 @@ function WebDevelopmentRoutePage() {
       <Navbar />
       <div style={{ height: "62px" }} />
       <WebDevelopmentPage />
-      <SiteFooter />
+      <SiteFooter nonHeadingLabels tagline="Digital marketing, web development and software solutions." />
     </div>
   );
 }
@@ -156,7 +156,7 @@ function ContactRoutePage() {
       <Navbar />
       <div style={{ height: "62px" }} />
       <ContactPage />
-      <SiteFooter />
+      <SiteFooter nonHeadingLabels copyrightBrand="D'Miraki" />
     </div>
   );
 }
@@ -167,7 +167,7 @@ function SEORoutePage() {
       <Navbar />
       <div style={{ height: "62px" }} />
       <SEOPage />
-      <SiteFooter />
+      <SiteFooter nonHeadingLabels />
     </div>
   );
 }
@@ -178,7 +178,7 @@ function LegalRoutePage({ page }: { page: "terms" | "privacy" | "disclaimer" }) 
       <Navbar />
       <div style={{ height: "62px" }} />
       <LegalPage page={page} />
-      <SiteFooter />
+        <SiteFooter nonHeadingLabels={page === "privacy" || page === "terms" || page === "disclaimer"} copyrightBrand={page === "privacy" || page === "terms" || page === "disclaimer" ? "D'Miraki" : undefined} />
     </div>
   );
 }

@@ -170,7 +170,7 @@ const pageMetadata: Record<string, { title: string; description: string; keyword
     keywords: "website development company in india, web development services india, website development company delhi ncr, custom website development, ecommerce website development, nextjs development company",
   },
   "/terms-and-conditions": { title: "Terms & Conditions | DMiraki", description: "Read the terms and conditions for using the DMiraki website and services." },
-  "/privacy-policy": { title: "Privacy Policy | DMiraki", description: "Learn how DMiraki handles personal information when you use our website and services." },
+  "/privacy-policy": { title: "Privacy Policy | DMiraki", description: "Learn how DMiraki collects, uses and protects personal information when you use our website, contact us or request our services." },
   "/disclaimer": { title: "Disclaimer | DMiraki", description: "Read the DMiraki website disclaimer and information about our services." },
   "/blogs": {
     title: "DMiraki Blog: Web Development, SEO and Marketing Insights",

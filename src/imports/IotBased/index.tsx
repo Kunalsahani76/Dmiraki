@@ -4,12 +4,11 @@ import imgIotBanner from "../../images/iotbanner.png";
 
 function Heading() {
   return (
-    <div className="content-stretch flex flex-col items-start pt-[1.2px] relative shrink-0 w-full" data-name="Heading 1">
-      <div className="[word-break:break-word] flex flex-col justify-center leading-[0] not-italic relative shrink-0 text-[#fbfbfb] text-[64px] w-full" style={{ fontFamily: "'Orbitron', sans-serif", fontWeight: 500, letterSpacing: "0.01em" }}>
-        <p className="leading-[86.4px] mb-0">IOT-BASED</p>
-        <p className="leading-[86.4px] mb-0">SMART</p>
-        <p className="leading-[86.4px]">SOLUTIONS</p>
-      </div>
+    <div className="content-stretch flex flex-col items-start pt-[1.2px] relative shrink-0 w-full">
+      <h1 className="[word-break:break-word] flex flex-col justify-center leading-[0] not-italic relative shrink-0 text-[#fbfbfb] text-[64px] w-full" style={{ fontFamily: "'Orbitron', sans-serif", fontWeight: 500, letterSpacing: "0.01em" }}>
+        <span className="block leading-[86.4px]">IoT Solutions and</span>
+        <span className="block leading-[86.4px]">Development Services</span>
+      </h1>
     </div>
   );
 }
@@ -18,9 +17,9 @@ function Container() {
   return (
     <div className="content-stretch flex flex-col items-start max-w-[576px] pb-[0.59px] relative shrink-0 w-full" data-name="Container">
       <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#fbfbfb] text-[18px] w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
-        <p className="leading-[28.8px] mb-0">We build intelligent IoT ecosystems that connect devices, automate</p>
-        <p className="leading-[28.8px] mb-0">operations, and deliver real-time insights for smarter business</p>
-        <p className="leading-[28.8px]">decisions.</p>
+        <p className="leading-[28.8px] mb-0">DMiraki is an IoT development company in India. We connect</p>
+        <p className="leading-[28.8px] mb-0">devices, dashboards and data, so businesses in Delhi NCR and</p>
+        <p className="leading-[28.8px]">across India can automate operations and decide from real-time insights.</p>
       </div>
     </div>
   );
@@ -31,7 +30,7 @@ function Button() {
     <div className="backdrop-blur-[6px] bg-[rgba(255,255,255,0.03)] content-stretch flex flex-col items-center justify-center px-[33px] py-[17px] relative shrink-0" data-name="Button">
       <div aria-hidden className="absolute border border-[rgba(255,255,255,0.3)] border-solid inset-0 pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#e5e1e4] text-[18px] text-center whitespace-nowrap">
-        <p className="leading-[28px]">BOOK FREE CONSULTATION</p>
+        <p className="leading-[28px]">BOOK FREE IOT CONSULTATION</p>
       </div>
     </div>
   );
@@ -148,7 +147,7 @@ function Container3() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-center pb-[0.59px] relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[14px] text-black text-center tracking-[4.2px] uppercase whitespace-nowrap">
-          <p className="leading-[19.6px]">POWERED BY ADVANCED IOT TECHNOLOGIES</p>
+          <p className="leading-[19.6px]">Technologies We Use</p>
         </div>
       </div>
     </div>
@@ -268,7 +267,7 @@ function Heading1() {
   return (
     <div className="content-stretch flex flex-col items-center pb-[0.8px] relative shrink-0 w-full" data-name="Heading 2">
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[40px] text-center text-white tracking-[1.92px] whitespace-nowrap">
-        <p className="leading-[52.8px]">INTELLIGENT IOT SERVICES</p>
+        <h2 className="leading-[52.8px]">IoT Development Services</h2>
       </div>
     </div>
   );
@@ -285,7 +284,7 @@ function Container12() {
         <Heading1 />
         <Container13 />
         <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute capitalize flex flex-col font-['Geist:Regular',sans-serif] font-normal justify-center leading-[0] left-[calc(50%+0.47px)] text-[#c4c7c8] text-[16px] text-center top-[95.09px] tracking-[0.16px] whitespace-nowrap">
-          <p className="leading-[25.6px] mb-0">Advanced connected systems engineered for automation, efficiency, and real-time</p>
+          <p className="leading-[25.6px] mb-0">Connected systems for automation, efficiency and real-time</p>
           <p className="leading-[25.6px]">monitoring.</p>
         </div>
       </div>
@@ -320,7 +319,7 @@ function Heading2() {
     <div className="relative shrink-0 w-full" data-name="Heading 3">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Sora:Regular',sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[18px] text-white tracking-[0.36px] whitespace-nowrap">
-          <p className="leading-[25.2px]">Smart Home Automation</p>
+          <h3 className="leading-[25.2px]">Smart Home Automation</h3>
         </div>
       </div>
     </div>
@@ -332,7 +331,7 @@ function Container16() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Geist:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#c4c7c8] text-[14px] tracking-[0.14px] w-full">
-          <p className="leading-[22.4px]">Seamless integration of residential devices for enhanced security, comfort, and energy management.</p>
+          <p className="leading-[22.4px]">Smart home automation that connects residential devices for better security, comfort and energy management.</p>
         </div>
       </div>
     </div>
@@ -379,7 +378,7 @@ function Heading3() {
     <div className="relative shrink-0 w-full" data-name="Heading 3">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Sora:Regular',sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[18px] text-white tracking-[0.36px] whitespace-nowrap">
-          <p className="leading-[25.2px]">Industrial IoT Solutions</p>
+          <h3 className="leading-[25.2px]">Industrial IoT Solutions</h3>
         </div>
       </div>
     </div>
@@ -391,7 +390,7 @@ function Container18() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Geist:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#c4c7c8] text-[14px] tracking-[0.14px] w-full">
-          <p className="leading-[22.4px]">Digitizing manufacturing floors with robust sensor networks for optimized throughput and safety.</p>
+          <p className="leading-[22.4px]">Industrial IoT solutions that digitise manufacturing floors with sensor networks for better throughput and safety.</p>
         </div>
       </div>
     </div>
@@ -438,7 +437,7 @@ function Heading4() {
     <div className="relative shrink-0 w-full" data-name="Heading 3">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Sora:Regular',sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[18px] text-white tracking-[0.36px] whitespace-nowrap">
-          <p className="leading-[25.2px]">IoT Mobile Applications</p>
+          <h3 className="leading-[25.2px]">IoT App Development</h3>
         </div>
       </div>
     </div>
@@ -450,7 +449,7 @@ function Container20() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Geist:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#c4c7c8] text-[14px] tracking-[0.14px] w-full">
-          <p className="leading-[22.4px]">Custom mobile interfaces designed for precise control and monitoring of connected hardware on the go.</p>
+          <p className="leading-[22.4px]">IoT app development for mobile apps that control and monitor connected hardware from anywhere.</p>
         </div>
       </div>
     </div>
@@ -497,7 +496,7 @@ function Heading5() {
     <div className="relative shrink-0 w-full" data-name="Heading 3">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Sora:Regular',sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[18px] text-white tracking-[0.36px] whitespace-nowrap">
-          <p className="leading-[25.2px]">Real-Time Monitoring</p>
+          <h3 className="leading-[25.2px]">IoT Dashboard Development</h3>
         </div>
       </div>
     </div>
@@ -509,7 +508,7 @@ function Container22() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Geist:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#c4c7c8] text-[14px] tracking-[0.14px] w-full">
-          <p className="leading-[22.4px]">High-fidelity data streams from field devices visualized in milliseconds for immediate action.</p>
+          <p className="leading-[22.4px]">IoT dashboards that show live data from field devices so you can act immediately.</p>
         </div>
       </div>
     </div>
@@ -556,7 +555,7 @@ function Heading6() {
     <div className="relative shrink-0 w-full" data-name="Heading 3">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Sora:Regular',sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[18px] text-white tracking-[0.36px] whitespace-nowrap">
-          <p className="leading-[25.2px]">{`Sensor & Hardware`}</p>
+          <h3 className="leading-[25.2px]">{`Sensor & Hardware Integration`}</h3>
         </div>
       </div>
     </div>
@@ -568,7 +567,7 @@ function Container24() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Geist:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#c4c7c8] text-[14px] tracking-[0.14px] w-full">
-          <p className="leading-[22.4px]">End-to-end integration of custom sensors and embedded systems into centralized cloud architectures.</p>
+          <p className="leading-[22.4px]">End-to-end integration of custom sensors and embedded systems with centralised cloud platforms.</p>
         </div>
       </div>
     </div>
@@ -615,7 +614,7 @@ function Heading7() {
     <div className="relative shrink-0 w-full" data-name="Heading 3">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Sora:Regular',sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[18px] text-white tracking-[0.36px] whitespace-nowrap">
-          <p className="leading-[25.2px]">Cloud-Based IoT</p>
+          <h3 className="leading-[25.2px]">Cloud-Based IoT</h3>
         </div>
       </div>
     </div>
@@ -627,7 +626,7 @@ function Container26() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Geist:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#c4c7c8] text-[14px] tracking-[0.14px] w-full">
-          <p className="leading-[22.4px]">Scalable backend infrastructures designed to manage millions of concurrent device connections securely.</p>
+          <p className="leading-[22.4px]">Scalable, secure cloud backends that manage large numbers of connected devices.</p>
         </div>
       </div>
     </div>
@@ -675,7 +674,7 @@ function Heading8() {
   return (
     <div className="content-stretch flex flex-col items-center pb-[0.8px] relative shrink-0 w-full" data-name="Heading 2">
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[36px] text-center text-white tracking-[-2.4px] uppercase whitespace-nowrap">
-        <p className="leading-[52.8px]">OUR CONNECTED DEVELOPMENT PROCESS</p>
+        <h2 className="leading-[52.8px]">Our IoT Development Process</h2>
       </div>
     </div>
   );
@@ -685,7 +684,7 @@ function Container28() {
   return (
     <div className="content-stretch flex flex-col items-center max-w-[672px] relative shrink-0 w-[672px]" data-name="Container">
       <div className="[word-break:break-word] capitalize flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#c4c7c8] text-[16px] text-center tracking-[0.16px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
-        <p className="leading-[25.6px]">A rigorous engineering framework from hardware discovery to global cloud deployment.</p>
+        <p className="leading-[25.6px]">A clear engineering process from hardware discovery to cloud deployment.</p>
       </div>
     </div>
   );
@@ -723,7 +722,7 @@ function Heading4Margin() {
   return (
     <div className="absolute h-[33.19px] left-0 top-[72px] w-[94.8px]" data-name="Heading 4:margin">
       <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Sora:Regular',sans-serif] font-medium justify-center leading-[0] left-0 text-[18px] text-white top-[12px] tracking-[0.36px] whitespace-nowrap">
-        <p className="leading-[25.2px]">Discovery</p>
+        <h3 className="leading-[25.2px]">Discovery</h3>
       </div>
     </div>
   );
@@ -733,8 +732,8 @@ function Container31() {
   return (
     <div className="absolute content-stretch flex flex-col items-start left-0 pr-[42.75px] top-[104.58px]" data-name="Container">
       <div className="[word-break:break-word] capitalize flex flex-col font-['Geist:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#c4c7c8] text-[14px] tracking-[0.14px] whitespace-nowrap">
-        <p className="leading-[22.4px] mb-0">Analyzing business</p>
-        <p className="leading-[22.4px] mb-0">requirements and edge</p>
+        <p className="leading-[22.4px] mb-0">Analysing business</p>
+        <p className="leading-[22.4px] mb-0">requirements and device</p>
         <p className="leading-[22.4px]">environment constraints.</p>
       </div>
     </div>
@@ -775,7 +774,7 @@ function Heading4Margin1() {
   return (
     <div className="absolute h-[33.19px] left-0 top-[136px] w-[120.97px]" data-name="Heading 4:margin">
       <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Sora:Regular',sans-serif] font-medium justify-center leading-[0] left-0 text-[18px] text-white top-[12px] tracking-[0.36px] whitespace-nowrap">
-        <p className="leading-[25.2px]">Architecture</p>
+        <h3 className="leading-[25.2px]">Architecture</h3>
       </div>
     </div>
   );
@@ -826,7 +825,7 @@ function Heading4Margin2() {
   return (
     <div className="h-[33.19px] relative shrink-0 w-[107.38px]" data-name="Heading 4:margin">
       <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Sora:Regular',sans-serif] font-medium justify-center leading-[0] left-0 text-[18px] text-white top-[12px] tracking-[0.36px] whitespace-nowrap">
-        <p className="leading-[25.2px]">Integration</p>
+        <h3 className="leading-[25.2px]">Integration</h3>
       </div>
     </div>
   );
@@ -878,7 +877,7 @@ function Heading4Margin3() {
   return (
     <div className="absolute h-[33.19px] left-0 top-[136px] w-[123.23px]" data-name="Heading 4:margin">
       <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Sora:Regular',sans-serif] font-medium justify-center leading-[0] left-0 text-[18px] text-white top-[12px] tracking-[0.36px] whitespace-nowrap">
-        <p className="leading-[25.2px]">Connectivity</p>
+        <h3 className="leading-[25.2px]">Connectivity</h3>
       </div>
     </div>
   );
@@ -888,8 +887,8 @@ function Container34() {
   return (
     <div className="absolute content-stretch flex flex-col items-start left-0 pr-[20.73px] top-[168.58px]" data-name="Container">
       <div className="[word-break:break-word] capitalize flex flex-col font-['Geist:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#c4c7c8] text-[14px] tracking-[0.14px] whitespace-nowrap">
-        <p className="leading-[22.4px] mb-0">Securing data transmission</p>
-        <p className="leading-[22.4px] mb-0">tunnels and low-latency API</p>
+        <p className="leading-[22.4px] mb-0">Secure data transmission</p>
+        <p className="leading-[22.4px] mb-0">and low-latency API</p>
         <p className="leading-[22.4px]">routes.</p>
       </div>
     </div>
@@ -929,7 +928,7 @@ function Heading4Margin4() {
   return (
     <div className="absolute h-[33.19px] left-0 top-[72px] w-[79.48px]" data-name="Heading 4:margin">
       <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Sora:Regular',sans-serif] font-medium justify-center leading-[0] left-0 text-[18px] text-white top-[12px] tracking-[0.36px] whitespace-nowrap">
-        <p className="leading-[25.2px]">Security</p>
+        <h3 className="leading-[25.2px]">Security</h3>
       </div>
     </div>
   );
@@ -1001,8 +1000,7 @@ function Heading9() {
   return (
     <div className="content-stretch flex flex-col items-start pb-[0.69px] relative shrink-0 w-full" data-name="Heading 2">
       <div className="[word-break:break-word] flex flex-col font-['Roboto:SemiBold',sans-serif] font-semibold justify-center leading-[0] relative shrink-0 text-[48px] text-white tracking-[1.92px] w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
-        <p className="leading-[52.8px] mb-0">SMART TECHNOLOGY.</p>
-        <p className="leading-[52.8px]">REAL RESULTS.</p>
+        <h2 className="leading-[52.8px]">Key IoT Capabilities</h2>
       </div>
     </div>
   );
@@ -1012,7 +1010,7 @@ function Heading10() {
   return (
     <div className="h-[25.19px] relative shrink-0 w-[206.52px]" data-name="Heading 5">
       <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Roboto:Medium',sans-serif] font-medium justify-center leading-[0] left-0 text-[20px] text-white top-[12px] tracking-[0.36px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
-        <p className="leading-[25.2px]">Real-Time Monitoring</p>
+        <h3 className="leading-[25.2px]">Real-Time Monitoring</h3>
       </div>
     </div>
   );
@@ -1031,8 +1029,8 @@ function Container40() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container">
       <div className="[word-break:break-word] capitalize flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#c4c7c8] text-[14px] tracking-[0.14px] w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
-        <p className="leading-[22.4px] mb-0">Continuous observation of performance</p>
-        <p className="leading-[22.4px]">metrics across global fleets.</p>
+        <p className="leading-[22.4px] mb-0">Continuous monitoring of performance</p>
+        <p className="leading-[22.4px]">metrics across your device fleet.</p>
       </div>
     </div>
   );
@@ -1051,7 +1049,7 @@ function Heading11() {
   return (
     <div className="h-[25.19px] relative shrink-0 w-[224.91px]" data-name="Heading 5">
       <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Roboto:Medium',sans-serif] font-medium justify-center leading-[0] left-0 text-[20px] text-white top-[12px] tracking-[0.36px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
-        <p className="leading-[25.2px]">Predictive Maintenance</p>
+        <h3 className="leading-[25.2px]">Predictive Maintenance</h3>
       </div>
     </div>
   );
@@ -1070,8 +1068,8 @@ function Container43() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container">
       <div className="[word-break:break-word] capitalize flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#c4c7c8] text-[14px] tracking-[0.14px] w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
-        <p className="leading-[22.4px] mb-0">Identify potential system failures before they</p>
-        <p className="leading-[22.4px]">result in downtime.</p>
+        <p className="leading-[22.4px] mb-0">Spot potential failures</p>
+        <p className="leading-[22.4px]">before they cause downtime.</p>
       </div>
     </div>
   );
@@ -1090,7 +1088,7 @@ function Heading12() {
   return (
     <div className="h-[25.19px] relative shrink-0 w-[224.28px]" data-name="Heading 5">
       <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Roboto:Medium',sans-serif] font-medium justify-center leading-[0] left-0 text-[20px] text-white top-[12px] tracking-[0.36px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
-        <p className="leading-[25.2px]">Secure Communication</p>
+        <h3 className="leading-[25.2px]">Secure IoT Communication</h3>
       </div>
     </div>
   );
@@ -1109,7 +1107,7 @@ function Container46() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container">
       <div className="[word-break:break-word] capitalize flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#c4c7c8] text-[14px] tracking-[0.14px] w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
-        <p className="leading-[22.4px]">AES-256 encrypted tunnels for all device-to-cloud telemetry.</p>
+        <p className="leading-[22.4px]">Encrypted communication between connected devices and cloud platforms.</p>
       </div>
     </div>
   );
@@ -1128,7 +1126,7 @@ function Heading13() {
   return (
     <div className="h-[25.19px] relative shrink-0 w-[210.08px]" data-name="Heading 5">
       <div className="-translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['Roboto:Medium',sans-serif] font-medium justify-center leading-[0] left-0 text-[20px] text-white top-[12px] tracking-[0.36px] whitespace-nowrap" style={{ fontVariationSettings: '"wdth" 100' }}>
-        <p className="leading-[25.2px]">AI-Driven Automation</p>
+        <h3 className="leading-[25.2px]">AI-Driven Automation</h3>
       </div>
     </div>
   );
@@ -1536,6 +1534,11 @@ export default function IotBased() {
       <ServicesSection />
       <ProcessSection />
       <Frame10 />
+      <section className="w-full bg-black px-6 py-16 text-center text-white">
+        <h2 className="mx-auto max-w-[760px] text-[32px] leading-tight" style={{ fontFamily: "'Orbitron', sans-serif" }}>Book a Free IoT Consultation</h2>
+        <p className="mx-auto mt-5 max-w-[720px] text-[16px] leading-7 text-white/80" style={{ fontFamily: "'Inter', sans-serif" }}>From connected hardware to cloud dashboards, we help you turn real-time data into practical business control. Talk to our Delhi NCR IoT team today.</p>
+        <a href="/contact" className="mt-7 inline-block border border-white/40 px-8 py-4 text-white no-underline" style={{ fontFamily: "'Orbitron', sans-serif" }}>Book Free IoT Consultation</a>
+      </section>
     </div>
   );
 }

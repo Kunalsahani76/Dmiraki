@@ -16,17 +16,17 @@ const services = [
   {
     icon: LayoutDashboard,
     title: "Corporate Website Development",
-    desc: "Scalable enterprise-grade platforms designed for security, stability, and professional branding.",
+    desc: "Scalable corporate websites designed for security, stability and professional branding.",
   },
   {
     icon: MonitorSmartphone,
     title: "Responsive Web Design",
-    desc: "Flawless execution across all device vectors, ensuring cinematic quality on mobile, tablet, and desktop.",
+    desc: "Responsive websites that look and work well on mobile, tablet and desktop.",
   },
   {
     icon: ShoppingCart,
-    title: "E-Commerce Development",
-    desc: "High-conversion transactional interfaces built with headless architectures and secure gateways.",
+    title: "E-Commerce Website Development",
+    desc: "E-commerce websites built for conversions, with secure payment gateways.",
   },
   {
     icon: Sparkles,
@@ -35,38 +35,38 @@ const services = [
   },
   {
     icon: Database,
-    title: "CMS & WordPress Solutions",
-    desc: "Custom-themed, high-performance content management systems tailored to your editorial workflow.",
+    title: "WordPress & CMS Development",
+    desc: "Custom WordPress and CMS websites tailored to how your team publishes content.",
   },
   {
     icon: TerminalSquare,
-    title: "Web App Development",
-    desc: "Complex functional applications built with React/Next.js for real-time data and high interactivity.",
+    title: "Next.js Web App Development",
+    desc: "Next.js and React web apps for real-time data and rich interactivity.",
   },
 ];
 
-const process = ["Research", "Wireframing", "UI/UX Design", "Development", "Testing", "Launch"];
+const process = ["Research", "Wireframing", "UI/UX Design", "Development", "Testing", "Launch & Maintenance"];
 
 const performance = [
   {
     icon: Zap,
-    title: "Speed",
-    desc: "Sub-second load times via edge delivery and optimized assets.",
+    title: "Fast Performance",
+    desc: "Fast load times through edge delivery and optimised assets.",
   },
   {
     icon: Search,
-    title: "SEO",
-    desc: "Semantic HTML and metadata engineered for visibility.",
+    title: "SEO-Ready Code",
+    desc: "Semantic HTML and metadata that help your site rank.",
   },
   {
     icon: MonitorSmartphone,
-    title: "Mobile",
-    desc: "Mobile-first approach for seamless portable experiences.",
+    title: "Mobile-First Design",
+    desc: "Mobile-first design for a smooth experience on every device.",
   },
   {
     icon: ShieldCheck,
-    title: "Secure",
-    desc: "Hardened architectures protecting data and integrity.",
+    title: "Website Security",
+    desc: "Secure architecture that protects your data.",
   },
 ];
 
@@ -121,17 +121,17 @@ export default function WebDevelopmentPage() {
               className="mb-8 uppercase text-white"
               style={{ fontFamily: "'Orbitron', sans-serif", fontWeight: 500, fontSize: "clamp(38px, 6vw, 76px)", lineHeight: 1.35, letterSpacing: "0.01em" }}
             >
-              MODERN WEB DEVELOPMENT SERVICES
+              Website Development Services
             </h1>
             <p className="mb-9 max-w-[530px] text-[#d0d0d0]" style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: "26px" }}>
-              We engineer high-performance, scalable web ecosystems using cutting-edge frontend architectures. Architectural stability meets cinematic user experiences.
+              DMiraki is a website development company in India. We build fast, mobile-first, SEO-ready business and e-commerce websites on Next.js for clients in Delhi NCR and across India.
             </p>
             <a
               href="#web-development-contact"
               className="border border-white/35 px-14 py-5 uppercase text-white transition-colors hover:bg-white hover:text-black"
               style={{ fontFamily: "'Orbitron', sans-serif", fontSize: 13, letterSpacing: "1.4px" }}
             >
-              BOOK FREE CONSULTATION
+              GET A WEBSITE QUOTE
             </a>
           </div>
           <DashboardVisual />
@@ -140,9 +140,9 @@ export default function WebDevelopmentPage() {
 
       <section className="bg-white px-5 py-12 text-black sm:px-8 lg:px-10">
         <div className="mx-auto max-w-[1270px] text-center">
-          <h2 className="mb-9 uppercase" style={{ fontFamily: "'Orbitron', sans-serif", fontSize: 16, letterSpacing: "6px" }}>
-            BUILT WITH MODERN WEB TECHNOLOGIES
-          </h2>
+          <p className="mb-9 uppercase" style={{ fontFamily: "'Orbitron', sans-serif", fontSize: 16, letterSpacing: "6px" }}>
+            Technologies We Use
+          </p>
           <div className="grid grid-cols-2 gap-6 text-[#9a9a9a] sm:grid-cols-4 lg:grid-cols-8">
             {techStack.map((tech) => (
               <span key={tech} className="text-sm font-bold">{tech}</span>
@@ -155,17 +155,19 @@ export default function WebDevelopmentPage() {
         <div className="mx-auto max-w-[1270px]">
           <div className="mb-16 text-center">
             <h2 className="mb-6 uppercase" style={{ fontFamily: "'Orbitron', sans-serif", fontSize: "clamp(28px, 4vw, 48px)", lineHeight: 1.15 }}>
-              HIGH-PERFORMANCE<br />WEB SOLUTIONS
+              Website Development Services
             </h2>
             <p className="mx-auto max-w-[560px] text-[#b9b9b9]" style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, lineHeight: "24px" }}>
-              We engineer high-performance, scalable web ecosystems using cutting-edge frontend architectures. Architectural stability meets cinematic user experiences.
+              Custom website development for businesses, from corporate sites and online stores to landing pages and web apps.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {services.map(({ icon: Icon, title, desc }) => (
               <article key={title} className="min-h-[300px] border border-white/30 bg-[linear-gradient(135deg,rgba(255,255,255,0.08),transparent_48%)] p-9">
                 <Icon className="mb-10 h-7 w-7 text-white" strokeWidth={1.8} />
-                <h3 className="mb-4 max-w-[250px] text-xl font-bold leading-tight text-white">{title}</h3>
+                <h3 className="mb-4 max-w-[250px] text-xl font-bold leading-tight text-white">
+                  {title === "Next.js Web App Development" ? <a href="/custom-software" className="text-inherit no-underline">{title}</a> : title}
+                </h3>
                 <p className="max-w-[275px] text-[#bdbdbd]" style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: "25px" }}>
                   {desc}
                 </p>
@@ -178,10 +180,10 @@ export default function WebDevelopmentPage() {
       <section className="border-y-[6px] border-white bg-[linear-gradient(105deg,#000_0%,#000_48%,#5c5c5c_100%)] px-5 py-24 sm:px-8 lg:px-10">
         <div className="mx-auto max-w-[1270px] text-center">
           <h2 className="mb-5 uppercase" style={{ fontFamily: "'Inter', sans-serif", fontSize: "clamp(30px, 4vw, 48px)", fontWeight: 800 }}>
-            OUR ARCHITECTURAL PROCESS
+            Our Website Development Process
           </h2>
           <p className="mb-20 text-[#bcbcbc]" style={{ fontFamily: "'Inter', sans-serif", fontSize: 14 }}>
-            The systematic roadmap from initial concept to deployment.
+            A clear roadmap from first idea to launch.
           </p>
           <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-6">
             {process.map((step, index) => (
@@ -191,11 +193,11 @@ export default function WebDevelopmentPage() {
                 </span>
                 <h3 className="mb-2 uppercase tracking-[3px] text-white" style={{ fontSize: 11, fontWeight: 800 }}>{step}</h3>
                 <p className="max-w-[120px] text-center text-[#aaa]" style={{ fontSize: 11, lineHeight: "17px" }}>
-                  {index === 0 && "Deep dive into market dynamics."}
-                  {index === 1 && "Structural blueprints and logic."}
-                  {index === 2 && "Visual identity and flow."}
-                  {index === 3 && "Clean, scalable code execution."}
-                  {index === 4 && "Rigorous QA and optimization."}
+                  {index === 0 && "Market and competitor research."}
+                  {index === 1 && "Page layouts and site structure."}
+                  {index === 2 && "Visual design and user flow."}
+                  {index === 3 && "Clean, scalable code."}
+                  {index === 4 && "Thorough QA and optimisation."}
                   {index === 5 && "Deployment and maintenance."}
                 </p>
               </div>
@@ -208,7 +210,7 @@ export default function WebDevelopmentPage() {
         <div className="mx-auto grid max-w-[1270px] grid-cols-1 gap-12 lg:grid-cols-[0.95fr_1.05fr]">
           <div>
             <h2 className="mb-14 uppercase" style={{ fontFamily: "'Inter', sans-serif", fontSize: "clamp(34px, 4vw, 52px)", lineHeight: 1.08, fontWeight: 900 }}>
-              ENGINEERED FOR<br />PEAK<br />PERFORMANCE
+              Fast, Mobile-First,<br />SEO-Ready Websites
             </h2>
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
               {performance.map(({ icon: Icon, title, desc }) => (
@@ -228,17 +230,17 @@ export default function WebDevelopmentPage() {
 
       <section id="web-development-contact" className="bg-[linear-gradient(115deg,#050505_0%,#111_45%,#606060_100%)] px-5 py-24 text-center sm:px-8 lg:px-10">
         <h2 className="mx-auto mb-8 max-w-[980px] uppercase" style={{ fontFamily: "'Inter', sans-serif", fontSize: "clamp(38px, 5vw, 70px)", lineHeight: 1.22, fontWeight: 300 }}>
-          LET'S BUILD YOUR<br />NEXT-GENERATION WEBSITE
+          Get a Website Quote
         </h2>
         <p className="mx-auto mb-12 max-w-[560px] text-[#d0d0d0]" style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, lineHeight: "27px" }}>
-          Partner with our architectural team to deploy a high-performance web solution that scales with your ambition.
+          Get a quote from our Delhi NCR web development team for a fast, scalable website built for your business.
         </p>
         <a
-          href="/#contact"
+          href="/contact"
           className="inline-flex bg-white px-16 py-6 uppercase text-black transition-colors hover:bg-black hover:text-white"
           style={{ fontFamily: "'Orbitron', sans-serif", fontSize: 15, letterSpacing: "2px" }}
         >
-          START YOUR PROJECT
+          GET A WEBSITE QUOTE
         </a>
       </section>
 

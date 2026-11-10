@@ -20,49 +20,49 @@ const inter = { fontFamily: "'Inter', sans-serif" };
 const contactCards = [
   { icon: Mail, label: "EMAIL", value: "info@dmiraki.com" },
   { icon: Phone, label: "PHONE", value: "+91 92113 41245" },
-  { icon: MapPin, label: "LOCATION", value: "A-20, Global Business Park, Sector 63, Noida, Uttar Pradesh – 201309, India." },
+  { icon: MapPin, label: "Office Address", value: "A-20, Global Business Park, Sector 63, Noida, Uttar Pradesh – 201309, India." },
 ];
 
 const developItems = [
   {
     icon: Code2,
     title: "Custom Software",
-    copy: "Bespoke software solutions tailored to your unique business requirements and operational challenges.",
+    copy: "Bespoke software built around your business requirements and operational challenges.",
   },
   {
     icon: Network,
-    title: "Enterprise Systems",
-    copy: "Robust and scalable enterprise-level applications designed to streamline complex business processes.",
+    title: "Enterprise Software",
+    copy: "Scalable enterprise applications that streamline complex business processes.",
   },
   {
     icon: BarChart3,
-    title: "CRM & ERP",
-    copy: "Integrated management systems to optimize resource planning and customer relationship management.",
+    title: "CRM & ERP Software",
+    copy: "Integrated CRM and ERP systems for resource planning and customer management.",
   },
   {
     icon: Cloud,
-    title: "SaaS",
-    copy: "Scalable and secure Software as a Service platforms built for modern cloud delivery models.",
+    title: "SaaS Development",
+    copy: "Scalable, secure SaaS platforms built for modern cloud delivery.",
   },
   {
     icon: Boxes,
-    title: "Cloud Apps",
-    copy: "Cloud-native applications engineered for high availability, performance, and seamless scalability.",
+    title: "Cloud Applications",
+    copy: "Cloud-native applications built for high availability, performance and scalability.",
   },
   {
     icon: ShieldCheck,
-    title: "API Integration",
-    copy: "Seamless connectivity between disparate systems through custom API development and integration.",
+    title: "API Development",
+    copy: "Custom API development and integration that connects your systems.",
   },
   {
     icon: Gauge,
-    title: "Automation",
-    copy: "Smart automation tools to reduce manual overhead and enhance overall organizational efficiency.",
+    title: "Automation Systems",
+    copy: "Automation tools that reduce manual work and improve efficiency.",
   },
   {
     icon: Database,
-    title: "Data Solutions",
-    copy: "Advanced data warehousing and analytics platforms to drive informed business decisions.",
+    title: "Data Management",
+    copy: "Data warehousing and analytics platforms for informed business decisions.",
   },
 ];
 
@@ -94,14 +94,14 @@ const techColumns = [
 ];
 
 const reasons = [
-  ["Business focused software architecture", "Design choices driven by ROI and organizational objectives, not just technology trends."],
-  ["Scalable and future ready development", "Infrastructure built to support millions of concurrent users without performance degradation."],
-  ["Enterprise grade security standards", "Military-grade encryption and zero-trust protocols embedded at every layer of the system."],
-  ["Cloud optimised infrastructure", "Native cloud applications designed for resilience and elastic scalability."],
-  ["Fast loading and high performance systems", "Optimized codebases and architecture to ensure ultra-low latency for global users."],
-  ["UI/UX focused modern interface design", "High-fidelity user experiences that combine aesthetic elegance with functional clarity."],
-  ["Automation and AI integration expertise", "Smart workflows and AI modules that eliminate redundant tasks and increase team velocity."],
-  ["Dedicated technical consultation and support", "High-priority engineering support to ensure continuous operational excellence."],
+  ["Business-Focused Software", "Design choices driven by ROI and organizational objectives, not just technology trends."],
+  ["Scalable Development", "Infrastructure built to scale with your user base."],
+  ["Enterprise-Grade Security", "Strong encryption and zero-trust security built into every layer."],
+  ["Cloud-Optimised Infrastructure", "Native cloud applications designed for resilience and elastic scalability."],
+  ["High-Performance Systems", "Optimised code and architecture for fast load times."],
+  ["Modern UI/UX Design", "User experiences that combine good design with functional clarity."],
+  ["Automation & AI Expertise", "Smart workflows and AI modules that remove repetitive tasks and speed up your team."],
+  ["Dedicated Support", "Priority engineering support to keep your operations running smoothly."],
 ];
 
 function SectionHeading({ children }: { children: string }) {
@@ -139,11 +139,10 @@ export default function ContactPage() {
               className="max-w-[620px] text-[#f1f1f1] uppercase"
               style={{ ...orbitron, fontSize: "clamp(42px, 6vw, 74px)", fontWeight: 500, lineHeight: 1.18 }}
             >
-              LET&apos;S BUILD SOMETHING EXTRAORDINARY
+              Contact D&apos;Miraki in Noida Head Office
             </h1>
             <p className="mt-8 max-w-[530px] text-[13px] font-semibold leading-6 text-[#d1d1d1]" style={inter}>
-              We engineer high-performance, scalable web ecosystems using cutting-edge frontend architectures.
-              Architectural stability meets cinematic user experiences.
+              Talk to D&apos;Miraki about SEO, digital marketing or web development. Our Noida team serves businesses across Delhi NCR and India. Call, email or send an enquiry.
             </p>
             <button
               className="mt-8 h-[64px] min-w-[365px] border border-white/40 px-8 text-[#eeeeee] transition-colors hover:bg-white hover:text-black max-sm:min-w-full"
@@ -168,7 +167,7 @@ export default function ContactPage() {
             className="mb-12 text-center text-[#dedede] uppercase"
             style={{ ...orbitron, fontSize: "clamp(24px, 3vw, 38px)", fontWeight: 500, lineHeight: 1.2 }}
           >
-            CONNECT WITH OUR TEAM
+            Contact Details
           </h2>
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {contactCards.map(({ icon: Icon, label, value }) => (
@@ -189,7 +188,7 @@ export default function ContactPage() {
       <section className="bg-[linear-gradient(145deg,#080808_0%,#111_58%,#222_100%)] px-6 py-20 lg:px-10">
         <div className="mx-auto grid max-w-[1110px] grid-cols-1 gap-16 lg:grid-cols-[1fr_0.9fr]">
           <div>
-            <SectionHeading>SEND US A MESSAGE</SectionHeading>
+            <SectionHeading>Send Us an Enquiry</SectionHeading>
             <form className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2" onSubmit={sendInquiryToWhatsApp}>
               {["FULL NAME", "EMAIL ADDRESS", "PHONE NUMBER"].map((label, index) => (
                 <label key={label} className="flex flex-col gap-3">
@@ -210,10 +209,12 @@ export default function ContactPage() {
                   SERVICE
                 </span>
                 <select name="service" className="h-[58px] border border-white/25 bg-black/20 px-5 text-sm text-[#9f9f9f] outline-none transition-colors focus:border-white/70">
-                  <option>System Architecture</option>
+                  <option>SEO Services</option>
+                  <option>Digital Marketing</option>
                   <option>Custom Software</option>
                   <option>Web Development</option>
-                  <option>Automation</option>
+                  <option>IoT Solutions</option>
+                  <option>Other</option>
                 </select>
               </label>
               <label className="flex flex-col gap-3 sm:col-span-2">
@@ -232,7 +233,7 @@ export default function ContactPage() {
                 className="h-[66px] bg-[linear-gradient(180deg,#ffffff_0%,#d9dce2_100%)] text-[#5b5b5b] transition-opacity hover:opacity-85 sm:col-span-2"
                 style={{ ...orbitron, fontSize: "13px", fontWeight: 700, letterSpacing: "0.08em" }}
               >
-                TRANSMIT INQUIRY
+                Send Enquiry
               </button>
             </form>
           </div>
@@ -240,11 +241,11 @@ export default function ContactPage() {
           <aside className="border border-white/25 p-8">
             <img src={analyticsVisual} alt="Support analytics dashboard" className="h-[340px] w-full object-cover opacity-75 grayscale" />
             <div className="px-4 py-10 text-center">
-              <h3 className="text-[#e6e6e6] uppercase" style={{ ...orbitron, fontSize: "22px", fontWeight: 500 }}>
+              <p className="text-[#e6e6e6] uppercase" style={{ ...orbitron, fontSize: "22px", fontWeight: 500 }}>
                 SUPPORT ANALYTICS
-              </h3>
+              </p>
               <p className="mx-auto mt-3 max-w-[310px] text-[13px] font-semibold leading-5 text-[#d5d5d5]" style={inter}>
-                Our team uses advanced diagnostic metrics to ensure 99.9% project success rates.
+                Our team reviews project information to help guide your enquiry.
               </p>
             </div>
           </aside>
@@ -253,9 +254,9 @@ export default function ContactPage() {
 
       <section className="border-y border-white/15 bg-[linear-gradient(145deg,#1b1b1b_0%,#515151_100%)] px-6 py-12 lg:px-10">
         <div className="mx-auto max-w-[1210px]">
-          <SectionHeading>WHAT WE DEVELOP</SectionHeading>
+          <SectionHeading>Software Development Services</SectionHeading>
           <p className="mt-7 max-w-[650px] text-[13px] font-medium leading-6 text-[#dfdfdf]" style={inter}>
-            Engineered for performance, built for scale. Our development lifecycle prioritizes architectural integrity and user excellence.
+            Custom software built for performance and scale, from first idea to launch.
           </p>
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {developItems.map(({ icon: Icon, title, copy }) => (
@@ -276,7 +277,7 @@ export default function ContactPage() {
       <section className="bg-[linear-gradient(145deg,#2b2b2b_0%,#666_100%)] px-6 py-20 lg:px-10">
         <div className="mx-auto max-w-[1150px]">
           <div className="text-center">
-            <SectionHeading>TECHNOLOGIES WE USE</SectionHeading>
+            <SectionHeading>Technologies We Use</SectionHeading>
           </div>
           <div className="mt-14 grid grid-cols-1 gap-10 lg:grid-cols-3">
             {techColumns.map((column) => (
@@ -308,9 +309,9 @@ export default function ContactPage() {
       <section className="bg-[linear-gradient(145deg,#5c5c5c_0%,#898989_100%)] px-6 py-20 lg:px-10">
         <div className="mx-auto max-w-[1210px]">
           <div className="text-center">
-            <SectionHeading>WHY CHOOSE D&apos;MIRAKI</SectionHeading>
+            <SectionHeading>Why Choose D&apos;Miraki</SectionHeading>
             <p className="mt-8 uppercase text-[#ededed]" style={{ ...orbitron, fontSize: "15px", fontWeight: 500 }}>
-              We don&apos;t just write code: we architect competitive advantages.
+              We build software that gives your business a competitive advantage.
             </p>
           </div>
           <div className="mt-10 grid grid-cols-1 border border-black/45 sm:grid-cols-2 lg:grid-cols-4">
@@ -333,11 +334,10 @@ export default function ContactPage() {
           className="mx-auto max-w-[980px] text-white uppercase"
           style={{ ...orbitron, fontSize: "clamp(34px, 5vw, 62px)", fontWeight: 500, lineHeight: 1.15 }}
         >
-          READY TO TRANSFORM YOUR OPERATIONS?
+          Book a Free Digital Strategy Call
         </h2>
         <p className="mx-auto mt-12 max-w-[590px] text-[14px] font-medium leading-6 text-[#eeeeee]" style={inter}>
-          Join the ranks of elite enterprises leveraging custom intelligence to dominate their industries.
-          Consultation sessions are currently available for Q4 2024.
+          Book a free digital strategy call with our Noida team to discuss your goals in SEO, digital marketing, web development or custom software.
         </p>
         <button
           className="mt-10 h-[66px] min-w-[360px] bg-[linear-gradient(180deg,#ffffff_0%,#d9dce2_100%)] text-[#5b5b5b] transition-opacity hover:opacity-85 max-sm:min-w-full"

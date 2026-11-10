@@ -5,14 +5,12 @@ import imgDmirakiPosts1 from "./bf4cf617b34b1b26e10ed7fbbabad160e79fb2e8.png";
 
 function Heading() {
   return (
-    <div className="content-stretch flex flex-col items-start pt-[1.2px] relative shrink-0 w-full" data-name="Heading 1">
+    <h1 className="content-stretch flex flex-col items-start pt-[1.2px] relative shrink-0 w-full">
       <div className="[word-break:break-word] flex flex-col justify-center leading-[0] not-italic relative shrink-0 text-[#fbfbfb] text-[64px] w-full" style={{ fontFamily: "'Orbitron', sans-serif", fontWeight: 500, letterSpacing: "0.01em" }}>
-        <p className="leading-[88px] mb-0">DIGITAL</p>
-        <p className="leading-[88px] mb-0">MARKETING</p>
-        <p className="leading-[88px] mb-0">THAT DRIVES</p>
-        <p className="leading-[88px]">REAL GROWTH</p>
+        <span className="block leading-[88px]">Digital Marketing</span>
+        <span className="block leading-[88px]">Services</span>
       </div>
-    </div>
+    </h1>
   );
 }
 
@@ -20,7 +18,7 @@ function Container() {
   return (
     <div className="content-stretch flex flex-col items-start max-w-[576px] pb-[0.59px] relative shrink-0 w-full" data-name="Container">
       <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#fbfbfb] text-[16px] w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
-        <p className="leading-[24px]">AetherForge Blends High-Precision Engineering With Visionary Digital...</p>
+        <p className="leading-[24px]">DMiraki is a digital marketing agency in India built around leads, not vanity metrics. We combine SEO, PPC, social media, content and branding to grow businesses across Delhi NCR and India.</p>
       </div>
     </div>
   );
@@ -31,7 +29,7 @@ function Button() {
     <div className="backdrop-blur-[6px] bg-[rgba(255,255,255,0.03)] content-stretch flex flex-col h-[66px] items-center justify-center relative shrink-0 w-[490px]" data-name="Button">
       <div aria-hidden className="absolute border border-[rgba(255,255,255,0.3)] border-solid inset-0 pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#e5e1e4] text-[16px] text-center tracking-[3px] uppercase whitespace-nowrap">
-        <p className="leading-[24px]">BOOK FREE CONSULTATION</p>
+        <p className="leading-[24px]">Book Free Strategy Call</p>
       </div>
     </div>
   );
@@ -154,7 +152,7 @@ function Container3() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-center pb-[0.59px] relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[14px] text-black text-center tracking-[4.2px] uppercase whitespace-nowrap">
-          <p className="leading-[19.6px]">ENGINEERED WITH INDUSTRY-LEADING TECH STACKS</p>
+          <p className="leading-[19.6px]">Tools We Work With</p>
         </div>
       </div>
     </div>
@@ -262,7 +260,7 @@ function Heading1() {
   return (
     <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-name="Heading 2">
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[40px] text-center text-white tracking-[-0.8px] whitespace-nowrap">
-        <p className="leading-[48px]">STRATEGIC SOLUTIONS</p>
+        <h2 className="leading-[48px]">Our Digital Marketing Services</h2>
       </div>
     </div>
   );
@@ -297,7 +295,7 @@ function Heading2() {
     <div className="relative shrink-0 w-full" data-name="Heading 3">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start pt-[8px] relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Geist:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#e5e1e4] text-[24px] w-full">
-          <p className="leading-[32px]">SEO Optimization</p>
+          <h3 className="leading-[32px]">SEO Services</h3>
         </div>
       </div>
     </div>
@@ -309,9 +307,9 @@ function Container15() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#c1c6d7] text-[16px] w-full">
-          <p className="leading-[24px] mb-0">Dominating search engines through</p>
-          <p className="leading-[24px] mb-0">data-driven keyword research and</p>
-          <p className="leading-[24px]">technical structural superiority.</p>
+          <p className="leading-[24px] mb-0">Keyword research, technical SEO and</p>
+          <p className="leading-[24px] mb-0">content optimisation that build lasting</p>
+          <p className="leading-[24px]">search visibility in India.</p>
         </div>
       </div>
     </div>
@@ -320,7 +318,8 @@ function Container15() {
 
 function Card() {
   return (
-    <div className="backdrop-blur-[6px] bg-[rgba(255,255,255,0.03)] col-1 justify-self-stretch relative row-1 self-stretch shrink-0" data-name="Card 1">
+    <a href="/seo-services" className="backdrop-blur-[6px] col-1 justify-self-stretch relative row-1 self-stretch shrink-0 block text-inherit no-underline">
+    <div className="bg-[rgba(255,255,255,0.03)] relative h-full w-full" data-name="Card 1">
       <div className="overflow-clip rounded-[inherit] size-full">
         <div className="content-stretch flex flex-col gap-[16px] items-start p-[33px] relative size-full">
           <Container14 />
@@ -331,6 +330,7 @@ function Card() {
       </div>
       <div aria-hidden className="absolute border border-[rgba(255,255,255,0.4)] border-solid inset-0 pointer-events-none" />
     </div>
+    </a>
   );
 }
 
@@ -361,7 +361,7 @@ function Heading3() {
     <div className="relative shrink-0 w-full" data-name="Heading 3">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start pt-[8px] relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Geist:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#e5e1e4] text-[24px] w-full">
-          <p className="leading-[32px]">Social Media Marketing</p>
+          <h3 className="leading-[32px]">Social Media Marketing</h3>
         </div>
       </div>
     </div>
@@ -373,9 +373,9 @@ function Container18() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#c1c6d7] text-[16px] w-full">
-          <p className="leading-[24px] mb-0">Creating viral resonance and</p>
-          <p className="leading-[24px] mb-0">meaningful community engagement</p>
-          <p className="leading-[24px]">across premium social platforms.</p>
+          <p className="leading-[24px] mb-0">Social media marketing that builds</p>
+          <p className="leading-[24px] mb-0">community engagement and brand awareness</p>
+          <p className="leading-[24px]">across major platforms.</p>
         </div>
       </div>
     </div>
@@ -425,7 +425,7 @@ function Heading4() {
     <div className="relative shrink-0 w-full" data-name="Heading 3">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start pt-[8px] relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Geist:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#e5e1e4] text-[24px] w-full">
-          <p className="leading-[32px]">Performance Marketing</p>
+          <h3 className="leading-[32px]">Performance Marketing</h3>
         </div>
       </div>
     </div>
@@ -437,9 +437,9 @@ function Container21() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#c1c6d7] text-[16px] w-full">
-          <p className="leading-[24px] mb-0">Hyper-targeted ad spending designed</p>
-          <p className="leading-[24px] mb-0">to maximize conversion rates and</p>
-          <p className="leading-[24px]">overall marketing ROI.</p>
+          <p className="leading-[24px] mb-0">Targeted paid campaigns built to improve</p>
+          <p className="leading-[24px] mb-0">conversion rates and marketing ROI.</p>
+
         </div>
       </div>
     </div>
@@ -489,7 +489,7 @@ function Heading5() {
     <div className="relative shrink-0 w-full" data-name="Heading 3">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start pt-[8px] relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Geist:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#e5e1e4] text-[24px] w-full">
-          <p className="leading-[32px]">{`Google Ads & PPC`}</p>
+          <h3 className="leading-[32px]">{`PPC Management`}</h3>
         </div>
       </div>
     </div>
@@ -501,9 +501,9 @@ function Container24() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#c1c6d7] text-[16px] w-full">
-          <p className="leading-[24px] mb-0">Strategic bidding and high-impact</p>
-          <p className="leading-[24px] mb-0">creative deployment to win the most</p>
-          <p className="leading-[24px]">valuable search real estate.</p>
+          <p className="leading-[24px] mb-0">Google Ads and PPC management with smart</p>
+          <p className="leading-[24px] mb-0">bidding and strong ad creative to capture</p>
+          <p className="leading-[24px]">high-value searches.</p>
         </div>
       </div>
     </div>
@@ -553,7 +553,7 @@ function Heading6() {
     <div className="relative shrink-0 w-full" data-name="Heading 3">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start pt-[8px] relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Geist:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#e5e1e4] text-[24px] w-full">
-          <p className="leading-[32px]">Content Marketing</p>
+          <h3 className="leading-[32px]">Content Marketing</h3>
         </div>
       </div>
     </div>
@@ -565,9 +565,9 @@ function Container27() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#c1c6d7] text-[16px] w-full">
-          <p className="leading-[24px] mb-0">Authority-building narratives and</p>
-          <p className="leading-[24px] mb-0">value-led assets that nurture</p>
-          <p className="leading-[24px]">prospects into loyal advocates.</p>
+          <p className="leading-[24px] mb-0">Content marketing that builds authority</p>
+          <p className="leading-[24px] mb-0">and turns prospects into loyal</p>
+          <p className="leading-[24px]">customers.</p>
         </div>
       </div>
     </div>
@@ -617,7 +617,7 @@ function Heading7() {
     <div className="relative shrink-0 w-full" data-name="Heading 3">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start pt-[8px] relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Geist:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#e5e1e4] text-[24px] w-full">
-          <p className="leading-[32px]">{`Branding & Strategy`}</p>
+          <h3 className="leading-[32px]">{`Branding & Strategy`}</h3>
         </div>
       </div>
     </div>
@@ -629,9 +629,9 @@ function Container30() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#c1c6d7] text-[16px] w-full">
-          <p className="leading-[24px] mb-0">Defining the visual and strategic core</p>
-          <p className="leading-[24px] mb-0">of your business to ensure long-term</p>
-          <p className="leading-[24px]">market differentiation.</p>
+          <p className="leading-[24px] mb-0">Branding that defines your visual identity</p>
+          <p className="leading-[24px] mb-0">and strategy so you stand out</p>
+          <p className="leading-[24px]">in your market.</p>
         </div>
       </div>
     </div>
@@ -685,7 +685,7 @@ function Heading8() {
     <div className="relative shrink-0 w-full" data-name="Heading 2">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[40px] text-white tracking-[1.2px] uppercase whitespace-nowrap">
-          <p className="leading-[48px]">THE AETHER METHOD</p>
+          <h2 className="leading-[48px]">Our Process</h2>
         </div>
       </div>
     </div>
@@ -730,7 +730,7 @@ function Heading9() {
   return (
     <div className="content-stretch flex flex-col items-center pt-[16px] relative shrink-0 w-full" data-name="Heading 4">
       <div className="[word-break:break-word] flex flex-col font-['Geist:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#e5e1e4] text-[18px] text-center whitespace-nowrap">
-        <p className="leading-[28px]">Research</p>
+        <h3 className="leading-[28px]">Research</h3>
       </div>
     </div>
   );
@@ -740,7 +740,7 @@ function Container37() {
   return (
     <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-name="Container">
       <div className="[word-break:break-word] flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#c1c6d7] text-[16px] text-center whitespace-nowrap">
-        <p className="leading-[20px] mb-0">Deep market and</p>
+        <p className="leading-[20px] mb-0">Market and</p>
         <p className="leading-[20px]">competitor analysis.</p>
       </div>
     </div>
@@ -782,7 +782,7 @@ function Heading10() {
   return (
     <div className="content-stretch flex flex-col items-center pt-[16px] relative shrink-0 w-full" data-name="Heading 4">
       <div className="[word-break:break-word] flex flex-col font-['Geist:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#e5e1e4] text-[18px] text-center whitespace-nowrap">
-        <p className="leading-[28px]">Strategy</p>
+        <h3 className="leading-[28px]">Strategy</h3>
       </div>
     </div>
   );
@@ -792,8 +792,8 @@ function Container40() {
   return (
     <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-name="Container">
       <div className="[word-break:break-word] flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#c1c6d7] text-[16px] text-center whitespace-nowrap">
-        <p className="leading-[20px] mb-0">Architecting your growth</p>
-        <p className="leading-[20px]">roadmap.</p>
+        <p className="leading-[20px] mb-0">A clear growth roadmap</p>
+        <p className="leading-[20px]">for your business.</p>
       </div>
     </div>
   );
@@ -834,7 +834,7 @@ function Heading11() {
   return (
     <div className="content-stretch flex flex-col items-center pt-[16px] relative shrink-0 w-full" data-name="Heading 4">
       <div className="[word-break:break-word] flex flex-col font-['Geist:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#e5e1e4] text-[18px] text-center whitespace-nowrap">
-        <p className="leading-[28px]">Campaign Design</p>
+        <h3 className="leading-[28px]">Campaign Design</h3>
       </div>
     </div>
   );
@@ -844,8 +844,8 @@ function Container43() {
   return (
     <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-name="Container">
       <div className="[word-break:break-word] flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#c1c6d7] text-[16px] text-center whitespace-nowrap">
-        <p className="leading-[20px] mb-0">Visual and tactical</p>
-        <p className="leading-[20px]">deployment.</p>
+        <p className="leading-[20px] mb-0">Designing creatives and</p>
+        <p className="leading-[20px]">campaign structure.</p>
       </div>
     </div>
   );
@@ -886,7 +886,7 @@ function Heading12() {
   return (
     <div className="content-stretch flex flex-col items-center pt-[16px] relative shrink-0 w-full" data-name="Heading 4">
       <div className="[word-break:break-word] flex flex-col font-['Geist:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#e5e1e4] text-[18px] text-center whitespace-nowrap">
-        <p className="leading-[28px]">Launch</p>
+        <h3 className="leading-[28px]">Launch</h3>
       </div>
     </div>
   );
@@ -896,8 +896,8 @@ function Container46() {
   return (
     <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-name="Container">
       <div className="[word-break:break-word] flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#c1c6d7] text-[16px] text-center whitespace-nowrap">
-        <p className="leading-[20px] mb-0">Activating high-fidelity</p>
-        <p className="leading-[20px]">market presence.</p>
+        <p className="leading-[20px] mb-0">Going live across your</p>
+        <p className="leading-[20px]">chosen channels.</p>
       </div>
     </div>
   );
@@ -938,7 +938,7 @@ function Heading13() {
   return (
     <div className="content-stretch flex flex-col items-center pt-[16px] relative shrink-0 w-full" data-name="Heading 4">
       <div className="[word-break:break-word] flex flex-col font-['Geist:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#e5e1e4] text-[18px] text-center whitespace-nowrap">
-        <p className="leading-[28px]">Optimization</p>
+        <h3 className="leading-[28px]">Optimization</h3>
       </div>
     </div>
   );
@@ -948,8 +948,8 @@ function Container49() {
   return (
     <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-name="Container">
       <div className="[word-break:break-word] flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#c1c6d7] text-[16px] text-center whitespace-nowrap">
-        <p className="leading-[20px] mb-0">Continuous data-backed</p>
-        <p className="leading-[20px]">refinements.</p>
+        <p className="leading-[20px] mb-0">Continuous improvements</p>
+        <p className="leading-[20px]">backed by data.</p>
       </div>
     </div>
   );
@@ -990,7 +990,7 @@ function Heading14() {
   return (
     <div className="content-stretch flex flex-col items-center pt-[16px] relative shrink-0 w-full" data-name="Heading 4">
       <div className="[word-break:break-word] flex flex-col font-['Geist:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#e5e1e4] text-[18px] text-center whitespace-nowrap">
-        <p className="leading-[28px]">Scaling</p>
+        <h3 className="leading-[28px]">Scaling</h3>
       </div>
     </div>
   );
@@ -1000,8 +1000,8 @@ function Container52() {
   return (
     <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-name="Container">
       <div className="[word-break:break-word] flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#c1c6d7] text-[16px] text-center whitespace-nowrap">
-        <p className="leading-[20px] mb-0">Accelerating success to</p>
-        <p className="leading-[20px]">peak volume.</p>
+        <p className="leading-[20px] mb-0">Scaling what works to</p>
+        <p className="leading-[20px]">reach more customers.</p>
       </div>
     </div>
   );
@@ -1069,7 +1069,7 @@ function Container56() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-center relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['JetBrains_Mono:Medium',sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[12px] text-center text-white uppercase whitespace-nowrap">
-          <p className="leading-[16px]">AVG. ROI GROWTH</p>
+          <p className="leading-[16px]">Average ROI Growth</p>
         </div>
       </div>
     </div>
@@ -1105,7 +1105,7 @@ function Container58() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-center relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['JetBrains_Mono:Medium',sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[12px] text-center text-white uppercase whitespace-nowrap">
-          <p className="leading-[16px]">RETENTION RATE</p>
+          <p className="leading-[16px]">Client Retention Rate</p>
         </div>
       </div>
     </div>
@@ -1141,7 +1141,7 @@ function Container60() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-center relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['JetBrains_Mono:Medium',sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[12px] text-center text-white uppercase whitespace-nowrap">
-          <p className="leading-[16px]">ANALYTICS VISIBILITY</p>
+          <p className="leading-[16px]">Analytics</p>
         </div>
       </div>
     </div>
@@ -1177,7 +1177,7 @@ function Container62() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-center relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['JetBrains_Mono:Medium',sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[12px] text-center text-white uppercase whitespace-nowrap">
-          <p className="leading-[16px]">CERTIFIED EXPERTS</p>
+          <p className="leading-[16px]">Certified Experts</p>
         </div>
       </div>
     </div>
@@ -1213,7 +1213,7 @@ function Container64() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-center relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['JetBrains_Mono:Medium',sans-serif] font-medium justify-center leading-[0] relative shrink-0 text-[12px] text-center text-white uppercase whitespace-nowrap">
-          <p className="leading-[16px]">OPTIMIZATION ENGINE</p>
+          <p className="leading-[16px]">Search Engine Optimization</p>
         </div>
       </div>
     </div>
@@ -1261,8 +1261,8 @@ function Heading15() {
     <div className="relative shrink-0 w-full" data-name="Heading 2">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Geist:Regular',sans-serif] font-bold justify-center leading-[0] relative shrink-0 text-[32px] text-white tracking-[-0.64px] whitespace-nowrap">
-          <p className="leading-[40px] mb-0">PERFORMANCE THAT SPEAKS FOR</p>
-          <p className="leading-[40px]">ITSELF</p>
+          <h2 className="leading-[40px]">Measurable Results</h2>
+
         </div>
       </div>
     </div>
@@ -1274,9 +1274,9 @@ function Container66() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start pt-[24px] relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-white w-full">
-          <p className="leading-[26px] mb-0">{`We don't deal in vanity metrics. Our focus is on the numbers that move`}</p>
-          <p className="leading-[26px] mb-0">the needle: revenue, cost-per-acquisition, and lifetime value. Every</p>
-          <p className="leading-[26px]">campaign is a precision-engineered instrument of growth.</p>
+          <p className="leading-[26px] mb-0">{`We don't chase vanity metrics. We focus on revenue, cost per acquisition and customer lifetime value. Every campaign is built to drive measurable growth.`}</p>
+
+
         </div>
       </div>
     </div>
@@ -1299,7 +1299,7 @@ function Container68() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Container">
       <div className="[word-break:break-word] flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-white whitespace-nowrap">
-        <p className="leading-[24px]">Granular Audience Targeting Systems</p>
+        <p className="leading-[24px]">Audience Targeting</p>
       </div>
     </div>
   );
@@ -1330,7 +1330,7 @@ function Container70() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Container">
       <div className="[word-break:break-word] flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-white whitespace-nowrap">
-        <p className="leading-[24px]">Automated Performance Optimization</p>
+        <p className="leading-[24px]">Automated Campaign Optimization</p>
       </div>
     </div>
   );
@@ -1361,7 +1361,7 @@ function Container72() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Container">
       <div className="[word-break:break-word] flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-white whitespace-nowrap">
-        <p className="leading-[24px]">Dynamic Multi-Channel Attribution</p>
+        <p className="leading-[24px]">Multi-Channel Attribution</p>
       </div>
     </div>
   );
@@ -1412,7 +1412,7 @@ function Heading16() {
   return (
     <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-name="Heading 2">
       <div className="[word-break:break-word] flex flex-col font-['Geist:Regular',sans-serif] font-bold justify-center leading-[0] relative shrink-0 text-[32px] text-center text-white tracking-[-0.64px] whitespace-nowrap">
-        <p className="leading-[41.6px]">LET’S SCALE YOUR BRAND TO THE NEXT LEVEL</p>
+        <h2 className="leading-[41.6px]">Book a Free Strategy Call</h2>
       </div>
     </div>
   );
@@ -1422,8 +1422,8 @@ function Container74() {
   return (
     <div className="content-stretch flex flex-col items-center max-w-[672px] pb-[16px] relative shrink-0 w-[672px]" data-name="Container">
       <div className="[word-break:break-word] flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-center text-white whitespace-nowrap">
-        <p className="leading-[24px] mb-0">Ready to engineer a digital presence that dominates? Your journey to unprecedented</p>
-        <p className="leading-[24px]">growth starts with a single audit.</p>
+        <p className="leading-[24px] mb-0">Ready to grow your business online? Start with a free consultation with our Delhi NCR team.</p>
+
       </div>
     </div>
   );
@@ -1434,7 +1434,7 @@ function Button1() {
     <div className="backdrop-blur-[6px] bg-[rgba(255,255,255,0.03)] content-stretch flex flex-col items-center justify-center px-[33px] py-[17px] relative shrink-0" data-name="Button">
       <div aria-hidden className="absolute border border-[rgba(255,255,255,0.3)] border-solid inset-0 pointer-events-none" />
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#e5e1e4] text-[18px] text-center whitespace-nowrap">
-          <p className="leading-[28px]">BOOK FREE CONSULTATION</p>
+          <p className="leading-[28px]">Book Free Strategy Call</p>
       </div>
     </div>
   );
@@ -1482,7 +1482,7 @@ function Container75() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container">
       <div className="[word-break:break-word] flex flex-col font-['Inter:Light',sans-serif] font-light justify-center leading-[0] not-italic relative shrink-0 text-[#a1a1aa] text-[18px] w-full">
-        <p className="leading-[28px]">Creating digital excellence</p>
+        <p className="leading-[28px]">Creating Digital Present</p>
       </div>
     </div>
   );

@@ -41,13 +41,9 @@ function HeroSection() {
                 lineHeight: "1.35",
               }}
             >
-              CUSTOM
+              Custom Software
               <br />
-              SOFTWARE
-              <br />
-              DEVELOPMENT
-              <br />
-              SOLUTIONS
+              Development Services
             </h1>
 
           {/* Description */}
@@ -60,8 +56,7 @@ function HeroSection() {
               lineHeight: "1.6",
             }}
           >
-            We build scalable, secure, and high-performance software tailored for startups, enterprises, and growing
-            businesses. Precision-engineered code for the infinite digital horizon.
+            DMiraki is a custom software development company in India. We build bespoke, scalable, secure web and business applications for startups, enterprises and growing businesses in Delhi NCR and across India.
           </p>
 
           {/* CTA Button */}
@@ -107,7 +102,7 @@ function TechStackBar() {
           className="text-black text-center text-[12px] sm:text-[14px] tracking-[4px] uppercase"
           style={{ fontFamily: "'Orbitron', monospace", fontWeight: 400 }}
         >
-          ENGINEERED WITH INDUSTRY-LEADING TECH STACKS
+          Technologies We Use
         </p>
         <div className="grid grid-cols-4 sm:grid-cols-8 gap-6 opacity-40">
           {techs.map((tech) => (
@@ -165,7 +160,9 @@ function ServiceCard({ iconPath, viewBox, iconH, title, description }: ServiceCa
         className="text-[#e5e1e4] text-[20px] sm:text-[24px] leading-8 mt-2"
         style={{ fontFamily: "'Geist', 'DM Sans', sans-serif", fontWeight: 400 }}
       >
-        {title}
+        {title === "Custom Web & Mobile Apps" ? (
+          <a href="/web-development" className="text-inherit no-underline">{title}</a>
+        ) : title}
       </h3>
       {/* Description */}
       <p
@@ -183,9 +180,9 @@ const services: ServiceCardProps[] = [
     iconPath: "p36df7c0",
     viewBox: "0 0 309.333 27",
     iconH: "27px",
-    title: "Enterprise Software",
+    title: "Enterprise Software Development",
     description:
-      "Robust, high-availability systems engineered for complex organizational workflows and large-scale data processing.",
+      "Reliable, high-availability enterprise software for complex workflows and large-scale data processing.",
   },
   {
     iconPath: "p11230c80",
@@ -193,7 +190,7 @@ const services: ServiceCardProps[] = [
     iconH: "24px",
     title: "SaaS Product Development",
     description:
-      "From MVP to global scale, we build multi-tenant cloud platforms with performance and monetization in mind.",
+      "SaaS product development from MVP to global scale, with multi-tenant cloud platforms built for performance and monetization.",
   },
   {
     iconPath: "pb45c080",
@@ -201,7 +198,7 @@ const services: ServiceCardProps[] = [
     iconH: "34px",
     title: "CRM & ERP Solutions",
     description:
-      "Customized business management tools that centralize your operations and unlock actionable intelligence.",
+      "Custom CRM and ERP tools that centralise your operations and turn data into insights.",
   },
   {
     iconPath: "p2214e800",
@@ -209,7 +206,7 @@ const services: ServiceCardProps[] = [
     iconH: "30px",
     title: "AI-Powered Apps",
     description:
-      "Integrating LLMs, computer vision, and predictive analytics to automate tasks and enhance user experiences.",
+      "AI-powered apps that use LLMs, computer vision and predictive analytics to automate tasks and improve user experience.",
   },
   {
     iconPath: "p3f5ff500",
@@ -217,15 +214,15 @@ const services: ServiceCardProps[] = [
     iconH: "24px",
     title: "Cloud-Based Software",
     description:
-      "Serverless and containerized architectures optimized for AWS, Azure, and Google Cloud environments.",
+      "Serverless and containerised cloud software for AWS, Azure and Google Cloud.",
   },
   {
     iconPath: "p179370c0",
     viewBox: "0 0 309.333 24",
     iconH: "24px",
-    title: "Mobile & Web Apps",
+    title: "Custom Web & Mobile Apps",
     description:
-      "Immersive, cross-platform experiences using React, Flutter, and native technologies for seamless reach.",
+      "Custom web and mobile apps built with React, Flutter and native technologies for wide, seamless reach.",
   },
 ];
 
@@ -240,13 +237,13 @@ function ServicesSection() {
             className="text-white text-center text-[28px] sm:text-[36px] lg:text-[40px] leading-[1.2]"
             style={{ fontFamily: "'Orbitron', monospace", fontWeight: 400, letterSpacing: "-0.8px" }}
           >
-            WORLD-CLASS SERVICES
+            Custom Software Development Services
           </h2>
           <p
             className="text-white text-[14px] sm:text-[16px] text-center leading-6 max-w-[672px] capitalize"
             style={{ fontFamily: "'Roboto', sans-serif", fontWeight: 400 }}
           >
-            Strategic Software Solutions Designed For Reliability, Scalability, And Competitive Advantage.
+            Custom software designed for reliability, scalability and competitive advantage.
           </p>
         </div>
 
@@ -285,12 +282,12 @@ function ProcessStep({ num, title, description }: StepProps) {
           {num}
         </span>
       </div>
-      <h4
+      <h3
         className="text-white text-[16px] sm:text-[18px] leading-7 mt-4"
         style={{ fontFamily: "'Geist', 'DM Sans', sans-serif", fontWeight: 400 }}
       >
         {title}
-      </h4>
+      </h3>
       <p
         className="text-white text-[13px] sm:text-[14px] leading-5"
         style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400 }}
@@ -302,12 +299,12 @@ function ProcessStep({ num, title, description }: StepProps) {
 }
 
 const steps: StepProps[] = [
-  { num: "01", title: "Requirement Analysis", description: "Defining your vision with deep technical discovery sessions." },
-  { num: "02", title: "UI/UX Design", description: "Crafting intuitive, pixel-perfect digital interfaces." },
+  { num: "01", title: "Requirement Analysis", description: "Discovery sessions to define your requirements." },
+  { num: "02", title: "UI/UX Design", description: "Intuitive, user-friendly interface design." },
   { num: "03", title: "Development", description: "Writing clean, scalable code with modern tech stacks." },
-  { num: "04", title: "Testing", description: "Rigorous QA and automated tests to ensure zero bugs." },
-  { num: "05", title: "Deployment", description: "Safe, seamless CI/CD integration into production." },
-  { num: "06", title: "Support", description: "Ongoing maintenance to keep your product evolving." },
+  { num: "04", title: "Testing", description: "Thorough QA and automated testing to catch bugs before launch." },
+  { num: "05", title: "Deployment", description: "Safe, smooth CI/CD deployment to production." },
+  { num: "06", title: "Support & Maintenance", description: "Ongoing maintenance to keep your product evolving." },
 ];
 
 /* Process Section */
@@ -331,7 +328,7 @@ function ProcessSection() {
             className="text-white text-center text-[22px] sm:text-[32px] lg:text-[40px] leading-[1.2]"
             style={{ fontFamily: "'Orbitron', monospace", fontWeight: 400, letterSpacing: "-0.8px" }}
           >
-            OUR SYMPHONY OF DEVELOPMENT
+            Our Software Development Process
           </h2>
         </div>
 
@@ -383,12 +380,13 @@ function CtaBanner() {
             lineHeight: "1.27",
           }}
         >
-          LET'S BUILD YOUR NEXT BIG
-          <br />
-          SOFTWARE PRODUCT
+          Book a Free Software Consultation
         </h2>
+        <p className="max-w-[720px] text-[15px] leading-7 text-white/80" style={{ fontFamily: "'Inter', sans-serif" }}>
+          Tell us about your workflow. Book a free call with our Delhi NCR team and get software built around your business.
+        </p>
         <a
-          href="#"
+          href="/contact"
           className="inline-block no-underline"
           style={{
             backdropFilter: "blur(6px)",
@@ -401,7 +399,7 @@ function CtaBanner() {
             className="text-[#e5e1e4] text-[16px] sm:text-[18px] leading-7 whitespace-nowrap"
             style={{ fontFamily: "'Orbitron', monospace", fontWeight: 400 }}
           >
-            BOOK FREE CONSULTATION
+            BOOK FREE SOFTWARE CONSULTATION
           </span>
         </a>
       </div>
