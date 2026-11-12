@@ -45,7 +45,7 @@ function FooterColumn({ title, items, nonHeadingLabels }: { title: string; items
   );
 }
 
-export function SiteFooter({ homePage = false, nonHeadingLabels = homePage, tagline, copyrightBrand }: { homePage?: boolean; nonHeadingLabels?: boolean; tagline?: string; copyrightBrand?: string }) {
+export function SiteFooter({ homePage = false, nonHeadingLabels = homePage, copyrightBrand }: { homePage?: boolean; nonHeadingLabels?: boolean; copyrightBrand?: string }) {
   const BrandTag = nonHeadingLabels ? "div" : "h2";
   return (
     <footer className="site-footer normal-case bg-[#222] w-full">
@@ -62,7 +62,7 @@ export function SiteFooter({ homePage = false, nonHeadingLabels = homePage, tagl
               className="site-footer__tagline text-[#a1a1aa] text-[18px] leading-7"
               style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}
             >
-              {tagline ?? (homePage ? "Digital marketing, web development and software solutions." : "Creating digital excellence")}
+              Creating digital excellence
             </p>
             <div className="mt-3 flex flex-col gap-4">
               <a href="tel:+919211341245" className="flex items-center gap-4 text-[#a1a1aa] no-underline hover:text-white">

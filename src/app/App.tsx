@@ -162,7 +162,7 @@ function IotPage() {
       <div className="hidden md:block">
         <IotBased />
       </div>
-      <SiteFooter nonHeadingLabels tagline="Digital marketing, web development and software solutions." />
+      <SiteFooter nonHeadingLabels />
     </div>
   );
 }
@@ -173,7 +173,7 @@ function WebDevelopmentRoutePage() {
       <Navbar />
       <div style={{ height: "62px" }} />
       <WebDevelopmentPage />
-      <SiteFooter nonHeadingLabels tagline="Digital marketing, web development and software solutions." />
+      <SiteFooter nonHeadingLabels />
     </div>
   );
 }

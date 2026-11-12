@@ -9,8 +9,25 @@ import {
   TerminalSquare,
   Zap,
 } from "lucide-react";
+import css3Logo from "../../icons/Technologies Logos/CSS3.png";
+import html5Logo from "../../icons/Technologies Logos/HTML5.png";
+import javascriptLogo from "../../icons/Technologies Logos/Javascript.png";
+import reactLogo from "../../icons/Technologies Logos/React.png";
+import nextJsLogo from "../../icons/Technologies Logos/Next js.png";
+import nodeJsLogo from "../../icons/Technologies Logos/Node js.png";
+import tailwindLogo from "../../icons/Technologies Logos/Tailwindcss.png";
+import wordpressLogo from "../../icons/Technologies Logos/Wordpress.png";
 
-const techStack = ["HTML5", "CSS3", "JAVASCRIPT", "REACT", "NEXT.JS", "NODE.JS", "TAILWIND", "WORDPRESS"];
+const techStack = [
+  { name: "HTML5", logo: html5Logo },
+  { name: "CSS3", logo: css3Logo },
+  { name: "JAVASCRIPT", logo: javascriptLogo },
+  { name: "REACT", logo: reactLogo },
+  { name: "NEXT.JS", logo: nextJsLogo },
+  { name: "NODE.JS", logo: nodeJsLogo },
+  { name: "TAILWIND", logo: tailwindLogo },
+  { name: "WORDPRESS", logo: wordpressLogo },
+];
 
 const services = [
   {
@@ -146,8 +163,11 @@ export default function WebDevelopmentPage() {
             Technologies We Use
           </p>
           <div className="grid grid-cols-2 gap-6 text-[#9a9a9a] sm:grid-cols-4 lg:grid-cols-8">
-            {techStack.map((tech) => (
-              <span key={tech} className="text-sm font-bold">{tech}</span>
+            {techStack.map(({ name, logo }) => (
+              <figure key={name} className="flex flex-col items-center gap-1">
+                <img src={logo} alt={`${name} logo`} className="h-[92px] w-full max-w-[92px] object-contain" />
+                <figcaption className="text-sm font-bold">{name}</figcaption>
+              </figure>
             ))}
           </div>
         </div>
