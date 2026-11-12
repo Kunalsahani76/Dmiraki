@@ -163,7 +163,8 @@ export default function AboutMobilePage() {
         <div className="text-center">
           <SectionHeading title="Our Values" dark />
           <p className="mt-4 text-[15px] leading-7 text-white/75" style={{ fontFamily: "'Roboto', sans-serif" }}>
-            We put people before projects and relationships before transactions. We listen before we suggest, speak honestly about what is possible, and recommend solutions based on what our customers actually need. For us, trust is earned through actions, not words.\n          </p>
+            We put people before projects and relationships before transactions. We listen before we suggest, speak honestly about what is possible, and recommend solutions based on what our customers actually need. For us, trust is earned through actions, not words.
+          </p>
         </div>
         <div className="mt-7 grid gap-5">
           {values.map(([title, body]) => (
@@ -200,7 +201,7 @@ export default function AboutMobilePage() {
 
       <section className="px-5 pb-10">
         <div className="text-center">
-        <SectionHeading title="Why Partner With DMiraki" />
+        <SectionHeading title="Why Partner With D'Miraki" />
           <p className="mt-4 text-[15px] leading-7 text-black/75" style={{ fontFamily: "'Roboto', sans-serif" }}>
             Proven results, dedicated support, and industry recognition for sustained partnership success.
           </p>

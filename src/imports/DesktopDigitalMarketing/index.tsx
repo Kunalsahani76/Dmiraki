@@ -307,9 +307,7 @@ function Container15() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#c1c6d7] text-[16px] w-full">
-          <p className="leading-[24px] mb-0">Keyword research, technical SEO and</p>
-          <p className="leading-[24px] mb-0">content optimisation that build lasting</p>
-          <p className="leading-[24px]">search visibility in India.</p>
+          <p className="leading-[24px]">Keyword research, technical SEO and content optimisation that build lasting search visibility in India.</p>
         </div>
       </div>
     </div>
@@ -373,9 +371,7 @@ function Container18() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#c1c6d7] text-[16px] w-full">
-          <p className="leading-[24px] mb-0">Social media marketing that builds</p>
-          <p className="leading-[24px] mb-0">community engagement and brand awareness</p>
-          <p className="leading-[24px]">across major platforms.</p>
+          <p className="leading-[24px]">Social media marketing that builds community engagement and brand awareness across major platforms.</p>
         </div>
       </div>
     </div>
@@ -437,8 +433,7 @@ function Container21() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#c1c6d7] text-[16px] w-full">
-          <p className="leading-[24px] mb-0">Targeted paid campaigns built to improve</p>
-          <p className="leading-[24px] mb-0">conversion rates and marketing ROI.</p>
+          <p className="leading-[24px]">Targeted paid campaigns built to improve conversion rates and marketing ROI.</p>
 
         </div>
       </div>
@@ -501,9 +496,7 @@ function Container24() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#c1c6d7] text-[16px] w-full">
-          <p className="leading-[24px] mb-0">Google Ads and PPC management with smart</p>
-          <p className="leading-[24px] mb-0">bidding and strong ad creative to capture</p>
-          <p className="leading-[24px]">high-value searches.</p>
+          <p className="leading-[24px]">Google Ads and PPC management with smart bidding and strong ad creative to capture high-value searches.</p>
         </div>
       </div>
     </div>
@@ -565,9 +558,7 @@ function Container27() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#c1c6d7] text-[16px] w-full">
-          <p className="leading-[24px] mb-0">Content marketing that builds authority</p>
-          <p className="leading-[24px] mb-0">and turns prospects into loyal</p>
-          <p className="leading-[24px]">customers.</p>
+          <p className="leading-[24px]">Content marketing that builds authority and turns prospects into loyal customers.</p>
         </div>
       </div>
     </div>
@@ -629,9 +620,7 @@ function Container30() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#c1c6d7] text-[16px] w-full">
-          <p className="leading-[24px] mb-0">Branding that defines your visual identity</p>
-          <p className="leading-[24px] mb-0">and strategy so you stand out</p>
-          <p className="leading-[24px]">in your market.</p>
+          <p className="leading-[24px]">Branding that defines your visual identity and strategy so you stand out in your market.</p>
         </div>
       </div>
     </div>

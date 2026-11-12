@@ -419,7 +419,8 @@ function Frame12() {
       <h2 className="flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[48px] relative shrink-0 text-[40px] text-white uppercase w-full [text-decoration-skip-ink:none] decoration-[7.5%] decoration-solid underline">Our Values</h2>
       <div className="flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center relative shrink-0 text-center text-[#c9c9c9] text-[20px] tracking-[-0.2px] w-full">
         <p className="leading-[32px]">
-          We put people before projects and relationships before transactions. We listen before we suggest, speak honestly about what is possible, and recommend solutions based on what our customers actually need. For us, trust is earned through actions, not words.\n        </p>
+          We put people before projects and relationships before transactions. We listen before we suggest, speak honestly about what is possible, and recommend solutions based on what our customers actually need. For us, trust is earned through actions, not words.
+        </p>
       </div>
     </div>
   );
@@ -943,7 +944,7 @@ function Heading10() {
   return (
     <div className="content-stretch flex flex-col items-center relative shrink-0 w-full" data-name="Heading 2">
       <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[40px] text-black text-center tracking-[-1.44px] uppercase whitespace-nowrap">
-        <h2 className="leading-[80px]">Why Partner With DMiraki</h2>
+        <h2 className="leading-[80px]">Why Partner With D'Miraki</h2>
       </div>
     </div>
   );
@@ -985,8 +986,7 @@ function Container32() {
     <div className="opacity-70 relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-black w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
-          <p className="leading-[24px] mb-0">200+ successful projects across</p>
-          <p className="leading-[24px]">industries with measurable results.</p>
+          <p className="leading-[24px]">200+ successful projects across industries with measurable results.</p>
         </div>
       </div>
     </div>
@@ -1056,8 +1056,7 @@ function Container34() {
     <div className="opacity-70 relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-black w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
-          <p className="leading-[24px] mb-0">Continuous optimization and</p>
-          <p className="leading-[24px]">support for sustained growth.</p>
+          <p className="leading-[24px]">Continuous optimization and support for sustained growth.</p>
         </div>
       </div>
     </div>
@@ -1093,8 +1092,7 @@ function Container35() {
     <div className="opacity-70 relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-black w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
-          <p className="leading-[24px] mb-0">Recognized for innovation and</p>
-          <p className="leading-[24px]">results by peers and publications.</p>
+          <p className="leading-[24px]">Recognized for innovation and results by peers and publications.</p>
         </div>
       </div>
     </div>
@@ -1115,7 +1113,7 @@ function Border3() {
 
 function Frame24() {
   return (
-    <div className="content-stretch flex h-[220px] items-start justify-between px-[30px] relative shrink-0 w-[1270px]">
+    <div className="content-stretch flex h-[180px] items-start justify-between px-[30px] relative shrink-0 w-[1270px]">
       <Border />
       <Border1 />
       <Border2 />
