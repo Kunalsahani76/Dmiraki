@@ -119,12 +119,12 @@ export default function WebDevelopmentPage() {
           <div className="flex max-w-[720px] flex-col items-start justify-center">
             <h1
               className="mb-8 uppercase text-white"
-              style={{ fontFamily: "'Orbitron', sans-serif", fontWeight: 500, fontSize: "clamp(38px, 6vw, 76px)", lineHeight: 1.35, letterSpacing: "0.01em" }}
+              style={{ fontFamily: "'Pirulen', 'Pirulen Rg', 'Orbitron', sans-serif", fontWeight: 500, fontSize: "clamp(38px, 6vw, 76px)", lineHeight: 1.35, letterSpacing: "0.01em" }}
             >
               Website Development Services
             </h1>
             <p className="mb-9 max-w-[530px] text-[#d0d0d0]" style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, lineHeight: "26px" }}>
-              DMiraki is a website development company in India. We build fast, mobile-first, SEO-ready business and e-commerce websites on Next.js for clients in Delhi NCR and across India.
+              D'Miraki is a website development company in India. We build fast, mobile-first, SEO-ready business and e-commerce websites on Next.js for clients in Delhi NCR and across India.
             </p>
             <a
               href="#web-development-contact"
@@ -134,7 +134,9 @@ export default function WebDevelopmentPage() {
               GET A WEBSITE QUOTE
             </a>
           </div>
-          <DashboardVisual />
+          <div className="xl:translate-x-12">
+            <DashboardVisual />
+          </div>
         </div>
       </section>
 

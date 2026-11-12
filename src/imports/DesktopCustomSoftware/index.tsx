@@ -34,7 +34,7 @@ function HeroSection() {
             <h1
               className="text-[#fbfbfb] mb-8 leading-tight"
               style={{
-                fontFamily: "'Orbitron', monospace",
+                fontFamily: "'Pirulen', 'Pirulen Rg', 'Orbitron', sans-serif",
                 fontWeight: 500,
                 fontSize: "clamp(48px, 5.2vw, 66px)",
                 letterSpacing: "0.01em",
@@ -56,7 +56,7 @@ function HeroSection() {
               lineHeight: "1.6",
             }}
           >
-            DMiraki is a custom software development company in India. We build bespoke, scalable, secure web and business applications for startups, enterprises and growing businesses in Delhi NCR and across India.
+            D'Miraki is a custom software development company in India. We build bespoke, scalable, secure web and business applications for startups, enterprises and growing businesses in Delhi NCR and across India.
           </p>
 
           {/* CTA Button */}

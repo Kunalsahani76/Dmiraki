@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
 import { Navigate, Route, Routes, useLocation } from "react-router";
 import { Navbar } from "./components/Navbar";
 import { HeroSection } from "./components/HeroSection";
@@ -25,6 +25,34 @@ import BlogPage from "./pages/BlogPage";
 import AdminPage from "./pages/AdminPage";
 import LegalPage from "./pages/LegalPage";
 import { SeoMetadata } from "./components/SeoMetadata";
+
+function ScrollToTop() {
+  const { pathname, key } = useLocation();
+
+  useLayoutEffect(() => {
+    const resetScroll = () => {
+      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+      document.scrollingElement?.scrollTo({ top: 0, left: 0, behavior: "auto" });
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+      document.getElementById("root")?.scrollTo({ top: 0, left: 0, behavior: "auto" });
+
+      document.querySelectorAll<HTMLElement>("*").forEach((element) => {
+        if (element.scrollTop > 0) element.scrollTop = 0;
+      });
+    };
+
+    resetScroll();
+    const frame = window.requestAnimationFrame(resetScroll);
+    const timer = window.setTimeout(resetScroll, 100);
+    return () => {
+      window.cancelAnimationFrame(frame);
+      window.clearTimeout(timer);
+    };
+  }, [pathname, key]);
+
+  return null;
+}
 
 function HomePage() {
   const location = useLocation();
@@ -186,6 +214,7 @@ function LegalRoutePage({ page }: { page: "terms" | "privacy" | "disclaimer" }) 
 export default function App() {
   return (
     <>
+    <ScrollToTop />
     <SeoMetadata />
     <Routes>
       <Route path="/" element={<HomePage />} />

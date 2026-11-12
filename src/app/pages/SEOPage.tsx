@@ -86,12 +86,12 @@ export default function SEOPage() {
           <div className="relative z-10">
             <h1
               className="max-w-[705px] uppercase text-[#f1f1f1]"
-              style={{ ...orbitron, fontSize: "clamp(42px, 5.5vw, 64px)", fontWeight: 500, lineHeight: 1.35, letterSpacing: "0.01em" }}
+              style={{ fontFamily: "'Pirulen', 'Pirulen Rg', 'Orbitron', sans-serif", fontSize: "clamp(42px, 5.5vw, 64px)", fontWeight: 500, lineHeight: 1.35, letterSpacing: "0.01em" }}
             >
               SEO Services
             </h1>
             <p className="mt-8 max-w-[610px] text-[16px] font-normal leading-[26px] text-[#f0f0f0]" style={inter}>
-              DMiraki is an SEO company in India that helps Delhi NCR and pan-India businesses rank higher on Google with technical SEO, on-page SEO, content and link building.
+              D'Miraki is an SEO company in India that helps Delhi NCR and pan-India businesses rank higher on Google with technical SEO, on-page SEO, content and link building.
             </p>
             <a
               href="/contact"
@@ -120,10 +120,10 @@ export default function SEOPage() {
           </div>
           <div className="flex flex-col justify-center px-6 py-16 lg:px-20">
             <h2 className="max-w-[470px] text-[42px] leading-[1.12] text-white" style={inter}>
-              Why Choose DMiraki for SEO
+              Why Choose D'Miraki for SEO
             </h2>
             <p className="mt-8 max-w-[560px] text-[14px] font-medium leading-7 text-[#d8d8d8]" style={inter}>
-              DMiraki SEO services focus on reaching the right audience, not just ranking for generic keywords. We make sure your brand is found, and understood, by the people who matter.
+              D'Miraki SEO services focus on reaching the right audience, not just ranking for generic keywords. We make sure your brand is found, and understood, by the people who matter.
             </p>
             <div className="mt-12 grid grid-cols-2 border-t border-white/20 pt-8">
               <div>
@@ -257,7 +257,7 @@ export default function SEOPage() {
             <h2 className="text-[36px] leading-tight text-white" style={inter}>Get a Free SEO Audit</h2>
           </div>
           <div className="border border-white/15 p-8">
-            <p className="mb-6 text-[15px] leading-7 text-white/80" style={inter}>Want to rank higher on Google? Get a free SEO audit from DMiraki, an SEO company in India. We will review your technical SEO, on-page SEO and backlinks, and show you where to improve.</p>
+            <p className="mb-6 text-[15px] leading-7 text-white/80" style={inter}>Want to rank higher on Google? Get a free SEO audit from D'Miraki, an SEO company in India. We will review your technical SEO, on-page SEO and backlinks, and show you where to improve.</p>
             <img src={angledVisual} alt="Monochrome search geometry" className="h-[260px] w-full object-cover opacity-80 grayscale" />
           </div>
         </div>

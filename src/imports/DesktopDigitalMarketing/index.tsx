@@ -6,9 +6,9 @@ import imgDmirakiPosts1 from "./bf4cf617b34b1b26e10ed7fbbabad160e79fb2e8.png";
 function Heading() {
   return (
     <h1 className="content-stretch flex flex-col items-start pt-[1.2px] relative shrink-0 w-full">
-      <div className="[word-break:break-word] flex flex-col justify-center leading-[0] not-italic relative shrink-0 text-[#fbfbfb] text-[64px] w-full" style={{ fontFamily: "'Orbitron', sans-serif", fontWeight: 500, letterSpacing: "0.01em" }}>
-        <span className="block leading-[88px]">Digital Marketing</span>
-        <span className="block leading-[88px]">Services</span>
+      <div className="digital-marketing-hero-heading [word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[80px] text-white tracking-[7.2px] uppercase w-full">
+        <span className="block leading-[110px]">Digital Marketing</span>
+        <span className="block leading-[110px]">Services</span>
       </div>
     </h1>
   );
@@ -18,7 +18,7 @@ function Container() {
   return (
     <div className="content-stretch flex flex-col items-start max-w-[576px] pb-[0.59px] relative shrink-0 w-full" data-name="Container">
       <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[#fbfbfb] text-[16px] w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
-        <p className="leading-[24px]">DMiraki is a digital marketing agency in India built around leads, not vanity metrics. We combine SEO, PPC, social media, content and branding to grow businesses across Delhi NCR and India.</p>
+        <p className="leading-[24px]">D'Miraki is a digital marketing agency in India built around leads, not vanity metrics. We combine SEO, PPC, social media, content and branding to grow businesses across Delhi NCR and India.</p>
       </div>
     </div>
   );
@@ -45,7 +45,7 @@ function Container1() {
 
 function Frame7() {
   return (
-    <div className="service-hero-typography content-stretch flex flex-col gap-[30px] items-start relative shrink-0 w-[660px]">
+    <div className="service-hero-typography content-stretch flex flex-col gap-[30px] items-start relative shrink-0 w-[760px]">
       <Heading />
       <Container />
       <Container1 />
@@ -1720,7 +1720,7 @@ function Container76() {
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-center relative size-full">
         <div className="[word-break:break-word] flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#a1a1aa] text-[14px] text-center whitespace-nowrap">
-          <p className="leading-[20px]">© 2026 DMiraki. All rights reserved.</p>
+          <p className="leading-[20px]">© 2026 D&apos;Miraki. All rights reserved.</p>
         </div>
       </div>
     </div>

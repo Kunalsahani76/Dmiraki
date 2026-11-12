@@ -155,18 +155,18 @@ const pageMetadata: Record<string, { title: string; description: string; keyword
     keywords: "digital marketing services in india, digital marketing services delhi ncr, ppc management services, social media marketing services, content marketing services, performance marketing services",
   },
   "/custom-software": {
-    title: "Custom Software Development Company in India | DMiraki",
-    description: "Need software built around your workflow? DMiraki develops custom web and business applications for companies in Delhi NCR and across India. Get a free call.",
+    title: "Custom Software Development Company in India | D'Miraki",
+    description: "Need software built around your workflow? D'Miraki develops custom web and business applications for companies in Delhi NCR and across India. Get a free call.",
     keywords: "custom software development company in india, custom software development services, custom software development company delhi ncr, bespoke software development, custom web application development, enterprise software development india",
   },
   "/iot-solutions": {
-    title: "IoT Solutions and Development Services in India | DMiraki",
+    title: "IoT Solutions and Development Services in India | D'Miraki",
     description: "Connect devices, dashboards and data with IoT solutions designed for Indian businesses, from sensor integration to cloud apps. Talk to our team today.",
     keywords: "iot solutions in india, iot development company india, iot solutions delhi ncr, iot app development, iot software development services, iot dashboard development",
   },
   "/web-development": {
     title: "Website Development Company in India for Business Growth",
-    description: "Fast, mobile-first, SEO-ready websites built on Next.js. DMiraki builds custom business and e-commerce sites for Delhi NCR and pan-India clients. Get a quote.",
+    description: "Fast, mobile-first, SEO-ready websites built on Next.js. D'Miraki builds custom business and e-commerce sites for Delhi NCR and pan-India clients. Get a quote.",
     keywords: "website development company in india, web development services india, website development company delhi ncr, custom website development, ecommerce website development, nextjs development company",
   },
   "/terms-and-conditions": { title: "Terms & Conditions | DMiraki", description: "Read the terms and conditions for using the DMiraki website and services." },

@@ -173,7 +173,7 @@ export function DigitalMarketingMobilePage() {
     <main className="w-full overflow-x-hidden bg-white md:hidden">
       <Hero
         title="Digital Marketing Services"
-        copy="DMiraki is a digital marketing agency in India built around leads, not vanity metrics. We combine SEO, PPC, social media, content and branding to grow businesses across Delhi NCR and India."
+        copy="D'Miraki is a digital marketing agency in India built around leads, not vanity metrics. We combine SEO, PPC, social media, content and branding to grow businesses across Delhi NCR and India."
         image={digitalHero}
         titleStyle={{ fontFamily: "'Orbitron', sans-serif", fontWeight: 500, letterSpacing: "0.01em" }}
       />
@@ -223,9 +223,9 @@ export function IotMobilePage() {
     <main className="w-full overflow-x-hidden bg-white md:hidden">
       <Hero
         title="IoT Solutions and Development Services"
-        copy="DMiraki is an IoT development company in India. We connect devices, dashboards and data, so businesses in Delhi NCR and across India can automate operations and decide from real-time insights."
+        copy="D'Miraki is an IoT development company in India. We connect devices, dashboards and data, so businesses in Delhi NCR and across India can automate operations and decide from real-time insights."
         image={iotHero}
-        titleStyle={{ fontFamily: "'Orbitron', sans-serif", fontWeight: 500, letterSpacing: "0.01em" }}
+        titleStyle={{ fontFamily: "'Pirulen', 'Pirulen Rg', 'Orbitron', sans-serif", fontWeight: 500, letterSpacing: "0.01em" }}
       />
       <TechStrip label="Technologies We Use" items={iotTech} />
 

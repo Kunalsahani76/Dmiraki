@@ -4,6 +4,8 @@
   import App from "./app/App.tsx";
   import "./styles/index.css";
 
+  window.history.scrollRestoration = "manual";
+
   createRoot(document.getElementById("root")!).render(
     <BrowserRouter>
       <App />

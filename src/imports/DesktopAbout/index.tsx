@@ -1021,10 +1021,8 @@ function Container33() {
   return (
     <div className="opacity-70 relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start relative size-full">
-        <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-black w-full whitespace-pre-wrap" style={{ fontVariationSettings: '"wdth" 100' }}>
-          <p className="leading-[24px] mb-0">{`You'll work with a `}</p>
-          <p className="leading-[24px] mb-0">consistent team</p>
-          <p className="leading-[24px]">invested in your success.</p>
+        <div className="[word-break:break-word] flex flex-col font-['Roboto:Regular',sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[16px] text-black w-full" style={{ fontVariationSettings: '"wdth" 100' }}>
+          <p className="leading-[24px]">You'll work with a consistent team invested in your success.</p>
         </div>
       </div>
     </div>
@@ -1318,7 +1316,7 @@ function Border7() {
 
 function Container38() {
   return (
-    <div className="gap-x-[32px] gap-y-[32px] grid grid-cols-[repeat(2,minmax(0,1fr))] grid-rows-[__220px_220px] relative shrink-0 w-full" data-name="Container">
+    <div className="gap-x-[32px] gap-y-[32px] grid grid-cols-[repeat(2,minmax(0,1fr))] grid-rows-[180px_180px] relative shrink-0 w-full" data-name="Container">
       <Border4 />
       <Border5 />
       <Border6 />

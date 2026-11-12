@@ -197,7 +197,11 @@ h6,
 
 .service-hero-typography [class*="Pirulen"],
 .service-hero-typography [style*="Pirulen"] {
-  font-family: "Pirulen", "Orbitron", sans-serif !important;
+  font-family: "Pirulen", "Pirulen Rg", "Orbitron", sans-serif !important;
+}
+
+.service-hero-typography .digital-marketing-hero-heading {
+  font-family: "Pirulen", "Pirulen Rg", "Orbitron", sans-serif !important;
 }
 
 .service-hero-typography [class*="Roboto"],
