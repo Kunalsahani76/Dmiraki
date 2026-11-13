@@ -137,7 +137,7 @@ export default function ContactPage() {
           <div className="flex flex-col items-start">
             <h1
               className="contact-hero-title max-w-[620px] text-[#f1f1f1] uppercase"
-              style={{ fontFamily: "'Pirulen', 'Pirulen Rg', 'Orbitron', sans-serif", fontSize: "80px", fontWeight: 400, lineHeight: "110px", letterSpacing: "7.2px" }}
+              style={{ fontFamily: "'Pirulen', 'Pirulen Rg', 'Orbitron', sans-serif", fontSize: "68px", fontWeight: 400, lineHeight: "1.25", letterSpacing: "0.09em" }}
             >
               Contact D&apos;Miraki in Noida Head Office
             </h1>

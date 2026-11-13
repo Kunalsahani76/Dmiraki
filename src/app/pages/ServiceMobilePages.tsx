@@ -103,7 +103,7 @@ function Hero({
 function TechStrip({ label, items }: { label: string; items: string[] }) {
   return (
     <section className="bg-white px-5 py-8 text-black">
-      <p className="text-center text-[12px] uppercase leading-5 tracking-[0.28em]" style={{ fontFamily: "'Orbitron', sans-serif" }}>
+      <p className="text-center text-[14px] font-bold uppercase leading-5 tracking-[0.28em]" style={{ fontFamily: "'Orbitron', sans-serif" }}>
         {label}
       </p>
       <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-4">

@@ -159,7 +159,7 @@ export default function WebDevelopmentPage() {
 
       <section className="bg-white px-5 py-12 text-black sm:px-8 lg:px-10">
         <div className="mx-auto max-w-[1270px] text-center">
-          <p className="mb-9 uppercase" style={{ fontFamily: "'Orbitron', sans-serif", fontSize: 16, letterSpacing: "6px" }}>
+          <p className="mb-9 font-bold uppercase" style={{ fontFamily: "'Orbitron', sans-serif", fontSize: 18, letterSpacing: "6px" }}>
             Technologies We Use
           </p>
           <div className="grid grid-cols-2 gap-6 text-[#9a9a9a] sm:grid-cols-4 lg:grid-cols-8">

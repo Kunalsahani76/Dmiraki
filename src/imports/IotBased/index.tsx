@@ -147,7 +147,7 @@ function Container3() {
   return (
     <div className="relative shrink-0 w-full" data-name="Container">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-center pb-[0.59px] relative size-full">
-        <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[14px] text-black text-center tracking-[4.2px] uppercase whitespace-nowrap">
+        <div className="[word-break:break-word] flex flex-col font-['Pirulen:Regular',sans-serif] font-bold justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-black text-center tracking-[4.2px] uppercase whitespace-nowrap">
           <p className="leading-[19.6px]">Technologies We Use</p>
         </div>
       </div>

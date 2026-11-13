@@ -1,4 +1,13 @@
 import type { ReactNode } from "react";
+import firebaseLogo from "../../icons/Logo for custom-software page/Firebase Logo.png";
+import flutterLogo from "../../icons/Logo for custom-software page/flutter_icon.png";
+import nodeLogo from "../../icons/Logo for custom-software page/Node js.png";
+import amazonIotLogo from "../../icons/Logo for iot-solutions/amazon IoT Core.png";
+import azureIotLogo from "../../icons/Logo for iot-solutions/Azure IoT.png";
+import googleCloudLogo from "../../icons/Logo for iot-solutions/Google Cloud.png";
+import mqttLogo from "../../icons/Logo for iot-solutions/mqtt-icon-solid.png";
+import nodeRedLogo from "../../icons/Logo for iot-solutions/node-red-icon.png";
+import raspberryPiLogo from "../../icons/Logo for iot-solutions/raspberry_pi.png";
 
 const marks: Record<string, ReactNode> = {
   React: <><circle cx="36" cy="36" r="5" fill="#61dafb" /><g fill="none" stroke="#61dafb" strokeWidth="3"><ellipse cx="36" cy="36" rx="29" ry="11" /><ellipse cx="36" cy="36" rx="29" ry="11" transform="rotate(60 36 36)" /><ellipse cx="36" cy="36" rx="29" ry="11" transform="rotate(120 36 36)" /></g></>,
@@ -20,5 +29,21 @@ const marks: Record<string, ReactNode> = {
 };
 
 export function SoftwareTechLogo({ name }: { name: string }) {
+  const imageByName: Record<string, string> = {
+    "Node.js": nodeLogo,
+    Flutter: flutterLogo,
+    Firebase: firebaseLogo,
+    "AWS IOT": amazonIotLogo,
+    "AZURE IOT": azureIotLogo,
+    "GOOGLE CLOUD": googleCloudLogo,
+    MQTT: mqttLogo,
+    "NODE-RED": nodeRedLogo,
+    "RASPBERRY PI": raspberryPiLogo,
+  };
+
+  if (imageByName[name]) {
+    return <img role="img" aria-label={`${name} logo`} src={imageByName[name]} className="h-[74px] w-[74px] object-contain" />;
+  }
+
   return <svg role="img" aria-label={`${name} logo`} viewBox="0 0 72 72" className="h-[74px] w-[74px]" fill="none">{marks[name]}</svg>;
 }

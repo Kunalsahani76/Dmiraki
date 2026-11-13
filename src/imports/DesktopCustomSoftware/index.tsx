@@ -100,8 +100,8 @@ function TechStackBar() {
     <section className="bg-[#fffffe] w-full">
       <div className="max-w-[1280px] mx-auto px-6 sm:px-10 py-10 sm:py-12 flex flex-col gap-9">
         <p
-          className="text-black text-center text-[12px] sm:text-[14px] tracking-[4px] uppercase"
-          style={{ fontFamily: "'Orbitron', monospace", fontWeight: 400 }}
+          className="text-black text-center text-[14px] sm:text-[16px] font-bold tracking-[4px] uppercase"
+          style={{ fontFamily: "'Orbitron', monospace", fontWeight: 700 }}
         >
           Technologies We Use
         </p>

@@ -1,4 +1,11 @@
 import type { ReactNode } from "react";
+import googleAdsLogo from "../../icons/Logo for digital-marketing page/google_ads.png";
+import hubspotLogo from "../../icons/Logo for digital-marketing page/HUBSPOT logo.jpg";
+import mailchimpLogo from "../../icons/Logo for digital-marketing page/mailchimp_icon.png";
+import metaLogo from "../../icons/Logo for digital-marketing page/meta.jpg";
+import semrushLogo from "../../icons/Logo for digital-marketing page/Semrush_Logo_Icon_Lavender_RGB_1024.png";
+import shopifyLogo from "../../icons/Logo for digital-marketing page/shopify_logo.png";
+import wordpressLogo from "../../icons/Logo for digital-marketing page/Wordpress.png";
 
 const marks: Record<string, ReactNode> = {
   "GOOGLE ADS": (
@@ -49,5 +56,15 @@ const marks: Record<string, ReactNode> = {
 };
 
 export function MarketingToolLogo({ name, className = "" }: { name: string; className?: string }) {
-  return <span role="img" aria-label={`${name} logo`} className={`block h-16 w-16 shrink-0 ${className}`}>{marks[name]}</span>;
+  const imageByName: Record<string, string> = {
+    "GOOGLE ADS": googleAdsLogo,
+    "META ADS": metaLogo,
+    SEMRUSH: semrushLogo,
+    SHOPIFY: shopifyLogo,
+    MAILCHIMP: mailchimpLogo,
+    WORDPRESS: wordpressLogo,
+    HUBSPOT: hubspotLogo,
+  };
+
+  return <span role="img" aria-label={`${name} logo`} className={`block h-16 w-16 shrink-0 ${className}`}><img alt="" src={imageByName[name]} className="h-full w-full object-contain" /></span>;
 }
