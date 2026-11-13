@@ -139,7 +139,7 @@ export default function ContactPage() {
               className="contact-hero-title max-w-[620px] text-[#f1f1f1] uppercase"
               style={{ fontFamily: "'Pirulen', 'Pirulen Rg', 'Orbitron', sans-serif", fontSize: "64px", fontWeight: 400, lineHeight: "1.25", letterSpacing: "0.09em" }}
             >
-              Contact D&apos;Miraki <br className="contact-heading-break" />in Noida Head Office
+              Contact D&apos;Miraki <br className="contact-heading-break" /><span style={{ fontSize: "30px" }}>in Noida Head Office</span>
             </h1>
             <p className="mt-8 max-w-[530px] text-[13px] font-semibold leading-6 text-[#d1d1d1]" style={inter}>
               Talk to D&apos;Miraki about SEO, digital marketing or web development. Our Noida team serves businesses across Delhi NCR and India. Call, email or send an enquiry.

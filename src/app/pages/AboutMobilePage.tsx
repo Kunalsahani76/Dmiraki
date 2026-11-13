@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowRight, Check, ChevronDown, Mail, MapPin, Phone } from "lucide-react";
+import { ArrowRight, Check, Mail, MapPin, Phone } from "lucide-react";
 import imgHeroBackground from "../../imports/DesktopAbout/899ad3003fb6b8bbbc20a36dec9d11b401674a56.png";
 import imgHeroPerson from "../../imports/DesktopAbout/1d7d1199b6359e2a5a182bbb1787c2a835d1add3.png";
 import imgStory from "../../imports/DesktopAbout/5d30b30b201bc563295ce7873381ee59fe7c305a.png";
@@ -37,26 +37,14 @@ const process = [
 ];
 
 const faqs = [
-  ["What does D'Miraki specialise in?", "D'Miraki specialises in Digital Marketing, Branding, Website Development, Mobile App Development, Custom Software Development, and IoT Solutions designed for modern businesses."],
-  ["What digital marketing services do you offer?", "We offer SEO, International SEO, Social Media Marketing, Performance Marketing, Google Ads, Content Marketing, Branding Strategy, and Lead Generation services."],
-  ["Do you provide branding services for startups and businesses?", "Yes. We help businesses build a strong brand identity through logo design, brand strategy, visual communication, positioning, and digital presence."],
-  ["Can D'Miraki develop custom websites?", "Yes. We design and develop custom websites based on your business goals, industry, and user experience requirements."],
-  ["Do you create e-commerce websites?", "Yes. We develop secure and scalable e-commerce websites with payment integration, product management, and mobile-friendly design."],
-  ["What technologies do you use for web development?", "We work with modern technologies including React, Node.js, PHP, WordPress, Shopify, Laravel, and custom frameworks based on project needs."],
-  ["Do you provide mobile app development services?", "Yes. We develop Android, iOS, and cross-platform mobile applications for startups, enterprises, and growing businesses."],
-  ["Can you develop custom software for businesses?", "Absolutely. We build customised software solutions that help businesses automate operations, improve efficiency, and manage workflows effectively."],
-  ["What is IoT software development?", "IoT software development connects devices, sensors, and systems through smart technology to automate processes, monitor data, and improve operational control."],
-  ["Which industries do you work with?", "We work with industries including Power, Infrastructure, Engineering, Construction, Real Estate, Manufacturing, Technology, Textile, Government, and SMEs."],
-  ["How long does it take to develop a website or app?", "The timeline depends on the project scope, features, and complexity. Basic websites may take a few weeks, while advanced platforms and applications may require longer development cycles."],
-  ["Do you offer SEO services for international markets?", "Yes. We provide international SEO strategies focused on global visibility, country-specific targeting, multilingual SEO, and organic growth."],
-  ["Why should I choose D'Miraki?", "D'Miraki combines strategy, creativity, and technology to build digital systems that are focused on long-term growth, visibility, and business impact."],
-  ["Do you provide ongoing support after project completion?", "Yes. We provide maintenance, technical support, updates, and performance monitoring after deployment."],
-  ["How can I get started with D'Miraki?", "You can contact our team through our website, email, or phone to discuss your business requirements and project goals."],
-  ["Do you work with small businesses and startups?", "Yes. We work with startups, SMEs, and enterprises, offering scalable solutions based on business stage and growth goals."],
-  ["Can you redesign an existing website or application?", "Yes. We help businesses modernise outdated websites, improve user experience, and upgrade digital performance."],
-  ["Do you sign NDAs and maintain project confidentiality?", "Yes. We value privacy and maintain strict confidentiality for all client projects and business information."],
-  ["What makes your SEO approach different?", "Our SEO approach focuses on search intent, technical optimisation, content structure, AI search readiness, and long-term visibility rather than temporary ranking tactics."],
-  ["Do you provide complete digital transformation solutions?", "Yes. From branding and marketing to software and automation, D'Miraki provides end-to-end digital solutions under one ecosystem."],
+  ["What does D'Miraki specialise in?", "D'Miraki is a Noida-based digital marketing and web development company. We help businesses grow with SEO, performance marketing, web development, custom software and IoT solutions."],
+  ["What digital marketing services do you offer?", "We offer SEO, social media marketing, performance marketing, Google Ads, content marketing, branding strategy and lead generation."],
+  ["Do you build custom websites and mobile apps?", "Yes. We design and develop custom websites and mobile apps around your business goals and user needs."],
+  ["Can you develop custom software for businesses?", "Yes. We build custom software, including ERP, CRM and SaaS platforms, to help businesses improve and automate their operations."],
+  ["Which industries and business sizes do you work with?", "We work with startups, small and medium businesses, and enterprises across a range of industries."],
+  ["Why should I choose D'Miraki?", "Our team brings strategy, marketing and technology together to create solutions focused on meaningful business growth."],
+  ["Do you provide support after a project is completed?", "Yes. We provide ongoing maintenance, technical support, updates and performance monitoring."],
+  ["How can I get started with D'Miraki?", "Contact our team through the website, email or phone to discuss your project and business requirements."],
 ];
 
 function SectionHeading({ title, dark = false }: { title: string; dark?: boolean }) {
@@ -85,21 +73,16 @@ function InfoCard({ title, body, dark = false }: { title: string; body: string; 
 }
 
 function MobileFAQItem({ q, a }: { q: string; a: string }) {
-  const [open, setOpen] = useState(false);
-
+  const [open, setOpen] = useState(q === faqs[0][0]);
   return (
-    <div className="border-b-2 border-black">
+    <div className={`overflow-hidden rounded-[13px] border ${open ? "border-[#4a4a47]" : "border-[#3a3a38]"}`}>
       <h3 className="m-0">
-        <button className="flex w-full items-start justify-between gap-4 py-6 text-left" onClick={() => setOpen((value) => !value)}>
-          <span className="text-[19px] font-bold leading-7 text-black" style={{ fontFamily: "'Roboto', sans-serif" }}>{q}</span>
-          <ChevronDown className="mt-1 size-5 shrink-0 transition-transform" style={{ transform: open ? "rotate(180deg)" : "rotate(0deg)" }} />
+        <button aria-expanded={open} className="flex w-full items-center justify-between gap-4 px-5 py-3 text-left text-[#ededeb]" onClick={() => setOpen((value) => !value)}>
+          <span className="text-[17px] font-semibold leading-6" style={{ fontFamily: "'Roboto', sans-serif" }}>{q}</span>
+          <span aria-hidden="true" className="shrink-0 text-[25px] leading-none">{open ? "?" : "+"}</span>
         </button>
       </h3>
-      {open && (
-        <p className="border-l-0 pb-6 text-[15px] leading-7 text-black/75" style={{ fontFamily: "'Roboto', sans-serif" }}>
-          {a}
-        </p>
-      )}
+      {open && <p className="px-5 pb-5 text-[15px] leading-7 text-[#b9b9b5]" style={{ fontFamily: "'Roboto', sans-serif" }}>{a}</p>}
     </div>
   );
 }
@@ -234,12 +217,15 @@ export default function AboutMobilePage() {
       </section>
 
       <DreamingBigSection />
-      <section className="bg-white px-5 py-10">
-        <SectionHeading title="FAQs" />
-        <div className="mt-6 grid grid-cols-1 gap-x-10 border-t-2 border-black md:grid-cols-2">
-          {faqs.map(([q, a]) => (
-            <MobileFAQItem key={q} q={q} a={a} />
-          ))}
+      <section className="bg-[#fbfbfb] px-5 py-10">
+        <div className="rounded-[20px] border border-[#30302e] bg-[#191918] p-5 text-[#ededeb]">
+          <h2 className="text-[30px] font-semibold leading-tight tracking-[-0.03em]" style={{ fontFamily: "'Roboto', sans-serif" }}>Frequently asked questions</h2>
+          <p className="mt-3 text-[17px] leading-7 text-[#b9b9b5]" style={{ fontFamily: "'Roboto', sans-serif" }}>Quick answers about D'Miraki and how we work.</p>
+          <p className="mt-6 text-[15px] text-[#b9b9b5]" style={{ fontFamily: "'Roboto', sans-serif" }}>Still have a question?</p>
+          <a href="/contact" className="mt-3 inline-flex items-center gap-3 rounded-[12px] border border-[#484845] px-5 py-3 text-[16px] font-medium text-[#e6e6e3]" style={{ fontFamily: "'Roboto', sans-serif" }}>Book a free call <ArrowRight className="size-4" /></a>
+          <div className="mt-7 space-y-1">
+            {faqs.map(([q, a]) => <MobileFAQItem key={q} q={q} a={a} />)}
+          </div>
         </div>
       </section>
     </main>

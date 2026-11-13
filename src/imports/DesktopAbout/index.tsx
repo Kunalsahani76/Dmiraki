@@ -3243,67 +3243,45 @@ function HorizontalBorder40() {
 }
 
 const aboutFaqItems = [
-  ["What does D’Miraki specialise in?", "D’Miraki specialises in Digital Marketing, Branding, Website Development, Mobile App Development, Custom Software Development, and IoT Solutions designed for modern businesses."],
-  ["What digital marketing services do you offer?", "We offer SEO, International SEO, Social Media Marketing, Performance Marketing, Google Ads, Content Marketing, Branding Strategy, and Lead Generation services."],
-  ["Do you provide branding services for startups and businesses?", "Yes. We help businesses build a strong brand identity through logo design, brand strategy, visual communication, positioning, and digital presence."],
-  ["Can D’Miraki develop custom websites?", "Yes. We design and develop custom websites based on your business goals, industry, and user experience requirements."],
-  ["Do you create e-commerce websites?", "Yes. We develop secure and scalable e-commerce websites with payment integration, product management, and mobile-friendly design."],
-  ["What technologies do you use for web development?", "We work with modern technologies including React, Node.js, PHP, WordPress, Shopify, Laravel, and custom frameworks based on project needs."],
-  ["Do you provide mobile app development services?", "Yes. We develop Android, iOS, and cross-platform mobile applications for startups, enterprises, and growing businesses."],
-  ["Can you develop custom software for businesses?", "Absolutely. We build customised software solutions that help businesses automate operations, improve efficiency, and manage workflows effectively."],
-  ["What is IoT software development?", "IoT software development connects devices, sensors, and systems through smart technology to automate processes, monitor data, and improve operational control."],
-  ["Which industries do you work with?", "We work with industries including Power, Infrastructure, Engineering, Construction, Real Estate, Manufacturing, Technology, Textile, Government, and SMEs."],
-  ["How long does it take to develop a website or app?", "The timeline depends on the project scope, features, and complexity. Basic websites may take a few weeks, while advanced platforms and applications may require longer development cycles."],
-  ["Do you offer SEO services for international markets?", "Yes. We provide international SEO strategies focused on global visibility, country-specific targeting, multilingual SEO, and organic growth."],
-  ["Why should I choose D’Miraki?", "D’Miraki combines strategy, creativity, and technology to build digital systems that are focused on long-term growth, visibility, and business impact."],
-  ["Do you provide ongoing support after project completion?", "Yes. We provide maintenance, technical support, updates, and performance monitoring after deployment."],
-  ["How can I get started with D’Miraki?", "You can contact our team through our website, email, or phone to discuss your business requirements and project goals."],
-  ["Do you work with small businesses and startups?", "Yes. We work with startups, SMEs, and enterprises, offering scalable solutions based on business stage and growth goals."],
-  ["Can you redesign an existing website or application?", "Yes. We help businesses modernise outdated websites, improve user experience, and upgrade digital performance."],
-  ["Do you sign NDAs and maintain project confidentiality?", "Yes. We value privacy and maintain strict confidentiality for all client projects and business information."],
-  ["What makes your SEO approach different?", "Our SEO approach focuses on search intent, technical optimisation, content structure, AI search readiness, and long-term visibility rather than temporary ranking tactics."],
-  ["Do you provide complete digital transformation solutions?", "Yes. From branding and marketing to software and automation, D’Miraki provides end-to-end digital solutions under one ecosystem."],
+  ["What does D'Miraki specialise in?", "D'Miraki is a Noida-based digital marketing and web development company. We help businesses grow with SEO, performance marketing, web development, custom software and IoT solutions."],
+  ["What digital marketing services do you offer?", "We offer SEO, social media marketing, performance marketing, Google Ads, content marketing, branding strategy and lead generation."],
+  ["Do you build custom websites and mobile apps?", "Yes. We design and develop custom websites and mobile apps around your business goals and user needs."],
+  ["Can you develop custom software for businesses?", "Yes. We build custom software, including ERP, CRM and SaaS platforms, to help businesses improve and automate their operations."],
+  ["Which industries and business sizes do you work with?", "We work with startups, small and medium businesses, and enterprises across a range of industries."],
+  ["Why should I choose D'Miraki?", "Our team brings strategy, marketing and technology together to create solutions focused on meaningful business growth."],
+  ["Do you provide support after a project is completed?", "Yes. We provide ongoing maintenance, technical support, updates and performance monitoring."],
+  ["How can I get started with D'Miraki?", "Contact our team through the website, email or phone to discuss your project and business requirements."],
 ];
 
-function HorizontalBorder() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
+function AboutFaq() {
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
   return (
-    <div className="content-stretch grid grid-cols-1 lg:grid-cols-2 gap-x-8 items-start pt-[2px] relative shrink-0 w-full border-t-2 border-black" data-name="HorizontalBorder">
-      {aboutFaqItems.map(([question, answer], index) => {
-        const isOpen = openIndex === index;
-
-        return (
-        <div className="relative shrink-0 w-full" data-name="FAQ Item" key={question}>
-          <h3 className="m-0 w-full">
-          <button
-            aria-expanded={isOpen}
-            className={`flex w-full cursor-pointer items-center justify-between gap-[24px] ${isOpen ? "border-b-0" : "border-b-2 border-black"} px-[16px] py-[34px] text-left outline-none transition-colors duration-300 hover:bg-black/[0.03]`}
-            onClick={() => setOpenIndex(isOpen ? null : index)}
-            type="button"
-          >
-            <span className="font-['Roboto:Regular',sans-serif] font-normal leading-[22px] font-bold text-[18px] text-black">{question}</span>
-            <span className="font-['Inter:Regular',sans-serif] text-[24px] leading-none text-black">{isOpen ? "⌃" : "⌄"}</span>
-          </button>
-          </h3>
-          {isOpen && (
-            <div className="flex items-center justify-between gap-[24px] border-b-2 border-l-0 border-black px-[16px] py-[32px]">
-              <p className="font-['Roboto:Regular',sans-serif] font-normal leading-[28px] text-[17px] text-black">{answer}</p>
-            </div>
-          )}
+    <section className="w-full max-w-[1226px] rounded-[20px] border border-[#30302e] bg-[#191918] p-6 text-[#ededeb] sm:p-9 lg:p-10" data-name="About FAQ">
+      <div className="grid gap-8 md:grid-cols-[minmax(220px,0.7fr)_minmax(0,1.3fr)] md:gap-12">
+        <div>
+          <h2 className="max-w-[340px] text-[32px] font-semibold leading-[1.2] tracking-[-0.03em] sm:text-[36px]" style={{ fontFamily: "'Roboto', sans-serif" }}>Frequently asked questions</h2>
+          <p className="mt-4 max-w-[340px] text-[18px] leading-[1.65] text-[#b9b9b5]" style={{ fontFamily: "'Roboto', sans-serif" }}>Quick answers about D'Miraki and how we work.</p>
+          <p className="mt-7 text-[16px] text-[#b9b9b5]" style={{ fontFamily: "'Roboto', sans-serif" }}>Still have a question?</p>
+          <a href="/contact" className="mt-3 inline-flex items-center gap-3 rounded-[12px] border border-[#484845] px-6 py-3 text-[17px] font-medium text-[#e6e6e3] transition-colors hover:bg-white/5" style={{ fontFamily: "'Roboto', sans-serif" }}>Book a free call <span aria-hidden="true">&#8594;</span></a>
         </div>
-        );
-      })}
-    </div>
-  );
-}
-
-function Container57() {
-  return (
-    <div className="content-stretch flex flex-col gap-[64px] items-start max-w-[1440px] relative shrink-0 w-[1226px]" data-name="Container">
-      <Heading21 />
-      <HorizontalBorder />
-    </div>
+        <div className="space-y-0.5">
+          {aboutFaqItems.map(([question, answer], index) => {
+            const isOpen = openIndex === index;
+            return (
+              <div key={question} className={`overflow-hidden rounded-[13px] border ${isOpen ? "border-[#4a4a47]" : "border-[#3a3a38]"}`}>
+                <h3 className="m-0">
+                  <button aria-expanded={isOpen} className="flex w-full items-center justify-between gap-4 px-5 py-[13px] text-left sm:px-6" onClick={() => setOpenIndex(isOpen ? null : index)} type="button">
+                    <span className="text-[16px] font-semibold leading-6 sm:text-[18px]" style={{ fontFamily: "'Roboto', sans-serif" }}>{question}</span>
+                    <span className="shrink-0 text-[25px] leading-none" aria-hidden="true">{isOpen ? "-" : "+"}</span>
+                  </button>
+                </h3>
+                {isOpen && <p className="px-5 pb-5 text-[16px] leading-[1.65] text-[#b9b9b5] sm:px-6" style={{ fontFamily: "'Roboto', sans-serif" }}>{answer}</p>}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -3717,8 +3695,7 @@ export default function About() {
       <Frame18 />
       <Frame23 />
       <Frame25 />
-      <Container43 />
-      <Container57 />
+      <AboutFaq />
       <div className="hidden" data-name="header">
         <div aria-hidden className="absolute border border-black border-solid inset-0 pointer-events-none" />
         <div className="h-[38.408px] relative shrink-0 w-[118px]" data-name="D'MIRAKI POSTS 1">
