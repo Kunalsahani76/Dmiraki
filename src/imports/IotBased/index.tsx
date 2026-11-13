@@ -1,6 +1,7 @@
 import svgPaths from "./svg-g0z6adp1kt";
 import imgFrame1000002782 from "../../images/digitalmarketingbaner.png";
 import imgIotBanner from "../../images/iotbanner.png";
+import { SoftwareTechLogo } from "../../app/components/SoftwareTechLogo";
 
 function Heading() {
   return (
@@ -235,18 +236,16 @@ function Container11() {
 }
 
 function Background() {
+  const technologies = ["AWS IOT", "AZURE IOT", "GOOGLE CLOUD", "RASPBERRY PI", "ARDUINO", "Docker", "MQTT", "NODE-RED"];
   return (
-    <div className="opacity-40 relative shrink-0 w-full" data-name="Background">
-      <div aria-hidden className="absolute bg-black bg-clip-padding border-0 border-[transparent] border-solid inset-0 mix-blend-saturation pointer-events-none" />
-      <div className="bg-clip-padding border-0 border-[transparent] border-solid gap-x-[32px] gap-y-[32px] grid grid-cols-[repeat(8,minmax(0,1fr))] grid-rows-[_28px] relative size-full">
-        <Container4 />
-        <Container5 />
-        <Container6 />
-        <Container7 />
-        <Container8 />
-        <Container9 />
-        <Container10 />
-        <Container11 />
+    <div className="relative shrink-0 w-full" data-name="Background">
+      <div className="grid grid-cols-2 gap-x-4 gap-y-6 sm:grid-cols-4 lg:grid-cols-8">
+        {technologies.map((technology) => (
+          <figure key={technology} className="flex flex-col items-center gap-2">
+            <SoftwareTechLogo name={technology} />
+            <figcaption className="text-center text-[12px] font-bold text-[#999]">{technology}</figcaption>
+          </figure>
+        ))}
       </div>
     </div>
   );
@@ -254,8 +253,8 @@ function Background() {
 
 function Container2() {
   return (
-    <div className="bg-[#fffffe] h-[166.59px] max-w-[1280px] relative shrink-0 w-full" data-name="Container">
-      <div className="content-stretch flex flex-col gap-[36px] items-start max-w-[inherit] p-[48px] relative size-full">
+    <div className="bg-[#fffffe] min-h-[166.59px] max-w-[1280px] relative shrink-0 w-full" data-name="Container">
+      <div className="content-stretch flex flex-col gap-[28px] items-start max-w-[inherit] px-6 py-8 sm:px-12 sm:py-10 relative size-full">
         <Container3 />
         <Background />
       </div>

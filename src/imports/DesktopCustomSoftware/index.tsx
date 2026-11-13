@@ -1,6 +1,7 @@
 import heroBg from "../../images/digitalmarketingbaner.png";
 import heroVisual from "../../images/customsoftwarebanner.png";
 import svgPaths from "./svg-v1mu0axv8t";
+import { SoftwareTechLogo } from "../../app/components/SoftwareTechLogo";
 
 /* SVG Icon component */
 function SvgIcon({ pathKey, viewBox }: { pathKey: keyof typeof svgPaths; viewBox: string }) {
@@ -104,16 +105,12 @@ function TechStackBar() {
         >
           Technologies We Use
         </p>
-        <div className="grid grid-cols-4 sm:grid-cols-8 gap-6 opacity-40">
+        <div className="grid grid-cols-2 gap-x-4 gap-y-7 sm:grid-cols-4 lg:grid-cols-8">
           {techs.map((tech) => (
-            <div key={tech} className="flex items-center justify-center">
-              <span
-                className="text-black text-[14px] sm:text-[18px] font-bold text-center leading-7"
-                style={{ fontFamily: "'Roboto', sans-serif", fontWeight: 700 }}
-              >
-                {tech}
-              </span>
-            </div>
+            <figure key={tech} className="flex flex-col items-center justify-center gap-2">
+              <SoftwareTechLogo name={tech} />
+              <figcaption className="text-[#999] text-[14px] sm:text-[16px] font-bold text-center leading-6" style={{ fontFamily: "'Roboto', sans-serif" }}>{tech}</figcaption>
+            </figure>
           ))}
         </div>
       </div>

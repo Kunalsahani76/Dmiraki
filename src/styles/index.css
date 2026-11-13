@@ -214,6 +214,18 @@ h6,
   font-family: "Inter", sans-serif !important;
 }
 
+#root .contact-hero-title {
+  font-family: "Pirulen", "Pirulen Rg", "Orbitron", sans-serif !important;
+}
+
+@media (max-width: 640px) {
+  #root .contact-hero-title {
+    font-size: 44px !important;
+    line-height: 1.16 !important;
+    letter-spacing: 0.04em !important;
+  }
+}
+
 .about-page-typography,
 .about-page-typography * {
   font-style: normal !important;

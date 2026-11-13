@@ -2,6 +2,8 @@ import type { CSSProperties } from "react";
 import { ArrowRight, BarChart3, CheckCircle2, Cpu, RadioTower, Search, Share2, ShieldCheck, Zap } from "lucide-react";
 import digitalHero from "../../images/Digitalmarketing.png";
 import iotHero from "../../images/digitalmarketingbaner.png";
+import { MarketingToolLogo } from "../components/MarketingToolLogo";
+import { SoftwareTechLogo } from "../components/SoftwareTechLogo";
 
 const digitalTech = ["GOOGLE ADS", "META ADS", "SEMRUSH", "SHOPIFY", "MAILCHIMP", "WORDPRESS", "HUBSPOT"];
 const iotTech = ["AWS IOT", "AZURE IOT", "GOOGLE CLOUD", "RASPBERRY PI", "ARDUINO", "DOCKER", "MQTT", "NODE-RED"];
@@ -104,11 +106,12 @@ function TechStrip({ label, items }: { label: string; items: string[] }) {
       <p className="text-center text-[12px] uppercase leading-5 tracking-[0.28em]" style={{ fontFamily: "'Orbitron', sans-serif" }}>
         {label}
       </p>
-      <div className="mt-5 grid grid-cols-2 gap-3">
+      <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-4">
         {items.map((item) => (
-          <div className="border border-black px-3 py-3 text-center text-[13px] uppercase" key={item} style={{ fontFamily: "'Roboto', sans-serif" }}>
-            {item}
-          </div>
+          <figure className="flex min-h-[112px] flex-col items-center justify-center gap-2 px-2 py-3 text-center" key={item}>
+            {label === "Tools We Work With" ? <MarketingToolLogo name={item} /> : <SoftwareTechLogo name={item} />}
+            <figcaption className="text-[12px] font-bold uppercase text-[#888]" style={{ fontFamily: "'Roboto', sans-serif" }}>{item}</figcaption>
+          </figure>
         ))}
       </div>
     </section>

@@ -2,6 +2,7 @@ import svgPaths from "./svg-97aztw19jm";
 import imgDigitalMarketing from "../../images/Digitalmarketing.png";
 import imgDigitalMarketingBanner from "../../images/digitalmarketingbaner.png";
 import imgDmirakiPosts1 from "./bf4cf617b34b1b26e10ed7fbbabad160e79fb2e8.png";
+import { MarketingToolLogo } from "../../app/components/MarketingToolLogo";
 
 function Heading() {
   return (
@@ -230,16 +231,16 @@ function Container11() {
 }
 
 function Container4() {
+  const tools = ["GOOGLE ADS", "META ADS", "SEMRUSH", "SHOPIFY", "MAILCHIMP", "WORDPRESS", "HUBSPOT"];
   return (
-    <div className="opacity-40 relative shrink-0 w-full" data-name="Container">
-      <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[48px] items-center justify-center relative size-full">
-        <Container5 />
-        <Container6 />
-        <Container7 />
-        <Container8 />
-        <Container9 />
-        <Container10 />
-        <Container11 />
+    <div className="relative shrink-0 w-full" data-name="Container">
+      <div className="grid grid-cols-4 items-center justify-items-center gap-x-5 gap-y-4 md:grid-cols-7">
+        {tools.map((name) => (
+          <figure className="flex min-w-0 flex-col items-center gap-2" key={name}>
+            <MarketingToolLogo name={name} className="h-[68px] w-[68px]" />
+            <figcaption className="text-center text-[12px] font-bold text-[#999]">{name}</figcaption>
+          </figure>
+        ))}
       </div>
     </div>
   );
@@ -247,8 +248,8 @@ function Container4() {
 
 function Container2() {
   return (
-    <div className="bg-[#fffffe] h-[166.59px] max-w-[1280px] relative shrink-0 w-full" data-name="Container">
-      <div className="content-stretch flex flex-col gap-[36px] items-start max-w-[inherit] p-[48px] relative size-full">
+    <div className="bg-[#fffffe] min-h-[166.59px] max-w-[1280px] relative shrink-0 w-full" data-name="Container">
+      <div className="content-stretch flex flex-col gap-[28px] items-start max-w-[inherit] px-6 py-8 sm:px-12 sm:py-10 relative size-full">
         <Container3 />
         <Container4 />
       </div>
