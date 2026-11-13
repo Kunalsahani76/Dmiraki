@@ -137,9 +137,9 @@ export default function ContactPage() {
           <div className="flex flex-col items-start">
             <h1
               className="contact-hero-title max-w-[620px] text-[#f1f1f1] uppercase"
-              style={{ fontFamily: "'Pirulen', 'Pirulen Rg', 'Orbitron', sans-serif", fontSize: "68px", fontWeight: 400, lineHeight: "1.25", letterSpacing: "0.09em" }}
+              style={{ fontFamily: "'Pirulen', 'Pirulen Rg', 'Orbitron', sans-serif", fontSize: "64px", fontWeight: 400, lineHeight: "1.25", letterSpacing: "0.09em" }}
             >
-              Contact D&apos;Miraki in Noida Head Office
+              Contact D&apos;Miraki <br className="contact-heading-break" />in Noida Head Office
             </h1>
             <p className="mt-8 max-w-[530px] text-[13px] font-semibold leading-6 text-[#d1d1d1]" style={inter}>
               Talk to D&apos;Miraki about SEO, digital marketing or web development. Our Noida team serves businesses across Delhi NCR and India. Call, email or send an enquiry.
@@ -260,12 +260,11 @@ export default function ContactPage() {
           </p>
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {developItems.map(({ icon: Icon, title, copy }) => (
-              <article key={title} className="min-h-[250px] border border-white/20 bg-white/[0.08] p-7">
-                <Icon className="h-6 w-6 text-white" strokeWidth={1.6} />
-                <h3 className="mt-6 text-[16px] font-bold text-white" style={inter}>
+              <article key={title} className="min-h-[210px] border border-white/20 bg-white/[0.08] p-7">
+                <h3 className="text-[16px] font-bold text-white" style={inter}>
                   {title}
                 </h3>
-                <p className="mt-5 text-[13px] font-medium leading-6 text-[#e3e3e3]" style={inter}>
+                <p className="mt-4 text-[13px] font-medium leading-6 text-[#e3e3e3]" style={inter}>
                   {copy}
                 </p>
               </article>
