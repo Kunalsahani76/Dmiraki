@@ -217,9 +217,9 @@ export default function AboutMobilePage() {
       </section>
 
       <DreamingBigSection />
-      <section className="bg-[#fbfbfb] px-5 py-10">
+      <section className="mb-10 bg-[#fbfbfb] px-5 py-10">
         <div className="rounded-[20px] border border-[#30302e] bg-[#191918] p-5 text-[#ededeb]">
-          <h2 className="text-[30px] font-semibold leading-tight tracking-[-0.03em]" style={{ fontFamily: "'Roboto', sans-serif" }}>Frequently asked questions</h2>
+          <h2 className="text-[30px] font-semibold leading-tight tracking-[-0.03em]" style={{ fontFamily: "'Roboto', sans-serif" }}>Frequently Asked Questions</h2>
           <p className="mt-3 text-[17px] leading-7 text-[#b9b9b5]" style={{ fontFamily: "'Roboto', sans-serif" }}>Quick answers about D'Miraki and how we work.</p>
           <p className="mt-6 text-[15px] text-[#b9b9b5]" style={{ fontFamily: "'Roboto', sans-serif" }}>Still have a question?</p>
           <a href="/contact" className="mt-3 inline-flex items-center gap-3 rounded-[12px] border border-[#484845] px-5 py-3 text-[16px] font-medium text-[#e6e6e3]" style={{ fontFamily: "'Roboto', sans-serif" }}>Book a free call <ArrowRight className="size-4" /></a>

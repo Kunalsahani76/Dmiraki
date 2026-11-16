@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import heroVisual from "../../imports/Home/ba94765630e49ad56eb0745d378f772c95ef7582.png";
 import analyticsVisual from "../../imports/Home/7e7289376327a991cbaea03f686e9c032ef6270e.png";
+import { ContactFAQSection } from "../components/ContactFAQFooter";
 
 const orbitron = { fontFamily: "'Orbitron', sans-serif" };
 const inter = { fontFamily: "'Inter', sans-serif" };
@@ -345,6 +346,8 @@ export default function ContactPage() {
           GET IN TOUCH
         </button>
       </section>
+
+      <ContactFAQSection />
 
     </main>
   );

@@ -3256,10 +3256,10 @@ const aboutFaqItems = [
 function AboutFaq() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   return (
-    <section className="w-full max-w-[1226px] rounded-[20px] border border-[#30302e] bg-[#191918] p-6 text-[#ededeb] sm:p-9 lg:p-10" data-name="About FAQ">
+    <section className="mb-10 w-full max-w-[1226px] rounded-[20px] border border-[#30302e] bg-[#191918] p-6 text-[#ededeb] sm:p-9 lg:p-10" data-name="About FAQ">
       <div className="grid gap-8 md:grid-cols-[minmax(220px,0.7fr)_minmax(0,1.3fr)] md:gap-12">
         <div>
-          <h2 className="max-w-[340px] text-[32px] font-semibold leading-[1.2] tracking-[-0.03em] sm:text-[36px]" style={{ fontFamily: "'Roboto', sans-serif" }}>Frequently asked questions</h2>
+          <h2 className="max-w-[340px] text-[32px] font-semibold leading-[1.2] tracking-[-0.03em] sm:text-[36px]" style={{ fontFamily: "'Roboto', sans-serif" }}>Frequently Asked Questions</h2>
           <p className="mt-4 max-w-[340px] text-[18px] leading-[1.65] text-[#b9b9b5]" style={{ fontFamily: "'Roboto', sans-serif" }}>Quick answers about D'Miraki and how we work.</p>
           <p className="mt-7 text-[16px] text-[#b9b9b5]" style={{ fontFamily: "'Roboto', sans-serif" }}>Still have a question?</p>
           <a href="/contact" className="mt-3 inline-flex items-center gap-3 rounded-[12px] border border-[#484845] px-6 py-3 text-[17px] font-medium text-[#e6e6e3] transition-colors hover:bg-white/5" style={{ fontFamily: "'Roboto', sans-serif" }}>Book a free call <span aria-hidden="true">&#8594;</span></a>

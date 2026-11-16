@@ -2,6 +2,7 @@ import svgPaths from "./svg-g0z6adp1kt";
 import imgFrame1000002782 from "../../images/digitalmarketingbaner.png";
 import imgIotBanner from "../../images/iotbanner.png";
 import { SoftwareTechLogo } from "../../app/components/SoftwareTechLogo";
+import { IoTFAQSection } from "../../app/components/ContactFAQFooter";
 
 function Heading() {
   return (
@@ -1538,6 +1539,7 @@ export default function IotBased() {
         <p className="mx-auto mt-5 max-w-[720px] text-[16px] leading-7 text-white/80" style={{ fontFamily: "'Inter', sans-serif" }}>From connected hardware to cloud dashboards, we help you turn real-time data into practical business control. Talk to our Delhi NCR IoT team today.</p>
         <a href="/contact" className="mt-7 inline-block border border-white/40 px-8 py-4 text-white no-underline" style={{ fontFamily: "'Orbitron', sans-serif" }}>Book Free IoT Consultation</a>
       </section>
+      <IoTFAQSection />
     </div>
   );
 }

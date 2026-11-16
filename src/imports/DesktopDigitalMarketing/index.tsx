@@ -3,6 +3,7 @@ import imgDigitalMarketing from "../../images/Digitalmarketing.png";
 import imgDigitalMarketingBanner from "../../images/digitalmarketingbaner.png";
 import imgDmirakiPosts1 from "./bf4cf617b34b1b26e10ed7fbbabad160e79fb2e8.png";
 import { MarketingToolLogo } from "../../app/components/MarketingToolLogo";
+import { DigitalMarketingFAQSection } from "../../app/components/ContactFAQFooter";
 
 function Heading() {
   return (
@@ -1799,6 +1800,7 @@ export default function DigitalMarketing() {
       <Container31 />
       <Frame10 />
       <OverlayBorderOverlayBlur5 />
+      <DigitalMarketingFAQSection />
       <div className="hidden" data-name="header">
         <div aria-hidden className="absolute border border-black border-solid inset-0 pointer-events-none" />
         <div className="h-[38.408px] relative shrink-0 w-[118px]" data-name="D'MIRAKI POSTS 1">

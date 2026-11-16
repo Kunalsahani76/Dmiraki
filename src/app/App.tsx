@@ -10,7 +10,7 @@ import {
   WebDevSection,
 } from "./components/ServiceSections";
 import { StatsSection, AttentionSection, ApproachSection, ClientLogosSection } from "./components/MiddleSections";
-import { DreamingBigSection } from "./components/ContactFAQFooter";
+import { DreamingBigSection, HomeFAQSection } from "./components/ContactFAQFooter";
 import { SiteFooter } from "./components/SiteFooter";
 import About from "../imports/DesktopAbout";
 import DigitalMarketing from "../imports/DesktopDigitalMarketing";
@@ -107,7 +107,10 @@ function HomePage() {
         {/* 11. Dreaming Big CTA + Contact Form */}
         <DreamingBigSection />
 
-        {/* 12. Footer */}
+        {/* 12. Frequently Asked Questions */}
+        <HomeFAQSection />
+
+        {/* 13. Footer */}
         <SiteFooter homePage />
       </div>
     </div>

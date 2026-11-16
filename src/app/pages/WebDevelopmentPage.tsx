@@ -17,6 +17,7 @@ import nextJsLogo from "../../icons/Technologies Logos/Next js.png";
 import nodeJsLogo from "../../icons/Technologies Logos/Node js.png";
 import tailwindLogo from "../../icons/Technologies Logos/Tailwindcss.png";
 import wordpressLogo from "../../icons/Technologies Logos/Wordpress.png";
+import { WebDevelopmentFAQSection } from "../components/ContactFAQFooter";
 
 const techStack = [
   { name: "HTML5", logo: html5Logo },
@@ -265,6 +266,8 @@ export default function WebDevelopmentPage() {
           GET A WEBSITE QUOTE
         </a>
       </section>
+
+      <WebDevelopmentFAQSection />
 
     </main>
   );

@@ -4,6 +4,7 @@ import digitalHero from "../../images/Digitalmarketing.png";
 import iotHero from "../../images/digitalmarketingbaner.png";
 import { MarketingToolLogo } from "../components/MarketingToolLogo";
 import { SoftwareTechLogo } from "../components/SoftwareTechLogo";
+import { DigitalMarketingFAQSection, IoTFAQSection } from "../components/ContactFAQFooter";
 
 const digitalTech = ["GOOGLE ADS", "META ADS", "SEMRUSH", "SHOPIFY", "MAILCHIMP", "WORDPRESS", "HUBSPOT"];
 const iotTech = ["AWS IOT", "AZURE IOT", "GOOGLE CLOUD", "RASPBERRY PI", "ARDUINO", "DOCKER", "MQTT", "NODE-RED"];
@@ -217,6 +218,7 @@ export function DigitalMarketingMobilePage() {
       </section>
 
       <FooterCta title="Book a Free Strategy Call" copy="Ready to grow your business online? Start with a free consultation with our Delhi NCR team." />
+      <DigitalMarketingFAQSection />
     </main>
   );
 }
@@ -265,6 +267,7 @@ export function IotMobilePage() {
       </section>
 
       <FooterCta title="Book a Free IoT Consultation" copy="From connected hardware to cloud dashboards, we help you turn real-time data into practical business control. Talk to our Delhi NCR IoT team today." buttonLabel="BOOK FREE IOT CONSULTATION" />
+      <IoTFAQSection />
     </main>
   );
 }

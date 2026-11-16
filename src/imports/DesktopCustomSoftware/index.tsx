@@ -2,6 +2,7 @@ import heroBg from "../../images/digitalmarketingbaner.png";
 import heroVisual from "../../images/customsoftwarebanner.png";
 import svgPaths from "./svg-v1mu0axv8t";
 import { SoftwareTechLogo } from "../../app/components/SoftwareTechLogo";
+import { SoftwareFAQSection } from "../../app/components/ContactFAQFooter";
 
 /* SVG Icon component */
 function SvgIcon({ pathKey, viewBox }: { pathKey: keyof typeof svgPaths; viewBox: string }) {
@@ -414,6 +415,7 @@ export default function App() {
         <ServicesSection />
         <ProcessSection />
         <CtaBanner />
+        <SoftwareFAQSection />
       </main>
     </div>
   );
